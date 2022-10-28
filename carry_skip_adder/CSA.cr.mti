@@ -1,0 +1,36 @@
+{E:/CMP/5th Semester/VLSI/Project/CSATb.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/Project/CSATb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CSA_tb
+
+Top level modules:
+	CSA_tb
+
+} {} {}} {E:/CMP/5th Semester/VLSI/Project/RippleCarryAdder.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/Project/RippleCarryAdder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RippelCarryAdder
+
+Top level modules:
+	RippelCarryAdder
+
+} {} {}} {E:/CMP/5th Semester/VLSI/Project/CarrySkipAdderInterface.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/Project/CarrySkipAdderInterface.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CSAPropagate
+
+Top level modules:
+	CSAPropagate
+
+} {} {}} {E:/CMP/5th Semester/VLSI/Project/mux.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/Project/mux.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux_2x1
+
+Top level modules:
+	mux_2x1
+
+} {} {}} {E:/CMP/5th Semester/VLSI/Project/FA.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/Project/FA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Fulladder
+
+Top level modules:
+	Fulladder
+
+} {} {}}
