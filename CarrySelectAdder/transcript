@@ -1,0 +1,80 @@
+# Compile of FullAdder.v failed with 1 errors.
+# Compile of FullAdder.v failed with 1 errors.
+# Compile of FullAdder.v was successful.
+# Compile of Mux2x1.v was successful.
+# Compile of RCA4.v failed with 1 errors.
+# Compile of RCA4.v failed with 1 errors.
+# Compile of RCA4.v failed with 1 errors.
+# Compile of RCA4.v was successful.
+# Compile of RCA16.v was successful.
+# Compile of RCA16.v was successful.
+# Compile of carrySelectAdder.v failed with 2 errors.
+# Compile of carrySelectAdder.v was successful.
+# Compile of carrySelectAdder_TB.v was successful.
+# Load canceled
+# Compile of carrySelectAdder_TB.v was successful.
+# Load canceled
+# Compile of carrySelectAdder_TB.v was successful.
+vsim -gui work.carrySelectAdder_TB
+# vsim -gui work.carrySelectAdder_TB 
+# Start time: 00:30:08 on Oct 29,2022
+# Loading work.carrySelectAdder_TB
+# Loading work.carrySelectAdder
+# ** Warning: (vsim-3035) Instantiation depth of '/carrySelectAdder_TB/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder' is 51. This might indicate a recursive instantiation. Increasing limit to 75.
+# ** Error: (vsim-3036) Instantiation depth of '/carrySelectAdder_TB/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder' is 75. Assuming recursive instantiation.
+#    Time: 0 ps  Iteration: 0  Instance: /carrySelectAdder_TB/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v
+# Error loading design
+# End time: 00:30:08 on Oct 29,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 28
+# Compile of carrySelectAdder_TB.v was successful.
+vsim -gui work.carrySelectAdder_TB
+# vsim -gui work.carrySelectAdder_TB 
+# Start time: 00:31:11 on Oct 29,2022
+# Loading work.carrySelectAdder_TB
+# Loading work.carrySelectAdder
+# ** Warning: (vsim-3035) Instantiation depth of '/carrySelectAdder_TB/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder' is 51. This might indicate a recursive instantiation. Increasing limit to 75.
+# ** Error: (vsim-3036) Instantiation depth of '/carrySelectAdder_TB/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder' is 75. Assuming recursive instantiation.
+#    Time: 0 ps  Iteration: 0  Instance: /carrySelectAdder_TB/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v
+# Error loading design
+# End time: 00:31:12 on Oct 29,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# Compile of carrySelectAdder.v was successful.
+# Compile of carrySelectAdder.v was successful.
+# Compile of carrySelectAdder_TB.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of Mux2x1.v was successful.
+# Compile of RCA16.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.carrySelectAdder_TB
+# vsim -gui work.carrySelectAdder_TB 
+# Start time: 00:33:36 on Oct 29,2022
+# Loading work.carrySelectAdder_TB
+# Loading work.carrySelectAdder
+# Loading work.RCA16
+# ** Error: (vsim-3033) Instantiation of 'Mux2s1' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /carrySelectAdder_TB/carryselectadder File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder.v Line: 41
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/work
+# Error loading design
+# End time: 00:33:37 on Oct 29,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# Compile of carrySelectAdder.v was successful.
+# Compile of carrySelectAdder_TB.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of Mux2x1.v was successful.
+# Compile of RCA16.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.carrySelectAdder_TB
+# vsim -gui work.carrySelectAdder_TB 
+# Start time: 00:34:08 on Oct 29,2022
+# Loading work.carrySelectAdder_TB
+# Loading work.carrySelectAdder
+# Loading work.RCA16
+# Loading work.Mux2x1
+# Loading work.FullAdder
+run
+add wave -position insertpoint sim:/carrySelectAdder_TB/*
+run
+quit -sim
+# End time: 00:35:15 on Oct 29,2022, Elapsed time: 0:01:07
+# Errors: 0, Warnings: 2
