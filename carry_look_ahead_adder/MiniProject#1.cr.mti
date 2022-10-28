@@ -1,0 +1,32 @@
+{C:/work/VLSI/Mini project 1/CLA_TB.v} {1 {vlog -work work -stats=none {C:\work\VLSI\Mini project 1\CLA_TB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CLA_TB
+
+Top level modules:
+	CLA_TB
+
+} {} {}} {C:/work/VLSI/Mini project 1/CLA4bit.v} {1 {vlog -work work -stats=none {C:/work/VLSI/Mini project 1/CLA4bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CLA4bit
+
+Top level modules:
+	CLA4bit
+
+} {} {}} {C:/work/VLSI/Mini project 1/bitAdder.v} {1 {vlog -work work -stats=none {C:/work/VLSI/Mini project 1/bitAdder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module bitAdder
+
+Top level modules:
+	bitAdder
+
+} {} {}} {C:/work/VLSI/Mini project 1/CSA.v} {1 {vlog -work work -stats=none {C:/work/VLSI/Mini project 1/CSA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+} {} {}} {C:/work/VLSI/Mini project 1/CLA32bit.v} {1 {vlog -work work -stats=none {C:/work/VLSI/Mini project 1/CLA32bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CLA32bit
+
+Top level modules:
+	CLA32bit
+
+} {} {}}
