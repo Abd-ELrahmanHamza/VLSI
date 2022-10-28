@@ -1,0 +1,33 @@
+module FullAdder_TB;
+
+reg in1;
+reg in2;
+reg c_in;
+
+wire c_out;
+wire sum;
+
+Fulladder fa(in1,in2,c_in,c_out,sum);
+always @(*) begin
+    $monitor("in1=%b in2=%b c_in=%b c_out=%b sum=%b", in1, in2, c_in, c_out, sum); 
+    $display("in1=%b in2=%b c_in=%b c_out=%b sum=%b", in1, in2, c_in, c_out, sum);
+    in1=0;
+    in2=0;
+    c_in=0;
+    #10;
+    in1=1;
+    in2=0;
+    c_in=0;
+    #10;
+    
+    for (in1 = 0; in1<2 ; in1=in1+1) begin
+        for (in2 = 0; in2<2 ; in2=in2+1 ) begin
+            for (c_in = 0; c_in<2 ; c_in=c_in+1 ) begin
+                $display("in1=%b in2=%b c_in=%b c_out=%b sum=%b", in1, in2, c_in, c_out, sum);
+                #10;
+            end
+        end
+    end
+end
+
+endmodule
