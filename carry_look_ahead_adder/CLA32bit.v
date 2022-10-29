@@ -1,3 +1,4 @@
+`include "CLA4bit.v"
 
 module CLA32bit(a,b, cin, sum,cout);
 input [31:0] a,b;
