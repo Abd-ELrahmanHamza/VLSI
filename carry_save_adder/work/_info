@@ -10,29 +10,53 @@ z2
 cModel Technology
 dC:/work/VLSI/Mini project 1
 vCarrySaveAdder
-Z0 !s110 1667064816
+Z0 !s110 1667071161
 !i10b 1
-!s100 CN1M0W^`R?[Ef240RWIIk3
+!s100 ]6l;;O=jU>:K4a6aPd`Pm2
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I3Tn<NQD88VQHjzXU3G3hB0
+IE18g0B8PH3;:F<J?d>o592
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dC:/work/VLSI/Repo/carry_save_adder
-w1667064810
+w1667070768
 Z4 8C:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder.v
 Z5 FC:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder.v
-!i122 13
-L0 2 28
+!i122 49
+L0 4 71
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1667064816.000000
-Z8 !s107 ../ripple_carry_adder/FullAdder.v|C:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder.v|
+Z7 !s108 1667071161.000000
+Z8 !s107 ../ripple_carry_adder/RippelCarryAdder.v|../ripple_carry_adder/FullAdder.v|C:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder.v|
 Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder.v|
 !i113 1
 Z10 o-work work
 Z11 tCvgOpt 0
 n@carry@save@adder
+vCarrySaveAdder_TB
+R0
+!i10b 1
+!s100 G<fT:04eci5c_;cPV>bDl3
+R1
+ITVMgLco1e_TOA]gf6TeRJ1
+R2
+R3
+w1667071152
+Z12 8C:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder_TB.v
+Z13 FC:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder_TB.v
+!i122 50
+Z14 L0 3 85
+R6
+r1
+!s85 0
+31
+R7
+Z15 !s107 C:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder_TB.v|
+Z16 !s90 -reportprogress|300|-work|work|-stats=none|C:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder_TB.v|
+!i113 1
+R10
+R11
+n@carry@save@adder_@t@b
 vCSA
 !s110 1667064579
 !i10b 1
@@ -51,7 +75,7 @@ r1
 !s85 0
 31
 !s108 1667064579.000000
-R8
+!s107 ../ripple_carry_adder/FullAdder.v|C:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder.v|
 R9
 !i113 1
 R10
@@ -65,10 +89,10 @@ R1
 ImzNlEKULLm_RNM?cZ9oN92
 R2
 R3
-Z12 w1666921636
+Z17 w1666921636
 8../ripple_carry_adder/FullAdder.v
 F../ripple_carry_adder/FullAdder.v
-!i122 13
+!i122 49
 L0 7 7
 R6
 r1
@@ -86,22 +110,46 @@ R0
 !i10b 1
 !s100 o]IjV`Nio7`i:RI02SLeL3
 R1
-IWBhML2WaFC4zg[Ggfb32@2
+I2b_ZzFFDOU>gTJ^zlLanR2
 R2
 R3
-R12
-8C:/work/VLSI/Repo/ripple_carry_adder/RippelCarryAdder.v
-FC:/work/VLSI/Repo/ripple_carry_adder/RippelCarryAdder.v
-!i122 12
+R17
+8../ripple_carry_adder/RippelCarryAdder.v
+F../ripple_carry_adder/RippelCarryAdder.v
+!i122 49
 L0 9 26
 R6
 r1
 !s85 0
 31
 R7
-!s107 C:/work/VLSI/Repo/ripple_carry_adder/RippelCarryAdder.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/work/VLSI/Repo/ripple_carry_adder/RippelCarryAdder.v|
+R8
+R9
 !i113 1
 R10
 R11
 n@rippel@carry@adder
+vRippleCarryAdder_TB
+!s110 1667069933
+!i10b 1
+!s100 :H1e@dRQ@nIZ?E3L7agYN0
+R1
+Ia2o[Q:^COC_A_Uh`_oV^20
+R2
+R3
+w1667069930
+R12
+R13
+!i122 26
+R14
+R6
+r1
+!s85 0
+31
+!s108 1667069933.000000
+R15
+R16
+!i113 1
+R10
+R11
+n@ripple@carry@adder_@t@b
