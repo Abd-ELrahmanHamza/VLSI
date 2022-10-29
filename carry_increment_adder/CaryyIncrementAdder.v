@@ -3,6 +3,8 @@
 
   Author: Ziad Sherif
 */
+`include "halfAdder.v"
+`include "RCA16.v"
 
 module Carryincadder(a,b,sum,cout,c0);
 input [31:0] a,b;

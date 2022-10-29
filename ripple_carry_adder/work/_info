@@ -10,28 +10,28 @@ z2
 cModel Technology
 dD:/Material/3rd CMP/First term/Computer arch/Labs/Lab2/Requirement
 vFulladder
-Z0 !s110 1666920957
+Z0 !s110 1667067922
 !i10b 1
 !s100 fH4e?:SC80UAiZSQFD:d;1
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-INC5BzaJZ@SRoge^2FzDbW3
+I60]i_g`<KRJz6G0ARVJQn2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dD:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code
+Z3 dD:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder
 w1666903545
-Z4 8D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder.v
-Z5 FD:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder.v
-!i122 194
-Z6 L0 7 7
-Z7 OV;L;2020.1;71
+8./FullAdder.v
+F./FullAdder.v
+!i122 202
+Z4 L0 7 7
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1666920957.000000
-Z9 !s107 D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder.v|
-Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder.v|
+Z6 !s108 1667067922.000000
+Z7 !s107 ./FullAdder.v|D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\RippelCarryAdder.v|
+Z8 !s90 -reportprogress|300|-work|work|-stats=none|D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\RippelCarryAdder.v|
 !i113 1
-Z11 o-work work
-Z12 tCvgOpt 0
+Z9 o-work work
+Z10 tCvgOpt 0
 n@fulladder
 vfulladder
 !s110 1666903493
@@ -40,45 +40,45 @@ vfulladder
 R1
 I3DYfLW:hFa2mheFolgl9S0
 R2
-R3
+dD:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code
 w1666903179
+8D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder.v
+FD:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder.v
+!i122 3
 R4
 R5
-!i122 3
-R6
-R7
 r1
 !s85 0
 31
 !s108 1666903493.000000
+!s107 D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder.v|
+!i113 1
 R9
 R10
-!i113 1
-R11
-R12
 vFullAdder_TB
 R0
 !i10b 1
 !s100 6ic<hMP^FSo8d<2O3[UdL1
 R1
-INfRMS:;DKnM59<`APZ^:43
+I^H@ZG@:ezFD3R5Y6=oV;n0
 R2
 R3
 w1666903981
-8D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder_TB.v
-FD:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder_TB.v
-!i122 195
+8D:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code/FullAdder_TB.v
+FD:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code/FullAdder_TB.v
+!i122 201
 L0 1 27
-R7
+R5
 r1
 !s85 0
 31
-R8
-!s107 D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder_TB.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder_TB.v|
+R6
+!s107 D:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code/FullAdder_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code/FullAdder_TB.v|
 !i113 1
-R11
-R12
+R9
+R10
 n@full@adder_@t@b
 vRippelCarryAdder
 R0
@@ -88,24 +88,24 @@ R1
 Ic<AO[R5>e2?<no6JJha_80
 R2
 R3
-w1666905014
+w1667067910
 8D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\RippelCarryAdder.v
 FD:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\RippelCarryAdder.v
-!i122 196
+!i122 202
 L0 9 26
-R7
+R5
 r1
 !s85 0
 31
+R6
+R7
 R8
-!s107 D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\RippelCarryAdder.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\RippelCarryAdder.v|
 !i113 1
-R11
-R12
+R9
+R10
 n@rippel@carry@adder
 vRippleCarryAdder_TB
-Z13 !s110 1666920958
+R0
 !i10b 1
 !s100 6H37P6H<X:P3fjc^DEWk;3
 R1
@@ -115,21 +115,21 @@ R3
 w1666920941
 8D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\RippelCarryAdder_TB.v
 FD:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\RippelCarryAdder_TB.v
-!i122 197
+!i122 203
 L0 2 83
-R7
+R5
 r1
 !s85 0
 31
-R8
+R6
 !s107 D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\RippelCarryAdder_TB.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\RippelCarryAdder_TB.v|
 !i113 1
-R11
-R12
+R9
+R10
 n@ripple@carry@adder_@t@b
 vSignedRippleCarryAdder
-R13
+Z11 !s110 1667067923
 !i10b 1
 !s100 ;72:Pm@l7CC=Zh5@5ZXX`3
 R1
@@ -139,21 +139,21 @@ R3
 w1666912445
 8D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\SignedRippleCarryAdder.v
 FD:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\SignedRippleCarryAdder.v
-!i122 198
+!i122 204
 L0 1 60
-R7
+R5
 r1
 !s85 0
 31
-Z14 !s108 1666920958.000000
+Z12 !s108 1667067923.000000
 !s107 D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\SignedRippleCarryAdder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\SignedRippleCarryAdder.v|
 !i113 1
-R11
-R12
+R9
+R10
 n@signed@ripple@carry@adder
 vSignedRippleCarryAdder_TB
-R13
+R11
 !i10b 1
 !s100 H@Ffe@Wgm8;;F=gN=g1Bd2
 R1
@@ -163,16 +163,16 @@ R3
 w1666912091
 8D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\SignedRippleCarryAdder_TB.v
 FD:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\SignedRippleCarryAdder_TB.v
-!i122 199
+!i122 205
 L0 2 49
-R7
+R5
 r1
 !s85 0
 31
-R14
+R12
 !s107 D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\SignedRippleCarryAdder_TB.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\SignedRippleCarryAdder_TB.v|
 !i113 1
-R11
-R12
+R9
+R10
 n@signed@ripple@carry@adder_@t@b

@@ -1,4 +1,4 @@
-
+`include "./FullAdder.v"
 module carry_bypass_4_bit (input [3:0]in1,
                            input [3:0]in2,
                            input c_in,

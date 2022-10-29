@@ -1,4 +1,4 @@
-
+`include "FullAdder.v"
 module RCA16(A,B,cin,sum,cout);
 input [15:0]A,B;
 input cin;
