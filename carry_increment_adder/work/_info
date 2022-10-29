@@ -10,23 +10,23 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 vCarryincadder
-Z0 !s110 1667008478
+Z0 !s110 1667057234
 !i10b 1
-!s100 JXQDXQ^ncB02;RH]J[Gf31
+!s100 _0EhoKFFhSP[E<3_TNUbL0
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IoiQEj=C]<:gKn;5Ek[>Um1
+I3Lao@;U<1n1:DcelanjTc0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dE:/CMP/5th Semester/VLSI/C2
-w1667008110
+w1667056972
 8E:/CMP/5th Semester/VLSI/C2/CaryyIncrementAdder.v
 FE:/CMP/5th Semester/VLSI/C2/CaryyIncrementAdder.v
-!i122 46
-L0 8 35
+!i122 114
+L0 7 30
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1667008478.000000
+Z5 !s108 1667057234.000000
 !s107 E:/CMP/5th Semester/VLSI/C2/CaryyIncrementAdder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/C2/CaryyIncrementAdder.v|
 !i113 1
@@ -34,7 +34,7 @@ Z6 o-work work
 Z7 tCvgOpt 0
 n@carryincadder
 vCIA_tb
-!s110 1667008479
+Z8 !s110 1667057235
 !i10b 1
 !s100 lnfi6cW4YFJO]]6:C`zM;1
 R1
@@ -42,23 +42,23 @@ IanSCC>YAX@P`en;l]M]M]0
 R2
 R3
 w1667008476
-Z8 8E:/CMP/5th Semester/VLSI/C2/CIA_TB.v
-Z9 FE:/CMP/5th Semester/VLSI/C2/CIA_TB.v
-!i122 49
-Z10 L0 2 75
+Z9 8E:/CMP/5th Semester/VLSI/C2/CIA_TB.v
+Z10 FE:/CMP/5th Semester/VLSI/C2/CIA_TB.v
+!i122 117
+Z11 L0 2 75
 R4
 r1
 !s85 0
 31
-R5
-Z11 !s107 E:/CMP/5th Semester/VLSI/C2/CIA_TB.v|
-Z12 !s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/C2/CIA_TB.v|
+Z12 !s108 1667057235.000000
+Z13 !s107 E:/CMP/5th Semester/VLSI/C2/CIA_TB.v|
+Z14 !s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/C2/CIA_TB.v|
 !i113 1
 R6
 R7
 n@c@i@a_tb
 vCLA4
-R0
+R8
 !i10b 1
 !s100 iL43n=YIU@HfYDDJ;7?9Y1
 R1
@@ -66,17 +66,17 @@ IJE`OcJBE5dOYK3cIUA_>d0
 R2
 R3
 w1667007268
-Z13 8E:/CMP/5th Semester/VLSI/C2/ClA4bit.v
-Z14 FE:/CMP/5th Semester/VLSI/C2/ClA4bit.v
-!i122 48
+Z15 8E:/CMP/5th Semester/VLSI/C2/ClA4bit.v
+Z16 FE:/CMP/5th Semester/VLSI/C2/ClA4bit.v
+!i122 116
 L0 1 24
 R4
 r1
 !s85 0
 31
-R5
-Z15 !s107 E:/CMP/5th Semester/VLSI/C2/ClA4bit.v|
-Z16 !s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/C2/ClA4bit.v|
+R12
+Z17 !s107 E:/CMP/5th Semester/VLSI/C2/ClA4bit.v|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/C2/ClA4bit.v|
 !i113 1
 R6
 R7
@@ -90,8 +90,8 @@ ITc8;oz0>zg42bH7@6?`4_1
 R2
 R3
 w1667003438
-R13
-R14
+R15
+R16
 !i122 13
 L0 1 21
 R4
@@ -99,8 +99,8 @@ r1
 !s85 0
 31
 !s108 1667004635.000000
-R15
-R16
+R17
+R18
 !i113 1
 R6
 R7
@@ -114,21 +114,45 @@ IO;LI7i?zobcLC3_K_j=JC1
 R2
 R3
 w1667008274
-R8
 R9
-!i122 41
 R10
+!i122 41
+R11
 R4
 r1
 !s85 0
 31
 !s108 1667008430.000000
-R11
-R12
+R13
+R14
 !i113 1
 R6
 R7
 n@c@s@a_tb
+vFullAdder
+R8
+!i10b 1
+!s100 9U;eH==gV`d9az?6=g@L>0
+R1
+IeM4kc`bU51Fg8:m2_@IHY3
+R2
+R3
+w1667057121
+8E:/CMP/5th Semester/VLSI/C2/FullAdder.v
+FE:/CMP/5th Semester/VLSI/C2/FullAdder.v
+!i122 119
+L0 1 7
+R4
+r1
+!s85 0
+31
+R12
+!s107 E:/CMP/5th Semester/VLSI/C2/FullAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/C2/FullAdder.v|
+!i113 1
+R6
+R7
+n@full@adder
 vha
 R0
 !i10b 1
@@ -140,7 +164,7 @@ R3
 w1667008395
 8E:/CMP/5th Semester/VLSI/C2/halfAdder.v
 FE:/CMP/5th Semester/VLSI/C2/halfAdder.v
-!i122 47
+!i122 115
 L0 2 4
 R4
 r1
@@ -152,3 +176,27 @@ R5
 !i113 1
 R6
 R7
+vRCA16
+R8
+!i10b 1
+!s100 bB]]fjCBXT1NG1lh;0Zdb1
+R1
+I>LkNN19FQHz[SPCOc3X4`2
+R2
+R3
+w1667008640
+8E:/CMP/5th Semester/VLSI/C2/RCA16.v
+FE:/CMP/5th Semester/VLSI/C2/RCA16.v
+!i122 118
+L0 2 19
+R4
+r1
+!s85 0
+31
+R12
+!s107 E:/CMP/5th Semester/VLSI/C2/RCA16.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/C2/RCA16.v|
+!i113 1
+R6
+R7
+n@r@c@a16
