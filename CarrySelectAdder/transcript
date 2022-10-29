@@ -1,80 +1,168 @@
-# Compile of FullAdder.v failed with 1 errors.
-# Compile of FullAdder.v failed with 1 errors.
-# Compile of FullAdder.v was successful.
-# Compile of Mux2x1.v was successful.
-# Compile of RCA4.v failed with 1 errors.
-# Compile of RCA4.v failed with 1 errors.
-# Compile of RCA4.v failed with 1 errors.
-# Compile of RCA4.v was successful.
-# Compile of RCA16.v was successful.
-# Compile of RCA16.v was successful.
-# Compile of carrySelectAdder.v failed with 2 errors.
-# Compile of carrySelectAdder.v was successful.
+# Compile of carrySelectAdder_TB.v failed with 2 errors.
+# Compile of carrySelectAdder_TB.v failed with 1 errors.
+# Compile of carrySelectAdder_TB.v failed with 1 errors.
+# Compile of carrySelectAdder_TB.v failed with 1 errors.
+# Compile of carrySelectAdder_TB.v failed with 1 errors.
+# Compile of carrySelectAdder_TB.v failed with 1 errors.
 # Compile of carrySelectAdder_TB.v was successful.
-# Load canceled
-# Compile of carrySelectAdder_TB.v was successful.
-# Load canceled
 # Compile of carrySelectAdder_TB.v was successful.
 vsim -gui work.carrySelectAdder_TB
 # vsim -gui work.carrySelectAdder_TB 
-# Start time: 00:30:08 on Oct 29,2022
-# Loading work.carrySelectAdder_TB
-# Loading work.carrySelectAdder
-# ** Warning: (vsim-3035) Instantiation depth of '/carrySelectAdder_TB/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder' is 51. This might indicate a recursive instantiation. Increasing limit to 75.
-# ** Error: (vsim-3036) Instantiation depth of '/carrySelectAdder_TB/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder' is 75. Assuming recursive instantiation.
-#    Time: 0 ps  Iteration: 0  Instance: /carrySelectAdder_TB/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v
-# Error loading design
-# End time: 00:30:08 on Oct 29,2022, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 28
-# Compile of carrySelectAdder_TB.v was successful.
-vsim -gui work.carrySelectAdder_TB
-# vsim -gui work.carrySelectAdder_TB 
-# Start time: 00:31:11 on Oct 29,2022
-# Loading work.carrySelectAdder_TB
-# Loading work.carrySelectAdder
-# ** Warning: (vsim-3035) Instantiation depth of '/carrySelectAdder_TB/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder' is 51. This might indicate a recursive instantiation. Increasing limit to 75.
-# ** Error: (vsim-3036) Instantiation depth of '/carrySelectAdder_TB/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder' is 75. Assuming recursive instantiation.
-#    Time: 0 ps  Iteration: 0  Instance: /carrySelectAdder_TB/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder/carryselectadder File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v
-# Error loading design
-# End time: 00:31:12 on Oct 29,2022, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 3
-# Compile of carrySelectAdder.v was successful.
-# Compile of carrySelectAdder.v was successful.
-# Compile of carrySelectAdder_TB.v was successful.
-# Compile of FullAdder.v was successful.
-# Compile of Mux2x1.v was successful.
-# Compile of RCA16.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.carrySelectAdder_TB
-# vsim -gui work.carrySelectAdder_TB 
-# Start time: 00:33:36 on Oct 29,2022
-# Loading work.carrySelectAdder_TB
-# Loading work.carrySelectAdder
-# Loading work.RCA16
-# ** Error: (vsim-3033) Instantiation of 'Mux2s1' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /carrySelectAdder_TB/carryselectadder File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder.v Line: 41
-#         Searched libraries:
-#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/work
-# Error loading design
-# End time: 00:33:37 on Oct 29,2022, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 3
-# Compile of carrySelectAdder.v was successful.
-# Compile of carrySelectAdder_TB.v was successful.
-# Compile of FullAdder.v was successful.
-# Compile of Mux2x1.v was successful.
-# Compile of RCA16.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.carrySelectAdder_TB
-# vsim -gui work.carrySelectAdder_TB 
-# Start time: 00:34:08 on Oct 29,2022
+# Start time: 13:50:34 on Oct 29,2022
 # Loading work.carrySelectAdder_TB
 # Loading work.carrySelectAdder
 # Loading work.RCA16
 # Loading work.Mux2x1
 # Loading work.FullAdder
-run
 add wave -position insertpoint sim:/carrySelectAdder_TB/*
 run
+run -all
+# sum = 10000000000000000000000000000000, carry = 0
+# sum = 01111111111111111111111111111111, carry = 1
+# sum = 01111111111111111111111111111110, carry = 1
+# sum = 10000000000000000000000000000001, carry = 0
+# sum = 11111111111111111111111111111110, carry = 1
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v(59)
+#    Time: 5 ns  Iteration: 0  Instance: /carrySelectAdder_TB
+# 1
+# Break in Module carrySelectAdder_TB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v line 59
 quit -sim
-# End time: 00:35:15 on Oct 29,2022, Elapsed time: 0:01:07
+# End time: 14:48:09 on Oct 29,2022, Elapsed time: 0:57:35
+# Errors: 0, Warnings: 9
+# Compile of overflow.v failed with 1 errors.
+# Compile of overflow.v was successful.
+# Compile of overflow_TB.v was successful.
+vsim -gui work.overflow
+# vsim -gui work.overflow 
+# Start time: 14:56:52 on Oct 29,2022
+# Loading work.overflow
+quit -sim
+# End time: 14:57:03 on Oct 29,2022, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 6
+# Compile of overflow_TB.v was successful.
+vsim -gui work.overflow_TB
+# vsim -gui work.overflow_TB 
+# Start time: 14:57:28 on Oct 29,2022
+# Loading work.overflow_TB
+# Loading work.overflow
+add wave -position insertpoint sim:/overflow_TB/*
+run -all
+# success
+# success
+# success
+# success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow_TB.v(56)
+#    Time: 7 ns  Iteration: 0  Instance: /overflow_TB
+# 1
+# Break in Module overflow_TB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow_TB.v line 56
+quit -sim
+# End time: 14:58:20 on Oct 29,2022, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 2
+# Compile of carrySelectAdder_TB.v was successful.
+# Compile of carrySelectAdder_TB.v was successful.
+# Compile of carrySelectAdder_TB.v failed with 1 errors.
+# Compile of carrySelectAdder_TB.v was successful.
+vsim -gui work.carrySelectAdder_TB
+# vsim -gui work.carrySelectAdder_TB 
+# Start time: 15:37:35 on Oct 29,2022
+# Loading work.carrySelectAdder_TB
+# Loading work.carrySelectAdder
+# Loading work.RCA16
+# Loading work.Mux2x1
+# Loading work.overflow
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'A'. The port definition is at: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /carrySelectAdder_TB/rsa_overflow File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'B'. The port definition is at: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /carrySelectAdder_TB/rsa_overflow File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v Line: 17
+add wave -position insertpoint sim:/carrySelectAdder_TB/*
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : failed with input 2147483647 and 4294967295 and Output 2147483646 and overflow status 1
+# TestCase#           3 : success
+# TestCase#           4 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v(88)
+#    Time: 5 ns  Iteration: 0  Instance: /carrySelectAdder_TB
+# 1
+# Break in Module carrySelectAdder_TB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v line 88
+quit -sim
+# End time: 15:39:16 on Oct 29,2022, Elapsed time: 0:01:41
+# Errors: 0, Warnings: 7
+# Compile of carrySelectAdder_TB.v was successful.
+# Compile of carrySelectAdder_TB.v was successful.
+# Compile of carrySelectAdder.v was successful.
+# Compile of carrySelectAdder_TB.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of Mux2x1.v was successful.
+# Compile of RCA16.v was successful.
+# Compile of overflow.v was successful.
+# Compile of overflow_TB.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.carrySelectAdder_TB
+# vsim -gui work.carrySelectAdder_TB 
+# Start time: 15:39:53 on Oct 29,2022
+# Loading work.carrySelectAdder_TB
+# Loading work.carrySelectAdder
+# Loading work.RCA16
+# Loading work.Mux2x1
+# Loading work.overflow
+# Loading work.FullAdder
+add wave -position insertpoint sim:/carrySelectAdder_TB/*
+run -all
+# TestCase#           0 : failed with input 2147483647 and          1 and Output 2147483648 and overflow status 1
+# TestCase#           1 : failed with input 4294967295 and 2147483648 and Output 2147483647 and overflow status 1
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v(88)
+#    Time: 5 ns  Iteration: 0  Instance: /carrySelectAdder_TB
+# 1
+# Break in Module carrySelectAdder_TB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v line 88
+quit -sim
+# End time: 15:40:43 on Oct 29,2022, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 4
+# Compile of carrySelectAdder_TB.v was successful.
+vsim -gui work.carrySelectAdder_TB
+# vsim -gui work.carrySelectAdder_TB 
+# Start time: 15:43:08 on Oct 29,2022
+# Loading work.carrySelectAdder_TB
+# Loading work.carrySelectAdder
+# Loading work.RCA16
+# Loading work.Mux2x1
+# Loading work.overflow
+# Loading work.FullAdder
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'sum'.
+#    Time: 0 ps  Iteration: 0  Instance: /carrySelectAdder_TB/carryselectadder File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v Line: 16
+# Error loading design
+# End time: 15:43:09 on Oct 29,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of carrySelectAdder_TB.v was successful.
+vsim -gui work.carrySelectAdder_TB
+# vsim -gui work.carrySelectAdder_TB 
+# Start time: 15:43:35 on Oct 29,2022
+# Loading work.carrySelectAdder_TB
+# Loading work.carrySelectAdder
+# Loading work.RCA16
+# Loading work.Mux2x1
+# Loading work.overflow
+# Loading work.FullAdder
+add wave -position insertpoint sim:/carrySelectAdder_TB/*
+run -all
+# TestCase#           0 : failed with input 2147483647 and          1 and Output -2147483648 and overflow status 1
+# TestCase#           1 : failed with input 4294967295 and 2147483648 and Output  2147483647 and overflow status 1
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v(88)
+#    Time: 5 ns  Iteration: 0  Instance: /carrySelectAdder_TB
+# 1
+# Break in Module carrySelectAdder_TB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v line 88
+quit -sim
+# End time: 15:43:53 on Oct 29,2022, Elapsed time: 0:00:18
 # Errors: 0, Warnings: 2
