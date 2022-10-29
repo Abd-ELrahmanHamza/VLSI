@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder
+vNormalAdder
+!s110 1667056263
+!i10b 1
+!s100 K@8bFJOf[6fI7KcPGC3>11
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IVzaFocCheJ1138bl22I?X0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder
+w1667056258
+8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder/NormalAdder.v
+FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder/NormalAdder.v
+!i122 0
+L0 1 10
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1667056262.000000
+!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder/NormalAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder/NormalAdder.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@normal@adder
+vNormalAdder_TB
+Z6 !s110 1667056379
+!i10b 1
+!s100 iRBVl]m1kN^`ahL927BMj2
+R0
+I73hl7GFb]XOFFA5C4O^Z51
+R1
+R2
+w1667056375
+8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder/NormalAdder_TB.v
+FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder/NormalAdder_TB.v
+!i122 1
+L0 2 93
+R3
+r1
+!s85 0
+31
+Z7 !s108 1667056379.000000
+!s107 ../CarrySelectAdder/overflow.v|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder/NormalAdder_TB.v|
+Z8 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder/NormalAdder_TB.v|
+!i113 1
+R4
+R5
+n@normal@adder_@t@b
+voverflow
+R6
+!i10b 1
+!s100 K9ZG;fhRVRmT6J9cliJkH1
+R0
+I6HnR1SdHANkOW:TbY2GYZ1
+R1
+R2
+w1667047933
+8../CarrySelectAdder/overflow.v
+F../CarrySelectAdder/overflow.v
+!i122 1
+L0 1 8
+R3
+r1
+!s85 0
+31
+R7
+Z9 !s107 ../CarrySelectAdder/overflow.v|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder/NormalAdder_TB.v|
+R8
+!i113 1
+R4
+R5

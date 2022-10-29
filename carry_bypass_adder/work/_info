@@ -1,0 +1,152 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code
+vcarry_bypass_4_bit
+Z0 !s110 1667007968
+!i10b 1
+!s100 oC@`Ai1YTXDlKDGDV`^^X2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ImlJmX@:lg<lgKXEzb1G[O2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder
+w1667005757
+8D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/carry_bypass_4_bit.v
+FD:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/carry_bypass_4_bit.v
+!i122 61
+L0 2 26
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1667007968.000000
+!s107 D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/carry_bypass_4_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/carry_bypass_4_bit.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vcarry_bypass_adder
+Z8 !s110 1667007969
+!i10b 1
+!s100 c;[9EWN3<fA2Sn:[bGcFj0
+R1
+IWE_P<::XXbS^E0d3^zd@60
+R2
+R3
+w1667007779
+8D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/carry_bypass_adder.v
+FD:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/carry_bypass_adder.v
+!i122 62
+L0 1 41
+R4
+r1
+!s85 0
+31
+Z9 !s108 1667007969.000000
+!s107 D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/carry_bypass_adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/carry_bypass_adder.v|
+!i113 1
+R6
+R7
+vcarry_bypass_adder_TB
+R8
+!i10b 1
+!s100 >5hWz3N06KY`jInGJAd:Y2
+R1
+INi5F6<]XA_zH[Yao7eW3Q1
+R2
+R3
+w1667007966
+Z10 8D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/carry_bypass_adder_TB.v
+Z11 FD:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/carry_bypass_adder_TB.v
+!i122 64
+Z12 L0 3 83
+R4
+r1
+!s85 0
+31
+R9
+Z13 !s107 D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/carry_bypass_adder_TB.v|
+Z14 !s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/carry_bypass_adder_TB.v|
+!i113 1
+R6
+R7
+ncarry_bypass_adder_@t@b
+vFulladder
+R0
+!i10b 1
+!s100 fH4e?:SC80UAiZSQFD:d;1
+R1
+IOb=nT:HKeFmFXN`?^NbOz1
+R2
+R3
+w1666903545
+8D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/FullAdder.v
+FD:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/FullAdder.v
+!i122 60
+L0 7 7
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/FullAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/FullAdder.v|
+!i113 1
+R6
+R7
+n@fulladder
+vmux_2x1
+R8
+!i10b 1
+!s100 Q_Y;JT0]e5>E:UCDM5[=A0
+R1
+Ia:a7JFVCf7C>e_ZmZ?b9H3
+R2
+R3
+w1667006823
+8D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/mux_2x1.v
+FD:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/mux_2x1.v
+!i122 63
+L0 2 8
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/mux_2x1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSI/carry_bypass_adder/mux_2x1.v|
+!i113 1
+R6
+R7
+vRippleCarryAdder_TB
+!s110 1667007066
+!i10b 1
+!s100 6PflDd_`n;c030I6_<Pb52
+R1
+I[mcO0YNX8TVkUffAS>4_N2
+R2
+R3
+w1667007064
+R10
+R11
+!i122 14
+R12
+R4
+r1
+!s85 0
+31
+!s108 1667007066.000000
+R13
+R14
+!i113 1
+R6
+R7
+n@ripple@carry@adder_@t@b

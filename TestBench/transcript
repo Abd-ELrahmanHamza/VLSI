@@ -1,0 +1,85 @@
+# Load canceled
+vsim Adders_TB.v
+# OpenFile Adders_TB.v
+add wave
+# wrong number of args for "add wave".
+# Usage: add wave [-allowconstants] [-clampanalog {0|1}] [-color <standard_color_name>] [-depth <level>] [-divider <divider_name>...] [-expand <signal_name>] [-filter <f> | -nofilter <f>] [-format <type> | -<format>] [-group <group_name> [<sig_name1>...]] [-height <pixels>] [[-in] [-out] [-inout] | [-ports]] [-internal] [-label <name>] [-max <real_num>] [-min <real_num>] [-noupdate] [-numdynitem <int>] [-position <location>] [-queueends] [-radix <type> | -<radix_type>] [-radixenumnumeric | -radixenumsymbolic] [-recursive] [-startdynitem <int>] [-time] [<object_name>...] [{<object_name> {sig1 sig2 ...}}] 
+add wave Adders_TB.v
+quit -sim
+# Load canceled
+# Compile of Adders_TB.v was successful.
+# Compile of empty.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of Adders_TB.v was successful.
+# Compile of test_tb.v failed with 1 errors.
+# Compile of test_tb.v was successful.
+vsim work.test_tb
+# vsim work.test_tb 
+# Start time: 18:37:47 on Oct 29,2022
+# Loading work.test_tb
+# Loading work.NormalAdder
+# Loading work.RippelCarryAdder
+# Loading work.CLA32bit
+# ** Error: (vsim-3033) Instantiation of 'CLA4bit' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cla File: ../carry_look_ahead_adder/CLA32bit.v Line: 14
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'CLA4bit' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cla File: ../carry_look_ahead_adder/CLA32bit.v Line: 16
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'CLA4bit' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cla File: ../carry_look_ahead_adder/CLA32bit.v Line: 18
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'CLA4bit' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cla File: ../carry_look_ahead_adder/CLA32bit.v Line: 20
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'CLA4bit' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cla File: ../carry_look_ahead_adder/CLA32bit.v Line: 22
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'CLA4bit' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cla File: ../carry_look_ahead_adder/CLA32bit.v Line: 24
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'CLA4bit' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cla File: ../carry_look_ahead_adder/CLA32bit.v Line: 26
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'CLA4bit' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cla File: ../carry_look_ahead_adder/CLA32bit.v Line: 28
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'CaryyIncrementAdder' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 41
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'CarrySkipAdder' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 42
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# Loading work.carry_bypass_adder
+# Loading work.carrySelectAdder
+# ** Error: (vsim-3033) Instantiation of 'RCA16' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cSa File: ../CarrySelectAdder/carrySelectAdder.v Line: 12
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'RCA16' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cSa File: ../CarrySelectAdder/carrySelectAdder.v Line: 20
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'RCA16' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cSa File: ../CarrySelectAdder/carrySelectAdder.v Line: 28
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'Mux2x1' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cSa File: ../CarrySelectAdder/carrySelectAdder.v Line: 41
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# Loading work.overflow
+# Error loading design
+# End time: 18:37:48 on Oct 29,2022, Elapsed time: 0:00:01
+# Errors: 14, Warnings: 19

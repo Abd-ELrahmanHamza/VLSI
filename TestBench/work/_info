@@ -1,0 +1,247 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder
+vcarry_bypass_adder
+Z0 !s110 1667061451
+!i10b 1
+!s100 c;[9EWN3<fA2Sn:[bGcFj0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Im_>WoKd4OMnFkE]da7Tfz2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench
+Z4 w1667042736
+8../carry_bypass_adder/carry_bypass_adder.v
+F../carry_bypass_adder/carry_bypass_adder.v
+!i122 3
+L0 1 41
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1667061451.000000
+!s107 ../carry_bypass_adder/carry_bypass_adder.v|../carry_increment_adder/CaryyIncrementAdder.v|../NormalAdder/NormalAdder.v|../ripple_carry_adder/RippelCarryAdder.v|../carry_look_ahead_adder/CLA32bit.v|../carry_skip_adder/CarrySkipAdder.v|../CarrySelectAdder/carrySelectAdder.v|../CarrySelectAdder/overflow.v|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v|
+Z7 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+vCarryincadder
+R0
+!i10b 1
+!s100 JXQDXQ^ncB02;RH]J[Gf31
+R1
+IIVchTPRYTPNW10f:4^Qel1
+R2
+R3
+R4
+8../carry_increment_adder/CaryyIncrementAdder.v
+F../carry_increment_adder/CaryyIncrementAdder.v
+!i122 3
+L0 8 35
+R5
+r1
+!s85 0
+31
+R6
+Z10 !s107 ../carry_bypass_adder/carry_bypass_adder.v|../carry_increment_adder/CaryyIncrementAdder.v|../NormalAdder/NormalAdder.v|../ripple_carry_adder/RippelCarryAdder.v|../carry_look_ahead_adder/CLA32bit.v|../carry_skip_adder/CarrySkipAdder.v|../CarrySelectAdder/carrySelectAdder.v|../CarrySelectAdder/overflow.v|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v|
+R7
+!i113 1
+R8
+R9
+n@carryincadder
+vcarrySelectAdder
+R0
+!i10b 1
+!s100 bOlEon4PYgX>VgLeUBk;00
+R1
+I5Kj[JT6IXX;`2MGB6zEKI0
+R2
+R3
+w1666996432
+8../CarrySelectAdder/carrySelectAdder.v
+F../CarrySelectAdder/carrySelectAdder.v
+!i122 3
+L0 2 42
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+ncarry@select@adder
+vCLA32bit
+R0
+!i10b 1
+!s100 ?AP98MW@Z:L45jM0BbUai2
+R1
+IjE@a;<nIP_kj>JBHjDRi=3
+R2
+R3
+Z11 w1666977378
+8../carry_look_ahead_adder/CLA32bit.v
+F../carry_look_ahead_adder/CLA32bit.v
+!i122 3
+L0 2 31
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+n@c@l@a32bit
+vCSA
+R0
+!i10b 1
+!s100 <Vf0[]cmmY[RDWCJ`ZI3V0
+R1
+IlnBUCWG]=<hU1dh[C3RGG3
+R2
+R3
+w1667056610
+8../carry_skip_adder/CarrySkipAdder.v
+F../carry_skip_adder/CarrySkipAdder.v
+!i122 3
+L0 1 14
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+n@c@s@a
+vempty
+!s110 1667061337
+!i10b 1
+!s100 fYRez:[aDS^0Ua^27X@N@2
+R1
+I8`7Go3>ImHEdO5YhHMz<T0
+R2
+R3
+w1667061053
+8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/empty.v
+FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/empty.v
+!i122 1
+L0 1 6
+R5
+r1
+!s85 0
+31
+!s108 1667061337.000000
+!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/empty.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/empty.v|
+!i113 1
+R8
+R9
+vNormalAdder
+R0
+!i10b 1
+!s100 K@8bFJOf[6fI7KcPGC3>11
+R1
+IZoNQlN>b2D7lYD4m[]SoS1
+R2
+R3
+w1667056258
+8../NormalAdder/NormalAdder.v
+F../NormalAdder/NormalAdder.v
+!i122 3
+L0 1 10
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+n@normal@adder
+voverflow
+R0
+!i10b 1
+!s100 K9ZG;fhRVRmT6J9cliJkH1
+R1
+I6HnR1SdHANkOW:TbY2GYZ1
+R2
+R3
+w1667047933
+8../CarrySelectAdder/overflow.v
+F../CarrySelectAdder/overflow.v
+!i122 3
+L0 1 8
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vRippelCarryAdder
+R0
+!i10b 1
+!s100 o]IjV`Nio7`i:RI02SLeL3
+R1
+I2b_ZzFFDOU>gTJ^zlLanR2
+R2
+R3
+R11
+8../ripple_carry_adder/RippelCarryAdder.v
+F../ripple_carry_adder/RippelCarryAdder.v
+!i122 3
+L0 9 26
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+n@rippel@carry@adder
+vtest_tb
+R0
+!i10b 1
+!s100 ajC4K`[;[BI6^J8id40750
+R1
+I;0L^Tz0bMe]:_[nlBl_aj2
+R2
+R3
+w1667061447
+8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v
+FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v
+!i122 3
+L0 12 126
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
