@@ -1,3 +1,5 @@
+`include "halfAdder.v"
+
 module CLA4(a,b,s,cout,c0,p,g);
 input [3:0] a,b;
 output [3:0] s,p,g;

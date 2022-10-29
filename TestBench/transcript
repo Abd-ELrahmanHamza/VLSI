@@ -1,0 +1,314 @@
+# Compile of empty.v was successful.
+# Compile of test_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.test_tb
+# vsim -gui work.test_tb 
+# Start time: 20:03:00 on Oct 29,2022
+# Loading work.test_tb
+# Loading work.NormalAdder
+# Loading work.RippelCarryAdder
+# Loading work.CLA32bit
+# Loading work.CLA4bit
+# ** Error: (vsim-3033) Instantiation of 'CaryyIncrementAdder' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 41
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'CarrySkipAdder' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 42
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# Loading work.carry_bypass_adder
+# Loading work.carrySelectAdder
+# ** Error: (vsim-3033) Instantiation of 'RCA16' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cSa File: ../CarrySelectAdder/carrySelectAdder.v Line: 12
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'RCA16' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cSa File: ../CarrySelectAdder/carrySelectAdder.v Line: 20
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'RCA16' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cSa File: ../CarrySelectAdder/carrySelectAdder.v Line: 28
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# ** Error: (vsim-3033) Instantiation of 'Mux2x1' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cSa File: ../CarrySelectAdder/carrySelectAdder.v Line: 41
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# Loading work.overflow
+# Error loading design
+# End time: 20:03:01 on Oct 29,2022, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 2
+# Compile of test_tb.v was successful.
+vsim -gui work.test_tb
+# vsim -gui work.test_tb 
+# Start time: 20:09:01 on Oct 29,2022
+# Loading work.test_tb
+# Loading work.CLA32bit
+# Loading work.CLA4bit
+# Loading work.carrySelectAdder
+# Loading work.RCA16
+# ** Error: (vsim-3033) Instantiation of 'Mux2x1' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cSa File: ../CarrySelectAdder/carrySelectAdder.v Line: 41
+#         Searched libraries:
+#             D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/work
+# Loading work.overflow
+# Error loading design
+# End time: 20:09:01 on Oct 29,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of empty.v was successful.
+# Compile of test_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.test_tb
+# vsim -gui work.test_tb 
+# Start time: 20:09:55 on Oct 29,2022
+# Loading work.test_tb
+# Loading work.CLA32bit
+# Loading work.CLA4bit
+# Loading work.carrySelectAdder
+# Loading work.RCA16
+# Loading work.Mux2x1
+# Loading work.overflow
+# Loading work.FullAdder
+# ** Error: (vsim-3043) Unresolved reference to 'rsa_of'.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 106
+# ** Error: (vsim-3043) Unresolved reference to 'rsa_sum'.
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 106
+# ** Error: (vsim-3063) Port 'A' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cla File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 40
+# ** Error: (vsim-3063) Port 'B' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cla File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 40
+# Error loading design
+# End time: 20:09:55 on Oct 29,2022, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 2
+# Compile of test_tb.v was successful.
+vsim -gui work.test_tb
+# vsim -gui work.test_tb 
+# Start time: 20:10:59 on Oct 29,2022
+# Loading work.test_tb
+# Loading work.CLA32bit
+# Loading work.CLA4bit
+# Loading work.carrySelectAdder
+# Loading work.RCA16
+# Loading work.Mux2x1
+# Loading work.overflow
+# Loading work.FullAdder
+# ** Error: (vsim-3063) Port 'A' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cla File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 40
+# ** Error: (vsim-3063) Port 'B' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/cla File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 40
+# Error loading design
+# End time: 20:10:59 on Oct 29,2022, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 2
+# Compile of test_tb.v was successful.
+vsim -gui work.test_tb
+# vsim -gui work.test_tb 
+# Start time: 20:12:11 on Oct 29,2022
+# Loading work.test_tb
+# Loading work.CLA32bit
+# Loading work.CLA4bit
+# Loading work.carrySelectAdder
+# Loading work.RCA16
+# Loading work.Mux2x1
+# Loading work.overflow
+# Loading work.FullAdder
+add wave -position insertpoint sim:/test_tb/*
+run -all
+# TestCase#           0, Type           0: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0, Type           1: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0, Type           2: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0 ,Type           3: success
+# TestCase#           0, Type           4: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0, Type           5: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0, Type           6: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0 ,Type           7: failed with input 2147483647 and          1 and Output -2147483648 and overflow status 1
+# TestCase#           1, Type           0: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1, Type           1: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1, Type           2: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1 ,Type           3: success
+# TestCase#           1, Type           4: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1, Type           5: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1, Type           6: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1 ,Type           7: failed with input 4294967295 and 2147483648 and Output  2147483647 and overflow status 1
+# TestCase#           2, Type           0: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2, Type           1: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2, Type           2: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2 ,Type           3: success
+# TestCase#           2, Type           4: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2, Type           5: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2, Type           6: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2 ,Type           7: success
+# TestCase#           3, Type           0: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3, Type           1: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3, Type           2: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3 ,Type           3: success
+# TestCase#           3, Type           4: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3, Type           5: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3, Type           6: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3 ,Type           7: success
+# TestCase#           4, Type           0: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4, Type           1: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4, Type           2: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4 ,Type           3: success
+# TestCase#           4, Type           4: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4, Type           5: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4, Type           6: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4 ,Type           7: success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v(132)
+#    Time: 5 ns  Iteration: 0  Instance: /test_tb
+# 1
+# Break in Module test_tb at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v line 132
+quit -sim
+# End time: 20:12:59 on Oct 29,2022, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 2
+# Compile of test_tb.v was successful.
+vsim -gui work.test_tb
+# vsim -gui work.test_tb 
+# Start time: 20:13:37 on Oct 29,2022
+# Loading work.test_tb
+# Loading work.CLA32bit
+# Loading work.CLA4bit
+# Loading work.carrySelectAdder
+# Loading work.RCA16
+# Loading work.Mux2x1
+# Loading work.overflow
+# Loading work.FullAdder
+run -all
+# TestCase#           0, Type           0: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0, Type           1: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0, Type           2: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0 ,Type           3: failed with input 2147483647 and          1 and Output -2147483648 and overflow status 1
+# TestCase#           0, Type           4: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0, Type           5: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0, Type           6: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0 ,Type           7: failed with input 2147483647 and          1 and Output -2147483648 and overflow status 1
+# TestCase#           1, Type           0: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1, Type           1: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1, Type           2: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1 ,Type           3: failed with input 4294967295 and 2147483648 and Output  2147483647 and overflow status 1
+# TestCase#           1, Type           4: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1, Type           5: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1, Type           6: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1 ,Type           7: failed with input 4294967295 and 2147483648 and Output  2147483647 and overflow status 1
+# TestCase#           2, Type           0: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2, Type           1: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2, Type           2: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2 ,Type           3: success
+# TestCase#           2, Type           4: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2, Type           5: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2, Type           6: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2 ,Type           7: success
+# TestCase#           3, Type           0: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3, Type           1: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3, Type           2: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3 ,Type           3: success
+# TestCase#           3, Type           4: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3, Type           5: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3, Type           6: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3 ,Type           7: success
+# TestCase#           4, Type           0: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4, Type           1: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4, Type           2: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4 ,Type           3: success
+# TestCase#           4, Type           4: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4, Type           5: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4, Type           6: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4 ,Type           7: success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v(132)
+#    Time: 5 ns  Iteration: 0  Instance: /test_tb
+# 1
+# Break in Module test_tb at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v line 132
+quit -sim
+# End time: 20:13:52 on Oct 29,2022, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 2
+# Compile of test_tb.v was successful.
+vsim -gui work.test_tb
+# vsim -gui work.test_tb 
+# Start time: 20:16:33 on Oct 29,2022
+# Loading work.test_tb
+# Loading work.NormalAdder
+# Loading work.CLA32bit
+# Loading work.CLA4bit
+# Loading work.carrySelectAdder
+# Loading work.RCA16
+# Loading work.Mux2x1
+# Loading work.overflow
+# Loading work.FullAdder
+run -all
+# TestCase#           0 ,Type           0: failed with input 2147483647 and          1 and Output -2147483648 and overflow status 1
+# TestCase#           0, Type           1: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0, Type           2: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0 ,Type           3: failed with input 2147483647 and          1 and Output -2147483648 and overflow status 1
+# TestCase#           0, Type           4: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0, Type           5: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0, Type           6: fail Output sum            z Expected sum 2147483648 
+# TestCase#           0 ,Type           7: failed with input 2147483647 and          1 and Output -2147483648 and overflow status 1
+# TestCase#           1 ,Type           0: failed with input 4294967295 and 2147483648 and Output  2147483647 and overflow status 1
+# TestCase#           1, Type           1: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1, Type           2: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1 ,Type           3: failed with input 4294967295 and 2147483648 and Output  2147483647 and overflow status 1
+# TestCase#           1, Type           4: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1, Type           5: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1, Type           6: fail Output sum            z Expected sum 2147483647 
+# TestCase#           1 ,Type           7: failed with input 4294967295 and 2147483648 and Output  2147483647 and overflow status 1
+# TestCase#           2 ,Type           0: success
+# TestCase#           2, Type           1: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2, Type           2: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2 ,Type           3: success
+# TestCase#           2, Type           4: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2, Type           5: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2, Type           6: fail Output sum            z Expected sum 2147483646 
+# TestCase#           2 ,Type           7: success
+# TestCase#           3 ,Type           0: success
+# TestCase#           3, Type           1: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3, Type           2: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3 ,Type           3: success
+# TestCase#           3, Type           4: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3, Type           5: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3, Type           6: fail Output sum            z Expected sum 2147483649 
+# TestCase#           3 ,Type           7: success
+# TestCase#           4 ,Type           0: success
+# TestCase#           4, Type           1: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4, Type           2: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4 ,Type           3: success
+# TestCase#           4, Type           4: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4, Type           5: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4, Type           6: fail Output sum            z Expected sum 4294967294 
+# TestCase#           4 ,Type           7: success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v(132)
+#    Time: 5 ns  Iteration: 0  Instance: /test_tb
+# 1
+# Break in Module test_tb at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v line 132
+quit -sim
+# End time: 20:16:47 on Oct 29,2022, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 2
+# Compile of test_tb.v failed with 1 errors.
+# Compile of test_tb.v was successful.
+vsim -gui work.test_tb
+# vsim -gui work.test_tb 
+# Start time: 20:20:38 on Oct 29,2022
+# Loading work.test_tb
+# Loading work.NormalAdder
+# Loading work.CarrySaveAdder
+# Loading work.CLA32bit
+# Loading work.CLA4bit
+# Loading work.carrySelectAdder
+# Loading work.RCA16
+# Loading work.Mux2x1
+# Loading work.overflow
+# Loading work.FullAdder
+# ** Error: (vsim-3063) Port 'a' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/csaa File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 39
+# ** Error: (vsim-3063) Port 'b' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/csaa File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 39
+# ** Error: (vsim-3063) Port 'cin' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/csaa File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 39
+# ** Error: (vsim-3063) Port 'sum' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /test_tb/csaa File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v Line: 39
+# Error loading design
+# End time: 20:20:39 on Oct 29,2022, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 3
+# Compile of test_tb.v was successful.

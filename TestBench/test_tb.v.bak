@@ -2,13 +2,13 @@
 
 `include "../CarrySelectAdder/overflow.v"
 `include "../CarrySelectAdder/carrySelectAdder.v"
-`include "../carry_skip_adder/CarrySkipAdder.v"
+//`include "../carry_skip_adder/CarrySkipAdder.v"
 `include "../carry_look_ahead_adder/CLA32bit.v"
-`include "../ripple_carry_adder/RippelCarryAdder.v"
+//`include "../ripple_carry_adder/RippelCarryAdder.v"
 `include "../NormalAdder/NormalAdder.v"
-`include "../carry_increment_adder/CaryyIncrementAdder.v"
-`include "../carry_bypass_adder/carry_bypass_adder.v"
-
+//`include "../carry_increment_adder/CaryyIncrementAdder.v"
+//`include "../carry_bypass_adder/carry_bypass_adder.v"
+`include "../carry_save_adder/CarrySaveAdder.v"
 module test_tb();
 localparam T = 1000;
 
@@ -35,20 +35,21 @@ carrySelectAdder  = 7
 
 */
 NormalAdder na (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[0]) ,.cout(couts[0]) );
-RippelCarryAdder rca (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[1]) ,.cout(couts[1]) );
-
-CLA32bit cla (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[3]) ,.cout(couts[3]) );
-CaryyIncrementAdder cia (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[4]) ,.cout(couts[4]) );
-CarrySkipAdder csa (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[5]) ,.cout(couts[5]) );
-carry_bypass_adder cba (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[6]) ,.cout(couts[6]) );
+//RippelCarryAdder rca (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[1]) ,.cout(couts[1]) );
+CarrySaveAdder csaa (.a(A) ,.b(B) ,.cin(cin) ,.sum(sums[2]) ,.cout(couts[2]) );
+CLA32bit cla (.a(A) ,.b(B) ,.cin(cin) ,.sum(sums[3]) ,.cout(couts[3]) );
+//CaryyIncrementAdder cia (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[4]) ,.cout(couts[4]) );
+//CarrySkipAdder cska (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[5]) ,.cout(couts[5]) );
+//carry_bypass_adder cba (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[6]) ,.cout(couts[6]) );
 carrySelectAdder cSa (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[7]) ,.cout(couts[7]) );
 
 overflow na_overflow(.A(A[31]),.B(B[31]),.sign(sums[0][31]),.of(of[0]));
-overflow rca_overflow(.A(A[31]),.B(B[31]),.sign(sums[1][31]),.of(of[1]));
+//overflow rca_overflow(.A(A[31]),.B(B[31]),.sign(sums[1][31]),.of(of[1]));
+overflow csaa_overflow(.A(A[31]),.B(B[31]),.sign(sums[2][31]),.of(of[2]));
 overflow cla_overflow(.A(A[31]),.B(B[31]),.sign(sums[3][31]),.of(of[3]));
-overflow cia_overflow(.A(A[31]),.B(B[31]),.sign(sums[4][31]),.of(of[4]));
-overflow csa_overflow(.A(A[31]),.B(B[31]),.sign(sums[5][31]),.of(of[5]));
-overflow cba_overflow(.A(A[31]),.B(B[31]),.sign(sums[6][31]),.of(of[6]));
+//overflow cia_overflow(.A(A[31]),.B(B[31]),.sign(sums[4][31]),.of(of[4]));
+//overflow csa_overflow(.A(A[31]),.B(B[31]),.sign(sums[5][31]),.of(of[5]));
+//overflow cba_overflow(.A(A[31]),.B(B[31]),.sign(sums[6][31]),.of(of[6]));
 overflow cSa_overflow(.A(A[31]),.B(B[31]),.sign(sums[7][31]),.of(of[7]));
 
 
@@ -103,14 +104,14 @@ cin =0;
 for(j=0;j<8;j=j+1) begin
 
 	if(of[j] == 1) begin
-		$display("TestCase# %d ,Type %d: failed with input %d and %d and Output %d and overflow status %b",i,j,A,B,rsa_sum,rsa_of);
+		$display("TestCase# %d ,Type %d: failed with input %d and %d and Output %d and overflow status %b",i,j,A,B,sums[j],of[j]);
 	end
 	else begin
-		if (sum[j] == Test_sum[i]) begin
+		if (sums[j] == Test_sum[i]) begin
 			$display("TestCase# %d ,Type %d: success",i,j);
 		end
 		else begin
-			$display("TestCase# %d, Type %d: fail Output sum  %d Expected sum %d ",i,j,rsa_sum,Test_sum[i]);
+			$display("TestCase# %d, Type %d: fail Output sum  %d Expected sum %d ",i,j,sums[j],Test_sum[i]);
 	end
 end
 //$display("sum = %b, carry = %b",rsa_sum,rsa_cout);
