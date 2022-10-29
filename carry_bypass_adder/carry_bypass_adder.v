@@ -1,3 +1,6 @@
+`include "./carry_bypass_4_bit.v"
+`include "./mux_2x1.v"
+
 module carry_bypass_adder(input [31:0]in1,
         input [31:0]in2,
         input c_in,
