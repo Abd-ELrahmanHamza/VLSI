@@ -1,0 +1,16 @@
+D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder/NormalAdder.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder/NormalAdder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module NormalAdder
+
+Top level modules:
+	NormalAdder
+
+} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder/NormalAdder_TB.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder/NormalAdder_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module overflow
+-- Compiling module NormalAdder_TB
+
+Top level modules:
+	NormalAdder_TB
+
+} {} {}}
