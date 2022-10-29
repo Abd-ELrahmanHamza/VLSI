@@ -5,21 +5,4 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	empty
 
-} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module overflow
--- Compiling module carrySelectAdder
--- Compiling module CSA
--- Compiling module CLA32bit
--- Compiling module RippelCarryAdder
--- Compiling module NormalAdder
--- Compiling module Carryincadder
--- Compiling module carry_bypass_adder
--- Compiling module test_tb
-
-Top level modules:
-	CSA
-	Carryincadder
-	test_tb
-
 } {} {}}
