@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/work/VLSI/Mini project 1
+vCarrySaveAdder
+Z0 !s110 1667064816
+!i10b 1
+!s100 CN1M0W^`R?[Ef240RWIIk3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I3Tn<NQD88VQHjzXU3G3hB0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/work/VLSI/Repo/carry_save_adder
+w1667064810
+Z4 8C:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder.v
+Z5 FC:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder.v
+!i122 13
+L0 2 28
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1667064816.000000
+Z8 !s107 ../ripple_carry_adder/FullAdder.v|C:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:\work\VLSI\Repo\carry_save_adder\CarrySaveAdder.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@carry@save@adder
+vCSA
+!s110 1667064579
+!i10b 1
+!s100 PT<D=CMAz`E^J_onBP0gU0
+R1
+Ioi_hcXUY26Vf_V4mKk2fH2
+R2
+R3
+w1667064571
+R4
+R5
+!i122 4
+L0 2 23
+R6
+r1
+!s85 0
+31
+!s108 1667064579.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@c@s@a
+vFulladder
+R0
+!i10b 1
+!s100 fH4e?:SC80UAiZSQFD:d;1
+R1
+ImzNlEKULLm_RNM?cZ9oN92
+R2
+R3
+Z12 w1666921636
+8../ripple_carry_adder/FullAdder.v
+F../ripple_carry_adder/FullAdder.v
+!i122 13
+L0 7 7
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@fulladder
+vRippelCarryAdder
+R0
+!i10b 1
+!s100 o]IjV`Nio7`i:RI02SLeL3
+R1
+IWBhML2WaFC4zg[Ggfb32@2
+R2
+R3
+R12
+8C:/work/VLSI/Repo/ripple_carry_adder/RippelCarryAdder.v
+FC:/work/VLSI/Repo/ripple_carry_adder/RippelCarryAdder.v
+!i122 12
+L0 9 26
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/work/VLSI/Repo/ripple_carry_adder/RippelCarryAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/work/VLSI/Repo/ripple_carry_adder/RippelCarryAdder.v|
+!i113 1
+R10
+R11
+n@rippel@carry@adder
