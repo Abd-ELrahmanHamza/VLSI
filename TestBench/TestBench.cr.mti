@@ -5,4 +5,58 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	empty
 
+} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v {2 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module overflow
+-- Compiling module FullAdder
+-- Compiling module RCA16
+-- Compiling module Mux2x1
+-- Compiling module carrySelectAdder
+-- Compiling module CSAPropagate
+-- Compiling module Fulladder
+-- Compiling module RippelCarryAdder
+-- Compiling module mux_2x1
+-- Compiling module CSA
+-- Compiling module CLA4bit
+-- Compiling module CLA32bit
+** Warning: ** while parsing file included at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v(7)
+** at ../ripple_carry_adder/RippelCarryAdder.v(9): (vlog-2275) Existing module 'RippelCarryAdder' will be overwritten.
+-- Compiling module RippelCarryAdder
+-- Compiling module NormalAdder
+-- Compiling module ha
+** Warning: ** while parsing file included at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v(9)
+** while parsing file included at ../carry_increment_adder/CaryyIncrementAdder.v(7)
+** while parsing file included at ..\carry_increment_adder\RCA16.v(1)
+** at ..\carry_increment_adder\FullAdder.v(1): (vlog-2275) Existing module 'FullAdder' will be overwritten.
+-- Compiling module FullAdder
+** Warning: ** while parsing file included at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v(9)
+** while parsing file included at ../carry_increment_adder/CaryyIncrementAdder.v(7)
+** at ..\carry_increment_adder\RCA16.v(2): (vlog-2275) Existing module 'RCA16' will be overwritten.
+-- Compiling module RCA16
+-- Compiling module Carryincadder
+** Warning: ** while parsing file included at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v(10)
+** while parsing file included at ../carry_bypass_adder/carry_bypass_adder.v(1)
+** while parsing file included at ..\carry_bypass_adder\.\carry_bypass_4_bit.v(1)
+** at ..\carry_bypass_adder\.\.\FullAdder.v(7): (vlog-2275) Existing module 'Fulladder' will be overwritten.
+-- Compiling module Fulladder
+-- Compiling module carry_bypass_4_bit
+** Warning: ** while parsing file included at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v(10)
+** while parsing file included at ../carry_bypass_adder/carry_bypass_adder.v(2)
+** at ..\carry_bypass_adder\.\mux_2x1.v(2): (vlog-2275) Existing module 'mux_2x1' will be overwritten.
+-- Compiling module mux_2x1
+-- Compiling module carry_bypass_adder
+** Warning: ** while parsing file included at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v(11)
+** while parsing file included at ../carry_save_adder/CarrySaveAdder.v(1)
+** at ../ripple_carry_adder/FullAdder.v(7): (vlog-2275) Existing module 'Fulladder' will be overwritten.
+-- Compiling module Fulladder
+** Warning: ** while parsing file included at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v(11)
+** while parsing file included at ../carry_save_adder/CarrySaveAdder.v(2)
+** at ../ripple_carry_adder/RippelCarryAdder.v(9): (vlog-2275) Existing module 'RippelCarryAdder' will be overwritten.
+-- Compiling module RippelCarryAdder
+-- Compiling module CarrySaveAdder
+-- Compiling module test_tb
+
+Top level modules:
+	test_tb
+
 } {} {}}

@@ -4,7 +4,7 @@ Author	      : Abdelrahman Hamza
 
 Functionality : A simple ripple carry adder which addes two 32 bits unsigned numbers
 */
-
+`include "FA.v"
 module RippelCarryAdder(
     input [31:0]in1,
     input [31:0]in2,

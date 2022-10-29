@@ -2,18 +2,18 @@
 
 `include "../CarrySelectAdder/overflow.v"
 `include "../CarrySelectAdder/carrySelectAdder.v"
-//`include "../carry_skip_adder/CarrySkipAdder.v"
+`include "../carry_skip_adder/CarrySkipAdder.v"
 `include "../carry_look_ahead_adder/CLA32bit.v"
-//`include "../ripple_carry_adder/RippelCarryAdder.v"
+`include "../ripple_carry_adder/RippelCarryAdder.v"
 `include "../NormalAdder/NormalAdder.v"
-//`include "../carry_increment_adder/CaryyIncrementAdder.v"
-//`include "../carry_bypass_adder/carry_bypass_adder.v"
+`include "../carry_increment_adder/CaryyIncrementAdder.v"
+`include "../carry_bypass_adder/carry_bypass_adder.v"
 `include "../carry_save_adder/CarrySaveAdder.v"
 module test_tb();
 localparam T = 1000;
 
 
-reg [31:0] A,B;
+reg [31:0] A,B,in3;
 reg cin;
 wire [7:0]couts;
 wire [7:0]of;
@@ -34,28 +34,30 @@ carrySelectAdder  = 6
 carrySelectAdder  = 7
 
 */
+
 NormalAdder na (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[0]) ,.cout(couts[0]) );
-//RippelCarryAdder rca (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[1]) ,.cout(couts[1]) );
-CarrySaveAdder csaa (.a(A) ,.b(B) ,.cin(cin) ,.sum(sums[2]) ,.cout(couts[2]) );
+RippelCarryAdder rca (.in1(A) ,.in2(B) ,.c_in(cin) ,.sum(sums[1]) ,.c_out(couts[1]) );
+CarrySaveAdder csaa (.in1(A) ,.in2(B) ,.in3(cin) ,.s(sums[2]) ,.cout(couts[2]) );
 CLA32bit cla (.a(A) ,.b(B) ,.cin(cin) ,.sum(sums[3]) ,.cout(couts[3]) );
-//CaryyIncrementAdder cia (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[4]) ,.cout(couts[4]) );
-//CarrySkipAdder cska (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[5]) ,.cout(couts[5]) );
-//carry_bypass_adder cba (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[6]) ,.cout(couts[6]) );
+Carryincadder cia (.a(A) ,.b(B) ,.c0(cin) ,.sum(sums[4]) ,.cout(couts[4]) );
+CSA cska (.a(A) ,.b(B) ,.cin(cin) ,.sum(sums[5]) ,.cout(couts[5]) );
+carry_bypass_adder cba (.in1(A) ,.in2(B) ,.c_in(cin) ,.sum(sums[6]) ,.c_out(couts[6]) );
 carrySelectAdder cSa (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[7]) ,.cout(couts[7]) );
 
 overflow na_overflow(.A(A[31]),.B(B[31]),.sign(sums[0][31]),.of(of[0]));
-//overflow rca_overflow(.A(A[31]),.B(B[31]),.sign(sums[1][31]),.of(of[1]));
+overflow rca_overflow(.A(A[31]),.B(B[31]),.sign(sums[1][31]),.of(of[1]));
 overflow csaa_overflow(.A(A[31]),.B(B[31]),.sign(sums[2][31]),.of(of[2]));
 overflow cla_overflow(.A(A[31]),.B(B[31]),.sign(sums[3][31]),.of(of[3]));
-//overflow cia_overflow(.A(A[31]),.B(B[31]),.sign(sums[4][31]),.of(of[4]));
-//overflow csa_overflow(.A(A[31]),.B(B[31]),.sign(sums[5][31]),.of(of[5]));
-//overflow cba_overflow(.A(A[31]),.B(B[31]),.sign(sums[6][31]),.of(of[6]));
+overflow cia_overflow(.A(A[31]),.B(B[31]),.sign(sums[4][31]),.of(of[4]));
+overflow csa_overflow(.A(A[31]),.B(B[31]),.sign(sums[5][31]),.of(of[5]));
+overflow cba_overflow(.A(A[31]),.B(B[31]),.sign(sums[6][31]),.of(of[6]));
 overflow cSa_overflow(.A(A[31]),.B(B[31]),.sign(sums[7][31]),.of(of[7]));
 
 
 integer i,j;
 initial
 begin
+in3 = 0;
 // overflow positive with cin = 0
 Test_A[0] = 32'b01111111_11111111_11111111_11111111; // biggest positive number 2147483647
 Test_B[0] = 32'b00000000_00000000_00000000_00000001; // smallest positive number 1

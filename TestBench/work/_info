@@ -9,79 +9,102 @@ z2
 !i10f 100
 cModel Technology
 dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/NormalAdder
-vcarry_bypass_adder
-Z0 !s110 1667066563
+vcarry_bypass_4_bit
+Z0 !s110 1667079909
 !i10b 1
-!s100 c;[9EWN3<fA2Sn:[bGcFj0
+!s100 oC@`Ai1YTXDlKDGDV`^^X2
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Im_>WoKd4OMnFkE]da7Tfz2
+I1=^=LJb[72HI8A`ozlWQ_0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench
-w1667042736
-8../carry_bypass_adder/carry_bypass_adder.v
-F../carry_bypass_adder/carry_bypass_adder.v
-!i122 5
-L0 1 41
-Z4 OV;L;2020.1;71
+Z4 w1667079091
+8..\carry_bypass_adder\.\carry_bypass_4_bit.v
+F..\carry_bypass_adder\.\carry_bypass_4_bit.v
+!i122 22
+L0 2 26
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1667066563.000000
-Z6 !s107 ../carry_bypass_adder/carry_bypass_adder.v|../carry_increment_adder/CaryyIncrementAdder.v|../NormalAdder/NormalAdder.v|../ripple_carry_adder/RippelCarryAdder.v|..\carry_look_ahead_adder\CLA4bit.v|../carry_look_ahead_adder/CLA32bit.v|../carry_skip_adder/CarrySkipAdder.v|../CarrySelectAdder/carrySelectAdder.v|../CarrySelectAdder/overflow.v|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v|
+Z6 !s108 1667079909.000000
+!s107 ../ripple_carry_adder/FullAdder.v|../carry_save_adder/CarrySaveAdder.v|..\carry_bypass_adder\.\mux_2x1.v|..\carry_bypass_adder\.\.\FullAdder.v|..\carry_bypass_adder\.\carry_bypass_4_bit.v|../carry_bypass_adder/carry_bypass_adder.v|..\carry_increment_adder\FullAdder.v|..\carry_increment_adder\RCA16.v|..\carry_increment_adder\halfAdder.v|../carry_increment_adder/CaryyIncrementAdder.v|../NormalAdder/NormalAdder.v|../ripple_carry_adder/RippelCarryAdder.v|..\carry_look_ahead_adder\CLA4bit.v|../carry_look_ahead_adder/CLA32bit.v|..\carry_skip_adder\mux.v|..\carry_skip_adder\FA.v|..\carry_skip_adder\RippleCarryAdder.v|..\carry_skip_adder\CarrySkipAdderInterface.v|../carry_skip_adder/CarrySkipAdder.v|..\CarrySelectAdder\Mux2x1.v|..\CarrySelectAdder\FullAdder.v|..\CarrySelectAdder\RCA16.v|../CarrySelectAdder/carrySelectAdder.v|../CarrySelectAdder/overflow.v|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v|
 Z7 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v|
 !i113 1
 Z8 o-work work
 Z9 tCvgOpt 0
-vCarryincadder
+vcarry_bypass_adder
 R0
 !i10b 1
-!s100 _0EhoKFFhSP[E<3_TNUbL0
+!s100 fg:Y[Z8n@CR8R8KbIeFEc1
 R1
-IXflFD@H;dL`a=b82kcnA]1
+I4VU]`TQ2BYoOZ8Pa1>@Uf0
 R2
 R3
-w1667062711
-8../carry_increment_adder/CaryyIncrementAdder.v
-F../carry_increment_adder/CaryyIncrementAdder.v
-!i122 5
-L0 7 30
 R4
+8../carry_bypass_adder/carry_bypass_adder.v
+F../carry_bypass_adder/carry_bypass_adder.v
+!i122 22
+L0 4 41
+R5
 r1
 !s85 0
 31
-R5
 R6
+Z10 !s107 ../ripple_carry_adder/FullAdder.v|../carry_save_adder/CarrySaveAdder.v|..\carry_bypass_adder\.\mux_2x1.v|..\carry_bypass_adder\.\.\FullAdder.v|..\carry_bypass_adder\.\carry_bypass_4_bit.v|../carry_bypass_adder/carry_bypass_adder.v|..\carry_increment_adder\FullAdder.v|..\carry_increment_adder\RCA16.v|..\carry_increment_adder\halfAdder.v|../carry_increment_adder/CaryyIncrementAdder.v|../NormalAdder/NormalAdder.v|../ripple_carry_adder/RippelCarryAdder.v|..\carry_look_ahead_adder\CLA4bit.v|../carry_look_ahead_adder/CLA32bit.v|..\carry_skip_adder\mux.v|..\carry_skip_adder\FA.v|..\carry_skip_adder\RippleCarryAdder.v|..\carry_skip_adder\CarrySkipAdderInterface.v|../carry_skip_adder/CarrySkipAdder.v|..\CarrySelectAdder\Mux2x1.v|..\CarrySelectAdder\FullAdder.v|..\CarrySelectAdder\RCA16.v|../CarrySelectAdder/carrySelectAdder.v|../CarrySelectAdder/overflow.v|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v|
+R7
+!i113 1
+R8
+R9
+vCarryincadder
+R0
+!i10b 1
+!s100 5Nj[L:YVIZ_Si6JClhGDD0
+R1
+Ia=0z=7jBjOC[f4^3ODcii2
+R2
+R3
+R4
+8../carry_increment_adder/CaryyIncrementAdder.v
+F../carry_increment_adder/CaryyIncrementAdder.v
+!i122 22
+L0 9 30
+R5
+r1
+!s85 0
+31
+R6
+R10
 R7
 !i113 1
 R8
 R9
 n@carryincadder
 vCarrySaveAdder
-Z10 !s110 1667067627
+R0
 !i10b 1
-!s100 ii4c2]Sa5Rl]fFi]k@g;R3
+!s100 ]6l;;O=jU>:K4a6aPd`Pm2
 R1
-Iei]8MHCCe`6nYb=Q7eOE@3
+IDREgejkEVF1FE?OX62WTl3
 R2
 R3
-w1667065213
+R4
 8../carry_save_adder/CarrySaveAdder.v
 F../carry_save_adder/CarrySaveAdder.v
-!i122 14
-L0 2 23
-R4
+!i122 22
+L0 4 71
+R5
 r1
 !s85 0
 31
-Z11 !s108 1667067627.000000
-Z12 !s107 ../ripple_carry_adder/FullAdder.v|../carry_save_adder/CarrySaveAdder.v|../NormalAdder/NormalAdder.v|..\carry_look_ahead_adder\CLA4bit.v|../carry_look_ahead_adder/CLA32bit.v|..\CarrySelectAdder\Mux2x1.v|..\CarrySelectAdder\FullAdder.v|..\CarrySelectAdder\RCA16.v|../CarrySelectAdder/carrySelectAdder.v|../CarrySelectAdder/overflow.v|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v|
+R6
+R10
 R7
 !i113 1
 R8
 R9
 n@carry@save@adder
 vcarrySelectAdder
-Z13 !s110 1667067708
+R0
 !i10b 1
 !s100 5HWT<7il@ON>0=7b=>JbN2
 R1
@@ -91,21 +114,21 @@ R3
 w1667066979
 8../CarrySelectAdder/carrySelectAdder.v
 F../CarrySelectAdder/carrySelectAdder.v
-!i122 15
+!i122 22
 L0 3 42
-R4
+R5
 r1
 !s85 0
 31
-Z14 !s108 1667067707.000000
-!s107 ../NormalAdder/NormalAdder.v|..\carry_look_ahead_adder\CLA4bit.v|../carry_look_ahead_adder/CLA32bit.v|..\CarrySelectAdder\Mux2x1.v|..\CarrySelectAdder\FullAdder.v|..\CarrySelectAdder\RCA16.v|../CarrySelectAdder/carrySelectAdder.v|../CarrySelectAdder/overflow.v|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v|
+R6
+R10
 R7
 !i113 1
 R8
 R9
 ncarry@select@adder
 vCLA32bit
-R13
+R0
 !i10b 1
 !s100 <;6?U^olh3hz=@9YGk0nD3
 R1
@@ -115,38 +138,38 @@ R3
 w1667066439
 8../carry_look_ahead_adder/CLA32bit.v
 F../carry_look_ahead_adder/CLA32bit.v
-!i122 15
+!i122 22
 L0 3 31
-R4
+R5
 r1
 !s85 0
 31
-R14
-Z15 !s107 ../NormalAdder/NormalAdder.v|..\carry_look_ahead_adder\CLA4bit.v|../carry_look_ahead_adder/CLA32bit.v|..\CarrySelectAdder\Mux2x1.v|..\CarrySelectAdder\FullAdder.v|..\CarrySelectAdder\RCA16.v|../CarrySelectAdder/carrySelectAdder.v|../CarrySelectAdder/overflow.v|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v|
+R6
+R10
 R7
 !i113 1
 R8
 R9
 n@c@l@a32bit
 vCLA4bit
-R13
+R0
 !i10b 1
 !s100 Q<K9Eiif:AOS<k7HVeAO41
 R1
 IZcgdZChU3<?iYD`P8g>MY2
 R2
 R3
-Z16 w1666977378
+Z11 w1666977378
 8..\carry_look_ahead_adder\CLA4bit.v
 F..\carry_look_ahead_adder\CLA4bit.v
-!i122 15
+!i122 22
 L0 2 21
-R4
+R5
 r1
 !s85 0
 31
-R14
-R15
+R6
+R10
 R7
 !i113 1
 R8
@@ -155,29 +178,53 @@ n@c@l@a4bit
 vCSA
 R0
 !i10b 1
-!s100 <Vf0[]cmmY[RDWCJ`ZI3V0
+!s100 40nzUM49QZQM>KIJ]6<@N2
 R1
-IlnBUCWG]=<hU1dh[C3RGG3
+I8AX7Bd]R^6Tm_>T_HUaA51
 R2
 R3
-w1667056610
+w1667079717
 8../carry_skip_adder/CarrySkipAdder.v
 F../carry_skip_adder/CarrySkipAdder.v
-!i122 5
-L0 1 14
-R4
+!i122 22
+L0 6 14
+R5
 r1
 !s85 0
 31
-R5
 R6
+R10
 R7
 !i113 1
 R8
 R9
 n@c@s@a
+vCSAPropagate
+R0
+!i10b 1
+!s100 B@;QaO_OU_9TjzX2F@Gkf3
+R1
+IJ=b:G:gFY1aWe<<K2>2nK3
+R2
+R3
+w1666996555
+8..\carry_skip_adder\CarrySkipAdderInterface.v
+F..\carry_skip_adder\CarrySkipAdderInterface.v
+!i122 22
+L0 7 11
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+n@c@s@a@propagate
 vempty
-!s110 1667066984
+R0
 !i10b 1
 !s100 fYRez:[aDS^0Ua^27X@N@2
 R1
@@ -187,68 +234,91 @@ R3
 w1667061053
 8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/empty.v
 FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/empty.v
-!i122 7
+!i122 21
 L0 1 6
-R4
+R5
 r1
 !s85 0
 31
-!s108 1667066984.000000
+R6
 !s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/empty.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/empty.v|
 !i113 1
 R8
 R9
-vFulladder
+vFullAdder
+R0
+!i10b 1
+!s100 9U;eH==gV`d9az?6=g@L>0
+R1
+I3G=74G9b7R[^FbA:fk@Zk2
+R2
+R3
+w1667062711
+8..\carry_increment_adder\FullAdder.v
+F..\carry_increment_adder\FullAdder.v
+!i122 22
+Z12 L0 1 7
+R5
+r1
+!s85 0
+31
+R6
 R10
+R7
+!i113 1
+R8
+R9
+n@full@adder
+vFulladder
+R0
 !i10b 1
 !s100 fH4e?:SC80UAiZSQFD:d;1
 R1
 ImzNlEKULLm_RNM?cZ9oN92
 R2
 R3
-R16
+R11
 8../ripple_carry_adder/FullAdder.v
 F../ripple_carry_adder/FullAdder.v
-!i122 14
+!i122 22
 L0 7 7
-R4
+R5
 r1
 !s85 0
 31
-R11
-R12
+R6
+R10
 R7
 !i113 1
 R8
 R9
 n@fulladder
-vFullAdder
-R13
+vha
+R0
 !i10b 1
-!s100 9U;eH==gV`d9az?6=g@L>0
+!s100 TT8@]WEfXlAmP@>[nNKa^1
 R1
-Io2@:F:e>z4>mzU:5WN1dG1
+IQ41ISm<XY9Z:QijMe?7CD2
 R2
 R3
-w1666978751
-8..\CarrySelectAdder\FullAdder.v
-F..\CarrySelectAdder\FullAdder.v
-!i122 15
-Z17 L0 1 7
-R4
+Z13 w1667042736
+8..\carry_increment_adder\halfAdder.v
+F..\carry_increment_adder\halfAdder.v
+!i122 22
+L0 2 4
+R5
 r1
 !s85 0
 31
-R14
-R15
+R6
+R10
 R7
 !i113 1
 R8
 R9
-n@full@adder
 vMux2x1
-R13
+R0
 !i10b 1
 !s100 gN_B]GJzeQ29SF=KN3Qg;1
 R1
@@ -258,21 +328,44 @@ R3
 w1666993946
 8..\CarrySelectAdder\Mux2x1.v
 F..\CarrySelectAdder\Mux2x1.v
-!i122 15
-R17
-R4
+!i122 22
+R12
+R5
 r1
 !s85 0
 31
-R14
-R15
+R6
+R10
 R7
 !i113 1
 R8
 R9
 n@mux2x1
-vNormalAdder
+vmux_2x1
+R0
+!i10b 1
+!s100 Q_Y;JT0]e5>E:UCDM5[=A0
+R1
+IIMU><1IYj][jTaNnOja8<1
+R2
+R3
 R13
+8..\carry_bypass_adder\.\mux_2x1.v
+F..\carry_bypass_adder\.\mux_2x1.v
+!i122 22
+L0 2 8
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vNormalAdder
+R0
 !i10b 1
 !s100 K@8bFJOf[6fI7KcPGC3>11
 R1
@@ -282,21 +375,21 @@ R3
 w1667056258
 8../NormalAdder/NormalAdder.v
 F../NormalAdder/NormalAdder.v
-!i122 15
+!i122 22
 L0 1 10
-R4
+R5
 r1
 !s85 0
 31
-R14
-R15
+R6
+R10
 R7
 !i113 1
 R8
 R9
 n@normal@adder
 voverflow
-R13
+R0
 !i10b 1
 !s100 K9ZG;fhRVRmT6J9cliJkH1
 R1
@@ -306,37 +399,37 @@ R3
 w1667047933
 8../CarrySelectAdder/overflow.v
 F../CarrySelectAdder/overflow.v
-!i122 15
+!i122 22
 L0 1 8
-R4
+R5
 r1
 !s85 0
 31
-R14
-R15
+R6
+R10
 R7
 !i113 1
 R8
 R9
 vRCA16
-R13
+R0
 !i10b 1
 !s100 bB]]fjCBXT1NG1lh;0Zdb1
 R1
-IBE<1ghd9m62Pi]92L6lmU1
+IghEHAVT<`4h@JNRlbJ0aj2
 R2
 R3
-w1667066858
-8..\CarrySelectAdder\RCA16.v
-F..\CarrySelectAdder\RCA16.v
-!i122 15
-L0 2 19
 R4
+8..\carry_increment_adder\RCA16.v
+F..\carry_increment_adder\RCA16.v
+!i122 22
+L0 2 19
+R5
 r1
 !s85 0
 31
-R14
-R15
+R6
+R10
 R7
 !i113 1
 R8
@@ -350,41 +443,41 @@ R1
 I2b_ZzFFDOU>gTJ^zlLanR2
 R2
 R3
-R16
+R11
 8../ripple_carry_adder/RippelCarryAdder.v
 F../ripple_carry_adder/RippelCarryAdder.v
-!i122 5
+!i122 22
 L0 9 26
-R4
+R5
 r1
 !s85 0
 31
-R5
 R6
+R10
 R7
 !i113 1
 R8
 R9
 n@rippel@carry@adder
 vtest_tb
-R13
+R0
 !i10b 1
-!s100 4Xbl`C5kz9;`j]TWXIZ2Q3
+!s100 bQ>MSh4QB5YLVJWKnP4QP2
 R1
-I>bcDE5cz;>2SGgd4;RD6T0
+I=iUMob296D2L1@>=3Cc^;1
 R2
 R3
-w1667067703
+w1667079906
 8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v
 FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/TestBench/test_tb.v
-!i122 15
-L0 12 127
-R4
+!i122 22
+L0 12 129
+R5
 r1
 !s85 0
 31
-R14
-R15
+R6
+R10
 R7
 !i113 1
 R8
