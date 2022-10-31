@@ -5,13 +5,12 @@ Author	      : Abdelrahman Hamza
 
 Functionality : A simple ripple carry adder which addes two 32 bits unsigned numbers
 */
-`include "../CarrySelectAdder/overflow.v"
+`include "./FullAdder.v"
 module RippelCarryAdder(
     input [31:0]in1,
     input [31:0]in2,
     input c_in,
     output c_out,
-    output of,
     output [31:0]sum
     );
     // The carry chain (carry chain is a series of full adders carries)
@@ -32,5 +31,4 @@ module RippelCarryAdder(
             );
         end
     endgenerate
-    overflow OverFlow(.A(in1[31]),.B(in2[31]),.sign(sum[31]),.of(of));
 endmodule
