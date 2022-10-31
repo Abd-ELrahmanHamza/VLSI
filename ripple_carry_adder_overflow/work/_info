@@ -1,0 +1,106 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vFulladder
+Z0 !s110 1667252460
+!i10b 1
+!s100 fH4e?:SC80UAiZSQFD:d;1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Il[J]`[l>NI?_Yc@81ZCc63
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow
+w1666903545
+8D:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/FullAdder.v
+FD:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/FullAdder.v
+!i122 14
+L0 7 7
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1667252460.000000
+!s107 D:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/FullAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/FullAdder.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@fulladder
+voverflow
+R0
+!i10b 1
+!s100 K9ZG;fhRVRmT6J9cliJkH1
+R1
+I6HnR1SdHANkOW:TbY2GYZ1
+R2
+R3
+w1667067265
+8../CarrySelectAdder/overflow.v
+F../CarrySelectAdder/overflow.v
+!i122 16
+L0 1 8
+R4
+r1
+!s85 0
+31
+R5
+Z8 !s107 ../CarrySelectAdder/overflow.v|D:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/RippelCarryAdder.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/RippelCarryAdder.v|
+!i113 1
+R6
+R7
+vRippelCarryAdder
+R0
+!i10b 1
+!s100 HYnDFZe]nSaLG0fFoHj7J0
+R1
+IbneaoO9mz<fNfh[_eb7FT2
+R2
+R3
+w1667251274
+8D:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/RippelCarryAdder.v
+FD:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/RippelCarryAdder.v
+!i122 16
+L0 9 28
+R4
+r1
+!s85 0
+31
+R5
+R8
+R9
+!i113 1
+R6
+R7
+n@rippel@carry@adder
+vRippleCarryAdder_TB
+R0
+!i10b 1
+!s100 m>]nZY3KIajUhc7[67`kb1
+R1
+I2YI7GV>U[F5BFoHceUg2W1
+R2
+R3
+w1667252457
+8D:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/RippelCarryAdder_TB.v
+FD:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/RippelCarryAdder_TB.v
+!i122 17
+L0 2 90
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/RippelCarryAdder_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/RippelCarryAdder_TB.v|
+!i113 1
+R6
+R7
+n@ripple@carry@adder_@t@b
