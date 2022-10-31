@@ -1,10 +1,11 @@
 `include "CLA4bit.v"
+`include "../CarrySelectAdder/overflow.v"
 
-module CLA32bit(a,b, cin, sum,cout);
+module CLA32bit(a,b, cin, sum,cout,of);
 input [31:0] a,b;
 input cin;
 output [31:0] sum;
-output cout;
+output cout,of;
 wire [8:0]c;
 	
 	
@@ -27,7 +28,7 @@ assign c[0]=cin;
 	CLA4bit cla7 (.a(a[27:24]), .b(b[27:24]), .cin(c[6]), .sum(sum[27:24]), .cout(c[7]));
 
 	CLA4bit cla8 (.a(a[31:28]), .b(b[31:28]), .cin(c[7]), .sum(sum[31:28]), .cout(c[8]));
-
+overflow OverFlow(.A(a[31]),.B(b[31]),.sign(sum[31]),.of(of));
 
 
 endmodule

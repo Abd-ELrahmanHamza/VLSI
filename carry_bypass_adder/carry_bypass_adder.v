@@ -1,11 +1,13 @@
 `include "./carry_bypass_4_bit.v"
 `include "./mux_2x1.v"
+`include "../CarrySelectAdder/overflow.v"
 
 module carry_bypass_adder(input [31:0]in1,
         input [31:0]in2,
         input c_in,
         output c_out,
-        output [31:0]sum);
+        output [31:0]sum,
+        output of);
 
     // The carry chain (carry chain is a series of full adders carries)
     wire [7:0]carrys_in;
@@ -41,4 +43,5 @@ module carry_bypass_adder(input [31:0]in1,
             );
         end
     endgenerate
+    overflow OverFlow(.A(in1[31]),.B(in2[31]),.sign(sum[31]),.of(of));
 endmodule

@@ -1,23 +1,16 @@
-{D:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code/FullAdder.v} {1 {vlog -work work -stats=none {D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Fulladder
-
-Top level modules:
-	Fulladder
-
-} {} {}} {D:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code/SignedRippleCarryAdder.v} {1 {vlog -work work -stats=none {D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\SignedRippleCarryAdder.v}
+{D:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code/SignedRippleCarryAdder.v} {1 {vlog -work work -stats=none {D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\SignedRippleCarryAdder.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module SignedRippleCarryAdder
 
 Top level modules:
 	SignedRippleCarryAdder
 
-} {} {}} {D:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code/FullAdder_TB.v} {1 {vlog -work work -stats=none {D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder_TB.v}
+} {} {}} {D:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code/FullAdder.v} {1 {vlog -work work -stats=none {D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module FullAdder_TB
+-- Compiling module Fulladder
 
 Top level modules:
-	FullAdder_TB
+	Fulladder
 
 } {} {}} {D:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code/SignedRippleCarryAdder_TB.v} {1 {vlog -work work -stats=none {D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\SignedRippleCarryAdder_TB.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -25,5 +18,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	SignedRippleCarryAdder_TB
+
+} {} {}} {D:/Material/3rd CMP/First term/VLSI/Project/Mini project 1/Code/FullAdder_TB.v} {1 {vlog -work work -stats=none {D:\Material\3rd CMP\First term\VLSI\Project\Mini project 1\Code\FullAdder_TB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FullAdder_TB
+
+Top level modules:
+	FullAdder_TB
 
 } {} {}}

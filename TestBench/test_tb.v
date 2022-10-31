@@ -35,15 +35,16 @@ carrySelectAdder  = 7
 
 */
 
-NormalAdder na (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[0]) ,.cout(couts[0]) );
-RippelCarryAdder rca (.in1(A) ,.in2(B) ,.c_in(cin) ,.sum(sums[1]) ,.c_out(couts[1]) );
-CarrySaveAdder csaa (.x(A) ,.y(B) ,.z(cin) ,.s(sums[2]) ,.cout(couts[2]) );
-CLA32bit cla (.a(A) ,.b(B) ,.cin(cin) ,.sum(sums[3]) ,.cout(couts[3]) );
-Carryincadder cia (.a(A) ,.b(B) ,.c0(cin) ,.sum(sums[4]) ,.cout(couts[4]) );
-CSA cska (.a(A) ,.b(B) ,.cin(cin) ,.sum(sums[5]) ,.cout(couts[5]) );
-carry_bypass_adder cba (.in1(A) ,.in2(B) ,.c_in(cin) ,.sum(sums[6]) ,.c_out(couts[6]) );
-carrySelectAdder cSa (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[7]) ,.cout(couts[7]) );
+NormalAdder na (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[0]) ,.cout(couts[0]),of(of[0]) );
+RippelCarryAdder rca (.in1(A) ,.in2(B) ,.c_in(cin) ,.sum(sums[1]) ,.c_out(couts[1]),of(of[1])  );
+CarrySaveAdder csaa (.x(A) ,.y(B) ,.z(cin) ,.s(sums[2]) ,.cout(couts[2]),of(of[2])  );
+CLA32bit cla (.a(A) ,.b(B) ,.cin(cin) ,.sum(sums[3]) ,.cout(couts[3]),,of(of[3])  );
+Carryincadder cia (.a(A) ,.b(B) ,.c0(cin) ,.sum(sums[4]) ,.cout(couts[4]),,of(of[4])  );
+CSA cska (.a(A) ,.b(B) ,.cin(cin) ,.sum(sums[5]) ,.cout(couts[5]),of(of[5])  );
+carry_bypass_adder cba (.in1(A) ,.in2(B) ,.c_in(cin) ,.sum(sums[6]) ,.c_out(couts[6]),of(of[6])  );
+carrySelectAdder cSa (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[7]) ,.cout(couts[7]),of(of[7])  );
 
+/*
 overflow na_overflow(.A(A[31]),.B(B[31]),.sign(sums[0][31]),.of(of[0]));
 overflow rca_overflow(.A(A[31]),.B(B[31]),.sign(sums[1][31]),.of(of[1]));
 overflow csaa_overflow(.A(A[31]),.B(B[31]),.sign(sums[2][31]),.of(of[2]));
@@ -52,7 +53,7 @@ overflow cia_overflow(.A(A[31]),.B(B[31]),.sign(sums[4][31]),.of(of[4]));
 overflow csa_overflow(.A(A[31]),.B(B[31]),.sign(sums[5][31]),.of(of[5]));
 overflow cba_overflow(.A(A[31]),.B(B[31]),.sign(sums[6][31]),.of(of[6]));
 overflow cSa_overflow(.A(A[31]),.B(B[31]),.sign(sums[7][31]),.of(of[7]));
-
+*/
 
 integer i,j;
 initial

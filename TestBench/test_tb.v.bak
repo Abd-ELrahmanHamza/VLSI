@@ -37,7 +37,7 @@ carrySelectAdder  = 7
 
 NormalAdder na (.A(A) ,.B(B) ,.cin(cin) ,.sum(sums[0]) ,.cout(couts[0]) );
 RippelCarryAdder rca (.in1(A) ,.in2(B) ,.c_in(cin) ,.sum(sums[1]) ,.c_out(couts[1]) );
-CarrySaveAdder csaa (.in1(A) ,.in2(B) ,.in3(cin) ,.s(sums[2]) ,.cout(couts[2]) );
+CarrySaveAdder csaa (.x(A) ,.y(B) ,.z(cin) ,.s(sums[2]) ,.cout(couts[2]) );
 CLA32bit cla (.a(A) ,.b(B) ,.cin(cin) ,.sum(sums[3]) ,.cout(couts[3]) );
 Carryincadder cia (.a(A) ,.b(B) ,.c0(cin) ,.sum(sums[4]) ,.cout(couts[4]) );
 CSA cska (.a(A) ,.b(B) ,.cin(cin) ,.sum(sums[5]) ,.cout(couts[5]) );

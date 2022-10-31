@@ -5,12 +5,13 @@
 */
 `include "halfAdder.v"
 `include "RCA16.v"
+`include "../CarrySelectAdder/overflow.v"
 
-module Carryincadder(a,b,sum,cout,c0);
+module Carryincadder(a,b,sum,cout,c0,of);
 input [31:0] a,b;
 input c0;
 output [31:0] sum;
-output cout;
+output cout,of;
 wire [15:0]s1;
 wire [1:0]c;
 wire [15:0]carry_outs;
@@ -35,5 +36,6 @@ endgenerate
 
 // getting carry out from last block
 assign cout = carry_outs[15] | c[1];
+overflow OverFlow(.A(a[31]),.B(b[31]),.sign(sum[31]),.of(of));
 endmodule
 
