@@ -1,0 +1,39 @@
+Report Instance Areas: 
+-----+---------------+---------------+-----+---------
+     |Instance       |Module         |Cells|Cell Area
+-----+---------------+---------------+-----+---------
+1    |top            |               |   36|      140
+2    |  OverFlow     |overflow       |    4|        3
+3    |  genblk1_0_FA |Fulladder__0_1 |    1|        4
+4    |  genblk1_1_FA |Fulladder__0_3 |    1|        4
+5    |  genblk1_2_FA |Fulladder__0_5 |    1|        4
+6    |  genblk1_3_FA |Fulladder__0_7 |    1|        4
+7    |  genblk1_4_FA |Fulladder__0_9 |    1|        4
+8    |  genblk1_5_FA |Fulladder__0_11|    1|        4
+9    |  genblk1_6_FA |Fulladder__0_13|    1|        4
+10   |  genblk1_7_FA |Fulladder__0_15|    1|        4
+11   |  genblk1_8_FA |Fulladder__0_17|    1|        4
+12   |  genblk1_9_FA |Fulladder__0_19|    1|        4
+13   |  genblk1_10_FA|Fulladder__0_21|    1|        4
+14   |  genblk1_11_FA|Fulladder__0_23|    1|        4
+15   |  genblk1_12_FA|Fulladder__0_25|    1|        4
+16   |  genblk1_13_FA|Fulladder__0_27|    1|        4
+17   |  genblk1_14_FA|Fulladder__0_29|    1|        4
+18   |  genblk1_15_FA|Fulladder__0_31|    1|        4
+19   |  genblk1_16_FA|Fulladder__0_33|    1|        4
+20   |  genblk1_17_FA|Fulladder__0_35|    1|        4
+21   |  genblk1_18_FA|Fulladder__0_37|    1|        4
+22   |  genblk1_19_FA|Fulladder__0_39|    1|        4
+23   |  genblk1_20_FA|Fulladder__0_41|    1|        4
+24   |  genblk1_21_FA|Fulladder__0_43|    1|        4
+25   |  genblk1_22_FA|Fulladder__0_45|    1|        4
+26   |  genblk1_23_FA|Fulladder__0_47|    1|        4
+27   |  genblk1_24_FA|Fulladder__0_49|    1|        4
+28   |  genblk1_25_FA|Fulladder__0_51|    1|        4
+29   |  genblk1_26_FA|Fulladder__0_53|    1|        4
+30   |  genblk1_27_FA|Fulladder__0_55|    1|        4
+31   |  genblk1_28_FA|Fulladder__0_57|    1|        4
+32   |  genblk1_29_FA|Fulladder__0_59|    1|        4
+33   |  genblk1_30_FA|Fulladder__0_61|    1|        4
+34   |  genblk1_31_FA|Fulladder      |    1|        4
+-----+---------------+---------------+-----+---------

@@ -1,0 +1,88 @@
+Report for group default
+Report for group I2R
+Report for group I2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: z[1]
+    (Clocked by vsysclk R)
+Endpoint: of
+    (Clocked by vsysclk R)
+Path Group: I2O
+Data required time: 19500.0
+    (Clock shift: 20000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 3875.4
+Slack: 15624.6
+Logic depth: 34
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+z[1]                     {set_input_delay}        f   1000.0   1000.0   1000.0                        2.3      6.1      1     0,   40                       
+f1/i_0/i_0/A->S          FA_X1                   ff   1097.6     97.6     97.4      0.2      0.0      0.4      3.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_0_FA/i_0/i_0/CI->CO
+                         FA_X1                   ff   1169.3     71.7     71.7      0.0     16.5      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_1_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   1251.0     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_2_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   1332.7     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_3_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   1414.4     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_4_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   1496.1     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_5_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   1577.8     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_6_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   1659.5     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_7_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   1741.2     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_8_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   1822.9     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_9_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   1904.6     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_10_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   1986.3     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_11_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   2068.0     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_12_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   2149.7     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_13_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   2231.4     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_14_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   2313.1     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_15_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   2394.8     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_16_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   2476.5     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_17_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   2558.2     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_18_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   2639.9     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_19_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   2721.6     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_20_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   2803.3     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_21_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   2885.0     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_22_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   2966.7     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_23_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   3048.4     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_24_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   3130.1     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_25_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   3211.8     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_26_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   3293.5     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_27_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   3375.2     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_28_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   3456.9     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_29_FA/i_0/i_0/A->CO
+                         FA_X1                   ff   3538.6     81.7     81.7      0.0     16.6      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca/genblk1_30_FA/i_0/i_0/A->S
+                         FA_X1*                  fr   3719.8    181.2    181.2      0.0     16.6      0.7     40.2      3    40,   40  /PD_TOP        (1.10)
+OverFlow/i_0_2/A->ZN     INV_X8                  rf   3726.0      6.2      6.2      0.0     15.3      0.3      2.0      1    40,   40  /PD_TOP        (1.10)
+OverFlow/i_0_3/B1->ZN    OAI33_X1                fr   3875.2    149.2    149.2      0.0      3.2      2.4     12.4      1    40,   40  /PD_TOP        (1.10)
+of                                                r   3875.4      0.2               0.2    139.2                             81,   42                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group R2O
