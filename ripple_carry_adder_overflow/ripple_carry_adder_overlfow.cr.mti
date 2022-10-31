@@ -12,14 +12,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	overflow
 
-} {} {}} {D:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/RippelCarryAdder.v} {1 {vlog -work work -stats=none {D:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/RippelCarryAdder.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module overflow
--- Compiling module RippelCarryAdder
-
-Top level modules:
-	RippelCarryAdder
-
 } {} {}} {D:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/RippelCarryAdder_TB.v} {1 {vlog -work work -stats=none {D:/Material/3rd CMP/First term/VLSI/VLSI/ripple_carry_adder_overflow/RippelCarryAdder_TB.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module RippleCarryAdder_TB
