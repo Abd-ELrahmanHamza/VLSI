@@ -1,0 +1,45 @@
+Report Instance Areas: 
+-----+----------+---------------+-----+---------
+     |Instance  |Module         |Cells|Cell Area
+-----+----------+---------------+-----+---------
+1    |top       |               |   42|      149
+2    |  RCA3    |RCA8__0_32     |    8|       34
+3    |    FA7   |FullAdder__0_31|    1|        4
+4    |    FA6   |FullAdder__0_29|    1|        4
+5    |    FA5   |FullAdder__0_27|    1|        4
+6    |    FA4   |FullAdder__0_25|    1|        4
+7    |    FA3   |FullAdder__0_23|    1|        4
+8    |    FA2   |FullAdder__0_21|    1|        4
+9    |    FA1   |FullAdder__0_19|    1|        4
+10   |    FA8   |FullAdder__0_17|    1|        4
+11   |  RCA2    |RCA8__0_49     |    8|       34
+12   |    FA7   |FullAdder__0_48|    1|        4
+13   |    FA6   |FullAdder__0_46|    1|        4
+14   |    FA5   |FullAdder__0_44|    1|        4
+15   |    FA4   |FullAdder__0_42|    1|        4
+16   |    FA3   |FullAdder__0_40|    1|        4
+17   |    FA2   |FullAdder__0_38|    1|        4
+18   |    FA1   |FullAdder__0_36|    1|        4
+19   |    FA8   |FullAdder__0_34|    1|        4
+20   |  RCA1    |RCA8__0_66     |    8|       34
+21   |    FA7   |FullAdder__0_65|    1|        4
+22   |    FA6   |FullAdder__0_63|    1|        4
+23   |    FA5   |FullAdder__0_61|    1|        4
+24   |    FA4   |FullAdder__0_59|    1|        4
+25   |    FA3   |FullAdder__0_57|    1|        4
+26   |    FA2   |FullAdder__0_55|    1|        4
+27   |    FA1   |FullAdder__0_53|    1|        4
+28   |    FA8   |FullAdder__0_51|    1|        4
+29   |  RCA4    |RCA8           |    8|       34
+30   |    FA7   |FullAdder__0_3 |    1|        4
+31   |    FA6   |FullAdder__0_5 |    1|        4
+32   |    FA5   |FullAdder__0_7 |    1|        4
+33   |    FA4   |FullAdder__0_9 |    1|        4
+34   |    FA3   |FullAdder__0_11|    1|        4
+35   |    FA2   |FullAdder__0_13|    1|        4
+36   |    FA1   |FullAdder__0_15|    1|        4
+37   |    FA8   |FullAdder      |    1|        4
+38   |  CSAP    |CSAPropagate   |    5|        8
+39   |  mux     |mux_2x1        |    1|        2
+40   |  OverFlow|overflow       |    4|        3
+-----+----------+---------------+-----+---------
