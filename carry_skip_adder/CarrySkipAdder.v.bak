@@ -1,3 +1,7 @@
+`include "CarrySkipAdderInterface.v"
+`include "RippleCarryAdder.v"
+`include "mux.v"
+
 
 module CSA(a,b,cin,sum,cout);
 input [31:0] a,b;
