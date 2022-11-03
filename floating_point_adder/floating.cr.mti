@@ -5,18 +5,18 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	Subtractor1bit
 
-} {} {}} C:/work/VLSI/Repo/floating_point_adder/HalfSubtractor.v {1 {vlog -work work -stats=none {C:\work\VLSI\Repo\floating_point_adder\HalfSubtractor.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module HalfSubtractor
-
-Top level modules:
-	HalfSubtractor
-
 } {} {}} C:/work/VLSI/Repo/floating_point_adder/Subtractor8bit.v {1 {vlog -work work -stats=none C:/work/VLSI/Repo/floating_point_adder/Subtractor8bit.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module Subtractor8Bit
 
 Top level modules:
 	Subtractor8Bit
+
+} {} {}} C:/work/VLSI/Repo/floating_point_adder/HalfSubtractor.v {1 {vlog -work work -stats=none {C:\work\VLSI\Repo\floating_point_adder\HalfSubtractor.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module HalfSubtractor
+
+Top level modules:
+	HalfSubtractor
 
 } {} {}}

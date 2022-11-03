@@ -22,7 +22,7 @@ RCA16 rca16(
 RCA16 rca16_0(
 .A(A[31:16]),
 .B(B[31:16]),
-.cin(tempcout),
+.cin(1'b0),
 .sum(sum0),
 .cout(cout_0)
 );
@@ -30,7 +30,7 @@ RCA16 rca16_0(
 RCA16 rca16_1(
 .A(A[31:16]),
 .B(B[31:16]),
-.cin(tempcout),
+.cin(1'b1),
 .sum(sum1),
 .cout(cout_1)
 );
@@ -38,9 +38,9 @@ RCA16 rca16_1(
 genvar i;
 generate
 for(i=0;i<16;i=i+1)
-Mux2x1 mux (.A(sum0[i]),.B(sum1[i]),.sel(cin),.out(sum[16+i]));
+Mux2x1 mux (.A(sum0[i]),.B(sum1[i]),.sel(tempcout),.out(sum[16+i]));
 endgenerate
-Mux2x1 mux2 (.A(cout_0),.B(cout_0),.sel(cin),.out(cout));
+Mux2x1 mux2 (.A(cout_0),.B(cout_1),.sel(tempcout),.out(cout));
 
 overflow OverFlow(.A(A[31]),.B(B[31]),.sign(sum[31]),.of(of));
 

@@ -2,7 +2,7 @@ Report Instance Areas:
 -----+------------------+----------------+-----+---------
      |Instance          |Module          |Cells|Cell Area
 -----+------------------+----------------+-----+---------
-1    |top               |                |   68|      238
+1    |top               |                |   69|      239
 2    |  rca16           |RCA16__0_94     |   16|       68
 3    |    genblk1_0_FA1 |FullAdder__0_93 |    1|        4
 4    |    genblk1_1_FA1 |FullAdder__0_91 |    1|        4
@@ -54,21 +54,22 @@ Report Instance Areas:
 50   |    genblk1_13_FA1|FullAdder__0_59 |    1|        4
 51   |    genblk1_14_FA1|FullAdder__0_61 |    1|        4
 52   |    genblk1_15_FA1|FullAdder       |    1|        4
-53   |  OverFlow        |overflow        |    4|        3
-54   |  genblk1_0_mux   |Mux2x1__0_3     |    1|        2
-55   |  genblk1_1_mux   |Mux2x1__0_5     |    1|        2
-56   |  genblk1_2_mux   |Mux2x1__0_7     |    1|        2
-57   |  genblk1_3_mux   |Mux2x1__0_9     |    1|        2
-58   |  genblk1_4_mux   |Mux2x1__0_11    |    1|        2
-59   |  genblk1_5_mux   |Mux2x1__0_13    |    1|        2
-60   |  genblk1_6_mux   |Mux2x1__0_15    |    1|        2
-61   |  genblk1_7_mux   |Mux2x1__0_17    |    1|        2
-62   |  genblk1_8_mux   |Mux2x1__0_19    |    1|        2
-63   |  genblk1_9_mux   |Mux2x1__0_21    |    1|        2
-64   |  genblk1_10_mux  |Mux2x1__0_23    |    1|        2
-65   |  genblk1_11_mux  |Mux2x1__0_25    |    1|        2
-66   |  genblk1_12_mux  |Mux2x1__0_27    |    1|        2
-67   |  genblk1_13_mux  |Mux2x1__0_29    |    1|        2
-68   |  genblk1_14_mux  |Mux2x1__0_31    |    1|        2
-69   |  genblk1_15_mux  |Mux2x1          |    1|        2
+53   |  mux2            |Mux2x1__0_1     |    1|        2
+54   |  OverFlow        |overflow        |    4|        3
+55   |  genblk1_0_mux   |Mux2x1__0_3     |    1|        2
+56   |  genblk1_1_mux   |Mux2x1__0_5     |    1|        2
+57   |  genblk1_2_mux   |Mux2x1__0_7     |    1|        2
+58   |  genblk1_3_mux   |Mux2x1__0_9     |    1|        2
+59   |  genblk1_4_mux   |Mux2x1__0_11    |    1|        2
+60   |  genblk1_5_mux   |Mux2x1__0_13    |    1|        2
+61   |  genblk1_6_mux   |Mux2x1__0_15    |    1|        2
+62   |  genblk1_7_mux   |Mux2x1__0_17    |    1|        2
+63   |  genblk1_8_mux   |Mux2x1__0_19    |    1|        2
+64   |  genblk1_9_mux   |Mux2x1__0_21    |    1|        2
+65   |  genblk1_10_mux  |Mux2x1__0_23    |    1|        2
+66   |  genblk1_11_mux  |Mux2x1__0_25    |    1|        2
+67   |  genblk1_12_mux  |Mux2x1__0_27    |    1|        2
+68   |  genblk1_13_mux  |Mux2x1__0_29    |    1|        2
+69   |  genblk1_14_mux  |Mux2x1__0_31    |    1|        2
+70   |  genblk1_15_mux  |Mux2x1          |    1|        2
 -----+------------------+----------------+-----+---------
