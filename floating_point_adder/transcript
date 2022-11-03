@@ -1,0 +1,40 @@
+# Compile of Subtractor1bit.v failed with 5 errors.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor8bit.v failed with 7 errors.
+# 2 compiles, 1 failed with 7 errors.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor8bit.v failed with 7 errors.
+# Compile of HalfSubtractor.v was successful.
+# 3 compiles, 1 failed with 7 errors.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor8bit.v failed with 7 errors.
+# Compile of HalfSubtractor.v was successful.
+# 3 compiles, 1 failed with 7 errors.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor8bit.v was successful.
+# Compile of HalfSubtractor.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor8bit.v was successful.
+# Compile of HalfSubtractor.v was successful.
+# Compile of Complement2s8bit.v was successful.
+# Compile of Mux1bit.v was successful.
+# Compile of SubtractionStage.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor8bit.v was successful.
+# Compile of HalfSubtractor.v was successful.
+# Compile of Complement2s8bit.v was successful.
+# Compile of Mux1bit.v was successful.
+# Compile of SubtractionStage.v was successful.
+# Compile of FullAdder.v failed with 1 errors.
+# 7 compiles, 1 failed with 1 error.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor8bit.v was successful.
+# Compile of HalfSubtractor.v was successful.
+# Compile of Complement2s8bit.v was successful.
+# Compile of Mux1bit.v was successful.
+# Compile of SubtractionStage.v was successful.
+# Compile of FullAdder.v was successful.
+# 7 compiles, 0 failed with no errors.

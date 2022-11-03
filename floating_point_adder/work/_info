@@ -1,0 +1,179 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/work/VLSI/Repo/carry_save_adder
+vComplement2s8bit
+Z0 !s110 1667466641
+!i10b 1
+!s100 2M=>h4KaEF@]]U:;b;gmn0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I31]W1CD_EJJI[^`g9PgAa2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/work/VLSI/Repo/floating_point_adder
+w1667490679
+8C:/work/VLSI/Repo/floating_point_adder/Complement2s8bit.v
+FC:/work/VLSI/Repo/floating_point_adder/Complement2s8bit.v
+!i122 24
+L0 2 33
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1667466641.000000
+!s107 C:/work/VLSI/Repo/floating_point_adder/Complement2s8bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/work/VLSI/Repo/floating_point_adder/Complement2s8bit.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@complement2s8bit
+vFullAdder
+R0
+!i10b 1
+!s100 36ile1F?S41QoQzkVdXha0
+R1
+IU8Gai53IB[7425CgeI9OL3
+R2
+R3
+w1667466636
+8C:\work\VLSI\Repo\floating_point_adder\FullAdder.v
+FC:\work\VLSI\Repo\floating_point_adder\FullAdder.v
+!i122 27
+Z8 L0 2 16
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:\work\VLSI\Repo\floating_point_adder\FullAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\work\VLSI\Repo\floating_point_adder\FullAdder.v|
+!i113 1
+R6
+R7
+n@full@adder
+vHalfSubtractor
+R0
+!i10b 1
+!s100 lAiEgNY3AX75SdPBY^IFe1
+R1
+IdFXR:aX^3FQc<AVG`H`Vh1
+R2
+R3
+w1667489646
+8C:\work\VLSI\Repo\floating_point_adder\HalfSubtractor.v
+FC:\work\VLSI\Repo\floating_point_adder\HalfSubtractor.v
+!i122 23
+L0 2 11
+R4
+r1
+!s85 0
+31
+Z9 !s108 1667466640.000000
+!s107 C:\work\VLSI\Repo\floating_point_adder\HalfSubtractor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\work\VLSI\Repo\floating_point_adder\HalfSubtractor.v|
+!i113 1
+R6
+R7
+n@half@subtractor
+vMux1bit
+R0
+!i10b 1
+!s100 C_B:GiWImHVND`=bjAc1A0
+R1
+IRdFD=487VzZB;m1d@=FTA2
+R2
+R3
+w1667491027
+8C:/work/VLSI/Repo/floating_point_adder/Mux1bit.v
+FC:/work/VLSI/Repo/floating_point_adder/Mux1bit.v
+!i122 25
+R8
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/work/VLSI/Repo/floating_point_adder/Mux1bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/work/VLSI/Repo/floating_point_adder/Mux1bit.v|
+!i113 1
+R6
+R7
+n@mux1bit
+vSubtractionStage
+R0
+!i10b 1
+!s100 f[7a947j>zb]YMWY6FYjJ1
+R1
+I;1kSJO6JZVcZ8YSQ4:QPH0
+R2
+R3
+w1667491194
+8C:\work\VLSI\Repo\floating_point_adder\SubtractionStage.v
+FC:\work\VLSI\Repo\floating_point_adder\SubtractionStage.v
+!i122 26
+L0 2 18
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:\work\VLSI\Repo\floating_point_adder\SubtractionStage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\work\VLSI\Repo\floating_point_adder\SubtractionStage.v|
+!i113 1
+R6
+R7
+n@subtraction@stage
+vSubtractor1bit
+Z10 !s110 1667466640
+!i10b 1
+!s100 II2mdjiQUK=T6lJeW62753
+R1
+Ie<LKI8heVg<S9m5ZgN@381
+R2
+R3
+w1667489451
+8C:/work/VLSI/Repo/floating_point_adder/Subtractor1bit.v
+FC:/work/VLSI/Repo/floating_point_adder/Subtractor1bit.v
+!i122 21
+L0 2 24
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/work/VLSI/Repo/floating_point_adder/Subtractor1bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/work/VLSI/Repo/floating_point_adder/Subtractor1bit.v|
+!i113 1
+R6
+R7
+n@subtractor1bit
+vSubtractor8Bit
+R10
+!i10b 1
+!s100 m1z`Dh8YjfJoOYB<VE@QK2
+R1
+Ii@i4_RKXUb<UGdMm?WZUQ0
+R2
+R3
+w1667489684
+8C:/work/VLSI/Repo/floating_point_adder/Subtractor8bit.v
+FC:/work/VLSI/Repo/floating_point_adder/Subtractor8bit.v
+!i122 22
+L0 2 25
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/work/VLSI/Repo/floating_point_adder/Subtractor8bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/work/VLSI/Repo/floating_point_adder/Subtractor8bit.v|
+!i113 1
+R6
+R7
+n@subtractor8@bit
