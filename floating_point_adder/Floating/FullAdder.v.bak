@@ -1,5 +1,5 @@
 
-module FullAdder2(
+module FullAdder(
   A,B,Cin,
     S,
     Cout

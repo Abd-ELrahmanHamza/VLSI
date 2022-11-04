@@ -1,22 +1,22 @@
 # Compile of Complement2s8bit.v was successful.
+# Compile of demo_carrySelectAdder.syn.v was successful.
+# Compile of FinalOutput.v was successful.
 # Compile of FloatingPointAdder.v was successful with warnings.
+# Compile of FloatingPointTB.v was successful.
 # Compile of FullAdder.v was successful.
 # Compile of HalfSubtractor.v was successful.
 # Compile of Mux1bit.v was successful.
+# Compile of Mux8.v was successful.
+# Compile of Mux23.v was successful.
+# Compile of NangateOpenCellLibrary.v was successful.
+# Compile of RightShifter.v was successful.
 # Compile of SubtractionStage.v was successful.
 # Compile of Subtractor1bit.v was successful.
 # Compile of Subtractor8bit.v was successful.
-# Compile of Mux23.v was successful.
-# Compile of RightShifter.v was successful.
-# Compile of demo_carrySelectAdder.syn.v was successful.
-# Compile of NangateOpenCellLibrary.v was successful.
-# Compile of Mux8.v was successful.
-# Compile of FinalOutput.v was successful.
-# Compile of FloatingPointTB.v was successful.
 # 15 compiles, 0 failed with no errors.
 vsim -gui work.FloatingPointTB
 # vsim -gui work.FloatingPointTB 
-# Start time: 00:39:38 on Nov 05,2022
+# Start time: 01:01:34 on Nov 05,2022
 # Loading work.FloatingPointTB
 # Loading work.FloatingPointAdder
 # Loading work.SubtractionStage
@@ -146,11 +146,22 @@ vsim -gui work.FloatingPointTB
 # Loading work.Mux2x1
 # Loading work.Mux8
 # Loading work.FinalOutput
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (56) for port 'A'. The port definition is at: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/demo_carrySelectAdder.syn.v(1219).
-#    Time: 0 ps  Iteration: 0  Instance: /FloatingPointTB/uut/CSA File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/FloatingPointAdder.v Line: 26
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (56) for port 'B'. The port definition is at: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/demo_carrySelectAdder.syn.v(1219).
-#    Time: 0 ps  Iteration: 0  Instance: /FloatingPointTB/uut/CSA File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/FloatingPointAdder.v Line: 26
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/demo_carrySelectAdder.syn.v(1219).
-#    Time: 0 ps  Iteration: 0  Instance: /FloatingPointTB/uut/CSA File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/FloatingPointAdder.v Line: 26
-# End time: 00:39:50 on Nov 05,2022, Elapsed time: 0:00:12
-# Errors: 0, Warnings: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (56) for port 'A'. The port definition is at: D:/Material/3rd CMP/First term/VLSI/VLSI Repo/floating_point_adder/Floating/demo_carrySelectAdder.syn.v(1219).
+#    Time: 0 ps  Iteration: 0  Instance: /FloatingPointTB/uut/CSA File: D:/Material/3rd CMP/First term/VLSI/VLSI Repo/floating_point_adder/Floating/FloatingPointAdder.v Line: 26
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (56) for port 'B'. The port definition is at: D:/Material/3rd CMP/First term/VLSI/VLSI Repo/floating_point_adder/Floating/demo_carrySelectAdder.syn.v(1219).
+#    Time: 0 ps  Iteration: 0  Instance: /FloatingPointTB/uut/CSA File: D:/Material/3rd CMP/First term/VLSI/VLSI Repo/floating_point_adder/Floating/FloatingPointAdder.v Line: 26
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: D:/Material/3rd CMP/First term/VLSI/VLSI Repo/floating_point_adder/Floating/demo_carrySelectAdder.syn.v(1219).
+#    Time: 0 ps  Iteration: 0  Instance: /FloatingPointTB/uut/CSA File: D:/Material/3rd CMP/First term/VLSI/VLSI Repo/floating_point_adder/Floating/FloatingPointAdder.v Line: 26
+run -all
+# in1=00000000000000000000000000000000 in2=00000000000000000000000000000000 Sum=00000000100000000000000000000000 cout=1
+# in1=00111111100110011001100110011001 in2=01000000000110011001100110011001 Sum=01000000011001100110011001100101 cout=0
+# in1=01000000010011001100110011001101 in2=10111111000110011001100110011010 Sum=11000000011100110011001100110011 cout=0
+# in1=01000101000010100111000011001101 in2=01000101000010011101000110011010 Sum=01000101100010100010000100110011 cout=1
+# in1=00000100000101001110010100101100 in2=00000010010100001001100010000010 Sum=00000100001000011110111010110100 cout=0
+# ** Note: $finish    : D:/Material/3rd CMP/First term/VLSI/VLSI Repo/floating_point_adder/Floating/FloatingPointTB.v(50)
+#    Time: 230 ps  Iteration: 0  Instance: /FloatingPointTB
+# 1
+# Break in Module FloatingPointTB at D:/Material/3rd CMP/First term/VLSI/VLSI Repo/floating_point_adder/Floating/FloatingPointTB.v line 50
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line

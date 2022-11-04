@@ -28,7 +28,7 @@ genvar i;
 		begin
 			for(i=1;i<8;i=i+1)
 			  begin
-			    FullAdder2 F1(w[i],1'b0,c[i-1],Out[i],c[i]);
+			    FullAdder F1(w[i],1'b0,c[i-1],Out[i],c[i]);
 			  end
 		end
 	endgenerate
