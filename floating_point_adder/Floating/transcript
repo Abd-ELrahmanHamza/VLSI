@@ -1,48 +1,23 @@
-# Error opening D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/FloatingPointAdder.v
-# Path name 'D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/FloatingPointAdder.v' doesn't exist.
-# Error opening D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/FloatingPointAdder.v
-# Path name 'D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/FloatingPointAdder.v' doesn't exist.
-# 0 compiles, 14 failed with no errors.
-# Error opening D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/RightShifter.v
-# Path name 'D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/RightShifter.v' doesn't exist.
-# Error opening D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/RightShifter.v
-# Path name 'D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/RightShifter.v' doesn't exist.
 # Compile of Complement2s8bit.v was successful.
-# Compile of demo_carrySelectAdder.syn.v was successful.
-# Compile of FinalOutput.v was successful.
 # Compile of FloatingPointAdder.v was successful with warnings.
-# Compile of FloatingPointTB.v was successful.
 # Compile of FullAdder.v was successful.
 # Compile of HalfSubtractor.v was successful.
 # Compile of Mux1bit.v was successful.
-# Compile of Mux8.v was successful.
-# Compile of Mux23.v was successful.
-# Compile of NangateOpenCellLibrary.v was successful.
-# Compile of RightShifter.v was successful.
 # Compile of SubtractionStage.v was successful.
 # Compile of Subtractor1bit.v was successful.
 # Compile of Subtractor8bit.v was successful.
-# 15 compiles, 14 failed with no errors.
-# Compile of Complement2s8bit.v was successful.
+# Compile of Mux23.v was successful.
+# Compile of RightShifter.v was successful.
 # Compile of demo_carrySelectAdder.syn.v was successful.
-# Compile of FinalOutput.v was successful.
-# Compile of FloatingPointAdder.v was successful with warnings.
-# Compile of FloatingPointTB.v was successful.
-# Compile of FullAdder.v was successful.
-# Compile of HalfSubtractor.v was successful.
-# Compile of Mux1bit.v was successful.
-# Compile of Mux8.v was successful.
-# Compile of Mux23.v was successful.
 # Compile of NangateOpenCellLibrary.v was successful.
-# Compile of RightShifter.v was successful.
-# Compile of SubtractionStage.v was successful.
-# Compile of Subtractor1bit.v was successful.
-# Compile of Subtractor8bit.v was successful.
+# Compile of Mux8.v was successful.
+# Compile of FinalOutput.v was successful.
+# Compile of FloatingPointTB.v was successful.
 # 15 compiles, 0 failed with no errors.
-vsim -gui work.tb
-# vsim -gui work.tb 
-# Start time: 22:32:44 on Nov 04,2022
-# Loading work.tb
+vsim -gui work.FloatingPointTB
+# vsim -gui work.FloatingPointTB 
+# Start time: 00:39:38 on Nov 05,2022
+# Loading work.FloatingPointTB
 # Loading work.FloatingPointAdder
 # Loading work.SubtractionStage
 # Loading work.Mux23
@@ -52,8 +27,6 @@ vsim -gui work.tb
 # Loading work.FullAdder__0_93
 # Loading work.datapath__0_92
 # Loading work.FA_X1
-# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'FA_X1' does not have a timeunit/timeprecision specification in effect, but other modules do.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/CSA/rca16/genblk1_0_FA1/i_0/i_0 File: E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Floating/NangateOpenCellLibrary.v
 # Loading work.FullAdder__0_91
 # Loading work.datapath__0_90
 # Loading work.FullAdder__0_89
@@ -149,17 +122,12 @@ vsim -gui work.tb
 # Loading work.FullAdder__0_61
 # Loading work.datapath__0_60
 # Loading work.FullAdder
+# Loading work.datapath
 # Loading work.Mux2x1__0_1
 # Loading work.MUX2_X1
-# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'MUX2_X1' does not have a timeunit/timeprecision specification in effect, but other modules do.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/CSA/mux2/i_0_0 File: E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Floating/NangateOpenCellLibrary.v
 # Loading work.overflow
 # Loading work.INV_X1
-# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'INV_X1' does not have a timeunit/timeprecision specification in effect, but other modules do.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/CSA/OverFlow/i_0_0 File: E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Floating/NangateOpenCellLibrary.v
 # Loading work.OAI33_X1
-# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'OAI33_X1' does not have a timeunit/timeprecision specification in effect, but other modules do.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/CSA/OverFlow/i_0_3 File: E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Floating/NangateOpenCellLibrary.v
 # Loading work.Mux2x1__0_3
 # Loading work.Mux2x1__0_5
 # Loading work.Mux2x1__0_7
@@ -178,179 +146,11 @@ vsim -gui work.tb
 # Loading work.Mux2x1
 # Loading work.Mux8
 # Loading work.FinalOutput
-# Error loading design
-# End time: 22:32:45 on Nov 04,2022, Elapsed time: 0:00:01
-# Errors: 4, Warnings: 6
-# Compile of Complement2s8bit.v was successful.
-# Compile of demo_carrySelectAdder.syn.v was successful.
-# Compile of FinalOutput.v was successful.
-# Compile of FloatingPointAdder.v was successful with warnings.
-# Compile of FloatingPointTB.v was successful.
-# Compile of FullAdder.v was successful.
-# Compile of HalfSubtractor.v was successful.
-# Compile of Mux1bit.v was successful.
-# Compile of Mux8.v was successful.
-# Compile of Mux23.v was successful.
-# Compile of NangateOpenCellLibrary.v was successful.
-# Compile of RightShifter.v was successful.
-# Compile of SubtractionStage.v was successful.
-# Compile of Subtractor1bit.v was successful.
-# Compile of Subtractor8bit.v was successful.
-# 15 compiles, 0 failed with no errors.
-# Compile of Complement2s8bit.v was successful.
-# Compile of demo_carrySelectAdder.syn.v was successful.
-# Compile of FinalOutput.v was successful.
-# Compile of FloatingPointAdder.v was successful with warnings.
-# Compile of FloatingPointTB.v was successful.
-# Compile of FullAdder.v was successful.
-# Compile of HalfSubtractor.v was successful.
-# Compile of Mux1bit.v was successful.
-# Compile of Mux8.v was successful.
-# Compile of Mux23.v was successful.
-# Compile of RightShifter.v was successful.
-# Compile of SubtractionStage.v was successful.
-# Compile of Subtractor1bit.v was successful.
-# Compile of Subtractor8bit.v was successful.
-# 14 compiles, 0 failed with no errors.
-vsim -gui work.tb
-# vsim -gui work.tb 
-# Start time: 22:34:07 on Nov 04,2022
-# Loading work.tb
-# Loading work.FloatingPointAdder
-# Loading work.SubtractionStage
-# Loading work.Mux23
-# Loading work.RightShifter
-# Loading work.carrySelectAdder
-# Loading work.RCA16__0_94
-# Loading work.FullAdder__0_93
-# Loading work.datapath__0_92
-# Loading work.FA_X1
-# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'FA_X1' does not have a timeunit/timeprecision specification in effect, but other modules do.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/CSA/rca16/genblk1_0_FA1/i_0/i_0 File: E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Floating/NangateOpenCellLibrary.v
-# Loading work.FullAdder__0_91
-# Loading work.datapath__0_90
-# Loading work.FullAdder__0_89
-# Loading work.datapath__0_88
-# Loading work.FullAdder__0_87
-# Loading work.datapath__0_86
-# Loading work.FullAdder__0_85
-# Loading work.datapath__0_84
-# Loading work.FullAdder__0_83
-# Loading work.datapath__0_82
-# Loading work.FullAdder__0_81
-# Loading work.datapath__0_80
-# Loading work.FullAdder__0_79
-# Loading work.datapath__0_78
-# Loading work.FullAdder__0_77
-# Loading work.datapath__0_76
-# Loading work.FullAdder__0_75
-# Loading work.datapath__0_74
-# Loading work.FullAdder__0_73
-# Loading work.datapath__0_72
-# Loading work.FullAdder__0_71
-# Loading work.datapath__0_70
-# Loading work.FullAdder__0_69
-# Loading work.datapath__0_68
-# Loading work.FullAdder__0_67
-# Loading work.datapath__0_66
-# Loading work.FullAdder__0_65
-# Loading work.datapath__0_64
-# Loading work.FullAdder__0_63
-# Loading work.datapath__0_62
-# Loading work.RCA16__0_127
-# Loading work.FullAdder__0_126
-# Loading work.datapath__0_125
-# Loading work.FullAdder__0_124
-# Loading work.datapath__0_123
-# Loading work.FullAdder__0_122
-# Loading work.datapath__0_121
-# Loading work.FullAdder__0_120
-# Loading work.datapath__0_119
-# Loading work.FullAdder__0_118
-# Loading work.datapath__0_117
-# Loading work.FullAdder__0_116
-# Loading work.datapath__0_115
-# Loading work.FullAdder__0_114
-# Loading work.datapath__0_113
-# Loading work.FullAdder__0_112
-# Loading work.datapath__0_111
-# Loading work.FullAdder__0_110
-# Loading work.datapath__0_109
-# Loading work.FullAdder__0_108
-# Loading work.datapath__0_107
-# Loading work.FullAdder__0_106
-# Loading work.datapath__0_105
-# Loading work.FullAdder__0_104
-# Loading work.datapath__0_103
-# Loading work.FullAdder__0_102
-# Loading work.datapath__0_101
-# Loading work.FullAdder__0_100
-# Loading work.datapath__0_99
-# Loading work.FullAdder__0_98
-# Loading work.datapath__0_97
-# Loading work.FullAdder__0_96
-# Loading work.datapath__0_95
-# Loading work.RCA16
-# Loading work.FullAdder__0_33
-# Loading work.datapath__0_32
-# Loading work.FullAdder__0_35
-# Loading work.datapath__0_34
-# Loading work.FullAdder__0_37
-# Loading work.datapath__0_36
-# Loading work.FullAdder__0_39
-# Loading work.datapath__0_38
-# Loading work.FullAdder__0_41
-# Loading work.datapath__0_40
-# Loading work.FullAdder__0_43
-# Loading work.datapath__0_42
-# Loading work.FullAdder__0_45
-# Loading work.datapath__0_44
-# Loading work.FullAdder__0_47
-# Loading work.datapath__0_46
-# Loading work.FullAdder__0_49
-# Loading work.datapath__0_48
-# Loading work.FullAdder__0_51
-# Loading work.datapath__0_50
-# Loading work.FullAdder__0_53
-# Loading work.datapath__0_52
-# Loading work.FullAdder__0_55
-# Loading work.datapath__0_54
-# Loading work.FullAdder__0_57
-# Loading work.datapath__0_56
-# Loading work.FullAdder__0_59
-# Loading work.datapath__0_58
-# Loading work.FullAdder__0_61
-# Loading work.datapath__0_60
-# Loading work.FullAdder
-# Loading work.Mux2x1__0_1
-# Loading work.MUX2_X1
-# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'MUX2_X1' does not have a timeunit/timeprecision specification in effect, but other modules do.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/CSA/mux2/i_0_0 File: E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Floating/NangateOpenCellLibrary.v
-# Loading work.overflow
-# Loading work.INV_X1
-# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'INV_X1' does not have a timeunit/timeprecision specification in effect, but other modules do.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/CSA/OverFlow/i_0_0 File: E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Floating/NangateOpenCellLibrary.v
-# Loading work.OAI33_X1
-# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'OAI33_X1' does not have a timeunit/timeprecision specification in effect, but other modules do.
-#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/CSA/OverFlow/i_0_3 File: E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Floating/NangateOpenCellLibrary.v
-# Loading work.Mux2x1__0_3
-# Loading work.Mux2x1__0_5
-# Loading work.Mux2x1__0_7
-# Loading work.Mux2x1__0_9
-# Loading work.Mux2x1__0_11
-# Loading work.Mux2x1__0_13
-# Loading work.Mux2x1__0_15
-# Loading work.Mux2x1__0_17
-# Loading work.Mux2x1__0_19
-# Loading work.Mux2x1__0_21
-# Loading work.Mux2x1__0_23
-# Loading work.Mux2x1__0_25
-# Loading work.Mux2x1__0_27
-# Loading work.Mux2x1__0_29
-# Loading work.Mux2x1__0_31
-# Loading work.Mux2x1
-# Loading work.Mux8
-# Loading work.FinalOutput
-# Error loading design
-# End time: 22:34:07 on Nov 04,2022, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 4
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (56) for port 'A'. The port definition is at: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/demo_carrySelectAdder.syn.v(1219).
+#    Time: 0 ps  Iteration: 0  Instance: /FloatingPointTB/uut/CSA File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/FloatingPointAdder.v Line: 26
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (56) for port 'B'. The port definition is at: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/demo_carrySelectAdder.syn.v(1219).
+#    Time: 0 ps  Iteration: 0  Instance: /FloatingPointTB/uut/CSA File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/FloatingPointAdder.v Line: 26
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/demo_carrySelectAdder.syn.v(1219).
+#    Time: 0 ps  Iteration: 0  Instance: /FloatingPointTB/uut/CSA File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/Floating/FloatingPointAdder.v Line: 26
+# End time: 00:39:50 on Nov 05,2022, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 5

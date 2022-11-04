@@ -6,7 +6,7 @@ module FloatingPointTB();
 
 	// Outputs
 	wire [31:0] fadd;
-    	wire cout;
+    wire cout;
 
 	// Instantiate the Unit Under Test (UUT)
 	FloatingPointAdder uut ( 
