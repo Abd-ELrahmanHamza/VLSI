@@ -1,22 +1,71 @@
-C:/work/VLSI/Repo/floating_point_adder/Subtractor1bit.v {1 {vlog -work work -stats=none C:/work/VLSI/Repo/floating_point_adder/Subtractor1bit.v
+{E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/HalfSubtractor.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/HalfSubtractor.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Subtractor1bit
+-- Compiling module HalfSubtractor
 
 Top level modules:
-	Subtractor1bit
+	HalfSubtractor
 
-} {} {}} C:/work/VLSI/Repo/floating_point_adder/Subtractor8bit.v {1 {vlog -work work -stats=none C:/work/VLSI/Repo/floating_point_adder/Subtractor8bit.v
+} {} {}} {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Subtractor8bit.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Subtractor8bit.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module Subtractor8Bit
 
 Top level modules:
 	Subtractor8Bit
 
-} {} {}} C:/work/VLSI/Repo/floating_point_adder/HalfSubtractor.v {1 {vlog -work work -stats=none {C:\work\VLSI\Repo\floating_point_adder\HalfSubtractor.v}
+} {} {}} {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Complement2s8bit.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Complement2s8bit.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module HalfSubtractor
+-- Compiling module Complement2s8bit
 
 Top level modules:
-	HalfSubtractor
+	Complement2s8bit
+
+} {} {}} {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Subtractor1bit.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Subtractor1bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Subtractor1bit
+
+Top level modules:
+	Subtractor1bit
+
+} {} {}} {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Mux1bit.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Mux1bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux1bit
+
+Top level modules:
+	Mux1bit
+
+} {} {}} {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/SubtractionStage.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/SubtractionStage.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SubtractionStage
+
+Top level modules:
+	SubtractionStage
+
+} {} {}} {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FullAdder.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FullAdder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FullAdder
+
+Top level modules:
+	FullAdder
+
+} {} {}} {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FloatingPointTB.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FloatingPointTB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/floatPointTB.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/floatPointTB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FloatingPointAdder.v} {1 {vlog -work work -stats=none {E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FloatingPointAdder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FloatingPointAdder
+
+Top level modules:
+	FloatingPointAdder
 
 } {} {}}

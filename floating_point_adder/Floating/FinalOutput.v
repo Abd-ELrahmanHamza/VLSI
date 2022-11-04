@@ -15,7 +15,7 @@ else
     begin
         outMantissa = mantissa;
         outExponent = exponent;
-    while(!outMantissa[23])
+    while(!outMantissa[23] && outMantissa != 0)
         begin
            outMantissa = outMantissa<<1;
            outExponent =  outExponent-1'b1;

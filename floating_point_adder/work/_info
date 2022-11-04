@@ -10,170 +10,217 @@ z2
 cModel Technology
 dC:/work/VLSI/Repo/carry_save_adder
 vComplement2s8bit
-Z0 !s110 1667466641
+Z0 !s110 1667593084
 !i10b 1
 !s100 2M=>h4KaEF@]]U:;b;gmn0
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I31]W1CD_EJJI[^`g9PgAa2
+IEdNz1e:35bM03RQ?52XL10
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dC:/work/VLSI/Repo/floating_point_adder
-w1667490679
-8C:/work/VLSI/Repo/floating_point_adder/Complement2s8bit.v
-FC:/work/VLSI/Repo/floating_point_adder/Complement2s8bit.v
-!i122 24
+Z3 dE:/CMP/5th Semester/VLSI/VLSI/floating_point_adder
+Z4 w1667590470
+8E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Complement2s8bit.v
+FE:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Complement2s8bit.v
+!i122 80
 L0 2 33
-Z4 OV;L;2020.1;71
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1667466641.000000
-!s107 C:/work/VLSI/Repo/floating_point_adder/Complement2s8bit.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/work/VLSI/Repo/floating_point_adder/Complement2s8bit.v|
+Z6 !s108 1667593084.000000
+!s107 E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Complement2s8bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Complement2s8bit.v|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z7 o-work work
+Z8 tCvgOpt 0
 n@complement2s8bit
+vFloatingPointAdder
+R0
+!i10b 1
+!s100 FQFR]MR^`oJ@Y:B?;JnlA0
+R1
+IP[Cd7QgX?QgXGg^5H`DeQ1
+R2
+R3
+R4
+8E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FloatingPointAdder.v
+FE:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FloatingPointAdder.v
+!i122 81
+L0 1 22
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FloatingPointAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FloatingPointAdder.v|
+!i113 1
+R7
+R8
+n@floating@point@adder
 vFullAdder
 R0
 !i10b 1
 !s100 36ile1F?S41QoQzkVdXha0
 R1
-IU8Gai53IB[7425CgeI9OL3
+Im7IL6GkA=T[LK7?iKTdi=3
 R2
 R3
-w1667466636
-8C:\work\VLSI\Repo\floating_point_adder\FullAdder.v
-FC:\work\VLSI\Repo\floating_point_adder\FullAdder.v
-!i122 27
-Z8 L0 2 16
 R4
+8E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FullAdder.v
+FE:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FullAdder.v
+!i122 84
+Z9 L0 2 16
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:\work\VLSI\Repo\floating_point_adder\FullAdder.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\work\VLSI\Repo\floating_point_adder\FullAdder.v|
-!i113 1
 R6
+!s107 E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FullAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FullAdder.v|
+!i113 1
 R7
+R8
 n@full@adder
 vHalfSubtractor
-R0
+Z10 !s110 1667593085
 !i10b 1
 !s100 lAiEgNY3AX75SdPBY^IFe1
 R1
-IdFXR:aX^3FQc<AVG`H`Vh1
+I_DdGc<T[i0im^I^<ei>Sc0
 R2
 R3
-w1667489646
-8C:\work\VLSI\Repo\floating_point_adder\HalfSubtractor.v
-FC:\work\VLSI\Repo\floating_point_adder\HalfSubtractor.v
-!i122 23
-L0 2 11
 R4
+8E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/HalfSubtractor.v
+FE:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/HalfSubtractor.v
+!i122 85
+L0 2 11
+R5
 r1
 !s85 0
 31
-Z9 !s108 1667466640.000000
-!s107 C:\work\VLSI\Repo\floating_point_adder\HalfSubtractor.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\work\VLSI\Repo\floating_point_adder\HalfSubtractor.v|
+Z11 !s108 1667593085.000000
+!s107 E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/HalfSubtractor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/HalfSubtractor.v|
 !i113 1
-R6
 R7
+R8
 n@half@subtractor
 vMux1bit
-R0
+R10
 !i10b 1
 !s100 C_B:GiWImHVND`=bjAc1A0
 R1
-IRdFD=487VzZB;m1d@=FTA2
+IP;l^V[kBK0M6^^MOY=S_[2
 R2
 R3
-w1667491027
-8C:/work/VLSI/Repo/floating_point_adder/Mux1bit.v
-FC:/work/VLSI/Repo/floating_point_adder/Mux1bit.v
-!i122 25
-R8
 R4
+8E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Mux1bit.v
+FE:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Mux1bit.v
+!i122 86
+R9
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/work/VLSI/Repo/floating_point_adder/Mux1bit.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/work/VLSI/Repo/floating_point_adder/Mux1bit.v|
+R11
+!s107 E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Mux1bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Mux1bit.v|
 !i113 1
-R6
 R7
+R8
 n@mux1bit
 vSubtractionStage
-R0
+R10
 !i10b 1
 !s100 f[7a947j>zb]YMWY6FYjJ1
 R1
-I;1kSJO6JZVcZ8YSQ4:QPH0
+InZczNiT>ePn@c3Png_i]A2
 R2
 R3
-w1667491194
-8C:\work\VLSI\Repo\floating_point_adder\SubtractionStage.v
-FC:\work\VLSI\Repo\floating_point_adder\SubtractionStage.v
-!i122 26
-L0 2 18
 R4
+8E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/SubtractionStage.v
+FE:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/SubtractionStage.v
+!i122 87
+L0 2 18
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:\work\VLSI\Repo\floating_point_adder\SubtractionStage.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\work\VLSI\Repo\floating_point_adder\SubtractionStage.v|
+R11
+!s107 E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/SubtractionStage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/SubtractionStage.v|
 !i113 1
-R6
 R7
+R8
 n@subtraction@stage
 vSubtractor1bit
-Z10 !s110 1667466640
+R10
 !i10b 1
 !s100 II2mdjiQUK=T6lJeW62753
 R1
-Ie<LKI8heVg<S9m5ZgN@381
+InB^b@z>TM[z3U^[:F`:of3
 R2
 R3
-w1667489451
-8C:/work/VLSI/Repo/floating_point_adder/Subtractor1bit.v
-FC:/work/VLSI/Repo/floating_point_adder/Subtractor1bit.v
-!i122 21
-L0 2 24
 R4
+8E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Subtractor1bit.v
+FE:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Subtractor1bit.v
+!i122 88
+L0 2 24
+R5
 r1
 !s85 0
 31
-R9
-!s107 C:/work/VLSI/Repo/floating_point_adder/Subtractor1bit.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/work/VLSI/Repo/floating_point_adder/Subtractor1bit.v|
+R11
+!s107 E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Subtractor1bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Subtractor1bit.v|
 !i113 1
-R6
 R7
+R8
 n@subtractor1bit
 vSubtractor8Bit
 R10
 !i10b 1
 !s100 m1z`Dh8YjfJoOYB<VE@QK2
 R1
-Ii@i4_RKXUb<UGdMm?WZUQ0
+Ik9?9zHlENGOGKOSW;a7@P0
 R2
 R3
-w1667489684
-8C:/work/VLSI/Repo/floating_point_adder/Subtractor8bit.v
-FC:/work/VLSI/Repo/floating_point_adder/Subtractor8bit.v
-!i122 22
-L0 2 25
 R4
+8E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Subtractor8bit.v
+FE:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Subtractor8bit.v
+!i122 89
+L0 2 25
+R5
 r1
 !s85 0
 31
-R9
-!s107 C:/work/VLSI/Repo/floating_point_adder/Subtractor8bit.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/work/VLSI/Repo/floating_point_adder/Subtractor8bit.v|
+R11
+!s107 E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Subtractor8bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Subtractor8bit.v|
 !i113 1
-R6
 R7
+R8
 n@subtractor8@bit
+vtb
+R0
+!i10b 1
+!s100 WkNg<]IR>bmN::j]:mEAM3
+R1
+Ih2eSOh6e74WIG<zQnHaC41
+R2
+R3
+w1667592825
+8E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FloatingPointTB.v
+FE:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FloatingPointTB.v
+!i122 83
+L0 3 56
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FloatingPointTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/FloatingPointTB.v|
+!i113 1
+R7
+R8
