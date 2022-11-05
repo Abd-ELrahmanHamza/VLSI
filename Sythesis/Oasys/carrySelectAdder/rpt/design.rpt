@@ -3,16 +3,16 @@ Report Physical info:
                         |                |Area (squm)|Leakage (uW)
 ------------------------+----------------+-----------+------------
 Design Name             |carrySelectAdder|           |            
-  Total Instances       |              68|        238|       4.303
+  Total Instances       |              69|        239|       4.339
     Macros              |               0|          0|       0.000
     Pads                |               0|          0|       0.000
     Phys                |               0|          0|       0.000
     Blackboxes          |               0|          0|       0.000
-    Cells               |              68|        238|       4.303
+    Cells               |              69|        239|       4.339
       Buffers           |               0|          0|       0.000
       Inverters         |               3|          2|       0.043
       Clock-Gates       |               0|          0|       0.000
-      Combinational     |              65|        236|       4.260
+      Combinational     |              66|        238|       4.296
       Latches           |               0|          0|       0.000
       FlipFlops         |               0|          0|       0.000
        Single-Bit FF    |               0|          0|       0.000
@@ -23,14 +23,14 @@ Design Name             |carrySelectAdder|           |
          Clock-Gated    |               0|           |            
   Tristate Pin Count    |               0|           |            
 Physical Info           |Placed          |           |            
-  Chip Size (mm x mm)   |0.080 x 0.080   |       6383|            
+  Chip Size (mm x mm)   |0.080 x 0.080   |       6396|            
   Fixed Cell Area       |                |          0|            
     Phys Only           |               0|          0|            
-  Placeable Area        |                |        387|            
-  Movable Cell Area     |                |        238|            
+  Placeable Area        |                |        391|            
+  Movable Cell Area     |                |        239|            
   Utilization (%)       |              61|           |            
   Chip Utilization (%)  |              61|           |            
-  Total Wire Length (mm)|           4.125|           |            
-  Longest Wire (mm)     |           0.044|           |            
+  Total Wire Length (mm)|           4.121|           |            
+  Longest Wire (mm)     |           0.043|           |            
   Average Wire (mm)     |           0.042|           |            
 ------------------------+----------------+-----------+------------

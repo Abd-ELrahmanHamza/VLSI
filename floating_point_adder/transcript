@@ -1,40 +1,100 @@
-# Compile of Subtractor1bit.v failed with 5 errors.
-# Compile of Subtractor1bit.v was successful.
-# Compile of Subtractor1bit.v was successful.
-# Compile of Subtractor8bit.v failed with 7 errors.
-# 2 compiles, 1 failed with 7 errors.
-# Compile of Subtractor1bit.v was successful.
-# Compile of Subtractor8bit.v failed with 7 errors.
-# Compile of HalfSubtractor.v was successful.
-# 3 compiles, 1 failed with 7 errors.
-# Compile of Subtractor1bit.v was successful.
-# Compile of Subtractor8bit.v failed with 7 errors.
-# Compile of HalfSubtractor.v was successful.
-# 3 compiles, 1 failed with 7 errors.
-# Compile of Subtractor1bit.v was successful.
-# Compile of Subtractor8bit.v was successful.
-# Compile of HalfSubtractor.v was successful.
-# 3 compiles, 0 failed with no errors.
-# Compile of Subtractor1bit.v was successful.
-# Compile of Subtractor8bit.v was successful.
-# Compile of HalfSubtractor.v was successful.
+# Error opening C:/work/VLSI/Repo/floating_point_adder/FloatingPointAdder.v
+# Path name 'C:/work/VLSI/Repo/floating_point_adder/FloatingPointAdder.v' doesn't exist.
+# Error opening C:/work/VLSI/Repo/floating_point_adder/FloatingPointAdder.v
+# Path name 'C:/work/VLSI/Repo/floating_point_adder/FloatingPointAdder.v' doesn't exist.
+# Error opening C:/work/VLSI/Repo/floating_point_adder/FloatingPointAdder.v
+# Path name 'C:/work/VLSI/Repo/floating_point_adder/FloatingPointAdder.v' doesn't exist.
+# Error opening C:/work/VLSI/Repo/floating_point_adder/Complement2s8bit.v
+# Path name 'C:/work/VLSI/Repo/floating_point_adder/Complement2s8bit.v' doesn't exist.
+# Error opening C:/work/VLSI/Repo/floating_point_adder/FloatingPointAdder.v
+# Path name 'C:/work/VLSI/Repo/floating_point_adder/FloatingPointAdder.v' doesn't exist.
+# Error opening C:/work/VLSI/Repo/floating_point_adder/FloatingPointAdder.v
+# Path name 'C:/work/VLSI/Repo/floating_point_adder/FloatingPointAdder.v' doesn't exist.
+# Compile of floatPointTB.v was successful.
+# Compile of FloatingPointTB.v was successful.
+# 2 compiles, 8 failed with no errors.
 # Compile of Complement2s8bit.v was successful.
-# Compile of Mux1bit.v was successful.
-# Compile of SubtractionStage.v was successful.
-# 6 compiles, 0 failed with no errors.
-# Compile of Subtractor1bit.v was successful.
-# Compile of Subtractor8bit.v was successful.
-# Compile of HalfSubtractor.v was successful.
-# Compile of Complement2s8bit.v was successful.
-# Compile of Mux1bit.v was successful.
-# Compile of SubtractionStage.v was successful.
-# Compile of FullAdder.v failed with 1 errors.
-# 7 compiles, 1 failed with 1 error.
-# Compile of Subtractor1bit.v was successful.
-# Compile of Subtractor8bit.v was successful.
-# Compile of HalfSubtractor.v was successful.
-# Compile of Complement2s8bit.v was successful.
-# Compile of Mux1bit.v was successful.
-# Compile of SubtractionStage.v was successful.
+# Compile of FloatingPointAdder.v was successful.
+# Compile of floatPointTB.v was successful.
+# Compile of FloatingPointTB.v was successful.
 # Compile of FullAdder.v was successful.
-# 7 compiles, 0 failed with no errors.
+# Compile of HalfSubtractor.v was successful.
+# Compile of Mux1bit.v was successful.
+# Compile of SubtractionStage.v was successful.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor8bit.v was successful.
+# 10 compiles, 8 failed with no errors.
+# Compile of Complement2s8bit.v was successful.
+# Compile of FloatingPointAdder.v was successful.
+# Compile of floatPointTB.v was successful.
+# Compile of FloatingPointTB.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of HalfSubtractor.v was successful.
+# Compile of Mux1bit.v was successful.
+# Compile of SubtractionStage.v was successful.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor8bit.v was successful.
+# 10 compiles, 8 failed with no errors.
+# Compile of Complement2s8bit.v was successful.
+# Compile of FloatingPointAdder.v was successful.
+# Compile of floatPointTB.v was successful.
+# Compile of FloatingPointTB.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of HalfSubtractor.v was successful.
+# Compile of Mux1bit.v was successful.
+# Compile of SubtractionStage.v was successful.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor8bit.v was successful.
+# 10 compiles, 3 failed with no errors.
+# Compile of Complement2s8bit.v was successful.
+# Compile of FloatingPointAdder.v was successful.
+# Compile of floatPointTB.v was successful.
+# Compile of FloatingPointTB.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of HalfSubtractor.v was successful.
+# Compile of Mux1bit.v was successful.
+# Compile of SubtractionStage.v was successful.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor8bit.v was successful.
+# 10 compiles, 3 failed with no errors.
+# Error opening C:/work/VLSI/Repo/floating_point_adder/Subtractor1bit.v
+# Path name 'C:/work/VLSI/Repo/floating_point_adder/Subtractor1bit.v' doesn't exist.
+# Compile of Complement2s8bit.v was successful.
+# Compile of FloatingPointAdder.v was successful.
+# Compile of floatPointTB.v was successful.
+# Compile of FloatingPointTB.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of HalfSubtractor.v was successful.
+# Compile of Mux1bit.v was successful.
+# Compile of SubtractionStage.v was successful.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor8bit.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of Complement2s8bit.v was successful.
+# Compile of FloatingPointAdder.v was successful.
+# Compile of floatPointTB.v was successful.
+# Compile of FloatingPointTB.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of HalfSubtractor.v was successful.
+# Compile of Mux1bit.v was successful.
+# Compile of SubtractionStage.v was successful.
+# Compile of Subtractor1bit.v was successful.
+# Compile of Subtractor8bit.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 22:18:17 on Nov 04,2022
+# Loading work.tb
+# Loading work.FloatingPointAdder
+# Loading work.SubtractionStage
+# Loading work.Subtractor8Bit
+# Loading work.HalfSubtractor
+# Loading work.Subtractor1bit
+# Loading work.Complement2s8bit
+# ** Error: (vsim-3033) Instantiation of 'HalfAdder' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/subtract/C File: E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/Complement2s8bit.v Line: 21
+#         Searched libraries:
+#             E:/CMP/5th Semester/VLSI/VLSI/floating_point_adder/work
+# Error loading design
+# End time: 22:18:18 on Nov 04,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 20
