@@ -1,0 +1,89 @@
+Report Instance Areas: 
+-----+--------------------+----------------+-----+---------
+     |Instance            |Module          |Cells|Cell Area
+-----+--------------------+----------------+-----+---------
+1    |top                 |                |  308|      528
+2    |  subtract          |SubtractionStage|   64|       63
+3    |  m1                |Mux23__0_10     |   23|       43
+4    |  RF1               |RightShifter    |  117|      147
+5    |  m2                |Mux23           |   23|       43
+6    |  CSA               |carrySelectAdder|   41|      153
+7    |    rca16_0         |RCA16           |    8|       34
+8    |      genblk1_7_FA1 |FullAdder__0_47 |    1|        4
+9    |        i_0         |datapath__0_46  |    1|        4
+10   |      genblk1_6_FA1 |FullAdder__0_45 |    1|        4
+11   |        i_0         |datapath__0_44  |    1|        4
+12   |      genblk1_5_FA1 |FullAdder__0_43 |    1|        4
+13   |        i_0         |datapath__0_42  |    1|        4
+14   |      genblk1_4_FA1 |FullAdder__0_41 |    1|        4
+15   |        i_0         |datapath__0_40  |    1|        4
+16   |      genblk1_3_FA1 |FullAdder__0_39 |    1|        4
+17   |        i_0         |datapath__0_38  |    1|        4
+18   |      genblk1_2_FA1 |FullAdder__0_37 |    1|        4
+19   |        i_0         |datapath__0_36  |    1|        4
+20   |      genblk1_1_FA1 |FullAdder__0_35 |    1|        4
+21   |        i_0         |datapath__0_34  |    1|        4
+22   |      genblk1_0_FA1 |FullAdder__0_33 |    1|        4
+23   |        i_0         |datapath__0_32  |    1|        4
+24   |    rca16_1         |RCA16__0_127    |    8|       34
+25   |      genblk1_7_FA1 |FullAdder__0_112|    1|        4
+26   |        i_0         |datapath__0_111 |    1|        4
+27   |      genblk1_6_FA1 |FullAdder__0_114|    1|        4
+28   |        i_0         |datapath__0_113 |    1|        4
+29   |      genblk1_5_FA1 |FullAdder__0_116|    1|        4
+30   |        i_0         |datapath__0_115 |    1|        4
+31   |      genblk1_4_FA1 |FullAdder__0_118|    1|        4
+32   |        i_0         |datapath__0_117 |    1|        4
+33   |      genblk1_3_FA1 |FullAdder__0_120|    1|        4
+34   |        i_0         |datapath__0_119 |    1|        4
+35   |      genblk1_2_FA1 |FullAdder__0_122|    1|        4
+36   |        i_0         |datapath__0_121 |    1|        4
+37   |      genblk1_1_FA1 |FullAdder__0_124|    1|        4
+38   |        i_0         |datapath__0_123 |    1|        4
+39   |      genblk1_0_FA1 |FullAdder__0_126|    1|        4
+40   |        i_0         |datapath__0_125 |    1|        4
+41   |    rca16           |RCA16__0_94     |   16|       68
+42   |      genblk1_14_FA1|FullAdder__0_65 |    1|        4
+43   |        i_0         |datapath__0_64  |    1|        4
+44   |      genblk1_13_FA1|FullAdder__0_67 |    1|        4
+45   |        i_0         |datapath__0_66  |    1|        4
+46   |      genblk1_12_FA1|FullAdder__0_69 |    1|        4
+47   |        i_0         |datapath__0_68  |    1|        4
+48   |      genblk1_11_FA1|FullAdder__0_71 |    1|        4
+49   |        i_0         |datapath__0_70  |    1|        4
+50   |      genblk1_10_FA1|FullAdder__0_73 |    1|        4
+51   |        i_0         |datapath__0_72  |    1|        4
+52   |      genblk1_9_FA1 |FullAdder__0_75 |    1|        4
+53   |        i_0         |datapath__0_74  |    1|        4
+54   |      genblk1_8_FA1 |FullAdder__0_77 |    1|        4
+55   |        i_0         |datapath__0_76  |    1|        4
+56   |      genblk1_7_FA1 |FullAdder__0_79 |    1|        4
+57   |        i_0         |datapath__0_78  |    1|        4
+58   |      genblk1_6_FA1 |FullAdder__0_81 |    1|        4
+59   |        i_0         |datapath__0_80  |    1|        4
+60   |      genblk1_5_FA1 |FullAdder__0_83 |    1|        4
+61   |        i_0         |datapath__0_82  |    1|        4
+62   |      genblk1_4_FA1 |FullAdder__0_85 |    1|        4
+63   |        i_0         |datapath__0_84  |    1|        4
+64   |      genblk1_3_FA1 |FullAdder__0_87 |    1|        4
+65   |        i_0         |datapath__0_86  |    1|        4
+66   |      genblk1_2_FA1 |FullAdder__0_89 |    1|        4
+67   |        i_0         |datapath__0_88  |    1|        4
+68   |      genblk1_1_FA1 |FullAdder__0_91 |    1|        4
+69   |        i_0         |datapath__0_90  |    1|        4
+70   |      genblk1_0_FA1 |FullAdder__0_93 |    1|        4
+71   |        i_0         |datapath__0_92  |    1|        4
+72   |      genblk1_15_FA1|FullAdder__0_63 |    1|        4
+73   |        i_0         |datapath__0_62  |    1|        4
+74   |    genblk1_8_mux   |Mux2x1__0_19    |    1|        2
+75   |    genblk1_7_mux   |Mux2x1__0_17    |    1|        2
+76   |    genblk1_6_mux   |Mux2x1__0_15    |    1|        2
+77   |    genblk1_5_mux   |Mux2x1__0_13    |    1|        2
+78   |    genblk1_4_mux   |Mux2x1__0_11    |    1|        2
+79   |    genblk1_3_mux   |Mux2x1__0_9     |    1|        2
+80   |    genblk1_2_mux   |Mux2x1__0_7     |    1|        2
+81   |    genblk1_1_mux   |Mux2x1__0_5     |    1|        2
+82   |    genblk1_0_mux   |Mux2x1__0_3     |    1|        2
+83   |  m8                |Mux8            |    8|       15
+84   |  finalout          |FinalOutput     |   31|       63
+-----+--------------------+----------------+-----+---------

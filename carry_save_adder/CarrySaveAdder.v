@@ -1,6 +1,6 @@
 `include "../ripple_carry_adder/FullAdder.v"
 `include "../ripple_carry_adder_overflow/RippelCarryAdder.v"
-`include "../CarrySelectAdder/overflow.v"
+`include "overflow.v"
 
 module CarrySaveAdder
         (    x,y,z,
@@ -11,7 +11,7 @@ input [31:0] x,y,z;
 output [31:0] s;
 output cout,of;
 wire [31:0] c,r,r1,s1;
-wire c1;
+wire c1,of2;
 
 Fulladder f0(.in1(x[0]),.in2(y[0]),.c_in(z[0]),.c_out(c[0]),.sum(r[0]));
 Fulladder f1(.in1(x[1]),.in2(y[1]),.c_in(z[1]),.c_out(c[1]),.sum(r[1]));
@@ -46,6 +46,7 @@ Fulladder f29(.in1(x[29]),.in2(y[29]),.c_in(z[29]),.c_out(c[29]),.sum(r[29]));
 Fulladder f30(.in1(x[30]),.in2(y[30]),.c_in(z[30]),.c_out(c[30]),.sum(r[30]));
 Fulladder f31(.in1(x[31]),.in2(y[31]),.c_in(z[31]),.c_out(c[31]),.sum(r[31]));
 
+
 assign r1={1'b0,r[31:1]};
 
 
@@ -55,11 +56,11 @@ assign r1={1'b0,r[31:1]};
      .c_in(0),
     .c_out(c1),
     .sum(s1),
-	.of(of)
+	.of(of2)
     );
 assign cout=s1[31];
 assign s={s1[30:0],r[0]};
-
+overflow overFlow(.A(x[31]),.B(y[31]),.sign(s[31]),.of(of));
 
 
 endmodule

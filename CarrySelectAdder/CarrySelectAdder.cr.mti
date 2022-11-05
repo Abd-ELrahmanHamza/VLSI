@@ -12,6 +12,17 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	overflow
 
+} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FullAdder
+-- Compiling module RCA16
+-- Compiling module Mux2x1
+-- Compiling module overflow
+-- Compiling module carrySelectAdder
+
+Top level modules:
+	carrySelectAdder
+
 } {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow_TB.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow_TB.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module overflow_TB
@@ -28,16 +39,17 @@ Top level modules:
 
 } {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/RCA16.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/RCA16.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FullAdder
 -- Compiling module RCA16
 
 Top level modules:
 	RCA16
 
-} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder.v
+} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module carrySelectAdder
+-- Compiling module carrySelectAdder_TB
 
 Top level modules:
-	carrySelectAdder
+	carrySelectAdder_TB
 
 } {} {}}

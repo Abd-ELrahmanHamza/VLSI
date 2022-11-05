@@ -1,0 +1,59 @@
+Report for group default
+Report for group I2R
+Report for group I2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: cin
+    (Clocked by vsysclk R)
+Endpoint: of
+    (Clocked by vsysclk R)
+Path Group: I2O
+Data required time: 19500.0
+    (Clock shift: 20000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 2100.6
+Slack: 17399.4
+Logic depth: 19
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+cin                      {set_input_delay}        r   1000.0   1000.0   1000.0                        2.2      6.0      1    80,   40                       
+rca16/genblk1_0_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1049.0     48.8     48.8      0.0      0.0      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_1_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1103.9     55.1     54.9      0.2     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_2_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1158.8     54.9     54.9      0.0     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_3_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1213.7     54.9     54.9      0.0     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_4_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1268.6     54.9     54.9      0.0     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_5_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1323.5     54.9     54.9      0.0     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_6_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1378.4     54.9     54.9      0.0     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_7_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1433.3     54.9     54.9      0.0     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_8_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1488.2     54.9     54.9      0.0     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_9_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1543.1     54.9     54.9      0.0     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_10_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1598.0     54.9     54.9      0.0     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_11_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1652.9     54.9     54.9      0.0     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_12_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1707.8     54.9     54.9      0.0     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_13_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1762.7     54.9     54.9      0.0     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_14_FA1/i_0/i_0/A->CO
+                         FA_X1                   rr   1817.6     54.9     54.9      0.0     15.7      0.4      4.1      1    40,   40  /PD_TOP        (1.10)
+rca16/genblk1_15_FA1/i_0/i_0/A->CO
+                         FA_X1*                  rr   1938.9    121.3    121.3      0.0     15.7      5.4     44.1     17    40,   40  /PD_TOP        (1.10)
+genblk1_15_mux/i_0_0/S->Z
+                         MUX2_X2*                rf   2045.0    106.1    105.9      0.2     15.3      0.7     40.1      3    40,   40  /PD_TOP        (1.10)
+OverFlow/i_0_2/A->ZN     INV_X8                  fr   2056.5     11.5     11.5      0.0     15.3      0.3      2.0      1    40,   40  /PD_TOP        (1.10)
+OverFlow/i_0_3/B1->ZN    OAI33_X1                rf   2100.4     43.9     43.9      0.0      4.7      2.4     12.4      1    40,   40  /PD_TOP        (1.10)
+of                                                f   2100.6      0.2               0.2     33.9                             80,   43                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group R2O

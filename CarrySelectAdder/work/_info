@@ -10,31 +10,31 @@ z2
 cModel Technology
 dD:/Engineering/Third_Year/CMP_2023/First_Term/Arch/Assignment1
 vcarrySelectAdder
-Z0 !s110 1667050784
+Z0 !s110 1667651024
 !i10b 1
-!s100 bOlEon4PYgX>VgLeUBk;00
+!s100 1KXB5>A>BS8[DSKW9Zgk81
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ISlK:ObRLkTAVdW8RFlY6F0
+IIU@[k1XKk1J_kP3TK5QMd3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder
-w1666996432
+Z3 dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/VLSI/CarrySelectAdder
+w1667650989
 8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder.v
 FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder.v
-!i122 31
-L0 2 42
+!i122 61
+L0 6 43
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1667050784.000000
-!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder.v|
+!s108 1667651023.000000
+!s107 overflow.v|Mux2x1.v|FullAdder.v|RCA16.v|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder.v|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z5 o-work work
+Z6 tCvgOpt 0
 ncarry@select@adder
 vcarrySelectAdder_TB
-!s110 1667051006
+R0
 !i10b 1
 !s100 zoYmen]ccUo]9_[:5d6G`3
 R1
@@ -44,42 +44,42 @@ R3
 w1667051001
 8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v
 FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v
-!i122 39
+!i122 62
 L0 1 93
 R4
 r1
 !s85 0
 31
-!s108 1667051006.000000
+Z7 !s108 1667651024.000000
 !s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/carrySelectAdder_TB.v|
 !i113 1
+R5
 R6
-R7
 ncarry@select@adder_@t@b
 vFullAdder
-R0
+Z8 !s110 1667651025
 !i10b 1
 !s100 9U;eH==gV`d9az?6=g@L>0
 R1
-IUL5oQ04R[O@??fYiCCePe3
+IYa?F6f49B=>[?3`nCVHm43
 R2
 R3
 w1666978751
-8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/FullAdder.v
-FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/FullAdder.v
-!i122 33
-Z8 L0 1 7
+8FullAdder.v
+FFullAdder.v
+!i122 65
+Z9 L0 1 7
 R4
 r1
 !s85 0
 31
-R5
-!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/FullAdder.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/FullAdder.v|
-!i113 1
-R6
 R7
+Z10 !s107 FullAdder.v|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/RCA16.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/RCA16.v|
+!i113 1
+R5
+R6
 n@full@adder
 vMux2x1
 R0
@@ -92,21 +92,21 @@ R3
 w1666993946
 8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/Mux2x1.v
 FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/Mux2x1.v
-!i122 34
-R8
+!i122 64
+R9
 R4
 r1
 !s85 0
 31
-R5
+R7
 !s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/Mux2x1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/Mux2x1.v|
 !i113 1
+R5
 R6
-R7
 n@mux2x1
 voverflow
-R0
+R8
 !i10b 1
 !s100 K9ZG;fhRVRmT6J9cliJkH1
 R1
@@ -116,20 +116,20 @@ R3
 w1667047933
 8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow.v
 FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow.v
-!i122 36
+!i122 66
 L0 1 8
 R4
 r1
 !s85 0
 31
-R5
+Z12 !s108 1667651025.000000
 !s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow.v|
 !i113 1
+R5
 R6
-R7
 voverflow_TB
-!s110 1667050785
+R8
 !i10b 1
 !s100 JVI;VilhlOIdMk8`=64Ii2
 R1
@@ -139,42 +139,42 @@ R3
 w1667048232
 8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow_TB.v
 FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow_TB.v
-!i122 37
+!i122 67
 L0 1 61
 R4
 r1
 !s85 0
 31
-!s108 1667050785.000000
+R12
 !s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow_TB.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/overflow_TB.v|
 !i113 1
+R5
 R6
-R7
 noverflow_@t@b
 vRCA16
-R0
+R8
 !i10b 1
 !s100 bB]]fjCBXT1NG1lh;0Zdb1
 R1
 IYh?3CcS;EZDI_?V35fa[O3
 R2
 R3
-w1666994941
+w1667649325
 8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/RCA16.v
 FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/RCA16.v
-!i122 35
+!i122 65
 L0 2 19
 R4
 r1
 !s85 0
 31
-R5
-!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/RCA16.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/RCA16.v|
-!i113 1
-R6
 R7
+R10
+R11
+!i113 1
+R5
+R6
 n@r@c@a16
 vRCA4
 !s110 1666994594
@@ -183,7 +183,7 @@ vRCA4
 R1
 IcDGk?0JWL566<V:z@cRSH2
 R2
-R3
+dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder
 w1666994590
 8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/RCA4.v
 FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/RCA4.v
@@ -197,6 +197,6 @@ r1
 !s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/RCA4.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/CarrySelectAdder/RCA4.v|
 !i113 1
+R5
 R6
-R7
 n@r@c@a4
