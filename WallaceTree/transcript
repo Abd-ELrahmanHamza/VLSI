@@ -1,0 +1,654 @@
+vsim -gui work.mulTreeTB
+# vsim -gui work.mulTreeTB 
+# Start time: 21:18:53 on Dec 15,2022
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+# ** Error: (vsim-3906) Connection type 'wire[63:0]$[31:0]' is incompatible with 'reg[63:0]$[63:0]' for  port (pp):  Array ranges [63:0] & [31:0] have different lengths.
+#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/multiplier/Products File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTree.v Line: 18
+# Error loading design
+# End time: 21:18:54 on Dec 15,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.mulTreeTB
+# vsim -gui work.mulTreeTB 
+# Start time: 21:19:44 on Dec 15,2022
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+add wave -position insertpoint sim:/mulTreeTB/*
+add wave -position insertpoint sim:/mulTreeTB/multiplier/*
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : fail Output mul            -2147483649 Expected mul                     4 
+# TestCase#           5 : fail Output mul   -4611686018427387904 Expected mul   4611686016279904256 
+# TestCase#           6 : fail Output mul    2305843009213693951 Expected mul   9223372036854775807 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(100)
+#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 100
+quit -sim
+# End time: 21:20:08 on Dec 15,2022, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 2
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v failed with 4 errors.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 1 failed with 4 errors.
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.mulTreeTB
+# vsim -gui work.mulTreeTB 
+# Start time: 21:21:50 on Dec 15,2022
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : fail Output mul             4294967295 Expected mul                    -1 
+# TestCase#           3 : fail Output mul             8589934588 Expected mul                    -4 
+# TestCase#           4 : fail Output mul   -9223372034707292161 Expected mul                     4 
+# TestCase#           5 : fail Output mul    4611686018427387904 Expected mul   4611686016279904256 
+# TestCase#           6 : fail Output mul    2305843009213693951 Expected mul   9223372036854775807 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(100)
+#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 100
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+add wave -position insertpoint sim:/mulTreeTB/*
+add wave -position insertpoint sim:/mulTreeTB/multiplier/*
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : fail Output mul             4294967295 Expected mul                    -1 
+# TestCase#           3 : fail Output mul             8589934588 Expected mul                    -4 
+# TestCase#           4 : fail Output mul   -9223372034707292161 Expected mul                     4 
+# TestCase#           5 : fail Output mul    4611686018427387904 Expected mul   4611686016279904256 
+# TestCase#           6 : fail Output mul    2305843009213693951 Expected mul   9223372036854775807 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(100)
+#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 100
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : fail Output mul             4294967295 Expected mul                    -1 
+# TestCase#           3 : fail Output mul             8589934588 Expected mul                    -4 
+# TestCase#           4 : fail Output mul   -9223372034707292161 Expected mul                     4 
+# TestCase#           5 : fail Output mul    4611686018427387904 Expected mul   4611686016279904256 
+# TestCase#           6 : fail Output mul    2305843009213693951 Expected mul   4611686014132420609 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
+#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : fail Output mul             4294967295 Expected mul                    -1 
+# TestCase#           3 : fail Output mul             8589934588 Expected mul                    -4 
+# TestCase#           4 : fail Output mul            -8589934591 Expected mul                     4 
+# TestCase#           5 : fail Output mul    4611686018427387904 Expected mul   4611686016279904256 
+# TestCase#           6 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
+#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : fail Output mul            -4294967295 Expected mul                     4 
+# TestCase#           5 : fail Output mul   -4611686018427387904 Expected mul   4611686016279904256 
+# TestCase#           6 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
+#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : fail Output mul            -2147483647 Expected mul                     4 
+# TestCase#           5 : fail Output mul                      0 Expected mul   4611686016279904256 
+# TestCase#           6 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
+#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : fail Output mul            -2147483647 Expected mul                     4 
+# TestCase#           5 : fail Output mul                      0 Expected mul   4611686016279904256 
+# TestCase#           6 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
+#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
+# Compile of mulTree.v failed with 1 errors.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : fail Output mul                      1 Expected mul                     4 
+# TestCase#           5 : fail Output mul             2147483648 Expected mul   4611686016279904256 
+# TestCase#           6 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
+#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : fail Output mul                      1 Expected mul                     4 
+# TestCase#           5 : fail Output mul             2147483648 Expected mul   4611686016279904256 
+# TestCase#           6 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
+#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : fail Output mul                      1 Expected mul                     4 
+# TestCase#           5 : fail Output mul    4611686018427387904 Expected mul   4611686016279904256 
+# TestCase#           6 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
+#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
+# A time value could not be extracted from the current line
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : success
+# TestCase#           5 : success
+# TestCase#           6 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
+#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : success
+# TestCase#           5 : success
+# TestCase#           6 : success
+# TestCase#           7 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(107)
+#    Time: 80 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 107
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+# ** Error (suppressible): (vsim-3389) Port 'of' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/multiplier File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v Line: 16
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+# Break key hit
+quit sim
+# unknown switch: sim
+quit -sim
+# End time: 22:56:44 on Dec 15,2022, Elapsed time: 1:34:54
+# Errors: 1, Warnings: 3
+quit -sim
+vsim -gui work.mulTreeTB
+# vsim -gui work.mulTreeTB 
+# Start time: 22:57:13 on Dec 15,2022
+# Loading work.mulTreeTB
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+# Warning in wave window restart: ** UI-Msg: (vish-4014) No objects found matching '/mulTreeTB/of'. 
+# Warning in wave window restart: ** UI-Msg: (vish-4014) No objects found matching '/mulTreeTB/multiplier/of'. 
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : success
+# TestCase#           5 : success
+# TestCase#           6 : success
+# TestCase#           7 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(106)
+#    Time: 80 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 106
+quit -sim
+# End time: 22:57:33 on Dec 15,2022, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 2
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v failed with 5 errors.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 1 failed with 5 errors.
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.mulTreeTB
+# vsim -gui work.mulTreeTB 
+# Start time: 23:10:57 on Dec 15,2022
+# Loading work.mulTreeTB
+# Loading work.integrationMult
+# Loading work.registerNbits
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+add wave -position insertpoint sim:/mulTreeTB/*
+run -all
+# TestCase#           0 : fail Output mul                      X Expected mul            2147483647 
+# TestCase#           1 : fail Output mul                      X Expected mul                131070 
+# TestCase#           2 : fail Output mul                      X Expected mul                    -1 
+# TestCase#           3 : fail Output mul                      X Expected mul                    -4 
+# TestCase#           4 : fail Output mul                      X Expected mul                     4 
+# TestCase#           5 : fail Output mul                      X Expected mul   4611686018427387904 
+# TestCase#           6 : fail Output mul                      X Expected mul   4611686014132420609 
+# TestCase#           7 : fail Output mul                      X Expected mul                    -3 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(115)
+#    Time: 18 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 115
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.integrationMult
+# Loading work.registerNbits
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'result'.
+#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/mul File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v Line: 15
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'out'.
+#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/multiplier File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v Line: 16
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+quit -sim
+# End time: 23:13:08 on Dec 15,2022, Elapsed time: 0:02:11
+# Errors: 2, Warnings: 2
+quit -sim
+vsim -gui work.mulTreeTB
+# vsim -gui work.mulTreeTB 
+# Start time: 23:13:18 on Dec 15,2022
+# Loading work.mulTreeTB
+# Loading work.integrationMult
+# Loading work.registerNbits
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# TestCase#           0 : fail Output mul                      X Expected mul            2147483647 
+# TestCase#           1 : fail Output mul                      X Expected mul                131070 
+# TestCase#           2 : fail Output mul                      X Expected mul                    -1 
+# TestCase#           3 : fail Output mul                      X Expected mul                    -4 
+# TestCase#           4 : fail Output mul                      X Expected mul                     4 
+# TestCase#           5 : fail Output mul                      X Expected mul   4611686018427387904 
+# TestCase#           6 : fail Output mul                      X Expected mul   4611686014132420609 
+# TestCase#           7 : fail Output mul                      X Expected mul                    -3 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(115)
+#    Time: 18 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 115
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.integrationMult
+# Loading work.registerNbits
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# TestCase#           0 : fail Output mul                      0 Expected mul            2147483647 
+# TestCase#           1 : fail Output mul             2147483647 Expected mul                131070 
+# TestCase#           2 : fail Output mul                 131070 Expected mul                    -1 
+# TestCase#           3 : fail Output mul                     -1 Expected mul                    -4 
+# TestCase#           4 : fail Output mul                     -4 Expected mul                     4 
+# TestCase#           5 : fail Output mul                      4 Expected mul   4611686018427387904 
+# TestCase#           6 : fail Output mul    4611686018427387904 Expected mul   4611686014132420609 
+# TestCase#           7 : fail Output mul    4611686014132420609 Expected mul                    -3 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(115)
+#    Time: 18 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 115
+# Compile of mulTree.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of CSA.v was successful.
+# Compile of products.v was successful.
+# Compile of FA.v was successful.
+# Compile of ripple.v was successful.
+# Compile of multiply.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mulTreeTB
+# Loading work.integrationMult
+# Loading work.registerNbits
+# Loading work.mulTree
+# Loading work.products
+# Loading work.CSA
+# Loading work.RCA64
+# Loading work.FA
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : success
+# TestCase#           5 : success
+# TestCase#           6 : success
+# TestCase#           7 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(117)
+#    Time: 34 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 117
+quit -sim
+# End time: 23:17:45 on Dec 15,2022, Elapsed time: 0:04:27
+# Errors: 0, Warnings: 1

@@ -1,0 +1,225 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Engineering/Third_Year/CMP_2023/First_Term/Arch/project/Phase3/PipelineProcessor
+vCSA
+Z0 !s110 1671139042
+!i10b 1
+!s100 2>D7bjLkb2SZUA1?7D6L:0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+InSk9in3Pe>8?QK1FLc2GQ0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree
+w1671134256
+8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/CSA.v
+FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/CSA.v
+!i122 609
+L0 21 12
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1671139042.000000
+!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/CSA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/CSA.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@c@s@a
+vFA
+R0
+!i10b 1
+!s100 7`6Ah7Yhim[iJ77c:6V[H2
+R1
+IK>nGTLYXi5lYn^INAf[D>1
+R2
+R3
+w1671101499
+8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/FA.v
+FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/FA.v
+!i122 611
+L0 1 10
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/FA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/FA.v|
+!i113 1
+R6
+R7
+n@f@a
+vintegrationMult
+Z8 !s110 1671139043
+!i10b 1
+!s100 LL5;j^G>MZiTSioZGG5[I0
+R1
+IPSBjA0gi>cBiRX1iBc2`41
+R2
+R3
+Z9 w1671108850
+Z10 8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/multiply.v
+Z11 FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/multiply.v
+!i122 613
+L0 17 19
+R4
+r1
+!s85 0
+31
+Z12 !s108 1671139043.000000
+!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/multiply.v|
+Z13 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/multiply.v|
+!i113 1
+R6
+R7
+nintegration@mult
+vmulTree
+!s110 1671139041
+!i10b 1
+!s100 kWKJ5FEc1BjcAFROb`?;80
+R1
+I?KR]09n4Y?<A2hTEO>C<i3
+R2
+R3
+w1671137652
+Z14 8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTree.v
+Z15 FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTree.v
+!i122 607
+L0 1 58
+R4
+r1
+!s85 0
+31
+!s108 1671139041.000000
+Z16 !s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTree.v|
+Z17 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTree.v|
+!i113 1
+R6
+R7
+nmul@tree
+vmulTreeTB
+R0
+!i10b 1
+!s100 @Q2^Qz0h`Kgbh@658U9=b3
+R1
+IoHk_Xg0H9nBE@R4_feY5Q2
+R2
+R3
+w1671138948
+8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v
+FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v
+!i122 608
+L0 2 121
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v|
+!i113 1
+R6
+R7
+nmul@tree@t@b
+vproducts
+R0
+!i10b 1
+!s100 UXNkhLX@LchoR^cDd8WXF2
+R1
+Io5;UdmfT0Weg0z:WflkiS0
+R2
+R3
+w1671136303
+8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/products.v
+FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/products.v
+!i122 610
+L0 1 35
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/products.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/products.v|
+!i113 1
+R6
+R7
+vRCA64
+R8
+!i10b 1
+!s100 ISES<bT1o=1Z5adifPHH32
+R1
+I0222QKQBY>UIJzk4^dc`m1
+R2
+R3
+w1671137636
+8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/ripple.v
+FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/ripple.v
+!i122 612
+L0 1 15
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/ripple.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/ripple.v|
+!i113 1
+R6
+R7
+n@r@c@a64
+vregisterNbits
+R8
+!i10b 1
+!s100 U2TlQJJ_zUBMbHVkAEMU>1
+R1
+I3XSghFCKYeb]UJFoGl_E=0
+R2
+R3
+R9
+R10
+R11
+!i122 613
+L0 2 13
+R4
+r1
+!s85 0
+31
+R12
+Z18 !s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/multiply.v|
+R13
+!i113 1
+R6
+R7
+nregister@nbits
+vwallace
+!s110 1671104539
+!i10b 1
+!s100 Azg3gi>XZJ7:oPC:kbS]P3
+R1
+IEf[XA9_O:dW84Gg_[P;j;2
+R2
+R3
+w1671104527
+R14
+R15
+!i122 7
+L0 1 65
+R4
+r1
+!s85 0
+31
+!s108 1671104539.000000
+R16
+R17
+!i113 1
+R6
+R7
