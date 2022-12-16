@@ -1,0 +1,19 @@
+{D:/Material/3rd CMP/First term/VLSI/Project/Mini project 2/booth_multiplier.v} {1 {vlog -work work -stats=none {D:/Material/3rd CMP/First term/VLSI/Project/Mini project 2/booth_multiplier.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module booth_multiplier
+
+Top level modules:
+	booth_multiplier
+
+} {} {}} {D:/Material/3rd CMP/First term/VLSI/Project/Mini project 2/booth_multiplier_tb.v} {2 {vlog -work work -stats=none {D:/Material/3rd CMP/First term/VLSI/Project/Mini project 2/booth_multiplier_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module booth_multiplier_tb
+** Warning: D:/Material/3rd CMP/First term/VLSI/Project/Mini project 2/booth_multiplier_tb.v(119): (vlog-2283) Extra semicolon in $unit (global) scope.
+** Warning: D:/Material/3rd CMP/First term/VLSI/Project/Mini project 2/booth_multiplier_tb.v(120): (vlog-2284) Empty $unit scope found.
+** Warning: D:/Material/3rd CMP/First term/VLSI/Project/Mini project 2/booth_multiplier_tb.v(119): (vlog-13233) Design unit "booth_multiplier_tb_v_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
+-- Compiling package booth_multiplier_tb_v_unit
+
+Top level modules:
+	booth_multiplier_tb
+
+} {} {}}

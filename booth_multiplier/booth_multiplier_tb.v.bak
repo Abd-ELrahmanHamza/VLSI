@@ -1,0 +1,69 @@
+module booth_multiplier_tb;
+reg [31:0]in1,in2;
+wire [31:0]out;
+booth_multiplier mult(in1,in2,out);
+
+initial begin
+	// Test positive and positive numbers
+	in1 = 2;
+	in2 = 5;
+	#100;
+	if(out == in1 * in2)begin
+		$display("[PASSED] positive and positive numbers");
+	end else  begin
+		$display("[Falied] positive and positive numbers out = ",out);
+	end
+
+	// Test positive and negaitive numbers
+	in1 = 2;
+	in2 = -5;
+	#100;
+	if(out == in1 * in2)begin
+		$display("[PASSED] positive and negaitive numbers");
+	end else  begin
+		$display("[Falied] positive and negaitive numbers out = ",out);
+	end
+
+	
+	// Test negaitive and negaitive numbers
+	in1 = -132;
+	in2 = -5;
+	#100;
+	if(out == in1 * in2)begin
+		$display("[PASSED] negaitive and negaitive numbers");
+	end else  begin
+		$display("[Falied] negaitive and negaitive numbers out = ",out);
+	end
+
+	// Test negaitive and positive numbers
+	in1 = -132;
+	in2 = 5;
+	#100;
+	if(out == in1 * in2)begin
+		$display("[PASSED] negaitive and positive numbers");
+	end else  begin
+		$display("[Falied] negaitive and positive numbers out = ",out);
+	end
+
+	// Test multiply by zero
+	in1 = 5;
+	in2 = 0;
+	#100;
+	if(out == in1 * in2)begin
+		$display("[PASSED] multiply by zero");
+	end else  begin
+		$display("[Falied] multiply by zero out = ",out);
+	end
+
+	// Test multiply by one
+	in1 = 5;
+	in2 = 1;
+	#100;
+	if(out == in1 * in2)begin
+		$display("[PASSED] multiply by one");
+	end else  begin
+		$display("[Falied] multiply by one out = ",out);
+	end
+	$finish;
+end
+endmodule;

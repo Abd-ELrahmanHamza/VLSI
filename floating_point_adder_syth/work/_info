@@ -10,7 +10,7 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 vAND2_X1
-Z0 !s110 1667660087
+Z0 !s110 1667745530
 !i10b 1
 !s100 DBG5e?gZ>=oCE^1kP`H0C1
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,13 +20,13 @@ Z3 dD:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth
 Z4 w1667602369
 Z5 8D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/NangateOpenCellLibrary.v
 Z6 FD:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/NangateOpenCellLibrary.v
-!i122 23
+!i122 113
 L0 43 13
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1667660087.000000
+Z8 !s108 1667745530.000000
 Z9 !s107 D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/NangateOpenCellLibrary.v|
 Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/NangateOpenCellLibrary.v|
 !i113 1
@@ -44,7 +44,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 57 13
 R7
 r1
@@ -68,7 +68,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 71 13
 R7
 r1
@@ -92,7 +92,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 85 16
 R7
 r1
@@ -116,7 +116,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 102 16
 R7
 r1
@@ -140,7 +140,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 119 16
 R7
 r1
@@ -164,7 +164,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 136 19
 R7
 r1
@@ -188,7 +188,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 156 19
 R7
 r1
@@ -212,7 +212,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 176 19
 R7
 r1
@@ -236,7 +236,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 196 4
 R7
 r1
@@ -260,7 +260,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 201 24
 R7
 r1
@@ -284,7 +284,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 226 24
 R7
 r1
@@ -308,7 +308,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 251 26
 R7
 r1
@@ -332,7 +332,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 278 19
 R7
 r1
@@ -356,7 +356,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 298 19
 R7
 r1
@@ -380,7 +380,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 318 19
 R7
 r1
@@ -404,7 +404,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 338 39
 R7
 r1
@@ -428,7 +428,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 378 39
 R7
 r1
@@ -452,7 +452,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 418 41
 R7
 r1
@@ -476,7 +476,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 460 74
 R7
 r1
@@ -500,7 +500,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 535 74
 R7
 r1
@@ -524,7 +524,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 610 76
 R7
 r1
@@ -548,7 +548,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 687 28
 R7
 r1
@@ -572,7 +572,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 716 28
 R7
 r1
@@ -596,7 +596,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 745 28
 R7
 r1
@@ -620,7 +620,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 774 11
 R7
 r1
@@ -644,7 +644,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 786 11
 R7
 r1
@@ -668,7 +668,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 798 11
 R7
 r1
@@ -692,7 +692,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 810 11
 R7
 r1
@@ -716,7 +716,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 822 11
 R7
 r1
@@ -740,7 +740,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 834 11
 R7
 r1
@@ -754,7 +754,7 @@ R11
 R12
 n@b@u@f_@x8
 vcarrySelectAdder
-Z13 !s110 1667660088
+Z13 !s110 1667745531
 !i10b 1
 !s100 G5NV^;K^^8KhfOgk<UEha3
 R1
@@ -764,13 +764,13 @@ R3
 Z14 w1667659839
 Z15 8D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_FloatingPointAdder.syn.v
 Z16 FD:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_FloatingPointAdder.syn.v
-!i122 28
+!i122 118
 L0 1165 49
 R7
 r1
 !s85 0
 31
-Z17 !s108 1667660088.000000
+Z17 !s108 1667745531.000000
 !s107 D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_FloatingPointAdder.syn.v|
 Z18 !s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_FloatingPointAdder.syn.v|
 !i113 1
@@ -788,7 +788,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 846 11
 R7
 r1
@@ -812,7 +812,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 858 11
 R7
 r1
@@ -836,7 +836,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 870 11
 R7
 r1
@@ -860,7 +860,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1139 35
 R7
 r1
@@ -884,7 +884,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1192 35
 R7
 r1
@@ -908,7 +908,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1245 35
 R7
 r1
@@ -932,7 +932,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1298 35
 R7
 r1
@@ -956,7 +956,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 899 42
 R7
 r1
@@ -980,7 +980,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 959 42
 R7
 r1
@@ -1004,7 +1004,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1019 42
 R7
 r1
@@ -1028,7 +1028,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1079 42
 R7
 r1
@@ -1042,7 +1042,7 @@ R11
 R12
 n@c@l@k@g@a@t@e@t@s@t_@x8
 vComplement2s8bit
-!s110 1667660085
+Z19 !s110 1667745528
 !i10b 1
 !s100 mWYS6A@W?AXhMT^fBDzmY1
 R1
@@ -1052,13 +1052,13 @@ R3
 w1667602715
 8D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/Complement2s8bit.v
 FD:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/Complement2s8bit.v
-!i122 14
+!i122 104
 L0 2 35
 R7
 r1
 !s85 0
 31
-Z19 !s108 1667660085.000000
+Z20 !s108 1667745528.000000
 !s107 D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/Complement2s8bit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/Complement2s8bit.v|
 !i113 1
@@ -1066,7 +1066,7 @@ R11
 R12
 n@complement2s8bit
 vdatapath
-Z20 !s110 1667660086
+Z21 !s110 1667745529
 !i10b 1
 !s100 Zj5dXID^8mi2]HU4X;RXW0
 R1
@@ -1074,22 +1074,22 @@ I=NI7IheT8G>@zAdh?CBEC2
 R2
 R3
 R4
-Z21 8D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_carrySelectAdder.syn.v
-Z22 FD:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_carrySelectAdder.syn.v
-!i122 15
+Z22 8D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_carrySelectAdder.syn.v
+Z23 FD:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_carrySelectAdder.syn.v
+!i122 105
 L0 987 8
 R7
 r1
 !s85 0
 31
-R19
-Z23 !s107 D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_carrySelectAdder.syn.v|
-Z24 !s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_carrySelectAdder.syn.v|
+R20
+Z24 !s107 D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_carrySelectAdder.syn.v|
+Z25 !s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_carrySelectAdder.syn.v|
 !i113 1
 R11
 R12
 vdatapath__0_101
-R20
+R19
 !i10b 1
 !s100 g<<>8NECeQQG36DQToYW53
 R1
@@ -1097,22 +1097,22 @@ Ie;?XL?C48iCJ51`OUKQ[Z1
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 583 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 vdatapath__0_103
-R20
+R19
 !i10b 1
 !s100 d[PXgO;QV;Z9>;E1i:TZ:3
 R1
@@ -1120,22 +1120,22 @@ IH3R3POK9^j754CA_ZX[>k1
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 564 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 vdatapath__0_105
-R20
+R19
 !i10b 1
 !s100 [_;]WlOAjkk]`=X1FQKBz2
 R1
@@ -1143,22 +1143,22 @@ IboL^7mLdBi`[j=4Z[Rh7c3
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 545 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 vdatapath__0_107
-R20
+R19
 !i10b 1
 !s100 L2:ROG:f<ab;o0W>Dc@gn2
 R1
@@ -1166,22 +1166,22 @@ IO4RDMR8[az7a`K2D=XINK3
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 526 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 vdatapath__0_109
-R20
+R19
 !i10b 1
 !s100 =I@BfBJ`C0:L_>V[c]ke?1
 R1
@@ -1189,17 +1189,17 @@ IV;bVHI;`GAFoV6j2a2jgj3
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 507 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
@@ -1214,14 +1214,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 562 8
 R7
 r1
 !s85 0
 31
 R17
-Z25 !s107 D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_FloatingPointAdder.syn.v|
+Z26 !s107 D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/demo_FloatingPointAdder.syn.v|
 R18
 !i113 1
 R11
@@ -1237,14 +1237,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 581 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1260,14 +1260,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 600 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1283,14 +1283,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 619 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1306,14 +1306,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 638 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1329,14 +1329,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 657 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1352,14 +1352,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 676 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1375,14 +1375,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 695 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1398,14 +1398,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 178 165
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1421,14 +1421,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 518 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1444,14 +1444,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 499 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1467,14 +1467,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 480 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1490,14 +1490,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 461 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1513,14 +1513,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 442 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1536,14 +1536,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 423 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1559,14 +1559,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 404 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1582,20 +1582,20 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 385 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
 R12
 vdatapath__0_48
-R20
+R21
 !i10b 1
 !s100 H?ZEF2]Xam2NiK;6C0Ldz0
 R1
@@ -1603,22 +1603,22 @@ IQZ;Y_G3K51L<fZ1oe9cLI2
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 854 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 vdatapath__0_50
-R20
+R21
 !i10b 1
 !s100 Ro2EO6<>?Ada<[[^Y[3BD3
 R1
@@ -1626,22 +1626,22 @@ I^AzL=8e`XJ62QLmDiVnYi2
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 873 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 vdatapath__0_52
-R20
+R21
 !i10b 1
 !s100 GC3[kc?dnDf6BnToW^47N1
 R1
@@ -1649,22 +1649,22 @@ IS<Vne<[10CanegZZ]2m<:2
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 892 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 vdatapath__0_54
-R20
+R21
 !i10b 1
 !s100 _G<E?OE=aI?eC^P8U9^CK2
 R1
@@ -1672,22 +1672,22 @@ Ija7Y<oT[KgR86Aoca_?`@2
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 911 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 vdatapath__0_56
-R20
+R21
 !i10b 1
 !s100 JnN6U41T^]dLoM<jADF;00
 R1
@@ -1695,22 +1695,22 @@ IZF4co5W4g;RE:bjLkJcfX1
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 930 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 vdatapath__0_58
-R20
+R21
 !i10b 1
 !s100 Y;RW7gKThSeOi>]R]6YXo0
 R1
@@ -1718,22 +1718,22 @@ IcZg;MO9bSmo3X4;9?fjWO1
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 949 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 vdatapath__0_60
-R20
+R21
 !i10b 1
 !s100 =SaZ2?3TFeci7H1_oQ6dF1
 R1
@@ -1741,17 +1741,17 @@ Ij0]oRJLDo3;A=eCQ5@5b20
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 968 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
@@ -1766,14 +1766,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1024 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1789,14 +1789,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 739 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1812,14 +1812,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 758 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1835,14 +1835,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 777 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1858,14 +1858,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 796 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1881,14 +1881,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 815 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1904,14 +1904,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 834 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1927,14 +1927,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 853 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1950,14 +1950,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 872 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1973,14 +1973,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 891 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -1996,14 +1996,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 910 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -2019,14 +2019,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 929 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -2042,14 +2042,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 948 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -2065,14 +2065,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 967 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -2088,14 +2088,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 986 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -2111,20 +2111,20 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1005 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
 R12
 vdatapath__0_95
-R20
+R19
 !i10b 1
 !s100 __`P9Z?E:62l?NJZc<4X42
 R1
@@ -2132,22 +2132,22 @@ IlL3P>gCY`Z[Z6Vl:5@`9O2
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 640 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 vdatapath__0_97
-R20
+R19
 !i10b 1
 !s100 4@mWg43hDQWUlJ``jeb>d2
 R1
@@ -2155,22 +2155,22 @@ IOS;UL4jc;b:78C5BTcl8Q2
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 621 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 vdatapath__0_99
-R20
+R19
 !i10b 1
 !s100 HlAAY_f8[4^8^8C6W5`XY3
 R1
@@ -2178,17 +2178,17 @@ I>a5d<l0c:7Xk<hbL0:[lV1
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 602 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
@@ -2203,7 +2203,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2089 40
 R7
 r1
@@ -2227,7 +2227,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2149 40
 R7
 r1
@@ -2251,7 +2251,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1664 84
 R7
 r1
@@ -2275,7 +2275,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1771 84
 R7
 r1
@@ -2299,7 +2299,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1359 128
 R7
 r1
@@ -2323,7 +2323,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1513 128
 R7
 r1
@@ -2347,7 +2347,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1878 84
 R7
 r1
@@ -2371,7 +2371,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1985 84
 R7
 r1
@@ -2395,7 +2395,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2207 35
 R7
 r1
@@ -2419,7 +2419,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2260 35
 R7
 r1
@@ -2443,7 +2443,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2313 35
 R7
 r1
@@ -2467,7 +2467,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2366 35
 R7
 r1
@@ -2491,7 +2491,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2402 36
 R7
 r1
@@ -2515,7 +2515,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2439 3
 R7
 r1
@@ -2539,7 +2539,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2455 3
 R7
 r1
@@ -2563,7 +2563,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2443 3
 R7
 r1
@@ -2587,7 +2587,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2459 3
 R7
 r1
@@ -2611,7 +2611,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2447 3
 R7
 r1
@@ -2635,7 +2635,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2451 3
 R7
 r1
@@ -2659,14 +2659,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1231 70
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -2683,45 +2683,45 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1302 99
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
 R12
 n@floating@point@adder
 vFloatingPointTB
-R20
+R21
 !i10b 1
-!s100 i5DS2J>9=2_7VGMohlQTY0
+!s100 [>lEzMCzRXDS>djSK^8c80
 R1
-ISoO`g`F6TUWh@b5bgJSWJ2
+IgTI4FWnz6[WFaN1F88V=U0
 R2
 R3
-w1667616437
-8D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/FloatingPointTB.v
-FD:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/FloatingPointTB.v
-!i122 17
-L0 1 146
+w1667745524
+8D:\Material\3rd CMP\First term\VLSI\VLSIREPO\floating_point_adder_syth\FloatingPointTB.v
+FD:\Material\3rd CMP\First term\VLSI\VLSIREPO\floating_point_adder_syth\FloatingPointTB.v
+!i122 107
+L0 1 154
 R7
 r1
 !s85 0
 31
-Z26 !s108 1667660086.000000
-!s107 D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/FloatingPointTB.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/FloatingPointTB.v|
+Z27 !s108 1667745529.000000
+!s107 D:\Material\3rd CMP\First term\VLSI\VLSIREPO\floating_point_adder_syth\FloatingPointTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\Material\3rd CMP\First term\VLSI\VLSIREPO\floating_point_adder_syth\FloatingPointTB.v|
 !i113 1
 R11
 R12
 n@floating@point@t@b
 vFullAdder
-R20
+R21
 !i10b 1
 !s100 ec`>Rlf1JH@jli_=oPP703
 R1
@@ -2729,23 +2729,23 @@ I9n[[Al6Ck]<lin2eQ^oj80
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 996 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@full@adder
 vFullAdder2
-R20
+R21
 !i10b 1
 !s100 LEhfOK71e[MSi[>C[U0Rh2
 R1
@@ -2755,13 +2755,13 @@ R3
 w1667602700
 8D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/FullAdder.v
 FD:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/FullAdder.v
-!i122 18
-Z27 L0 2 16
+!i122 108
+Z28 L0 2 16
 R7
 r1
 !s85 0
 31
-R26
+R27
 !s107 D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/FullAdder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/FullAdder.v|
 !i113 1
@@ -2769,7 +2769,7 @@ R11
 R12
 n@full@adder2
 vFullAdder__0_100
-R20
+R19
 !i10b 1
 !s100 N8J<GELTU7Zg[z<dVg>bJ0
 R1
@@ -2777,23 +2777,23 @@ IVCWL=^SK38b2f<4]CS_dd1
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 611 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@full@adder__0_100
 vFullAdder__0_102
-R20
+R19
 !i10b 1
 !s100 cNcgUAA_N99YKN=AEc46^3
 R1
@@ -2801,23 +2801,23 @@ IOcYZd]6_6E1ThH8b66Dci2
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 592 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@full@adder__0_102
 vFullAdder__0_104
-R20
+R19
 !i10b 1
 !s100 I>ofFFO[BCfO5_a_5Eh^o1
 R1
@@ -2825,23 +2825,23 @@ IY@ed4N=Q_=0>lIeYno`0J0
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 573 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@full@adder__0_104
 vFullAdder__0_106
-R20
+R19
 !i10b 1
 !s100 NV_4GOV]b4WofnS;>g=2=1
 R1
@@ -2849,23 +2849,23 @@ IQSJoS5=68Zf<Mh23`g8Wh3
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 554 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@full@adder__0_106
 vFullAdder__0_108
-R20
+R19
 !i10b 1
 !s100 Th24NDcYVA=MT>JilRJBg1
 R1
@@ -2873,23 +2873,23 @@ IMCUSBdlgOoOQ:zlh5dFfl1
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 535 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@full@adder__0_108
 vFullAdder__0_110
-R20
+R19
 !i10b 1
 !s100 ?RQA7iPFbSg675ZDjV^4c2
 R1
@@ -2897,17 +2897,17 @@ IC7PLC6:OQ=?eEd0JJK6MS1
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 516 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
@@ -2923,14 +2923,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 571 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -2947,14 +2947,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 590 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -2971,14 +2971,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 609 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -2995,14 +2995,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 628 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3019,14 +3019,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 647 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3043,14 +3043,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 666 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3067,14 +3067,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 685 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3091,14 +3091,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 704 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3115,14 +3115,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 527 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3139,14 +3139,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 508 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3163,14 +3163,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 489 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3187,14 +3187,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 470 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3211,14 +3211,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 451 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3235,14 +3235,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 432 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3259,14 +3259,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 413 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3283,21 +3283,21 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 394 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
 R12
 n@full@adder__0_47
 vFullAdder__0_49
-R20
+R21
 !i10b 1
 !s100 SM:7ISEVE61PeD32>G3k[2
 R1
@@ -3305,23 +3305,23 @@ IDY4`ea`ga_7f68EeNZRPY1
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 863 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@full@adder__0_49
 vFullAdder__0_51
-R20
+R21
 !i10b 1
 !s100 B:16maniEaY3SUlN>_>@A1
 R1
@@ -3329,23 +3329,23 @@ Io`KKmV@cz8LPGf;FHB@K]2
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 882 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@full@adder__0_51
 vFullAdder__0_53
-R20
+R21
 !i10b 1
 !s100 L84DflifUN0SPim[5DMcS3
 R1
@@ -3353,23 +3353,23 @@ IZO<^j[9V7b55:6Y[2^KhF2
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 901 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@full@adder__0_53
 vFullAdder__0_55
-R20
+R21
 !i10b 1
 !s100 ?Q^7i^?DafSX_:OLJM^I81
 R1
@@ -3377,23 +3377,23 @@ IUcA2?_59QCj@XnHkLO53;3
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 920 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@full@adder__0_55
 vFullAdder__0_57
-R20
+R21
 !i10b 1
 !s100 KGXYbKXeTaDH5J>cNacLW1
 R1
@@ -3401,23 +3401,23 @@ IX2DjUkQS1D4D^nT]O5a]a0
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 939 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@full@adder__0_57
 vFullAdder__0_59
-R20
+R21
 !i10b 1
 !s100 JaID6HfV3PakYS5f;R;ni2
 R1
@@ -3425,23 +3425,23 @@ IG>iimlmFf9W]Agc?:;Gn53
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 958 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@full@adder__0_59
 vFullAdder__0_61
-R20
+R21
 !i10b 1
 !s100 `@a4VoEC13LZR@>MJmaYN0
 R1
@@ -3449,17 +3449,17 @@ IIKzIfWE87WR3[6`I_::z:2
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 977 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
@@ -3475,14 +3475,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1033 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3499,14 +3499,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 748 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3523,14 +3523,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 767 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3547,14 +3547,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 786 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3571,14 +3571,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 805 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3595,14 +3595,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 824 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3619,14 +3619,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 843 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3643,14 +3643,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 862 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3667,14 +3667,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 881 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3691,14 +3691,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 900 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3715,14 +3715,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 919 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3739,14 +3739,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 938 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3763,14 +3763,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 957 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3787,14 +3787,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 976 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3811,14 +3811,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 995 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -3835,21 +3835,21 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1014 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
 R12
 n@full@adder__0_93
 vFullAdder__0_96
-R20
+R19
 !i10b 1
 !s100 OWf4C_i]1<aNFU?igE8PV3
 R1
@@ -3857,23 +3857,23 @@ IiVIYULA>]bC12[Cn`2G6:0
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 649 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@full@adder__0_96
 vFullAdder__0_98
-R20
+R19
 !i10b 1
 !s100 [OKSF8SiF:>La>o>QzP?90
 R1
@@ -3881,17 +3881,17 @@ IGiRzK9IcmYLe8]jAXn7Z_2
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 630 9
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
@@ -3907,7 +3907,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2463 19
 R7
 r1
@@ -3921,7 +3921,7 @@ R11
 R12
 n@h@a_@x1
 vHalfSubtractor
-R20
+R21
 !i10b 1
 !s100 lAiEgNY3AX75SdPBY^IFe1
 R1
@@ -3931,13 +3931,13 @@ R3
 R4
 8D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/HalfSubtractor.v
 FD:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/HalfSubtractor.v
-!i122 19
+!i122 109
 L0 2 11
 R7
 r1
 !s85 0
 31
-R26
+R27
 !s107 D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/HalfSubtractor.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/HalfSubtractor.v|
 !i113 1
@@ -3955,7 +3955,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2483 11
 R7
 r1
@@ -3979,7 +3979,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2495 11
 R7
 r1
@@ -4003,7 +4003,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2507 11
 R7
 r1
@@ -4027,7 +4027,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2519 11
 R7
 r1
@@ -4051,7 +4051,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2531 11
 R7
 r1
@@ -4075,7 +4075,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2543 11
 R7
 r1
@@ -4099,7 +4099,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2555 5
 R7
 r1
@@ -4123,7 +4123,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2561 5
 R7
 r1
@@ -4137,7 +4137,7 @@ R11
 R12
 n@l@o@g@i@c1_@x1
 vMux1bit
-R20
+R0
 !i10b 1
 !s100 C_B:GiWImHVND`=bjAc1A0
 R1
@@ -4147,13 +4147,13 @@ R3
 R4
 8D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/Mux1bit.v
 FD:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/Mux1bit.v
-!i122 20
-R27
+!i122 110
+R28
 R7
 r1
 !s85 0
 31
-R26
+R8
 !s107 D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/Mux1bit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/Mux1bit.v|
 !i113 1
@@ -4171,14 +4171,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 354 30
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -4195,14 +4195,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 147 30
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -4219,7 +4219,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2567 21
 R7
 r1
@@ -4243,7 +4243,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2589 21
 R7
 r1
@@ -4257,7 +4257,7 @@ R11
 R12
 n@m@u@x2_@x2
 vMux2x1
-R20
+R21
 !i10b 1
 !s100 0S6GDB0dYL54e:iX60CGf3
 R1
@@ -4265,23 +4265,23 @@ IS04zCS30T`9@;U9fEIlUQ1
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 1210 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@mux2x1
 vMux2x1__0_1
-R20
+R21
 !i10b 1
 !s100 a1S;hmG4ZEfFnn_l_c?a;0
 R1
@@ -4289,17 +4289,17 @@ I4NH:DChgGoMj4W74E>ekS3
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 1049 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
@@ -4315,14 +4315,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1120 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -4339,14 +4339,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1111 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -4363,14 +4363,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1102 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -4387,14 +4387,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1093 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -4411,21 +4411,21 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1084 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
 R12
 n@mux2x1__0_19
 vMux2x1__0_21
-R20
+R21
 !i10b 1
 !s100 =D]lN5f;R=IaN:>3g_jP93
 R1
@@ -4433,23 +4433,23 @@ Iozn:lL^nbZN[Z@]9bfz2Y2
 R2
 R3
 R4
-R21
 R22
-!i122 15
-Z28 L0 1156 8
+R23
+!i122 105
+Z29 L0 1156 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@mux2x1__0_21
 vMux2x1__0_23
-R20
+R21
 !i10b 1
 !s100 HSR61LAMjoaao;DS]EHIV2
 R1
@@ -4457,23 +4457,23 @@ IHVDVUb36U>iR]R<]cMIU;2
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 1165 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@mux2x1__0_23
 vMux2x1__0_25
-R20
+R21
 !i10b 1
 !s100 k<jN9lnk:XZPM7`QT[43i2
 R1
@@ -4481,23 +4481,23 @@ IMa>O[?C:17=4^m8nM<dOT0
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 1174 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@mux2x1__0_25
 vMux2x1__0_27
-R20
+R21
 !i10b 1
 !s100 5XgTNiA^lhPVPIj4e`hHA1
 R1
@@ -4505,23 +4505,23 @@ ITeJ<@UJ0TVB]2Tfb]oogk3
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 1183 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
 n@mux2x1__0_27
 vMux2x1__0_29
-R20
+R21
 !i10b 1
 !s100 6Y6SoT@S3fk4AjGi?9TGD3
 R1
@@ -4529,17 +4529,17 @@ I2JWh26IY<dh_BBm_oI7IJ0
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 1192 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
@@ -4555,21 +4555,21 @@ R3
 R14
 R15
 R16
-!i122 28
-R28
+!i122 118
+R29
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
 R12
 n@mux2x1__0_3
 vMux2x1__0_31
-R20
+R21
 !i10b 1
 !s100 :`CY;:0<2deVWWNQ753jz1
 R1
@@ -4577,17 +4577,17 @@ ILA^H=@3[MVf;<3ENg2I[F2
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 1201 8
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
@@ -4603,14 +4603,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1147 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -4627,14 +4627,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1138 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -4651,14 +4651,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1129 8
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -4675,14 +4675,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1215 15
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -4699,7 +4699,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2611 14
 R7
 r1
@@ -4723,7 +4723,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2626 14
 R7
 r1
@@ -4747,7 +4747,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2641 14
 R7
 r1
@@ -4771,7 +4771,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2656 17
 R7
 r1
@@ -4795,7 +4795,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2674 17
 R7
 r1
@@ -4819,7 +4819,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2692 17
 R7
 r1
@@ -4843,7 +4843,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2710 20
 R7
 r1
@@ -4867,7 +4867,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2731 20
 R7
 r1
@@ -4891,7 +4891,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2752 20
 R7
 r1
@@ -4915,7 +4915,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5377 0
 R7
 r1
@@ -4938,7 +4938,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2773 14
 R7
 r1
@@ -4962,7 +4962,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2788 14
 R7
 r1
@@ -4986,7 +4986,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2803 14
 R7
 r1
@@ -5010,7 +5010,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2818 17
 R7
 r1
@@ -5034,7 +5034,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2836 17
 R7
 r1
@@ -5058,7 +5058,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2854 17
 R7
 r1
@@ -5082,7 +5082,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2872 20
 R7
 r1
@@ -5106,7 +5106,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2893 20
 R7
 r1
@@ -5130,7 +5130,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2914 20
 R7
 r1
@@ -5154,7 +5154,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2935 24
 R7
 r1
@@ -5178,7 +5178,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2960 24
 R7
 r1
@@ -5202,7 +5202,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2985 24
 R7
 r1
@@ -5226,7 +5226,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3010 19
 R7
 r1
@@ -5250,7 +5250,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3030 19
 R7
 r1
@@ -5274,7 +5274,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3050 19
 R7
 r1
@@ -5298,7 +5298,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3070 39
 R7
 r1
@@ -5322,7 +5322,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3110 39
 R7
 r1
@@ -5346,7 +5346,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3150 41
 R7
 r1
@@ -5370,7 +5370,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3192 74
 R7
 r1
@@ -5394,7 +5394,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3267 74
 R7
 r1
@@ -5418,7 +5418,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3342 76
 R7
 r1
@@ -5442,7 +5442,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3419 28
 R7
 r1
@@ -5466,7 +5466,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3448 28
 R7
 r1
@@ -5490,7 +5490,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3477 28
 R7
 r1
@@ -5514,7 +5514,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3506 62
 R7
 r1
@@ -5538,7 +5538,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3569 13
 R7
 r1
@@ -5562,7 +5562,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3583 13
 R7
 r1
@@ -5586,7 +5586,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3597 13
 R7
 r1
@@ -5610,7 +5610,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3611 16
 R7
 r1
@@ -5634,7 +5634,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3628 16
 R7
 r1
@@ -5658,7 +5658,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3645 16
 R7
 r1
@@ -5682,7 +5682,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3662 19
 R7
 r1
@@ -5706,7 +5706,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3682 19
 R7
 r1
@@ -5730,7 +5730,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3702 19
 R7
 r1
@@ -5744,7 +5744,7 @@ R11
 R12
 n@o@r4_@x4
 voverflow
-R20
+R21
 !i10b 1
 !s100 4_B=DoAOVQWNLzUd17>cP2
 R1
@@ -5752,17 +5752,17 @@ Ic^7Q_WLTHW5Ffc^DYS^_22
 R2
 R3
 R4
-R21
 R22
-!i122 15
+R23
+!i122 105
 L0 1058 16
 R7
 r1
 !s85 0
 31
-R19
-R23
+R20
 R24
+R25
 !i113 1
 R11
 R12
@@ -5777,14 +5777,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 537 24
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -5801,14 +5801,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 714 24
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -5825,14 +5825,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 1043 40
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -5849,14 +5849,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 344 9
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -5873,7 +5873,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 4965 84
 R7
 r1
@@ -5897,7 +5897,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5069 84
 R7
 r1
@@ -5921,7 +5921,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 4288 147
 R7
 r1
@@ -5945,7 +5945,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 4458 147
 R7
 r1
@@ -5969,7 +5969,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3747 246
 R7
 r1
@@ -5993,7 +5993,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 4019 246
 R7
 r1
@@ -6017,7 +6017,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 4628 147
 R7
 r1
@@ -6041,7 +6041,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 4798 147
 R7
 r1
@@ -6065,7 +6065,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1122 0
 R7
 r1
@@ -6089,7 +6089,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1175 0
 R7
 r1
@@ -6113,7 +6113,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1228 0
 R7
 r1
@@ -6137,7 +6137,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1281 0
 R7
 r1
@@ -6161,7 +6161,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 882 0
 R7
 r1
@@ -6185,7 +6185,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 942 0
 R7
 r1
@@ -6209,7 +6209,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1002 0
 R7
 r1
@@ -6233,7 +6233,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1062 0
 R7
 r1
@@ -6257,7 +6257,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2070 0
 R7
 r1
@@ -6281,7 +6281,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2130 0
 R7
 r1
@@ -6305,7 +6305,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1642 0
 R7
 r1
@@ -6329,7 +6329,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1749 0
 R7
 r1
@@ -6353,7 +6353,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1334 0
 R7
 r1
@@ -6377,7 +6377,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1488 0
 R7
 r1
@@ -6401,7 +6401,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1856 0
 R7
 r1
@@ -6425,7 +6425,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 1963 0
 R7
 r1
@@ -6449,7 +6449,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2190 0
 R7
 r1
@@ -6473,7 +6473,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2243 0
 R7
 r1
@@ -6497,7 +6497,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2296 0
 R7
 r1
@@ -6521,7 +6521,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 2349 0
 R7
 r1
@@ -6545,7 +6545,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 4946 0
 R7
 r1
@@ -6569,7 +6569,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5050 0
 R7
 r1
@@ -6593,7 +6593,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 4266 0
 R7
 r1
@@ -6617,7 +6617,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 4436 0
 R7
 r1
@@ -6641,7 +6641,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3722 0
 R7
 r1
@@ -6665,7 +6665,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 3994 0
 R7
 r1
@@ -6689,7 +6689,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 4606 0
 R7
 r1
@@ -6713,7 +6713,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 4776 0
 R7
 r1
@@ -6737,7 +6737,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5250 0
 R7
 r1
@@ -6761,14 +6761,14 @@ R3
 R14
 R15
 R16
-!i122 28
+!i122 118
 L0 8 138
 R7
 r1
 !s85 0
 31
 R17
-R25
+R26
 R18
 !i113 1
 R11
@@ -6785,7 +6785,7 @@ R3
 R4
 8D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/Subtractor1bit.v
 FD:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/Subtractor1bit.v
-!i122 26
+!i122 116
 L0 2 24
 R7
 r1
@@ -6809,7 +6809,7 @@ R3
 R4
 8D:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/Subtractor8bit.v
 FD:/Material/3rd CMP/First term/VLSI/VLSIREPO/floating_point_adder_syth/Subtractor8bit.v
-!i122 27
+!i122 117
 L0 2 25
 R7
 r1
@@ -6833,7 +6833,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5154 15
 R7
 r1
@@ -6857,7 +6857,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5170 15
 R7
 r1
@@ -6881,7 +6881,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5186 15
 R7
 r1
@@ -6905,7 +6905,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5202 15
 R7
 r1
@@ -6929,7 +6929,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5218 15
 R7
 r1
@@ -6953,7 +6953,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5234 15
 R7
 r1
@@ -6977,7 +6977,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5267 41
 R7
 r1
@@ -7001,7 +7001,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5309 16
 R7
 r1
@@ -7025,7 +7025,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5326 16
 R7
 r1
@@ -7049,7 +7049,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5343 15
 R7
 r1
@@ -7073,7 +7073,7 @@ R3
 R4
 R5
 R6
-!i122 23
+!i122 113
 L0 5359 15
 R7
 r1
