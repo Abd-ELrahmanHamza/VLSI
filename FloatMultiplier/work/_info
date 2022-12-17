@@ -1,0 +1,105 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree
+vfloatMultiplier
+Z0 !s110 1671299291
+!i10b 1
+!s100 IiIRI[KDm9n84c63bgRI>3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ImCRFX^b3N]n>8W^GFRK?Q1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier
+w1671299288
+8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatMultiplier.v
+FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatMultiplier.v
+!i122 119
+L0 2 66
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1671299291.000000
+!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatMultiplier.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatMultiplier.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+nfloat@multiplier
+vfloatTB
+!s110 1671299292
+!i10b 1
+!s100 3AJ?2G308CMhUTCf:AHJf2
+R1
+I^JO258KZGDIZL^0?C;ef61
+R2
+R3
+w1671294756
+8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v
+FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v
+!i122 120
+L0 2 119
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v|
+!i113 1
+R6
+R7
+nfloat@t@b
+vradix4_tb
+R0
+!i10b 1
+!s100 n;NMhmbCzT?i3M7g_5TSO3
+R1
+IX[VW;=aFKdc8K7=]63?RD3
+R2
+R3
+w1671113866
+8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/radix4_tb.v
+FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/radix4_tb.v
+!i122 117
+L0 2 111
+R4
+r1
+!s85 0
+31
+R5
+!s107 radix4booth.v|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/radix4_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/radix4_tb.v|
+!i113 1
+R6
+R7
+vradix4booth
+R0
+!i10b 1
+!s100 aQ9VPKM?4QKLVn8QU5J=b1
+R1
+IVazBae[FEV4AC4Lij:U?90
+R2
+R3
+w1671105396
+8D:\Engineering\Third_Year\CMP_2023\First_Term\VLSI\Project\Project\FloatMultiplier\radix4booth.v
+FD:\Engineering\Third_Year\CMP_2023\First_Term\VLSI\Project\Project\FloatMultiplier\radix4booth.v
+!i122 118
+L0 1 138
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:\Engineering\Third_Year\CMP_2023\First_Term\VLSI\Project\Project\FloatMultiplier\radix4booth.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\Engineering\Third_Year\CMP_2023\First_Term\VLSI\Project\Project\FloatMultiplier\radix4booth.v|
+!i113 1
+R6
+R7
