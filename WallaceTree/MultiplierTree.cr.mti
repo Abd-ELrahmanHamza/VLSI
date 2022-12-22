@@ -1,37 +1,16 @@
-D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/CSA.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/CSA.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module CSA
-
-Top level modules:
-	CSA
-
-} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/FA.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/FA.v
+D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/FA.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/FA.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module FA
 
 Top level modules:
 	FA
 
-} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v
+} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/CSA.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/CSA.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module mulTreeTB
+-- Compiling module CSA
 
 Top level modules:
-	mulTreeTB
-
-} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/ripple.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/ripple.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module RCA64
-
-Top level modules:
-	RCA64
-
-} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/products.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/products.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module products
-
-Top level modules:
-	products
+	CSA
 
 } {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/multiply.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/multiply.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -40,6 +19,27 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	integrationMult
+
+} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/products.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/products.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module products
+
+Top level modules:
+	products
+
+} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/ripple.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/ripple.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RCA64
+
+Top level modules:
+	RCA64
+
+} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mulTreeTB
+
+Top level modules:
+	mulTreeTB
 
 } {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTree.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTree.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

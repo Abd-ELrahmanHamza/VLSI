@@ -1,0 +1,29 @@
+Report 'report_drc': DRC Violations
+Generated on Thu Dec 22 20:12:33 2022
+  
+-----------------------------
+| Constraint Max Transition | 
+| Total Cost -0.3430        | 
+| Violators  11             | 
+-----------------------------
+
+
+  
+------------------------------------------------------------
+| Pin                            Actual Limit Slack   Edge | 
+|----------------------------------------------------------|
+| multiplier/Products/i_0_330/A1 235    199   -0.0360 Rise | 
+| multiplier/Products/i_0_358/A1 232    199   -0.0330 Rise | 
+| multiplier/Products/i_0_359/A1 232    199   -0.0330 Rise | 
+| multiplier/Products/i_0_360/A1 232    199   -0.0330 Rise | 
+| multiplier/Products/i_0_361/A1 232    199   -0.0330 Rise | 
+| multiplier/Products/i_0_354/A1 231    199   -0.0320 Rise | 
+| multiplier/Products/i_0_355/A1 231    199   -0.0320 Rise | 
+| multiplier/Products/i_0_356/A1 231    199   -0.0320 Rise | 
+| multiplier/Products/i_0_357/A1 231    199   -0.0320 Rise | 
+| multiplier/Products/i_0_353/A1 230    199   -0.0310 Rise | 
+| multiplier/Products/i_0_331/A1 215    199   -0.0160 Rise | 
+------------------------------------------------------------
+
+
+info UI33: performed report_constraints for 0 sec (CPU time: 0 sec; MEM: RSS - 501M, CVMEM - 2340M, PVMEM - 3059M)

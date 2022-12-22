@@ -1,654 +1,624 @@
-vsim -gui work.mulTreeTB
-# vsim -gui work.mulTreeTB 
-# Start time: 21:18:53 on Dec 15,2022
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
-# ** Error: (vsim-3906) Connection type 'wire[63:0]$[31:0]' is incompatible with 'reg[63:0]$[63:0]' for  port (pp):  Array ranges [63:0] & [31:0] have different lengths.
-#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/multiplier/Products File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTree.v Line: 18
-# Error loading design
-# End time: 21:18:54 on Dec 15,2022, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 1
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
-vsim -gui work.mulTreeTB
-# vsim -gui work.mulTreeTB 
-# Start time: 21:19:44 on Dec 15,2022
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
-add wave -position insertpoint sim:/mulTreeTB/*
-add wave -position insertpoint sim:/mulTreeTB/multiplier/*
-run -all
-# TestCase#           0 : success
-# TestCase#           1 : success
-# TestCase#           2 : success
-# TestCase#           3 : success
-# TestCase#           4 : fail Output mul            -2147483649 Expected mul                     4 
-# TestCase#           5 : fail Output mul   -4611686018427387904 Expected mul   4611686016279904256 
-# TestCase#           6 : fail Output mul    2305843009213693951 Expected mul   9223372036854775807 
-# Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(100)
-#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
-# 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 100
+# Compile of radix4booth.v was successful.
+# Compile of radix4_tb.v was successful.
+vsim -gui work.radix4booth
+# vsim -gui work.radix4booth 
+# Start time: 16:02:24 on Dec 17,2022
+# Loading work.radix4booth
+add wave -position insertpoint sim:/radix4booth/*
+force -freeze sim:/radix4booth/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/radix4booth/reset 0 0
+force -freeze sim:/radix4booth/x 10000000000000000000000000000000 0
+force -freeze sim:/radix4booth/x 10000000000000000000000000000000 0
+force -freeze sim:/radix4booth/y 10000000000000000000000000000000 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 quit -sim
-# End time: 21:20:08 on Dec 15,2022, Elapsed time: 0:00:24
-# Errors: 0, Warnings: 2
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v failed with 4 errors.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 1 failed with 4 errors.
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
-vsim -gui work.mulTreeTB
-# vsim -gui work.mulTreeTB 
-# Start time: 21:21:50 on Dec 15,2022
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
+# End time: 16:06:21 on Dec 17,2022, Elapsed time: 0:03:57
+# Errors: 0, Warnings: 9
+# Compile of floatMultiplier.v was successful.
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v failed with 2 errors.
+# 4 compiles, 1 failed with 2 errors.
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.floatTB
+# vsim -gui work.floatTB 
+# Start time: 16:49:00 on Dec 17,2022
+# Loading work.floatTB
+# Loading work.floatMultiplier
 run -all
 # TestCase#           0 : success
-# TestCase#           1 : success
-# TestCase#           2 : fail Output mul             4294967295 Expected mul                    -1 
-# TestCase#           3 : fail Output mul             8589934588 Expected mul                    -4 
-# TestCase#           4 : fail Output mul   -9223372034707292161 Expected mul                     4 
-# TestCase#           5 : fail Output mul    4611686018427387904 Expected mul   4611686016279904256 
-# TestCase#           6 : fail Output mul    2305843009213693951 Expected mul   9223372036854775807 
+# TestCase#           1 : fail Output mul  1211401503 Expected mul 1266679808 
 # Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(100)
-#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(105)
+#    Time: 10 ns  Iteration: 0  Instance: /floatTB
 # 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 100
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 105
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-add wave -position insertpoint sim:/mulTreeTB/*
-add wave -position insertpoint sim:/mulTreeTB/multiplier/*
+add wave -position insertpoint sim:/floatTB/*
+add wave -position insertpoint sim:/floatTB/mul/*
 run -all
 # TestCase#           0 : success
-# TestCase#           1 : success
-# TestCase#           2 : fail Output mul             4294967295 Expected mul                    -1 
-# TestCase#           3 : fail Output mul             8589934588 Expected mul                    -4 
-# TestCase#           4 : fail Output mul   -9223372034707292161 Expected mul                     4 
-# TestCase#           5 : fail Output mul    4611686018427387904 Expected mul   4611686016279904256 
-# TestCase#           6 : fail Output mul    2305843009213693951 Expected mul   9223372036854775807 
+# TestCase#           1 : fail Output mul  1211401503 Expected mul 1266679808 
 # Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(100)
-#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(105)
+#    Time: 10 ns  Iteration: 0  Instance: /floatTB
 # 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 100
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 105
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
+# Loading work.floatTB
+# Loading work.floatMultiplier
 run -all
 # TestCase#           0 : success
-# TestCase#           1 : success
-# TestCase#           2 : fail Output mul             4294967295 Expected mul                    -1 
-# TestCase#           3 : fail Output mul             8589934588 Expected mul                    -4 
-# TestCase#           4 : fail Output mul   -9223372034707292161 Expected mul                     4 
-# TestCase#           5 : fail Output mul    4611686018427387904 Expected mul   4611686016279904256 
-# TestCase#           6 : fail Output mul    2305843009213693951 Expected mul   4611686014132420609 
+# TestCase#           1 : fail Output mul  1211401503 Expected mul 1160909033 
 # Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
-#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(105)
+#    Time: 10 ns  Iteration: 0  Instance: /floatTB
 # 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 105
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
+# Loading work.floatTB
+# Loading work.floatMultiplier
 run -all
 # TestCase#           0 : success
-# TestCase#           1 : success
-# TestCase#           2 : fail Output mul             4294967295 Expected mul                    -1 
-# TestCase#           3 : fail Output mul             8589934588 Expected mul                    -4 
-# TestCase#           4 : fail Output mul            -8589934591 Expected mul                     4 
-# TestCase#           5 : fail Output mul    4611686018427387904 Expected mul   4611686016279904256 
-# TestCase#           6 : success
+# TestCase#           1 : fail Output mul  1160909034 Expected mul 1160909033 
 # Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
-#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(105)
+#    Time: 10 ns  Iteration: 0  Instance: /floatTB
 # 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 105
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  1160909034 Expected mul 1160909033 
+# TestCase#           2 : fail Output mul  3258273891 Expected mul 3258273890 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(109)
+#    Time: 14 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 109
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  1155801555 Expected mul 1160909033 
+# TestCase#           2 : fail Output mul  3253379270 Expected mul 3258273890 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(109)
+#    Time: 14 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 109
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  1160909034 Expected mul 1160909033 
+# TestCase#           2 : fail Output mul  3258273891 Expected mul 3258273890 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(109)
+#    Time: 14 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 109
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  1152520426 Expected mul 1160909033 
+# TestCase#           2 : fail Output mul  3249885283 Expected mul 3258273890 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(109)
+#    Time: 14 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 109
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  1164190163 Expected mul 1160909033 
+# TestCase#           2 : fail Output mul  3261767878 Expected mul 3258273890 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(109)
+#    Time: 14 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 109
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+restart -f
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  1160909034 Expected mul 1160909033 
+# TestCase#           2 : fail Output mul  3258273891 Expected mul 3258273890 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(109)
+#    Time: 14 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 109
 # A time value could not be extracted from the current line
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(109)
+#    Time: 14 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 109
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Load canceled
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : fail Output mul           0 Expected mul 1266679808 
+# TestCase#           5 : fail Output mul   908066814 Expected mul  908066791 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(115)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 115
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  1164190164 Expected mul 1160909033 
+# TestCase#           2 : fail Output mul  3261767877 Expected mul 3258273890 
+# TestCase#           3 : fail Output mul  1144825576 Expected mul 1142838133 
+# TestCase#           4 : fail Output mul  1270874112 Expected mul 1266679808 
+# TestCase#           5 : fail Output mul   910163966 Expected mul  908066791 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  1164190163 Expected mul 1160909033 
+# TestCase#           2 : fail Output mul  3261767878 Expected mul 3258273890 
+# TestCase#           3 : fail Output mul  1144825577 Expected mul 1142838133 
+# TestCase#           4 : fail Output mul  1270874112 Expected mul 1266679808 
+# TestCase#           5 : fail Output mul   910163965 Expected mul  908066791 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
 # A time value could not be extracted from the current line
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  01000101011001000010000111010011 Expected mul 01000101001100100001000011101001 
+# TestCase#           2 : fail Output mul  11000010011010101010000011000110 Expected mul 11000010001101010101000001100010 
+# TestCase#           3 : fail Output mul  01000100001111001010011011101001 Expected mul 01000100000111100101001101110101 
+# TestCase#           4 : fail Output mul  01001011110000000000000000000000 Expected mul 01001011100000000000000000000000 
+# TestCase#           5 : fail Output mul  00110110001111111111111111111101 Expected mul 00110110000111111111111111100111 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
 # A time value could not be extracted from the current line
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
+# Loading work.floatTB
+# Loading work.floatMultiplier
 run -all
 # TestCase#           0 : success
-# TestCase#           1 : success
-# TestCase#           2 : success
-# TestCase#           3 : success
-# TestCase#           4 : fail Output mul            -4294967295 Expected mul                     4 
-# TestCase#           5 : fail Output mul   -4611686018427387904 Expected mul   4611686016279904256 
-# TestCase#           6 : success
+# TestCase#           1 : fail Output mul  01000101001100100001000011101010 Expected mul 01000101001100100001000011101001 
+# TestCase#           2 : fail Output mul  11000010001101010101000001100011 Expected mul 11000010001101010101000001100010 
+# TestCase#           3 : fail Output mul  01000100000111100101001101110100 Expected mul 01000100000111100101001101110101 
+# TestCase#           4 : fail Output mul  01001011101000000000000000000000 Expected mul 01001011100000000000000000000000 
+# TestCase#           5 : fail Output mul  00110110000111111111111111111111 Expected mul 00110110000111111111111111100111 
 # Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
-#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
 # 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
+# Loading work.floatTB
+# Loading work.floatMultiplier
 run -all
 # TestCase#           0 : success
-# TestCase#           1 : success
-# TestCase#           2 : success
-# TestCase#           3 : success
-# TestCase#           4 : fail Output mul            -2147483647 Expected mul                     4 
-# TestCase#           5 : fail Output mul                      0 Expected mul   4611686016279904256 
-# TestCase#           6 : success
+# TestCase#           1 : fail Output mul  01000101001100100001000011101010 Expected mul 01000101001100100001000011101001 
+# TestCase#           2 : fail Output mul  11000010001101010101000001100011 Expected mul 11000010001101010101000001100010 
+# TestCase#           3 : fail Output mul  01000100000111100101001101110100 Expected mul 01000100000111100101001101110101 
+# TestCase#           4 : fail Output mul  00000000000000000000000000000000 Expected mul 01001011100000000000000000000000 
+# TestCase#           5 : fail Output mul  00110110000111111111111111111111 Expected mul 00110110000111111111111111100111 
 # Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
-#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
 # 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
+# Loading work.floatTB
+# Loading work.floatMultiplier
 run -all
 # TestCase#           0 : success
-# TestCase#           1 : success
-# TestCase#           2 : success
-# TestCase#           3 : success
-# TestCase#           4 : fail Output mul            -2147483647 Expected mul                     4 
-# TestCase#           5 : fail Output mul                      0 Expected mul   4611686016279904256 
-# TestCase#           6 : success
+# TestCase#           1 : fail Output mul  01000101011001000010000111010011 Expected mul 01000101001100100001000011101001 
+# TestCase#           2 : fail Output mul  11000010011010101010000011000110 Expected mul 11000010001101010101000001100010 
+# TestCase#           3 : fail Output mul  01000100001111001010011011101001 Expected mul 01000100000111100101001101110101 
+# TestCase#           4 : fail Output mul  01001011110000000000000000000000 Expected mul 01001011100000000000000000000000 
+# TestCase#           5 : fail Output mul  00110110001111111111111111111101 Expected mul 00110110000111111111111111100111 
 # Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
-#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
 # 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
-# Compile of mulTree.v failed with 1 errors.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 1 failed with 1 error.
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
+# Loading work.floatTB
+# Loading work.floatMultiplier
 run -all
 # TestCase#           0 : success
-# TestCase#           1 : success
-# TestCase#           2 : success
-# TestCase#           3 : success
-# TestCase#           4 : fail Output mul                      1 Expected mul                     4 
-# TestCase#           5 : fail Output mul             2147483648 Expected mul   4611686016279904256 
-# TestCase#           6 : success
+# TestCase#           1 : fail Output mul  01000101001100100001000011101010 Expected mul 01000101001100100001000011101001 
+# TestCase#           2 : fail Output mul  11000010001101010101000001100011 Expected mul 11000010001101010101000001100010 
+# TestCase#           3 : fail Output mul  01000100000111100101001101110100 Expected mul 01000100000111100101001101110101 
+# TestCase#           4 : fail Output mul  00000000000000000000000000000000 Expected mul 01001011100000000000000000000000 
+# TestCase#           5 : fail Output mul  00110110000111111111111111111111 Expected mul 00110110000111111111111111100111 
 # Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
-#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
 # 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
-run -all
-# TestCase#           0 : success
-# TestCase#           1 : success
-# TestCase#           2 : success
-# TestCase#           3 : success
-# TestCase#           4 : fail Output mul                      1 Expected mul                     4 
-# TestCase#           5 : fail Output mul             2147483648 Expected mul   4611686016279904256 
-# TestCase#           6 : success
-# Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
-#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
-# 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
-run -all
-# TestCase#           0 : success
-# TestCase#           1 : success
-# TestCase#           2 : success
-# TestCase#           3 : success
-# TestCase#           4 : fail Output mul                      1 Expected mul                     4 
-# TestCase#           5 : fail Output mul    4611686018427387904 Expected mul   4611686016279904256 
-# TestCase#           6 : success
-# Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
-#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
-# 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
 # A time value could not be extracted from the current line
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  01000101001100100001000011101010 Expected mul 01000101001100100001000011101001 
+# TestCase#           2 : fail Output mul  11000010001101010101000001100011 Expected mul 11000010001101010101000001100010 
+# TestCase#           3 : fail Output mul  01000100000111100101001101110100 Expected mul 01000100000111100101001101110101 
+# TestCase#           4 : fail Output mul  01001011110000000000000000000000 Expected mul 01001011100000000000000000000000 
+# TestCase#           5 : fail Output mul  00110110000111111111111111111111 Expected mul 00110110000111111111111111100111 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  01000101001100100001000011101010 Expected mul 01000101001100100001000011101001 
+# TestCase#           2 : fail Output mul  11000010001101010101000001100011 Expected mul 11000010001101010101000001100010 
+# TestCase#           3 : fail Output mul  01000100000111100101001101110100 Expected mul 01000100000111100101001101110101 
+# TestCase#           4 : fail Output mul  01001011101000000000000000000000 Expected mul 01001011100000000000000000000000 
+# TestCase#           5 : fail Output mul  00110110000111111111111111111111 Expected mul 00110110000111111111111111100111 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  01000101001100100001000011101010 Expected mul 01000101001100100001000011101001 
+# TestCase#           2 : fail Output mul  11000010001101010101000001100011 Expected mul 11000010001101010101000001100010 
+# TestCase#           3 : fail Output mul  01000100000111100101001101110100 Expected mul 01000100000111100101001101110101 
+# TestCase#           4 : success
+# TestCase#           5 : fail Output mul  00110110000111111111111111111111 Expected mul 00110110000111111111111111100111 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  01000101001100100001000011101010 Expected mul 01000101001100100001000011101001 
+# TestCase#           2 : success
+# TestCase#           3 : fail Output mul  01000100000111100101001101110100 Expected mul 01000100000111100101001101110101 
+# TestCase#           4 : success
+# TestCase#           5 : fail Output mul  00110110000111111111111111111110 Expected mul 00110110000111111111111111100111 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
+restart -f
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  01000101001100100001000011101010 Expected mul 01000101001100100001000011101001 
+# TestCase#           2 : success
+# TestCase#           3 : fail Output mul  01000100000111100101001101110100 Expected mul 01000100000111100101001101110101 
+# TestCase#           4 : success
+# TestCase#           5 : fail Output mul  00110110000111111111111111111110 Expected mul 00110110000111111111111111100111 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
 run -all
 # TestCase#           0 : success
 # TestCase#           1 : success
 # TestCase#           2 : success
 # TestCase#           3 : success
 # TestCase#           4 : success
-# TestCase#           5 : success
-# TestCase#           6 : success
+# TestCase#           5 : fail Output mul  00110110000111111111111111111110 Expected mul 00110110000111111111111111100111 
 # Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(101)
-#    Time: 70 ns  Iteration: 0  Instance: /mulTreeTB
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
 # 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 101
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  01000100100000100000110101011000 Expected mul 01000101001100100001000011101001 
+# TestCase#           2 : fail Output mul  11000001100010101111001010101111 Expected mul 11000010001101010101000001100010 
+# TestCase#           3 : fail Output mul  01000011100101101001001001101110 Expected mul 01000100000111100101001101110101 
+# TestCase#           4 : success
+# TestCase#           5 : fail Output mul  00110101100101100111010011111010 Expected mul 00110110000111111111111111100111 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : fail Output mul  01000101001100100001000011101010 Expected mul 01000101001100100001000011101001 
+# TestCase#           2 : fail Output mul  11000010001101010101000001100011 Expected mul 11000010001101010101000001100010 
+# TestCase#           3 : success
+# TestCase#           4 : success
+# TestCase#           5 : fail Output mul  00110110000111111111111111111111 Expected mul 00110110000111111111111111100111 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
+restart -f
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
+run -all
+# TestCase#           0 : fail Output mul  0x000x00x00000000000000000000000 Expected mul 00000000000000000000000000000000 
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : success
+# TestCase#           5 : fail Output mul  00110110000111111111111111111110 Expected mul 00110110000111111111111111100111 
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
+# 1
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
+# Compile of radix4_tb.v was successful.
+# Compile of radix4booth.v was successful.
+# Compile of floatMultiplier.v was successful.
+# Compile of floatTB.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.floatTB
+# Loading work.floatMultiplier
 run -all
 # TestCase#           0 : success
 # TestCase#           1 : success
 # TestCase#           2 : success
 # TestCase#           3 : success
 # TestCase#           4 : success
-# TestCase#           5 : success
-# TestCase#           6 : success
-# TestCase#           7 : success
+# TestCase#           5 : fail Output mul  00110110000111111111111111111110 Expected mul 00110110000111111111111111100111 
 # Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(107)
-#    Time: 80 ns  Iteration: 0  Instance: /mulTreeTB
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v(116)
+#    Time: 26 ns  Iteration: 0  Instance: /floatTB
 # 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 107
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
-# ** Error (suppressible): (vsim-3389) Port 'of' not found in the connected module (4th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/multiplier File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v Line: 16
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
-restart -f
-# No Design Loaded!
-# Break key hit
-quit sim
-# unknown switch: sim
+# Break in Module floatTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier/floatTB.v line 116
 quit -sim
-# End time: 22:56:44 on Dec 15,2022, Elapsed time: 1:34:54
-# Errors: 1, Warnings: 3
-quit -sim
-vsim -gui work.mulTreeTB
-# vsim -gui work.mulTreeTB 
-# Start time: 22:57:13 on Dec 15,2022
-# Loading work.mulTreeTB
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
-# Warning in wave window restart: ** UI-Msg: (vish-4014) No objects found matching '/mulTreeTB/of'. 
-# Warning in wave window restart: ** UI-Msg: (vish-4014) No objects found matching '/mulTreeTB/multiplier/of'. 
-run -all
-# TestCase#           0 : success
-# TestCase#           1 : success
-# TestCase#           2 : success
-# TestCase#           3 : success
-# TestCase#           4 : success
-# TestCase#           5 : success
-# TestCase#           6 : success
-# TestCase#           7 : success
-# Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(106)
-#    Time: 80 ns  Iteration: 0  Instance: /mulTreeTB
-# 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 106
-quit -sim
-# End time: 22:57:33 on Dec 15,2022, Elapsed time: 0:00:20
-# Errors: 0, Warnings: 2
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v failed with 5 errors.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 1 failed with 5 errors.
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
-vsim -gui work.mulTreeTB
-# vsim -gui work.mulTreeTB 
-# Start time: 23:10:57 on Dec 15,2022
-# Loading work.mulTreeTB
-# Loading work.integrationMult
-# Loading work.registerNbits
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
-add wave -position insertpoint sim:/mulTreeTB/*
-run -all
-# TestCase#           0 : fail Output mul                      X Expected mul            2147483647 
-# TestCase#           1 : fail Output mul                      X Expected mul                131070 
-# TestCase#           2 : fail Output mul                      X Expected mul                    -1 
-# TestCase#           3 : fail Output mul                      X Expected mul                    -4 
-# TestCase#           4 : fail Output mul                      X Expected mul                     4 
-# TestCase#           5 : fail Output mul                      X Expected mul   4611686018427387904 
-# TestCase#           6 : fail Output mul                      X Expected mul   4611686014132420609 
-# TestCase#           7 : fail Output mul                      X Expected mul                    -3 
-# Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(115)
-#    Time: 18 ns  Iteration: 0  Instance: /mulTreeTB
-# 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 115
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.integrationMult
-# Loading work.registerNbits
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'result'.
-#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/mul File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v Line: 15
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'out'.
-#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/multiplier File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v Line: 16
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
-restart -f
-# No Design Loaded!
-quit -sim
-# End time: 23:13:08 on Dec 15,2022, Elapsed time: 0:02:11
-# Errors: 2, Warnings: 2
-quit -sim
-vsim -gui work.mulTreeTB
-# vsim -gui work.mulTreeTB 
-# Start time: 23:13:18 on Dec 15,2022
-# Loading work.mulTreeTB
-# Loading work.integrationMult
-# Loading work.registerNbits
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
-run -all
-# TestCase#           0 : fail Output mul                      X Expected mul            2147483647 
-# TestCase#           1 : fail Output mul                      X Expected mul                131070 
-# TestCase#           2 : fail Output mul                      X Expected mul                    -1 
-# TestCase#           3 : fail Output mul                      X Expected mul                    -4 
-# TestCase#           4 : fail Output mul                      X Expected mul                     4 
-# TestCase#           5 : fail Output mul                      X Expected mul   4611686018427387904 
-# TestCase#           6 : fail Output mul                      X Expected mul   4611686014132420609 
-# TestCase#           7 : fail Output mul                      X Expected mul                    -3 
-# Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(115)
-#    Time: 18 ns  Iteration: 0  Instance: /mulTreeTB
-# 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 115
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.integrationMult
-# Loading work.registerNbits
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# TestCase#           0 : fail Output mul                      0 Expected mul            2147483647 
-# TestCase#           1 : fail Output mul             2147483647 Expected mul                131070 
-# TestCase#           2 : fail Output mul                 131070 Expected mul                    -1 
-# TestCase#           3 : fail Output mul                     -1 Expected mul                    -4 
-# TestCase#           4 : fail Output mul                     -4 Expected mul                     4 
-# TestCase#           5 : fail Output mul                      4 Expected mul   4611686018427387904 
-# TestCase#           6 : fail Output mul    4611686018427387904 Expected mul   4611686014132420609 
-# TestCase#           7 : fail Output mul    4611686014132420609 Expected mul                    -3 
-# Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(115)
-#    Time: 18 ns  Iteration: 0  Instance: /mulTreeTB
-# 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 115
-# Compile of mulTree.v was successful.
-# Compile of mulTreeTB.v was successful.
-# Compile of CSA.v was successful.
-# Compile of products.v was successful.
-# Compile of FA.v was successful.
-# Compile of ripple.v was successful.
-# Compile of multiply.v was successful.
-# 7 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.mulTreeTB
-# Loading work.integrationMult
-# Loading work.registerNbits
-# Loading work.mulTree
-# Loading work.products
-# Loading work.CSA
-# Loading work.RCA64
-# Loading work.FA
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# TestCase#           0 : success
-# TestCase#           1 : success
-# TestCase#           2 : success
-# TestCase#           3 : success
-# TestCase#           4 : success
-# TestCase#           5 : success
-# TestCase#           6 : success
-# TestCase#           7 : success
-# Finish testbench
-# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v(117)
-#    Time: 34 ns  Iteration: 0  Instance: /mulTreeTB
-# 1
-# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/WallaceTree/mulTreeTB.v line 117
-quit -sim
-# End time: 23:17:45 on Dec 15,2022, Elapsed time: 0:04:27
+# End time: 19:52:49 on Dec 17,2022, Elapsed time: 3:03:49
 # Errors: 0, Warnings: 1

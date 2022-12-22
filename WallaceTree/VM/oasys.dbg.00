@@ -1,0 +1,891 @@
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:952
+libc: 2.17-stable
+
+Timestamp: 1671143339.970768908
+---
+PID=3487 0.150462644 0.032793 0.117671 program start
+Complete list of environment variables at program start
+_ /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui
+CALIBRE_HOME /home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14
+COLORTERM truecolor
+DBUS_SESSION_BUS_ADDRESS unix:abstract=/tmp/dbus-OqXMPrOE5T,guid=a80fd58dcd5263f72edf56b8639b9c50
+DBUS_STARTER_ADDRESS unix:abstract=/tmp/dbus-OqXMPrOE5T,guid=a80fd58dcd5263f72edf56b8639b9c50
+DBUS_STARTER_BUS_TYPE session
+DESKTOP_SESSION gnome-classic
+DISPLAY :0
+GDM_LANG en_US.UTF-8
+GDMSESSION gnome-classic
+GNOME_DESKTOP_SESSION_ID this-is-deprecated
+GNOME_SHELL_SESSION_MODE classic
+GNOME_TERMINAL_SCREEN /org/gnome/Terminal/screen/58fc81d0_f6cb_4622_878f_da20604e0dbd
+GNOME_TERMINAL_SERVICE :1.102
+HISTCONTROL ignoredups
+HISTSIZE 1000
+HOME /home/vlsi
+HOSTNAME localhost.localdomain
+IMSETTINGS_INTEGRATE_DESKTOP yes
+IMSETTINGS_MODULE none
+LANG en_US.UTF-8
+LD_LIBRARY_PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/Linux-x86_64-O:
+LESSOPEN {||/usr/bin/lesspipe.sh %s}
+LM_LICENSE_FILE /home/vlsi/Installation/5984_authcodes.txt
+LOGNAME vlsi
+LS_COLORS {rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:}
+MAIL /var/spool/mail/vlsi
+MANPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/doc/man:
+MGC_HOME /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/mgc_home
+OASYSLD_LICENSE_FILE /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/license.lic
+PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/share/onespin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/share/slec:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/vlsi/Installation/mgls_v9-22_3-1-0.aol/bin:/home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/bin:/home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14/bin:/home/vlsi/Installation/intelFPGA/19.1/modelsim_ase/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin:/home/vlsi/.local/bin:/home/vlsi/bin:/home/vlsi/Installation/mgls_v9-22_3-1-0.aol/bin:/home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/bin:/home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14/bin:/home/vlsi/Installation/intelFPGA/19.1/modelsim_ase/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin
+PWD /home/vlsi/Desktop/WallaceTree
+QT_GRAPHICSSYSTEM_CHECKED 1
+QT_IM_MODULE ibus
+QTDIR /usr/lib64/qt-3.3
+QTINC /usr/lib64/qt-3.3/include
+QTLIB /usr/lib64/qt-3.3/lib
+RT_CMD {/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/oasys }
+RT_HOME /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1
+RT_LIBPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib
+RT_MANPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/doc/man
+RT_PID 3477
+RT_TCL_PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl
+RT_TMP /tmp/oasys.3477
+RT_WRAPPER_SCRIPT /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/oasys
+SESSION_MANAGER local/unix:@/tmp/.ICE-unix/1871,unix/unix:/tmp/.ICE-unix/1871
+SHELL /bin/bash
+SHLVL 3
+SSH_AGENT_PID 2015
+SSH_AUTH_SOCK /run/user/1000/keyring/ssh
+TCL_LIBRARY /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl/library
+TERM xterm-256color
+USER vlsi
+USERNAME vlsi
+VTE_VERSION 5202
+WINDOWPATH 1
+XAUTHORITY /run/gdm/auth-for-vlsi-NRlKc6/database
+XDG_CURRENT_DESKTOP GNOME-Classic:GNOME
+XDG_DATA_DIRS /home/vlsi/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+XDG_MENU_PREFIX gnome-
+XDG_RUNTIME_DIR /run/user/1000
+XDG_SEAT seat0
+XDG_SESSION_DESKTOP gnome-classic
+XDG_SESSION_ID 1
+XDG_SESSION_TYPE x11
+XDG_VTNR 1
+XMODIFIERS @im=ibus
+---
+
+Timestamp: 1671143339.980253025
+---
+Soft resource limits:
+
+Executing: /bin/bash -f -c {ulimit -a -S}
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 15652
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+---
+
+Timestamp: 1671143339.983550554
+---
+Hard resource limits:
+
+Executing: /bin/bash -f -c {ulimit -a -H}
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 15652
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 15652
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+---
+
+Timestamp: 1671143339.983747988
+---
+CPU Information
+
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 165
+model name	: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+stepping	: 2
+microcode	: 0xec
+cpu MHz		: 2592.000
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx rdtscp lm constant_tsc arch_perfmon nopl tsc_reliable nonstop_tsc eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx hypervisor lahf_lm 3dnowprefetch arat
+bogomips	: 5184.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+
+
+This host has 1 processors, with most parameters identical to the first one, except as noted above.
+
+---
+
+Timestamp: 1671143340.094998937
+---
+Miscellaneous system info for process PID=3487
+Recorded at Fri Dec 16 00:28:59 EET 2022
+
+Executing: uptime
+ 00:29:00 up 14 min,  3 users,  load average: 0.26, 0.21, 0.23
+
+Executing: uname -a
+Linux localhost.localdomain 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+Executing: free
+              total        used        free      shared  buff/cache   available
+Mem:        4040776      850736     1727076       17296     1462964     2931896
+Swap:       4063228           0     4063228
+
+Executing: ps u 3487
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+vlsi      3487  8.5  0.7 277836 31424 pts/2    S+   00:28   0:00 /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui --
+
+Executing: cat /etc/redhat-release
+CentOS Linux release 7.7.1908 (Core)
+
+Executing: ldd /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui
+	linux-vdso.so.1 =>  (0x00007ffdb43cb000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00007f93528bf000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f93526a3000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f935249f000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f9352297000)
+	libX11.so.6 => /lib64/libX11.so.6 (0x00007f9351f59000)
+	libSM.so.6 => /lib64/libSM.so.6 (0x00007f9351d51000)
+	libICE.so.6 => /lib64/libICE.so.6 (0x00007f9351b35000)
+	libXi.so.6 => /lib64/libXi.so.6 (0x00007f9351925000)
+	libXrender.so.1 => /lib64/libXrender.so.1 (0x00007f935171a000)
+	libXfixes.so.3 => /lib64/libXfixes.so.3 (0x00007f9351514000)
+	libXrandr.so.2 => /lib64/libXrandr.so.2 (0x00007f9351309000)
+	libXcursor.so.1 => /lib64/libXcursor.so.1 (0x00007f93510fe000)
+	libXinerama.so.1 => /lib64/libXinerama.so.1 (0x00007f9350efb000)
+	libfreetype.so.6 => /lib64/libfreetype.so.6 (0x00007f9350c3c000)
+	libXext.so.6 => /lib64/libXext.so.6 (0x00007f9350a2a000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f9350814000)
+	libgthread-2.0.so.0 => /lib64/libgthread-2.0.so.0 (0x00007f9350612000)
+	libglib-2.0.so.0 => /lib64/libglib-2.0.so.0 (0x00007f93502fc000)
+	libfontconfig.so.1 => /lib64/libfontconfig.so.1 (0x00007f93500ba000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f934fdb8000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f934f9ea000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f9352ae6000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00007f934f7c0000)
+	libxcb.so.1 => /lib64/libxcb.so.1 (0x00007f934f598000)
+	libuuid.so.1 => /lib64/libuuid.so.1 (0x00007f934f393000)
+	libbz2.so.1 => /lib64/libbz2.so.1 (0x00007f934f183000)
+	libpng15.so.15 => /lib64/libpng15.so.15 (0x00007f934ef58000)
+	libpcre.so.1 => /lib64/libpcre.so.1 (0x00007f934ecf6000)
+	libexpat.so.1 => /lib64/libexpat.so.1 (0x00007f934eacc000)
+	libXau.so.6 => /lib64/libXau.so.6 (0x00007f934e8c8000)
+
+Examining disk space in the following directories:
+  Current directory: /home/vlsi/Desktop/WallaceTree
+  Oasys' temp directory: /tmp/oasys.3477/ (normalized path: /tmp/oasys.3477)
+  RT_TMP directory: /tmp/oasys.3477
+
+Executing: df /home/vlsi/Desktop/WallaceTree /tmp/oasys.3477 /tmp/oasys.3477
+Filesystem          1K-blocks     Used Available Use% Mounted on
+/dev/mapper/cl-root  47285700 31355756  15929944  67% /
+tmpfs                 2020388       32   2020356   1% /tmp
+tmpfs                 2020388       32   2020356   1% /tmp
+
+
+---
+
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:22400
+
+
+interrupt: signal 2 (Interrupt)
+
+About to print stack trace (depth=10, limit=50)
+0: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal14printBacktraceEib+0x116) [0x2ed72b6]
+1: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal9interruptEi+0x51) [0x2ed75e1]
+2: /lib64/libpthread.so.0(+0xf5f0) [0x7f48113845f0]
+3: /lib64/libpthread.so.0(raise+0x2b) [0x7f48113844bb]
+4: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2fec68c]
+5: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(gl_get_line+0x461) [0x2ff4cf1]
+6: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_Main+0x8c2) [0x2f7ac02]
+7: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN9MRealTime4mainEiPPc+0x16f) [0xdb993f]
+8: /lib64/libc.so.6(__libc_start_main+0xf5) [0x7f480e6de505]
+9: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0xe7ef25]
+Timestamp: 1671145345.988552400
+---
+NDbC::beforeConcurrency uniquifier=<offset=0,modulo=2>
+
+---
+
+1671145345.991674385 Parent PID=3487 6.070554070 4.987559 1.082995 forking worker # 1
+Timestamp: 1671145345.991903124
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=2>
+
+---
+
+Timestamp: 1671145345.991903124
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=2>
+
+---
+
+Timestamp: 1671145346.142659660
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=2>
+
+---
+
+Timestamp: 1671145346.142715505
+---
+Parent 3487 started child 4572 
+
+---
+
+1671145346.189195816 BEGIN areaOpt PID=3487 6.167369252 5.001295 1.166074
+1671145401.872991101 END areaOpt PID=3487 7.532873719 6.112956 1.419918
+1671145401.921354803 BEGIN constProp PID=3487 7.538140893 6.117261 1.420879
+1671145401.927851092 END constProp PID=3487 7.544193592 6.120122 1.424072
+1671145402.755361291 BEGIN runTimingOptimizationLoopLevel2 PID=3487 7.988245810 6.552313 1.435933
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:182472
+info: (0) optimizing 'i_0/I1[63]' (path group default) @ -1528.1ps(1/2) (0 secs)
+optimized 'integrationMult__GC0' area: 294940800000 -> 295260000000, inst: 268->269, slack: -1528.1 -> -1528.1 (0.0 secs)
+optimized 'mulTree__GB4' area: 939937600000 -> 958451200000, inst: 1972->2035, slack: -1528.1 -> -527.8 (3.7 secs)
+optimized 'mulTree__GB2' area: 607118400000 -> 612864000000, inst: 1300->1329, slack: -1528.1 -> -1522.3 (0.1 secs)
+optimized 'mulTree__GB0' area: 568920800000 -> 571687200000, inst: 1575->1586, slack: -1528.1 -> -1510.0 (0.2 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:182552
+info: (1) optimizing 'i_0/I1[62]' (path group default) @ -510.4ps(1/2) (6 secs)
+optimized 'integrationMult__GC0' area: 295260000000 -> 295260000000, inst: 269->269, slack: -510.4 -> -510.4 (0.0 secs)
+unchanged 'mulTree__GB4' area: 958451200000 -> 958451200000, inst: 2035->2035, slack: -510.4 -> -510.4 (0.1 secs)
+optimized 'mulTree__GB2' area: 612864000000 -> 637868000000, inst: 1329->1441, slack: -510.4 -> -498.3 (0.3 secs)
+unchanged 'mulTree__GB0' area: 571687200000 -> 571687200000, inst: 1586->1586, slack: -510.4 -> -510.4 (0.0 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:182632
+info: (2) optimizing 'i_0/I1[62]' (path group default) @ -490.2ps(1/2) (0 secs)
+unchanged 'integrationMult__GC0' area: 295260000000 -> 295260000000, inst: 269->269, slack: -490.2 -> -490.2 (0.0 secs)
+optimized 'mulTree__GB4' area: 958451200000 -> 974730400000, inst: 2035->2086, slack: -490.2 -> -407.6 (1.6 secs)
+optimized 'mulTree__GB2' area: 637868000000 -> 639570400000, inst: 1441->1448, slack: -490.2 -> -467.3 (0.2 secs)
+optimized 'mulTree__GB0' area: 571687200000 -> 575198400000, inst: 1586->1600, slack: -490.2 -> -481.0 (0.3 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:182712
+info: (3) optimizing 'i_0/I1[62]' (path group default) @ -384.0ps(1/2) (3 secs)
+optimized 'mulTree__GB1' area: 443475200000 -> 448901600000, inst: 957->981, slack: -384.0 -> -382.5 (0.2 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:182792
+info: (4) optimizing 'i_0/I1[62]' (path group default) @ -383.2ps(1/2) (1 secs)
+unchanged 'integrationMult__GC0' area: 295260000000 -> 295260000000, inst: 269->269, slack: -383.2 -> -383.2 (0.0 secs)
+unchanged 'mulTree__GB4' area: 974730400000 -> 974730400000, inst: 2086->2086, slack: -383.2 -> -383.2 (0.1 secs)
+optimized 'mulTree__GB2' area: 639570400000 -> 635846400000, inst: 1448->1436, slack: -383.2 -> -375.9 (0.8 secs)
+unchanged 'mulTree__GB0' area: 575198400000 -> 575198400000, inst: 1600->1600, slack: -383.2 -> -383.2 (0.1 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:182872
+info: (5) optimizing 'i_0/I1[62]' (path group default) @ -375.9ps(1/2) (1 secs)
+optimized 'integrationMult__GC0' area: 295260000000 -> 296324000000, inst: 269->269, slack: -375.9 -> -375.2 (0.0 secs)
+unchanged 'mulTree__GB4' area: 974730400000 -> 974730400000, inst: 2086->2086, slack: -375.9 -> -375.9 (0.0 secs)
+unchanged 'mulTree__GB2' area: 635846400000 -> 635846400000, inst: 1436->1436, slack: -375.9 -> -375.9 (0.1 secs)
+optimized 'mulTree__GB0' area: 575198400000 -> 577007200000, inst: 1600->1607, slack: -375.9 -> -365.6 (0.4 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:182952
+info: (6) optimizing 'i_0/I1[63]' (path group default) @ -364.9ps(1/2) (1 secs)
+optimized 'integrationMult__GC0' area: 296324000000 -> 297175200000, inst: 269->269, slack: -364.9 -> -364.9 (0.0 secs)
+optimized 'mulTree__GB4' area: 974730400000 -> 974624000000, inst: 2086->2086, slack: -364.9 -> -365.5 (1.0 secs)
+unchanged 'mulTree__GB2' area: 635846400000 -> 635846400000, inst: 1436->1436, slack: -364.9 -> -364.9 (0.0 secs)
+unchanged 'mulTree__GB1' area: 448901600000 -> 448901600000, inst: 981->981, slack: -364.9 -> -364.9 (0.0 secs)
+unchanged 'mulTree__GB0' area: 577007200000 -> 577007200000, inst: 1607->1607, slack: -364.9 -> -364.9 (0.1 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:183032
+info: (7) optimizing 'i_0/I1[63]' (path group default) @ -363.3ps(1/2) (1 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:183212
+optimized 'mulTree__GB0' area: 577007200000 -> 644996800000, inst: 1607->1573, slack: -363.3 -> -377.1 (1.2 secs)
+optimized 'mulTree__GB1' area: 448901600000 -> 464010400000, inst: 981->1006, slack: -363.3 -> -361.0 (0.4 secs)
+optimized 'mulTree__GB2' area: 635846400000 -> 619992800000, inst: 1436->1349, slack: -363.3 -> -340.1 (3.5 secs)
+optimized 'mulTree__GB4' area: 974624000000 -> 962920000000, inst: 2086->2081, slack: -363.3 -> -1275.6 (8.6 secs)
+optimized 'integrationMult__GC0' area: 297175200000 -> 297175200000, inst: 269->269, slack: -363.3 -> -363.3 (0.1 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:183294
+info: (8) optimizing 'i_0/I1[63]' (path group default) @ -1276.5ps(1/2) (17 secs)
+optimized 'mulTree__GB0' area: 644996800000 -> 644784000000, inst: 1573->1571, slack: -1276.5 -> -1244.2 (0.3 secs)
+optimized 'mulTree__GB2' area: 619992800000 -> 625206400000, inst: 1349->1381, slack: -1276.5 -> -1236.0 (0.8 secs)
+optimized 'mulTree__GB4' area: 962920000000 -> 963132800000, inst: 2081->2082, slack: -1276.5 -> -1275.0 (5.2 secs)
+unchanged 'integrationMult__GC0' area: 297175200000 -> 297175200000, inst: 269->269, slack: -1276.5 -> -1276.5 (0.0 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:183375
+info: (9) optimizing 'i_0/I1[63]' (path group default) @ -1271.7ps(1/2) (7 secs)
+optimized 'mulTree__GB0' area: 644784000000 -> 645954400000, inst: 1571->1580, slack: -1271.7 -> -1267.4 (0.5 secs)
+optimized 'mulTree__GB2' area: 625206400000 -> 633186400000, inst: 1381->1418, slack: -1271.7 -> -1239.5 (0.2 secs)
+unchanged 'mulTree__GB4' area: 963132800000 -> 963132800000, inst: 2082->2082, slack: -1271.7 -> -1271.7 (0.1 secs)
+optimized 'integrationMult__GC0' area: 297175200000 -> 297388000000, inst: 269->269, slack: -1271.7 -> -1271.7 (0.1 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:183457
+info: (10) optimizing 'i_0/I1[63]' (path group default) @ -1238.3ps(1/2) (1 secs)
+optimized 'mulTree__GB0' area: 645954400000 -> 645316000000, inst: 1580->1574, slack: -1238.3 -> -1237.9 (0.3 secs)
+optimized 'mulTree__GB2' area: 633186400000 -> 636378400000, inst: 1418->1432, slack: -1238.3 -> -1232.0 (1.9 secs)
+optimized 'mulTree__GB4' area: 963132800000 -> 965473600000, inst: 2082->2096, slack: -1238.3 -> -1254.0 (2.5 secs)
+optimized 'integrationMult__GC0' area: 297388000000 -> 298452000000, inst: 269->269, slack: -1238.3 -> -1238.3 (0.1 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:183539
+info: (11) optimizing 'i_0/I1[63]' (path group default) @ -1261.6ps(1/2) (6 secs)
+
+
+interrupt: signal 2 (Interrupt)
+
+About to print stack trace (depth=50, limit=50)
+0: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal14printBacktraceEib+0x116) [0x2ed72b6]
+1: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal9interruptEi+0x51) [0x2ed75e1]
+2: /lib64/libpthread.so.0(+0xf5f0) [0x7f48113845f0]
+3: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(cuddInitCache+0x19b) [0x2ba127b]
+4: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Cudd_Init+0x79) [0x2baa059]
+5: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4CuddC2Ejjjjm+0x47) [0x2bdf407]
+6: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN9ConstPropC2E8NRealMod11NEqPinArrayP9UHashListIP6NInstCS4_5UEKeyIS4_E13UHashListNodeIS4_ES4_E+0xdb) [0x1a0f3eb]
+7: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN8NRealMod18propagateConstantsEbbb+0x13d) [0x1a2684d]
+8: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN8OptTools29postProcessRegeneratedNetlistER8NRealModS1_R5NInst9regenModebb5TTimeyyRiRbS7_S7_S7_S7_S7_RK5UListIi9UListNodeIiEi7UEValueIiSA_ELi0EES5_R8UHashMapIiS5_i5UEKeyIiELi0EESK_bb+0xfa) [0x161e5fa]
+9: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN8OptTools13regenerateIntE8NRealModb9regenModeRbP7FFRemapP6NInstCb5TTimeP5UListIi9UListNodeIiEi7UEValueIiSA_ELi0EEbb+0x1f32) [0x16216b2]
+10: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN8OptTools10regenerateE8NRealModb9regenModeRbP7FFRemapP6NInstCb5TTimeP5UListIi9UListNodeIiEi7UEValueIiSA_ELi0EE+0x67) [0x1623447]
+11: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN8OptTools5regenEv+0x9a) [0x16257fa]
+12: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN8OptTools14optimizeModuleE8NRealModbbbRb+0x3db) [0x160ef5b]
+13: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN14OptToolManager8runToolsEibbbbbb+0xea8) [0x16043e8]
+14: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN9Optimize217timingOptInternalEiiP5UListIP5NPinC9UListNodeIS2_ES2_7UEValueIS2_S4_ELi0EEPbRbP7UCArrayI5TTimeEPi+0x5c1) [0x15bd861]
+15: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN9Optimize219processActiveGroupsEbiP5UListIP5NPinC9UListNodeIS2_ES2_7UEValueIS2_S4_ELi0EEPbRiRb+0x2c2) [0x15bee92]
+16: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN9Optimize219timingOptPathGroupsEiP5UListIP5NPinC9UListNodeIS2_ES2_7UEValueIS2_S4_ELi0EEPb+0x4e9) [0x15bfcb9]
+17: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN9Optimize29timingOptEiP5UListIP5NPinC9UListNodeIS2_ES2_7UEValueIS2_S4_ELi0EEPb+0xfd) [0x15c068d]
+18: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN19TimingOptMpgManager15timingOptDesignE4NDesP7Tcl_Obj+0x445) [0x158ef15]
+19: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN10MpgManager15processMpgTasksEbbb+0x21b) [0x2997b8b]
+20: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top51timingOptMpgProcessTasksInListsWithStatusReturnOnlyER9UHashListIPS0_IP6NInstCS2_5UEKeyIS2_E13UHashListNodeIS2_ES2_ES8_S3_IS8_ES5_IS8_ES8_EiR8UHashMapIP5NGenCP15TimingOptResultSF_S3_ISF_ELi0EERb+0x236) [0x158c966]
+21: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31timingOptMpgProcessTasksInListsER9UHashListIPS0_IP6NInstCS2_5UEKeyIS2_E13UHashListNodeIS2_ES2_ES8_S3_IS8_ES5_IS8_ES8_Ei+0x11d) [0x158dded]
+22: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top28optRetryMostCriticalPathPassER22OptGenomeInstSchedulerb+0x43f) [0x15da4af]
+23: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel3ERP5UTaskRbRiS3_S4_RP8UControliS3_+0x3d6) [0x15dfa66]
+24: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel2EiiRbP7UCArrayI5TTimeE+0x783) [0x15e0b03]
+25: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel1ERbi+0x487) [0x15e2327]
+26: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel0ERbib+0xfa) [0x15e261a]
+27: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top24runTimingOptimizationAuxEi+0x2b2) [0x15e2ea2]
+28: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top21runTimingOptimizationEi+0x270) [0x15e3460]
+29: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top7runCoreEv+0x466) [0x15e47e6]
+30: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top3runEv+0x6a) [0x15e579a]
+31: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes8optimizeEbbbbbf5TTimebbb+0x6cf) [0x159e1bf]
+32: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x1192328]
+33: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+34: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01f10]
+35: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+36: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+37: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+38: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+39: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+40: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+41: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+42: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+43: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+44: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+45: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+46: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_EvalEx+0x13) [0x2f04ac3]
+47: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_FSEvalFileEx+0x1f7) [0x2f74097]
+48: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f18e52]
+49: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+
+
+interrupt: signal 2 (Interrupt)
+
+About to print stack trace (depth=50, limit=50)
+0: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal14printBacktraceEib+0x116) [0x2ed72b6]
+1: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal9interruptEi+0x51) [0x2ed75e1]
+2: /lib64/libpthread.so.0(+0xf5f0) [0x7f48113845f0]
+3: /lib64/libc.so.6(getrusage+0x7) [0x7f480e7b0d37]
+4: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Extra_CpuTimeDouble+0x11) [0x1e30981]
+5: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(CmdCommandDispatch+0x146) [0x1cbc386]
+6: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Cmd_CommandExecute+0x98) [0x1cbbb88]
+7: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7LOptAbc6runAbcERK11Name2NetMapPKc+0x3bd) [0x156f5ad]
+8: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7LOptAbc28tryMethodAbcExecuteAbcScriptEv+0x1b1) [0x156f891]
+9: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7LOptAbc15tryMethodAbcAuxEv+0x28) [0x1571058]
+10: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7LOptAbc12tryMethodAbcEv+0xae) [0x1571b2e]
+11: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7LOptAbc19tryAllMethodsTimingERi+0xeb) [0x15728ab]
+12: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7LOptAbc11optimizeAuxEv+0x237) [0x1572c47]
+13: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7LOptAbc8optimizeE8NRealMod8LOptModeP15LOptAbcControlsb5TTimeS4_xfRS4_Rb+0x1f9) [0x1573079]
+14: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN8NRealMod13optimizeLogicE7OptMode14AbcAreaNewModeP15LOptAbcControlsb5TTimexf+0x92) [0x1574182]
+15: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x160926b]
+16: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN10OTAbcRemap5applyEv+0x9c) [0x160941c]
+17: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN8OptTools14optimizeModuleE8NRealModbbbRb+0x3db) [0x160ef5b]
+18: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN14OptToolManager8runToolsEibbbbbb+0xea8) [0x16043e8]
+19: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN9Optimize217timingOptInternalEiiP5UListIP5NPinC9UListNodeIS2_ES2_7UEValueIS2_S4_ELi0EEPbRbP7UCArrayI5TTimeEPi+0x5c1) [0x15bd861]
+20: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN9Optimize219processActiveGroupsEbiP5UListIP5NPinC9UListNodeIS2_ES2_7UEValueIS2_S4_ELi0EEPbRiRb+0x2c2) [0x15bee92]
+21: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN9Optimize219timingOptPathGroupsEiP5UListIP5NPinC9UListNodeIS2_ES2_7UEValueIS2_S4_ELi0EEPb+0x4e9) [0x15bfcb9]
+22: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN9Optimize29timingOptEiP5UListIP5NPinC9UListNodeIS2_ES2_7UEValueIS2_S4_ELi0EEPb+0xfd) [0x15c068d]
+23: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN19TimingOptMpgManager15timingOptDesignE4NDesP7Tcl_Obj+0x445) [0x158ef15]
+24: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN10MpgManager15processMpgTasksEbbb+0x21b) [0x2997b8b]
+25: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top51timingOptMpgProcessTasksInListsWithStatusReturnOnlyER9UHashListIPS0_IP6NInstCS2_5UEKeyIS2_E13UHashListNodeIS2_ES2_ES8_S3_IS8_ES5_IS8_ES8_EiR8UHashMapIP5NGenCP15TimingOptResultSF_S3_ISF_ELi0EERb+0x236) [0x158c966]
+26: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31timingOptMpgProcessTasksInListsER9UHashListIPS0_IP6NInstCS2_5UEKeyIS2_E13UHashListNodeIS2_ES2_ES8_S3_IS8_ES5_IS8_ES8_Ei+0x11d) [0x158dded]
+27: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top28optRetryMostCriticalPathPassER22OptGenomeInstSchedulerb+0x43f) [0x15da4af]
+28: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel3ERP5UTaskRbRiS3_S4_RP8UControliS3_+0x3d6) [0x15dfa66]
+29: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel2EiiRbP7UCArrayI5TTimeE+0x783) [0x15e0b03]
+30: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel1ERbi+0x487) [0x15e2327]
+31: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel0ERbib+0xfa) [0x15e261a]
+32: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top24runTimingOptimizationAuxEi+0x2b2) [0x15e2ea2]
+33: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top21runTimingOptimizationEi+0x270) [0x15e3460]
+34: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top7runCoreEv+0x466) [0x15e47e6]
+35: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top3runEv+0x6a) [0x15e579a]
+36: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes8optimizeEbbbbbf5TTimebbb+0x6cf) [0x159e1bf]
+37: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x1192328]
+38: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+39: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01f10]
+40: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+41: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+42: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+43: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+44: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+45: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+46: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+47: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+48: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+49: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+optimized 'mulTree__GB0' area: 645316000000 -> 646592800000, inst: 1574->1582, slack: -1261.6 -> -1255.0 (0.6 secs)
+unchanged 'mulTree__GB2' area: 636378400000 -> 636378400000, inst: 1432->1432, slack: -1261.6 -> -1261.6 (0.1 secs)
+optimized 'mulTree__GB4' area: 965473600000 -> 972389600000, inst: 2096->2125, slack: -1261.6 -> -921.8 (21.5 secs)
+unchanged 'integrationMult__GC0' area: 298452000000 -> 298452000000, inst: 269->269, slack: -1238.3 -> -1238.3 (0.0 secs)
+1671145472.129809254 BEGIN optRepartitionGenomes PID=3487 75.238288176 69.150254 6.088034
+1671145472.715377166 END optRepartitionGenomes PID=3487 75.803814939 69.685011 6.118804
+1671145472.715393406 END runTimingOptimizationLoopLevel2 PID=3487 75.803831177 69.685027 6.118804
+1671145472.949902889 BEGIN runTimingOptimizationLoopLevel2 PID=3487 76.030189622 69.907504 6.122685
+1671145472.950026799 END runTimingOptimizationLoopLevel2 PID=3487 76.030313909 69.907511 6.122803
+1671145472.950548182 BEGIN runTimingOptimizationLoopLevel2 PID=3487 76.030835318 69.907511 6.123324
+1671145472.950620115 END runTimingOptimizationLoopLevel2 PID=3487 76.030907282 69.907511 6.123396
+1671145472.952288192 BEGIN runTimingOptimizationLoopLevel2 PID=3487 76.032449677 69.908785 6.123665
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:184281
+info: (12) optimizing 'i_0/I1[63]' (path group default) @ -958.9ps(1/2) (25 secs)
+optimized 'mulTree__GTE0' area: 2255360800000 -> 2255360800000, inst: 5139->5139, slack: -958.9 -> -958.9 (0.2 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:184362
+info: (13) optimizing 'i_0/I1[63]' (path group default) @ -954.0ps(1/2) (0 secs)
+
+
+interrupt: signal 2 (Interrupt)
+
+About to print stack trace (depth=50, limit=50)
+0: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal14printBacktraceEib+0x116) [0x2ed72b6]
+1: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal9interruptEi+0x51) [0x2ed75e1]
+2: /lib64/libpthread.so.0(+0xf5f0) [0x7f48113845f0]
+3: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(__dynamic_cast+0x3e) [0x3ebef0e]
+4: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZNK9NBaseModC10realModuleEv+0x39) [0x29fe0a9]
+5: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZNK5NPinC6designEv+0x9) [0x2a49ca9]
+6: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZNK6TNPinC10onClockNetEb10TClockType+0x49) [0x2912099]
+7: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNPinC11updateViewsE5TBiInb+0xa3b) [0x28ac49b]
+8: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNPinC12updateInvArrE5TBiInb+0x79) [0x289dce9]
+9: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNDesC14processInvVwsQE6TLevelb+0xfd) [0x282f9ad]
+10: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNDesC12_updateViewsEbbP6TNPinC5TBiIn+0x4e5) [0x283aec5]
+11: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNDesC11updateViewsEbbP6TNPinC5TBiIn+0xb9) [0x283b3f9]
+12: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNDesC9endGroupsEv+0x15) [0x283b755]
+13: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNDesC10worstSlackEbPP5TMode+0x24) [0x283b7b4]
+14: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes10worstSlackEv+0x1d) [0x283b97d]
+15: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN19TimingOptMpgManager15timingOptDesignE4NDesP7Tcl_Obj+0x296) [0x158ed66]
+16: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN10MpgManager15processMpgTasksEbbb+0x21b) [0x2997b8b]
+17: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top51timingOptMpgProcessTasksInListsWithStatusReturnOnlyER9UHashListIPS0_IP6NInstCS2_5UEKeyIS2_E13UHashListNodeIS2_ES2_ES8_S3_IS8_ES5_IS8_ES8_EiR8UHashMapIP5NGenCP15TimingOptResultSF_S3_ISF_ELi0EERb+0x236) [0x158c966]
+18: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31timingOptMpgProcessTasksInListsER9UHashListIPS0_IP6NInstCS2_5UEKeyIS2_E13UHashListNodeIS2_ES2_ES8_S3_IS8_ES5_IS8_ES8_Ei+0x11d) [0x158dded]
+19: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN22OptGenomeInstScheduler15dispatchWorkersEib+0x228) [0x1683158]
+20: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel3ERP5UTaskRbRiS3_S4_RP8UControliS3_+0x5a6) [0x15dfc36]
+21: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel2EiiRbP7UCArrayI5TTimeE+0x783) [0x15e0b03]
+22: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel1ERbi+0x487) [0x15e2327]
+23: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel0ERbib+0xfa) [0x15e261a]
+24: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top24runTimingOptimizationAuxEi+0x2b2) [0x15e2ea2]
+25: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top21runTimingOptimizationEi+0x270) [0x15e3460]
+26: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top7runCoreEv+0x466) [0x15e47e6]
+27: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top3runEv+0x6a) [0x15e579a]
+28: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes8optimizeEbbbbbf5TTimebbb+0x6cf) [0x159e1bf]
+29: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x1192328]
+30: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+31: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01f10]
+32: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+33: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+34: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+35: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+36: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+37: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+38: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+39: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+40: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+41: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+42: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+43: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_EvalEx+0x13) [0x2f04ac3]
+44: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_FSEvalFileEx+0x1f7) [0x2f74097]
+45: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f18e52]
+46: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+47: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+48: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_EvalObjEx+0x2e0) [0x2f059a0]
+49: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f94307]
+optimized 'mulTree__GTE0' area: 2255360800000 -> 2266213600000, inst: 5139->5196, slack: -954.0 -> -941.0 (0.8 secs)
+
+
+interrupt: signal 2 (Interrupt)
+
+About to print stack trace (depth=50, limit=50)
+0: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal14printBacktraceEib+0x116) [0x2ed72b6]
+1: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal9interruptEi+0x51) [0x2ed75e1]
+2: /lib64/libpthread.so.0(+0xf5f0) [0x7f48113845f0]
+3: /lib64/libc.so.6(+0x13f415) [0x7f480e7fb415]
+4: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZNK10__cxxabiv120__si_class_type_info12__do_dyncastElNS_17__class_type_info10__sub_kindEPKS1_PKvS4_S6_RNS1_16__dyncast_resultE+0x56) [0x3ec0a16]
+5: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(__dynamic_cast+0x66) [0x3ebef36]
+6: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZNK9NBaseModC10realModuleEv+0x39) [0x29fe0a9]
+7: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZNK6NInstC6designEv+0xd) [0x29eb0ed]
+8: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZNK12TGenDelayArc19computeDelayAndSlewEP7TNInstCPK5TGenCR7BRFTimeR2RFI10TTimeShortEbS9_bb+0x2d0) [0x2894fa0]
+9: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7TGenPin13updateDrvArcsEP7TNInstCbPK5TGenCb+0x422) [0x2898f82]
+10: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7TNInstC13updateDrvArcsEibb+0xa3c) [0x28f7b2c]
+11: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNPinC13updateDrvArcsEbb+0x45) [0x2917965]
+12: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNPinC26updateDriverAndLoadingPinsEiR8TNetInfob+0x254) [0x2919b64]
+13: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNPinC22updateDriverAndNetArcsEb+0x6d) [0x291a01d]
+14: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZNK12TGenDelayArc5delayEP7TNInstCbPK5TGenCbb+0x231) [0x2895a11]
+15: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN9TGenDelay5delayEP7TNInstCbPK5TGenCb+0x6d) [0x2892fcd]
+16: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZNK5TGenC5delayEP7TNInstCiiR8TArcTypeRiP5TMode+0x1f3) [0x28dbb73]
+17: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7TNInstC5delayEiiR8TArcTypeRiP5TMode+0x28f) [0x28f29ff]
+18: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNPinC13mergeArcViewsER12TPinViewHashP7TNInstCiiS1_bbb+0x287) [0x28a4de7]
+19: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNPinC20collectIncomingViewsER12TPinViewHash5TBiIn6TLevelbb+0x23f) [0x28a756f]
+20: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNPinC11updateViewsE5TBiInb+0xfa) [0x28abb5a]
+21: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNPinC12updateInvArrE5TBiInb+0x79) [0x289dce9]
+22: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNDesC14processInvVwsQE6TLevelb+0xfd) [0x282f9ad]
+23: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNDesC12_updateViewsEbbP6TNPinC5TBiIn+0x4e5) [0x283aec5]
+24: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNDesC11updateViewsEbbP6TNPinC5TBiIn+0x1ae) [0x283b4ee]
+25: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNDesC9endGroupsEv+0x15) [0x283b755]
+26: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN6TNDesC10worstSlackEbPP5TMode+0x24) [0x283b7b4]
+27: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes10worstSlackEbPi+0x34) [0x283b9d4]
+28: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel3ERP5UTaskRbRiS3_S4_RP8UControliS3_+0x5f4) [0x15dfc84]
+29: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel2EiiRbP7UCArrayI5TTimeE+0x783) [0x15e0b03]
+30: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel1ERbi+0x487) [0x15e2327]
+31: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top31runTimingOptimizationLoopLevel0ERbib+0xfa) [0x15e261a]
+32: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top24runTimingOptimizationAuxEi+0x2b2) [0x15e2ea2]
+33: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top21runTimingOptimizationEi+0x270) [0x15e3460]
+34: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top7runCoreEv+0x466) [0x15e47e6]
+35: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top3runEv+0x6a) [0x15e579a]
+36: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes8optimizeEbbbbbf5TTimebbb+0x6cf) [0x159e1bf]
+37: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x1192328]
+38: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+39: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01f10]
+40: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+41: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+42: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+43: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+44: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+45: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+46: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+47: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+48: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+49: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+1671145474.696763194 BEGIN optRepartitionGenomes PID=3487 77.704699944 71.520281 6.184419
+1671145474.697191890 END optRepartitionGenomes PID=3487 77.705128904 71.520710 6.184419
+1671145474.697367841 END runTimingOptimizationLoopLevel2 PID=3487 77.705304671 71.520886 6.184419
+1671145474.738517639 BEGIN runTimingOptimizationLoopLevel2 PID=3487 77.742755215 71.556283 6.186472
+1671145474.738628619 END runTimingOptimizationLoopLevel2 PID=3487 77.742866574 71.556394 6.186472
+1671145474.739178559 BEGIN runTimingOptimizationLoopLevel2 PID=3487 77.743416511 71.556914 6.186502
+1671145474.739253608 END runTimingOptimizationLoopLevel2 PID=3487 77.743491627 71.556983 6.186508
+1671145475.531841980 Pausing MPG
+1671145475.531989127 BEGIN Optimize3Top::place PID=3487 78.414513473 72.216611 6.197903
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:221601
+
+
+interrupt: signal 2 (Interrupt)
+
+About to print stack trace (depth=50, limit=50)
+0: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal14printBacktraceEib+0x116) [0x2ed72b6]
+1: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal9interruptEi+0x51) [0x2ed75e1]
+2: /lib64/libpthread.so.0(+0xf5f0) [0x7f48113845f0]
+3: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace21simpleSmoothPotentialEv+0x7c6) [0x184bc26]
+4: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace10initPlace2EP15PlaceControllerbb+0xaea) [0x184c94a]
+5: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace6place2EP7PNGraphi+0x7fb) [0x185202b]
+6: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace6place2EP11PNPlaceInst+0x141) [0x1854271]
+7: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace5placeEP11PNPlaceInst+0x89d) [0x183d75d]
+8: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN16PNPlaceInterface5placeE4NDesbbbbbbbbbP11PNPlaceInst+0xe27) [0x1711477]
+9: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12PModulePlace9floorplanEbbbP5UListIPS0_IP6NInstC9UListNodeIS2_ES2_7UEValueIS2_S4_ELi0EES3_IS8_ES8_S5_IS8_S9_ELi0EE+0xc68) [0x1791aa8]
+10: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes9floorplanEbbb+0x122) [0x17932a2]
+11: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes6nplaceEbbbbbbb+0x51d) [0x17121ed]
+12: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top5placeEv+0x1be) [0x15d092e]
+13: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top7runCoreEv+0x5b5) [0x15e4935]
+14: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top3runEv+0x6a) [0x15e579a]
+15: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes8optimizeEbbbbbf5TTimebbb+0x6cf) [0x159e1bf]
+16: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x1192328]
+17: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+18: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01f10]
+19: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+20: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+21: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+22: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+23: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+24: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+25: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+26: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+27: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+28: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+29: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+30: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_EvalEx+0x13) [0x2f04ac3]
+31: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_FSEvalFileEx+0x1f7) [0x2f74097]
+32: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f18e52]
+33: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+34: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+35: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_EvalObjEx+0x2e0) [0x2f059a0]
+36: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f94307]
+37: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+38: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+39: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+40: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+41: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+42: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+43: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+44: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+45: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+46: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+47: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+48: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+49: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f56a16]
+
+
+interrupt: signal 2 (Interrupt)
+
+About to print stack trace (depth=50, limit=50)
+0: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal14printBacktraceEib+0x116) [0x2ed72b6]
+1: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal9interruptEi+0x51) [0x2ed75e1]
+2: /lib64/libpthread.so.0(+0xf5f0) [0x7f48113845f0]
+3: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace21simpleSmoothPotentialEv+0x42e) [0x184b88e]
+4: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace10initPlace2EP15PlaceControllerbb+0xaea) [0x184c94a]
+5: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace6place2EP7PNGraphi+0x7fb) [0x185202b]
+6: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace6place2EP11PNPlaceInst+0x141) [0x1854271]
+7: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace5placeEP11PNPlaceInst+0x89d) [0x183d75d]
+8: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN16PNPlaceInterface5placeE4NDesbbbbbbbbbP11PNPlaceInst+0xe27) [0x1711477]
+9: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12PModulePlace9floorplanEbbbP5UListIPS0_IP6NInstC9UListNodeIS2_ES2_7UEValueIS2_S4_ELi0EES3_IS8_ES8_S5_IS8_S9_ELi0EE+0xc68) [0x1791aa8]
+10: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes9floorplanEbbb+0x122) [0x17932a2]
+11: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes6nplaceEbbbbbbb+0x51d) [0x17121ed]
+12: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top5placeEv+0x1be) [0x15d092e]
+13: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top7runCoreEv+0x5b5) [0x15e4935]
+14: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top3runEv+0x6a) [0x15e579a]
+15: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes8optimizeEbbbbbf5TTimebbb+0x6cf) [0x159e1bf]
+16: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x1192328]
+17: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+18: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01f10]
+19: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+20: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+21: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+22: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+23: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+24: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+25: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+26: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+27: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+28: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+29: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+30: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_EvalEx+0x13) [0x2f04ac3]
+31: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_FSEvalFileEx+0x1f7) [0x2f74097]
+32: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f18e52]
+33: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+34: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+35: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_EvalObjEx+0x2e0) [0x2f059a0]
+36: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f94307]
+37: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+38: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+39: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+40: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+41: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+42: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+43: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+44: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+45: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+46: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+47: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+48: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+49: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f56a16]
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.00:221776
+
+
+interrupt: signal 2 (Interrupt)
+
+About to print stack trace (depth=50, limit=50)
+0: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal14printBacktraceEib+0x116) [0x2ed72b6]
+1: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal9interruptEi+0x51) [0x2ed75e1]
+2: /lib64/libpthread.so.0(+0xf5f0) [0x7f48113845f0]
+3: /lib64/libpthread.so.0(pthread_cond_wait+0xc3) [0x7f48113809f3]
+4: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace14nlpFuncGrad_mtEPdS0_Rd+0x5e8) [0x18650b8]
+5: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN13PNPlaceSolver7mcsrch2EPdS0_idddddS0_+0x2fe) [0x1866fae]
+6: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN13PNPlaceSolver8optimizeEv+0x269) [0x1867789]
+7: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace8solveNLPEi+0x4a9) [0x1850f89]
+8: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace6place2EP7PNGraphi+0x3d5) [0x1851c05]
+9: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace6place2EP11PNPlaceInst+0x141) [0x1854271]
+10: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace5placeEP11PNPlaceInst+0x89d) [0x183d75d]
+11: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN16PNPlaceInterface5placeE4NDesbbbbbbbbbP11PNPlaceInst+0xe27) [0x1711477]
+12: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12PModulePlace9floorplanEbbbP5UListIPS0_IP6NInstC9UListNodeIS2_ES2_7UEValueIS2_S4_ELi0EES3_IS8_ES8_S5_IS8_S9_ELi0EE+0xc68) [0x1791aa8]
+13: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes9floorplanEbbb+0x122) [0x17932a2]
+14: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes6nplaceEbbbbbbb+0x51d) [0x17121ed]
+15: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top5placeEv+0x1be) [0x15d092e]
+16: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top7runCoreEv+0x5b5) [0x15e4935]
+17: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top3runEv+0x6a) [0x15e579a]
+18: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes8optimizeEbbbbbf5TTimebbb+0x6cf) [0x159e1bf]
+19: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x1192328]
+20: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+21: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01f10]
+22: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+23: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+24: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+25: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+26: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+27: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+28: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+29: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+30: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+31: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+32: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+33: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_EvalEx+0x13) [0x2f04ac3]
+34: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_FSEvalFileEx+0x1f7) [0x2f74097]
+35: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f18e52]
+36: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+37: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+38: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_EvalObjEx+0x2e0) [0x2f059a0]
+39: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f94307]
+40: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+41: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+42: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+43: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+44: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+45: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+46: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+47: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+48: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+49: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+
+
+interrupt: signal 2 (Interrupt)
+
+About to print stack trace (depth=50, limit=50)
+0: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal14printBacktraceEib+0x116) [0x2ed72b6]
+1: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal9interruptEi+0x51) [0x2ed75e1]
+2: /lib64/libpthread.so.0(+0xf5f0) [0x7f48113845f0]
+3: /lib64/libpthread.so.0(pthread_cond_wait+0xc3) [0x7f48113809f3]
+4: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace14nlpFuncGrad_mtEPdS0_Rd+0x5e8) [0x18650b8]
+5: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN13PNPlaceSolver7mcsrch2EPdS0_idddddS0_+0x2fe) [0x1866fae]
+6: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN13PNPlaceSolver8optimizeEv+0x269) [0x1867789]
+7: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace8solveNLPEi+0x4de) [0x1850fbe]
+8: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace6place2EP7PNGraphi+0x3d5) [0x1851c05]
+9: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace6place2EP11PNPlaceInst+0x141) [0x1854271]
+10: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace5placeEP11PNPlaceInst+0x89d) [0x183d75d]
+11: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN16PNPlaceInterface5placeE4NDesbbbbbbbbbP11PNPlaceInst+0xe27) [0x1711477]
+12: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12PModulePlace9floorplanEbbbP5UListIPS0_IP6NInstC9UListNodeIS2_ES2_7UEValueIS2_S4_ELi0EES3_IS8_ES8_S5_IS8_S9_ELi0EE+0xc68) [0x1791aa8]
+13: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes9floorplanEbbb+0x122) [0x17932a2]
+14: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes6nplaceEbbbbbbb+0x51d) [0x17121ed]
+15: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top5placeEv+0x1be) [0x15d092e]
+16: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top7runCoreEv+0x5b5) [0x15e4935]
+17: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top3runEv+0x6a) [0x15e579a]
+18: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes8optimizeEbbbbbf5TTimebbb+0x6cf) [0x159e1bf]
+19: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x1192328]
+20: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+21: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01f10]
+22: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+23: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+24: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+25: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+26: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+27: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+28: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+29: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+30: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+31: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+32: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+33: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_EvalEx+0x13) [0x2f04ac3]
+34: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_FSEvalFileEx+0x1f7) [0x2f74097]
+35: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f18e52]
+36: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+37: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+38: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_EvalObjEx+0x2e0) [0x2f059a0]
+39: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f94307]
+40: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+41: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+42: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+43: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+44: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+45: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+46: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+47: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+48: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+49: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+
+
+interrupt: signal 2 (Interrupt)
+
+About to print stack trace (depth=50, limit=50)
+0: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal14printBacktraceEib+0x116) [0x2ed72b6]
+1: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal9interruptEi+0x51) [0x2ed75e1]
+2: /lib64/libpthread.so.0(+0xf5f0) [0x7f48113845f0]
+3: /lib64/libpthread.so.0(pthread_cond_wait+0xc3) [0x7f48113809f3]
+4: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace14nlpFuncGrad_mtEPdS0_Rd+0x5e8) [0x18650b8]
+5: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN13PNPlaceSolver7mcsrch2EPdS0_idddddS0_+0x2fe) [0x1866fae]
+6: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN13PNPlaceSolver8optimizeEv+0x269) [0x1867789]
+7: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace8solveNLPEi+0x4de) [0x1850fbe]
+8: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace6place2EP7PNGraphi+0x3d5) [0x1851c05]
+9: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace6place2EP11PNPlaceInst+0x141) [0x1854271]
+10: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7PNPlace5placeEP11PNPlaceInst+0x89d) [0x183d75d]
+11: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN16PNPlaceInterface5placeE4NDesbbbbbbbbbP11PNPlaceInst+0xe27) [0x1711477]
+12: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12PModulePlace9floorplanEbbbP5UListIPS0_IP6NInstC9UListNodeIS2_ES2_7UEValueIS2_S4_ELi0EES3_IS8_ES8_S5_IS8_S9_ELi0EE+0xc68) [0x1791aa8]
+13: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes9floorplanEbbb+0x122) [0x17932a2]
+14: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes6nplaceEbbbbbbb+0x51d) [0x17121ed]
+15: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top5placeEv+0x1be) [0x15d092e]
+16: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top7runCoreEv+0x5b5) [0x15e4935]
+17: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN12Optimize3Top3runEv+0x6a) [0x15e579a]
+18: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN4NDes8optimizeEbbbbbf5TTimebbb+0x6cf) [0x159e1bf]
+19: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x1192328]
+20: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+21: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01f10]
+22: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+23: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+24: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+25: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+26: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+27: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+28: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+29: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+30: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+31: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+32: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+33: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_EvalEx+0x13) [0x2f04ac3]
+34: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_FSEvalFileEx+0x1f7) [0x2f74097]
+35: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f18e52]
+36: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+37: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+38: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_EvalObjEx+0x2e0) [0x2f059a0]
+39: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f94307]
+40: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+41: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+42: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]
+43: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+44: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f03cb3]
+45: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclEvalObjEx+0x380) [0x2f04e90]
+46: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f0d0b5]
+47: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f01a25]
+48: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2f5016f]
+49: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(TclObjInterpProc+0x40a) [0x2f9537a]

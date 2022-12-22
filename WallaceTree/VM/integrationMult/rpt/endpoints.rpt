@@ -1,0 +1,30 @@
+Report End Points: 
+-----+-------+-------+-------+------+------+-----+-----+-----------------+------------------
+     |Group  |Launch |Capture|Shift |Delay |Depth|Slack|Begin Point      |End Point         
+-----+-------+-------+-------+------+------+-----+-----+-----------------+------------------
+1    |default|vsysclk|vsysclk|3000.0|2809.1|  126| 12.2|regA/out_reg[0]/Q|outB/out_reg[31]/D
+2    |default|vsysclk|vsysclk|3000.0|2807.5|  124| 13.8|regA/out_reg[0]/Q|outB/out_reg[30]/D
+3    |default|vsysclk|vsysclk|3000.0|2776.3|  122| 45.0|regA/out_reg[0]/Q|outB/out_reg[29]/D
+-----+-------+-------+-------+------+------+-----+-----+-----------------+------------------
+Report End Points: 
+-----+-----+-------+-------+------+-----+-----+------+-----------+-----------------------
+     |Group|Launch |Capture|Shift |Delay|Depth|Slack |Begin Point|End Point              
+-----+-----+-------+-------+------+-----+-----+------+-----------+-----------------------
+1    |I2R  |vsysclk|vsysclk|3000.0| 17.0|    1|2697.9|reset      |regA/clk_gate_out_reg/E
+2    |I2R  |vsysclk|vsysclk|3000.0| 17.0|    1|2697.9|reset      |regB/clk_gate_out_reg/E
+3    |I2R  |vsysclk|vsysclk|3000.0| 17.0|    1|2697.9|reset      |outB/clk_gate_out_reg/E
+-----+-----+-------+-------+------+-----+-----+------+-----------+-----------------------
+Report End Points: 
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+     |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+1    |I2O  |      |       |     |     |     |     |           |         
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+Report End Points: 
+-----+-----+-------+-------+------+-----+-----+------+------------------+----------
+     |Group|Launch |Capture|Shift |Delay|Depth|Slack |Begin Point       |End Point 
+-----+-----+-------+-------+------+-----+-----+------+------------------+----------
+1    |R2O  |vsysclk|vsysclk|3000.0|  0.4|    0|2403.7|outB/out_reg[31]/Q|result[63]
+2    |R2O  |vsysclk|vsysclk|3000.0|  0.4|    0|2403.7|outB/out_reg[30]/Q|result[62]
+3    |R2O  |vsysclk|vsysclk|3000.0|  0.4|    0|2403.8|outB/out_reg[28]/Q|result[60]
+-----+-----+-------+-------+------+-----+-----+------+------------------+----------

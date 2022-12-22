@@ -1,0 +1,647 @@
+# Loading project postSim
+# reading /home/vlsi/Installation/modelsim/modelsim_dlx/linuxpe/../modelsim.ini
+# Loading project post_routing
+# Compile of multiplier.route.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of NangateOpenCellLibrary.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of multiplier.route.v was successful.
+# Compile of mulTreeTB.v was successful.
+# Compile of NangateOpenCellLibrary.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim integrationMult -t ps -sdfmax  multiplier.sdf
+# vsim integrationMult -t ps -sdfmax "multiplier.sdf" 
+# Start time: 20:41:53 on Dec 22,2022
+# //  ModelSim DE 2022.4 Oct 18 2022 Linux 3.10.0-1062.12.1.el7.x86_64
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.integrationMult
+# Loading work.registerNbits
+# Loading work.AND2_X1
+# Loading work.INV_X1
+# Loading work.OR2_X1
+# Loading work.DFF_X1
+# Loading work.CLKGATETST_X1
+# Loading work.INV_X4
+# Loading work.INV_X16
+# Loading work.INV_X8
+# Loading work.registerNbits__6_8
+# Loading work.NAND2_X1
+# Loading work.AND2_X2
+# Loading work.OR2_X4
+# Loading work.CLKGATETST_X8
+# Loading work.registerNbits__6_5
+# Loading work.INV_X2
+# Loading work.OR2_X2
+# Loading work.DFF_X2
+# Loading work.BUF_X8
+# Loading work.BUF_X4
+# Loading work.registerNbits__6_2
+# Loading work.mulTree
+# Loading work.RCA64
+# Loading work.FA
+# Loading work.XNOR2_X1
+# Loading work.AOI22_X2
+# Loading work.FA__5_188
+# Loading work.XNOR2_X2
+# Loading work.OAI21_X2
+# Loading work.NAND2_X2
+# Loading work.FA__5_185
+# Loading work.NAND2_X4
+# Loading work.FA__5_182
+# Loading work.FA__5_179
+# Loading work.FA__5_176
+# Loading work.FA__5_173
+# Loading work.FA__5_170
+# Loading work.FA__5_167
+# Loading work.FA__5_164
+# Loading work.FA__5_161
+# Loading work.FA__5_158
+# Loading work.FA__5_155
+# Loading work.FA__5_152
+# Loading work.FA__5_149
+# Loading work.FA__5_146
+# Loading work.FA__5_143
+# Loading work.FA__5_140
+# Loading work.FA__5_137
+# Loading work.FA__5_134
+# Loading work.FA__5_131
+# Loading work.FA__5_128
+# Loading work.FA__5_125
+# Loading work.FA__5_122
+# Loading work.FA__5_119
+# Loading work.FA__5_116
+# Loading work.FA__5_113
+# Loading work.FA__5_110
+# Loading work.FA__5_107
+# Loading work.FA__5_104
+# Loading work.NOR2_X2
+# Loading work.AOI21_X2
+# Loading work.NOR2_X4
+# Loading work.FA__5_101
+# Loading work.FA__5_98
+# Loading work.FA__5_95
+# Loading work.FA__5_92
+# Loading work.FA__5_89
+# Loading work.FA__5_86
+# Loading work.FA__5_83
+# Loading work.OAI21_X4
+# Loading work.FA__5_80
+# Loading work.FA__5_77
+# Loading work.FA__5_74
+# Loading work.FA__5_71
+# Loading work.FA__5_68
+# Loading work.FA__5_65
+# Loading work.FA__5_62
+# Loading work.FA__5_59
+# Loading work.FA__5_56
+# Loading work.FA__5_53
+# Loading work.FA__5_50
+# Loading work.FA__5_47
+# Loading work.FA__5_44
+# Loading work.FA__5_41
+# Loading work.FA__5_38
+# Loading work.FA__5_35
+# Loading work.FA__5_32
+# Loading work.AND2_X4
+# Loading work.XOR2_X1
+# Loading work.CLKBUF_X1
+# Loading work.CSA
+# Loading work.XOR2_X2
+# Loading work.OAI21_X1
+# Loading work.CSA__5_212
+# Loading work.CSA__5_209
+# Loading work.CSA__5_206
+# Loading work.CSA__5_203
+# Loading work.CSA__5_200
+# Loading work.CSA__5_197
+# Loading work.CSA__5_194
+# Loading work.CSA__5_191
+# Loading work.NOR2_X1
+# Loading work.CSA__0_78
+# Loading work.CSA__4_20
+# Loading work.CSA__4_17
+# Loading work.CSA__4_14
+# Loading work.CSA__4_11
+# Loading work.CSA__4_8
+# Loading work.AOI21_X1
+# Loading work.CSA__4_5
+# Loading work.CSA__4_2
+# Loading work.CSA__0_75
+# Loading work.CSA__3_14
+# Loading work.NAND3_X1
+# Loading work.CSA__3_11
+# Loading work.NAND3_X2
+# Loading work.CSA__3_8
+# Loading work.CSA__3_5
+# Loading work.CSA__3_2
+# Loading work.CLKBUF_X3
+# Loading work.CSA__0_72
+# Loading work.BUF_X1
+# Loading work.CSA__2_11
+# Loading work.CSA__2_8
+# Loading work.CSA__2_5
+# Loading work.BUF_X2
+# Loading work.CSA__2_2
+# Loading work.CSA__0_69
+# Loading work.CSA__1_5
+# Loading work.CSA__1_2
+# Loading work.products
+# Loading work.BUF_X16
+# Loading work.CLKBUF_X2
+# SDF 2022.4 Compiler 2022.10 Oct 18 2022
+# Loading instances from multiplier.sdf
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'outA'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 23167
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(23167): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[0] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[0]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 89
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(89): [TFMPC] - Missing connection for port 'QN'.
+# Loading work.seq_DFF_X1
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[1] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[1]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 90
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(90): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[2] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[2]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 91
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(91): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[3] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[3]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 92
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(92): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[4] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[4]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 93
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(93): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[5] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[5]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 94
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(94): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[6] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[6]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 95
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(95): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[7] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[7]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 96
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(96): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[8] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[8]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 97
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(97): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[9] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[9]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 98
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(98): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[10] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[10]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 99
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(99): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[11] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[11]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 100
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(100): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[12] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[12]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 101
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(101): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[13] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[13]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 102
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(102): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[14] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[14]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 103
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(103): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[15] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[15]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 104
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(104): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[16] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[16]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 105
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(105): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[17] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[17]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 106
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(106): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[18] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[18]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 107
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(107): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[19] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[19]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 108
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(108): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[20] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[20]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 109
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(109): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[21] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[21]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 110
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(110): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[22] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[22]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 111
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(111): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[23] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[23]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 112
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(112): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[24] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[24]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 113
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(113): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[25] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[25]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 114
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(114): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[26] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[26]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 115
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(115): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[27] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[27]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 116
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(116): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[28] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[28]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 117
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(117): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[29] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[29]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 118
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(118): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[30] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[30]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 119
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(119): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[31] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outA/\out_reg[31]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 120
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(120): [TFMPC] - Missing connection for port 'QN'.
+# Loading work.seq_CLKGATETST_X1
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'outB'.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 23179
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(23179): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[0] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[0]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 213
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(213): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[1] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[1]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 214
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(214): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[2] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[2]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 215
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(215): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[3] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[3]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 216
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(216): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[4] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[4]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 217
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(217): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[5] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[5]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 218
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(218): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[6] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[6]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 219
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(219): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[7] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[7]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 220
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(220): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[8] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[8]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 221
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(221): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[9] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[9]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 222
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(222): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[10] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[10]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 223
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(223): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[11] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[11]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 224
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(224): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[12] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[12]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 225
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(225): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[13] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[13]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 226
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(226): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[14] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[14]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 227
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(227): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[15] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[15]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 228
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(228): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[16] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[16]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 229
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(229): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[17] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[17]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 230
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(230): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[18] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[18]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 231
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(231): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[19] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[19]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 232
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(232): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[20] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[20]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 233
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(233): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[21] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[21]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 234
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(234): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[22] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[22]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 235
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(235): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[23] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[23]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 236
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(236): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[24] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[24]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 237
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(237): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[25] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[25]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 238
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(238): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[26] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[26]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 239
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(239): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[27] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[27]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 240
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(240): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[28] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[28]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 241
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(241): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[29] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[29]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 242
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(242): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[30] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[30]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 243
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(243): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[31] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/outB/\out_reg[31]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 244
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(244): [TFMPC] - Missing connection for port 'QN'.
+# Loading work.seq_CLKGATETST_X8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'regB'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 23191
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(23191): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[0] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[0]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 340
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(340): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[1] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[1]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 341
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(341): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[2] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[2]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 342
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(342): [TFMPC] - Missing connection for port 'QN'.
+# Loading work.seq_DFF_X2
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[3] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[3]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 343
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(343): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[4] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[4]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 344
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(344): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[5] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[5]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 345
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(345): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[6] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[6]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 346
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(346): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[7] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[7]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 347
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(347): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[8] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[8]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 348
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(348): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[9] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[9]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 349
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(349): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[10] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[10]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 350
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(350): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[11] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[11]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 351
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(351): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[12] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[12]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 352
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(352): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[13] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[13]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 353
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(353): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[14] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[14]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 354
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(354): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[15] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[15]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 355
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(355): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[16] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[16]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 356
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(356): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[17] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[17]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 357
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(357): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[18] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[18]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 358
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(358): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[19] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[19]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 359
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(359): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[20] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[20]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 360
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(360): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[21] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[21]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 361
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(361): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[22] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[22]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 362
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(362): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[23] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[23]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 363
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(363): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[24] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[24]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 364
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(364): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[25] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[25]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 365
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(365): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[26] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[26]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 366
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(366): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[27] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[27]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 367
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(367): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[28] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[28]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 368
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(368): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[29] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[29]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 369
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(369): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[30] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[30]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 370
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(370): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[31] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regB/\out_reg[31]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 371
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(371): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'regA'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 23202
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(23202): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[0] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[0]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 473
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(473): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[1] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[1]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 474
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(474): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[2] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[2]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 475
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(475): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[3] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[3]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 476
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(476): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[4] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[4]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 477
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(477): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[5] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[5]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 478
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(478): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[6] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[6]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 479
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(479): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[7] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[7]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 480
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(480): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[8] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[8]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 481
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(481): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[9] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[9]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 482
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(482): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[10] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[10]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 483
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(483): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[11] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[11]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 484
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(484): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[12] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[12]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 485
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(485): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[13] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[13]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 486
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(486): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[14] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[14]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 487
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(487): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[15] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[15]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 488
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(488): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[16] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[16]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 489
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(489): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[17] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[17]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 490
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(490): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[18] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[18]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 491
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(491): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[19] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[19]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 492
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(492): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[20] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[20]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 493
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(493): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[21] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[21]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 494
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(494): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[22] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[22]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 495
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(495): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[23] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[23]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 496
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(496): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[24] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[24]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 497
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(497): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[25] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[25]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 498
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(498): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[26] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[26]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 499
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(499): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[27] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[27]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 500
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(500): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[28] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[28]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 501
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(501): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[29] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[29]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 502
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(502): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[30] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[30]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 503
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(503): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\out_reg[31] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/regA/\out_reg[31]  File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 504
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(504): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ripple_adder'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/multiplier/ripple_adder File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 21092
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(21092): [TFMPC] - Missing connection for port 'cin'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'genblk1_63_Full_Adder'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/multiplier/ripple_adder/genblk1_63_Full_Adder File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 1737
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(1737): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'genblk1_10_Full_Adder'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/multiplier/ripple_adder/genblk1_10_Full_Adder File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 1794
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(1794): [TFMPC] - Missing connection for port 'z'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Products'.  Expected 35, found 34.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult/multiplier/Products File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v Line: 22741
+# ** Warning: (vsim-3722) /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v(22741): [TFMPC] - Missing connection for port '\pp[32] '.
+# Loading timing data from multiplier.sdf
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16166): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16167): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16168): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16169): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16170): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16171): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16172): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16173): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16174): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16175): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16176): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16177): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16178): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16179): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16180): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16181): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16182): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16183): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16184): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16185): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16186): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16187): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16188): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16192): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16193): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16194): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16195): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16196): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16197): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16198): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16199): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16200): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16202): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16203): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16204): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16205): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16217): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16218): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16219): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16220): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) multiplier.sdf(16221): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-8756) Instance 'integrationMult.outA.clk_gate_out_reg' - Negative timing check limits detected in simulation with cells modeled without delayed copies of data or reference signals.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult File: /home/vlsi/Desktop/WallaceTree/postSimulation/NangateOpenCellLibrary.v Line: 934
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /integrationMult File: /home/vlsi/Desktop/WallaceTree/postSimulation/multiplier.route.v
+add wave -position insertpoint sim:/integrationMult/*
+force -freeze sim:/integrationMult/reset 0 0
+force -freeze sim:/integrationMult/en 1 0
+force -freeze sim:/integrationMult/clk 1 0, 0 {1500 ps} -r 3000
+force -freeze sim:/integrationMult/inputA -5 0
+force -freeze sim:/integrationMult/inputB -7 0
+run
+# ** Error: $setup( posedge E:28 ps, posedge CK:58 ps, 80 ps );
+#    Time: 62 ps  Iteration: 0  Process: /integrationMult/outA/clk_gate_out_reg/#Setuphold# File: /home/vlsi/Desktop/WallaceTree/postSimulation/NangateOpenCellLibrary.v Line: 934
+run
+# ** Error: $setup( posedge E:60 ps, posedge CK:103 ps, 205 ps );
+#    Time: 103 ps  Iteration: 1  Process: /integrationMult/outB/clk_gate_out_reg/#Setuphold# File: /home/vlsi/Desktop/WallaceTree/postSimulation/NangateOpenCellLibrary.v Line: 1114
+# ** Error: $setup( posedge E:74 ps, posedge CK:86 ps, 217 ps );
+#    Time: 119 ps  Iteration: 0  Process: /integrationMult/regA/clk_gate_out_reg/#Setuphold# File: /home/vlsi/Desktop/WallaceTree/postSimulation/NangateOpenCellLibrary.v Line: 1114
+run
+run
+run
+run
+run
+run
+force -freeze sim:/integrationMult/inputA 1 0
+run
+run
+run
+# End time: 21:08:01 on Dec 22,2022, Elapsed time: 0:26:08
+# Errors: 3, Warnings: 320

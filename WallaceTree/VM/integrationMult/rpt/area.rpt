@@ -1,0 +1,98 @@
+Report Instance Areas: 
+-----+---------------------------+------------------+-----+---------
+     |Instance                   |Module            |Cells|Cell Area
+-----+---------------------------+------------------+-----+---------
+1    |top                        |                  | 7557|     8825
+2    |  multiplier               |mulTree           | 7288|     8086
+3    |    Products               |products          | 1099|      858
+4    |    CSA13                  |CSA__1_2          |  167|      196
+5    |    CSA5                   |CSA__1_5          |  160|      188
+6    |    CSA4                   |CSA__0_69         |  160|      188
+7    |    CSA2                   |CSA__2_2          |  160|      188
+8    |    CSA11                  |CSA__2_5          |  237|      271
+9    |    CSA12                  |CSA__2_8          |  169|      197
+10   |    CSA3                   |CSA__2_11         |  160|      188
+11   |    CSA18                  |CSA__0_72         |  231|      266
+12   |    CSA17                  |CSA__3_2          |  246|      280
+13   |    CSA10                  |CSA__3_5          |  169|      197
+14   |    CSA22                  |CSA__3_8          |  288|      339
+15   |    CSA1                   |CSA__3_11         |  174|      194
+16   |    CSA0                   |CSA__3_14         |  174|      194
+17   |    CSA25                  |CSA__0_75         |  277|      327
+18   |    CSA7                   |CSA__4_2          |  160|      188
+19   |    CSA14                  |CSA__4_5          |  169|      197
+20   |    CSA19                  |CSA__4_8          |  182|      212
+21   |    CSA23                  |CSA__4_11         |  224|      261
+22   |    CSA6                   |CSA__4_14         |  160|      188
+23   |    CSA8                   |CSA__4_17         |  160|      188
+24   |    CSA15                  |CSA__4_20         |  167|      196
+25   |    CSA20                  |CSA__0_78         |  177|      208
+26   |    CSA9                   |CSA__5_191        |  170|      198
+27   |    CSA16                  |CSA__5_194        |  169|      199
+28   |    CSA21                  |CSA__5_197        |  164|      193
+29   |    CSA24                  |CSA__5_200        |  188|      222
+30   |    CSA26                  |CSA__5_203        |  200|      236
+31   |    CSA27                  |CSA__5_206        |  260|      308
+32   |    CSA28                  |CSA__5_209        |  237|      283
+33   |    CSA29                  |CSA__5_212        |  208|      252
+34   |    CSA30                  |CSA               |  112|      148
+35   |    ripple_adder           |RCA64             |  310|      342
+36   |      genblk1_10_Full_Adder|FA__5_32          |    2|        3
+37   |      genblk1_11_Full_Adder|FA__5_35          |    6|        6
+38   |      genblk1_12_Full_Adder|FA__5_38          |    6|        6
+39   |      genblk1_13_Full_Adder|FA__5_41          |    6|        6
+40   |      genblk1_14_Full_Adder|FA__5_44          |    6|        6
+41   |      genblk1_15_Full_Adder|FA__5_47          |    6|        6
+42   |      genblk1_16_Full_Adder|FA__5_50          |    6|        6
+43   |      genblk1_17_Full_Adder|FA__5_53          |    6|        6
+44   |      genblk1_18_Full_Adder|FA__5_56          |    6|        6
+45   |      genblk1_19_Full_Adder|FA__5_59          |    6|        6
+46   |      genblk1_20_Full_Adder|FA__5_62          |    6|        6
+47   |      genblk1_21_Full_Adder|FA__5_65          |    6|        6
+48   |      genblk1_22_Full_Adder|FA__5_68          |    6|        6
+49   |      genblk1_23_Full_Adder|FA__5_71          |    6|        6
+50   |      genblk1_24_Full_Adder|FA__5_74          |    6|        6
+51   |      genblk1_25_Full_Adder|FA__5_77          |    6|        6
+52   |      genblk1_26_Full_Adder|FA__5_80          |    6|        6
+53   |      genblk1_27_Full_Adder|FA__5_83          |    6|        6
+54   |      genblk1_28_Full_Adder|FA__5_86          |    5|        6
+55   |      genblk1_29_Full_Adder|FA__5_89          |    5|        6
+56   |      genblk1_30_Full_Adder|FA__5_92          |    5|        6
+57   |      genblk1_31_Full_Adder|FA__5_95          |    5|        6
+58   |      genblk1_32_Full_Adder|FA__5_98          |    5|        6
+59   |      genblk1_33_Full_Adder|FA__5_101         |    5|        6
+60   |      genblk1_34_Full_Adder|FA__5_104         |    5|        6
+61   |      genblk1_35_Full_Adder|FA__5_107         |    6|        7
+62   |      genblk1_36_Full_Adder|FA__5_110         |    6|        7
+63   |      genblk1_37_Full_Adder|FA__5_113         |    6|        7
+64   |      genblk1_38_Full_Adder|FA__5_116         |    6|        7
+65   |      genblk1_39_Full_Adder|FA__5_119         |    6|        7
+66   |      genblk1_40_Full_Adder|FA__5_122         |    6|        7
+67   |      genblk1_41_Full_Adder|FA__5_125         |    6|        7
+68   |      genblk1_42_Full_Adder|FA__5_128         |    6|        7
+69   |      genblk1_43_Full_Adder|FA__5_131         |    6|        7
+70   |      genblk1_44_Full_Adder|FA__5_134         |    6|        7
+71   |      genblk1_45_Full_Adder|FA__5_137         |    6|        7
+72   |      genblk1_46_Full_Adder|FA__5_140         |    6|        7
+73   |      genblk1_47_Full_Adder|FA__5_143         |    6|        7
+74   |      genblk1_48_Full_Adder|FA__5_146         |    6|        7
+75   |      genblk1_49_Full_Adder|FA__5_149         |    6|        7
+76   |      genblk1_50_Full_Adder|FA__5_152         |    6|        7
+77   |      genblk1_51_Full_Adder|FA__5_155         |    6|        7
+78   |      genblk1_52_Full_Adder|FA__5_158         |    6|        7
+79   |      genblk1_53_Full_Adder|FA__5_161         |    6|        7
+80   |      genblk1_54_Full_Adder|FA__5_164         |    6|        7
+81   |      genblk1_55_Full_Adder|FA__5_167         |    6|        7
+82   |      genblk1_56_Full_Adder|FA__5_170         |    6|        7
+83   |      genblk1_57_Full_Adder|FA__5_173         |    6|        7
+84   |      genblk1_58_Full_Adder|FA__5_176         |    6|        7
+85   |      genblk1_59_Full_Adder|FA__5_179         |    6|        7
+86   |      genblk1_60_Full_Adder|FA__5_182         |    6|        7
+87   |      genblk1_61_Full_Adder|FA__5_185         |    6|        7
+88   |      genblk1_62_Full_Adder|FA__5_188         |    5|        6
+89   |      genblk1_63_Full_Adder|FA                |    4|        4
+90   |  regA                     |registerNbits__6_2|   67|      184
+91   |  regB                     |registerNbits__6_5|   67|      184
+92   |  outB                     |registerNbits__6_8|   68|      185
+93   |  outA                     |registerNbits     |   67|      184
+-----+---------------------------+------------------+-----+---------

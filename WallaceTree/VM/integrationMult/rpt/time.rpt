@@ -1,0 +1,319 @@
+Report for group default
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: regB/out_reg[8]/Q
+    (Clocked by vsysclk R)
+Endpoint: outB/out_reg[31]/D
+    (Clocked by vsysclk R)
+Path Group: default
+Data required time: 2969.2
+    (Clock shift: 3000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 30.8)
+Data arrival time: 2957.0
+Slack: 12.2
+Logic depth: 126
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0      4   139,    0                       
+regB/clk_gate_out_reg/CK->GCK
+                         CLKGATETST_X1           rr      0.0      0.0      0.0      0.0      0.0      0.0      0.0     32   131,   47  /PD_TOP        (1.10)
+regB/out_reg[8]/CK->Q    DFF_X1*                 rr    150.0    150.0    150.0      0.0      0.0      3.2     38.7      4   131,   47  /PD_TOP        (1.10)
+multiplier/Products/i_0_1097/A1->ZN
+                         AND2_X4*                rr    203.8     53.6     53.6      0.0     15.3      3.8     41.0      4   121,   80  /PD_TOP        (1.10)
+multiplier/CSA0/i_0_161/A->ZN
+                         INV_X8                  rf    211.0      7.2      6.8      0.4     15.3      0.3      4.0      1   127,  127  /PD_TOP        (1.10)
+multiplier/CSA0/i_0_160/A1->ZN
+                         NAND2_X4                fr    225.0     14.0     14.0      0.0      3.4      0.6      8.3      2   127,  127  /PD_TOP        (1.10)
+multiplier/CSA0/i_0_116/A1->ZN
+                         NAND2_X4                rf    237.8     12.8     12.8      0.0     11.6      0.3      4.0      1   127,  127  /PD_TOP        (1.10)
+multiplier/CSA0/i_0_115/A1->ZN
+                         NAND2_X4                fr    250.7     12.9     12.9      0.0      6.9      0.3      4.0      1   127,  127  /PD_TOP        (1.10)
+multiplier/CSA0/i_0_113/A1->ZN
+                         NAND2_X4                rf    267.7     17.0     17.0      0.0      9.4      0.8     12.5      3   127,  127  /PD_TOP        (1.10)
+multiplier/CSA10/i_0_115/B->ZN
+                         XNOR2_X2                ff    306.8     39.1     39.1      0.0     10.2      0.3      4.0      1   127,  127  /PD_TOP        (1.10)
+multiplier/CSA10/i_0_114/B->ZN
+                         XNOR2_X2                fr    366.1     59.3     59.3      0.0     11.0      0.8     12.5      3   127,  127  /PD_TOP        (1.10)
+multiplier/CSA17/i_0_139/B->ZN
+                         XNOR2_X2                rr    412.6     46.5     46.5      0.0     42.4      0.3      4.0      1   127,  127  /PD_TOP        (1.10)
+multiplier/CSA17/i_0_138/B->ZN
+                         XNOR2_X2                rr    465.6     53.0     53.0      0.0     22.6      0.8     12.5      3   127,  127  /PD_TOP        (1.10)
+multiplier/CSA22/i_0_181/B->ZN
+                         XNOR2_X2                rr    512.1     46.5     46.5      0.0     42.4      0.3      4.0      1   127,  127  /PD_TOP        (1.10)
+multiplier/CSA22/i_0_180/B->ZN
+                         XNOR2_X2                rr    565.1     53.0     53.0      0.0     22.6      0.8     12.5      3   127,  127  /PD_TOP        (1.10)
+multiplier/CSA25/i_0_170/B->ZN
+                         XNOR2_X2                rr    611.6     46.5     46.5      0.0     42.4      0.3      4.0      1   127,  127  /PD_TOP        (1.10)
+multiplier/CSA25/i_0_169/B->ZN
+                         XNOR2_X2                rr    665.5     53.9     53.9      0.0     22.6      7.7     13.2      2   127,  127  /PD_TOP        (1.10)
+multiplier/CSA27/i_0_0/A->Z
+                         XOR2_X2                 rr    730.7     65.2     63.1      2.1     44.0      0.5      5.9      2    65,   59  /PD_TOP        (1.10)
+multiplier/CSA28/i_0_0/A->Z
+                         XOR2_X2                 rr    791.7     61.0     61.0      0.0     30.1      0.5      5.9      2    65,   59  /PD_TOP        (1.10)
+multiplier/CSA29/i_0_133/A->Z
+                         XOR2_X2                 rr    852.7     61.0     61.0      0.0     30.1      0.5      5.9      2    65,   59  /PD_TOP        (1.10)
+multiplier/CSA30/i_0_69/A->Z
+                         XOR2_X2                 rr    914.2     61.5     61.5      0.0     30.1      0.5      6.0      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_10_Full_Adder/i_0_0/A1->ZN
+                         AND2_X4                 rr    954.4     40.2     40.2      0.0     30.5      0.8     11.9      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_11_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf    963.4      9.0      9.0      0.0     11.8      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_11_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr    998.7     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_12_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1009.5     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_12_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1044.8     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_13_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1055.6     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_13_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1090.9     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_14_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1101.7     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_14_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1137.0     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_15_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1147.8     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_15_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1183.1     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_16_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1193.9     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_16_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1229.2     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_17_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1240.0     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_17_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1275.3     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_18_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1286.1     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_18_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1321.4     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_19_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1332.2     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_19_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1367.5     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_20_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1378.3     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_20_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1413.6     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_21_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1424.4     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_21_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1459.7     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_22_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1470.5     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_22_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1505.8     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_23_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1516.6     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_23_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1551.9     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_24_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1562.7     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_24_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1598.0     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_25_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1608.8     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_25_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1644.1     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_26_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1654.9     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_26_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1690.2     35.3     35.3      0.0      5.6      0.8     12.0      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_27_Full_Adder/i_0_1/A1->ZN
+                         NOR2_X4                 rf   1701.0     10.8     10.8      0.0     27.3      0.3      4.3      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_27_Full_Adder/i_0_0/B1->ZN
+                         OAI21_X4                fr   1736.6     35.6     35.6      0.0      5.6      0.9     12.3      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_28_Full_Adder/i_0_1/B1->ZN
+                         AOI21_X4                rf   1754.8     18.2     18.2      0.0     27.6      0.3      4.5      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_28_Full_Adder/i_0_0/A1->ZN
+                         NOR2_X4                 fr   1787.6     32.8     32.8      0.0      7.8      0.8     12.2      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_29_Full_Adder/i_0_1/B1->ZN
+                         AOI21_X4                rf   1805.4     17.8     17.8      0.0     24.6      0.3      4.5      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_29_Full_Adder/i_0_0/A1->ZN
+                         NOR2_X4                 fr   1838.2     32.8     32.8      0.0      7.8      0.8     12.2      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_30_Full_Adder/i_0_1/B1->ZN
+                         AOI21_X4                rf   1856.0     17.8     17.8      0.0     24.6      0.3      4.5      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_30_Full_Adder/i_0_0/A1->ZN
+                         NOR2_X4                 fr   1888.8     32.8     32.8      0.0      7.8      0.8     12.2      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_31_Full_Adder/i_0_1/B1->ZN
+                         AOI21_X4                rf   1906.6     17.8     17.8      0.0     24.6      0.3      4.5      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_31_Full_Adder/i_0_0/A1->ZN
+                         NOR2_X4                 fr   1939.4     32.8     32.8      0.0      7.8      0.8     12.2      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_32_Full_Adder/i_0_1/B1->ZN
+                         AOI21_X4                rf   1957.2     17.8     17.8      0.0     24.6      0.3      4.5      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_32_Full_Adder/i_0_0/A1->ZN
+                         NOR2_X4                 fr   1990.0     32.8     32.8      0.0      7.8      0.8     12.2      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_33_Full_Adder/i_0_1/B1->ZN
+                         AOI21_X4                rf   2007.8     17.8     17.8      0.0     24.6      0.3      4.5      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_33_Full_Adder/i_0_0/A1->ZN
+                         NOR2_X4                 fr   2040.6     32.8     32.8      0.0      7.8      0.8     12.2      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_34_Full_Adder/i_0_1/B1->ZN
+                         AOI21_X4                rf   2058.4     17.8     17.8      0.0     24.6      0.3      4.5      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_34_Full_Adder/i_0_0/A1->ZN
+                         NOR2_X4                 fr   2085.0     26.6     26.6      0.0      7.8      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_35_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2099.8     14.8     14.8      0.0     19.0      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_35_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2114.9     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_36_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2127.5     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_36_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2142.6     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_37_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2155.2     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_37_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2170.3     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_38_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2182.9     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_38_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2198.0     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_39_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2210.6     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_39_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2225.7     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_40_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2238.3     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_40_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2253.4     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_41_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2266.0     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_41_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2281.1     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_42_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2293.7     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_42_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2308.8     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_43_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2321.4     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_43_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2336.5     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_44_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2349.1     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_44_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2364.2     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_45_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2376.8     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_45_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2391.9     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_46_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2404.5     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_46_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2419.6     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_47_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2432.2     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_47_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2447.3     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_48_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2459.9     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_48_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2475.0     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_49_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2487.6     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_49_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2502.7     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_50_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2515.3     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_50_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2530.4     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_51_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2543.0     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_51_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2558.1     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_52_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2570.7     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_52_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2585.8     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_53_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2598.4     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_53_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2613.5     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_54_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2626.1     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_54_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2641.2     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_55_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2653.8     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_55_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2668.9     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_56_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2681.5     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_56_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2696.6     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_57_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2709.2     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_57_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2724.3     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_58_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2736.9     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_58_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2752.0     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_59_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2764.6     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_59_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2779.7     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_60_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2792.3     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_60_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2807.4     15.1     15.1      0.0      6.9      0.5      7.4      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_61_Full_Adder/i_0_1/A1->ZN
+                         NAND2_X4                rf   2820.0     12.6     12.6      0.0     11.1      0.3      4.0      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_61_Full_Adder/i_0_0/A1->ZN
+                         NAND2_X4                fr   2837.8     17.8     17.8      0.0      6.9      0.8     11.7      3    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_62_Full_Adder/i_0_1/B1->ZN
+                         OAI21_X4                rf   2852.9     15.1     15.1      0.0     13.4      0.3      4.2      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_62_Full_Adder/i_0_0/A2->ZN
+                         NAND2_X4*               fr   2885.8     32.9     32.9      0.0      9.4      5.0     29.9      2    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_63_Full_Adder/i_0_0/A->ZN
+                         INV_X8                  rf   2892.7      6.9      6.9      0.0     15.3      0.3      4.4      1    65,   59  /PD_TOP        (1.10)
+multiplier/ripple_adder/genblk1_63_Full_Adder/i_0_3/A1->ZN
+                         AOI22_X4                fr   2924.7     32.0     32.0      0.0      3.5      4.4      6.5      1    65,   59  /PD_TOP        (1.10)
+outB/i_0_33/A1->ZN       AND2_X4                 rr   2957.0     31.5     31.5      0.0     27.4      0.3      1.4      1   131,   47  /PD_TOP        (1.10)
+outB/out_reg[31]/D       DFF_X1                   r   2957.0      0.8               0.8      6.3                            131,   47  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2R
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: reset
+    (Clocked by vsysclk R)
+Endpoint: regA/clk_gate_out_reg/E
+    (Clocked by vsysclk R)
+Path Group: I2R
+Data required time: 2914.9
+    (Clock shift: 3000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 85.1)
+Data arrival time: 217.0
+Slack: 2697.9
+Logic depth: 1
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+reset                    {set_input_delay}        r    200.0    200.0    200.0                        4.9    115.4      8   181,   43                       
+regA/i_0_0/A2->ZN        OR2_X4                  rr    217.0     16.6     16.6      0.0      0.0      0.3      1.2      1   131,   47  /PD_TOP        (1.10)
+regA/clk_gate_out_reg/E  CLKGATETST_X2            r    217.0      0.4               0.4      5.2                            131,   47  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2O
+Report for group R2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: outB/out_reg[31]/Q
+    (Clocked by vsysclk R)
+Endpoint: result[63]
+    (Clocked by vsysclk R)
+Path Group: R2O
+Data required time: 2500.0
+    (Clock shift: 3000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 96.3
+Slack: 2403.7
+Logic depth: 0
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0      4   139,    0                       
+outB/clk_gate_out_reg/CK->GCK
+                         CLKGATETST_X1           rr      0.0      0.0      0.0      0.0      0.0      0.0      0.0     32   131,   47  /PD_TOP        (1.10)
+outB/out_reg[31]/CK->Q   DFF_X1                  rf     95.9     95.9     95.9      0.0      0.0      3.4     13.4      1   131,   47  /PD_TOP        (1.10)
+result[63]                                        f     96.3      0.4               0.4     17.3                            143,    0                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------

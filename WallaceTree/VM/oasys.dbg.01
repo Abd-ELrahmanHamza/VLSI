@@ -1,0 +1,523 @@
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:952
+libc: 2.17-stable
+
+Timestamp: 1671145521.993055019
+---
+PID=4742 0.042817058 0.036007 0.006812 program start
+Complete list of environment variables at program start
+_ /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui
+CALIBRE_HOME /home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14
+COLORTERM truecolor
+DBUS_SESSION_BUS_ADDRESS unix:abstract=/tmp/dbus-OqXMPrOE5T,guid=a80fd58dcd5263f72edf56b8639b9c50
+DBUS_STARTER_ADDRESS unix:abstract=/tmp/dbus-OqXMPrOE5T,guid=a80fd58dcd5263f72edf56b8639b9c50
+DBUS_STARTER_BUS_TYPE session
+DESKTOP_SESSION gnome-classic
+DISPLAY :0
+GDM_LANG en_US.UTF-8
+GDMSESSION gnome-classic
+GNOME_DESKTOP_SESSION_ID this-is-deprecated
+GNOME_SHELL_SESSION_MODE classic
+GNOME_TERMINAL_SCREEN /org/gnome/Terminal/screen/31d41d0e_9fc0_4a63_92ba_124eb6dfb558
+GNOME_TERMINAL_SERVICE :1.102
+HISTCONTROL ignoredups
+HISTSIZE 1000
+HOME /home/vlsi
+HOSTNAME localhost.localdomain
+IMSETTINGS_INTEGRATE_DESKTOP yes
+IMSETTINGS_MODULE none
+LANG en_US.UTF-8
+LD_LIBRARY_PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/Linux-x86_64-O:
+LESSOPEN {||/usr/bin/lesspipe.sh %s}
+LM_LICENSE_FILE /home/vlsi/Installation/5984_authcodes.txt
+LOGNAME vlsi
+LS_COLORS {rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:}
+MAIL /var/spool/mail/vlsi
+MANPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/doc/man:
+MGC_HOME /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/mgc_home
+OASYSLD_LICENSE_FILE /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/license.lic
+PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/share/onespin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/share/slec:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/vlsi/Installation/mgls_v9-22_3-1-0.aol/bin:/home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/bin:/home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14/bin:/home/vlsi/Installation/intelFPGA/19.1/modelsim_ase/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin:/home/vlsi/.local/bin:/home/vlsi/bin:/home/vlsi/Installation/mgls_v9-22_3-1-0.aol/bin:/home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/bin:/home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14/bin:/home/vlsi/Installation/intelFPGA/19.1/modelsim_ase/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin
+PWD /home/vlsi/Desktop/WallaceTree
+QT_GRAPHICSSYSTEM_CHECKED 1
+QT_IM_MODULE ibus
+QTDIR /usr/lib64/qt-3.3
+QTINC /usr/lib64/qt-3.3/include
+QTLIB /usr/lib64/qt-3.3/lib
+RT_CMD {/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/oasys }
+RT_HOME /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1
+RT_LIBPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib
+RT_MANPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/doc/man
+RT_PID 4732
+RT_TCL_PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl
+RT_TMP /tmp/oasys.4732
+RT_WRAPPER_SCRIPT /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/oasys
+SESSION_MANAGER local/unix:@/tmp/.ICE-unix/1871,unix/unix:/tmp/.ICE-unix/1871
+SHELL /bin/bash
+SHLVL 3
+SSH_AGENT_PID 2015
+SSH_AUTH_SOCK /run/user/1000/keyring/ssh
+TCL_LIBRARY /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl/library
+TERM xterm-256color
+USER vlsi
+USERNAME vlsi
+VTE_VERSION 5202
+WINDOWPATH 1
+XAUTHORITY /run/gdm/auth-for-vlsi-NRlKc6/database
+XDG_CURRENT_DESKTOP GNOME-Classic:GNOME
+XDG_DATA_DIRS /home/vlsi/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+XDG_MENU_PREFIX gnome-
+XDG_RUNTIME_DIR /run/user/1000
+XDG_SEAT seat0
+XDG_SESSION_DESKTOP gnome-classic
+XDG_SESSION_ID 1
+XDG_SESSION_TYPE x11
+XDG_VTNR 1
+XMODIFIERS @im=ibus
+---
+
+Timestamp: 1671145521.996653778
+---
+Soft resource limits:
+
+Executing: /bin/bash -f -c {ulimit -a -S}
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 15652
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+---
+
+Timestamp: 1671145521.998715609
+---
+Hard resource limits:
+
+Executing: /bin/bash -f -c {ulimit -a -H}
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 15652
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 15652
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+---
+
+Timestamp: 1671145521.998944554
+---
+CPU Information
+
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 165
+model name	: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+stepping	: 2
+microcode	: 0xec
+cpu MHz		: 2592.000
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx rdtscp lm constant_tsc arch_perfmon nopl tsc_reliable nonstop_tsc eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx hypervisor lahf_lm 3dnowprefetch arat
+bogomips	: 5184.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+
+
+This host has 1 processors, with most parameters identical to the first one, except as noted above.
+
+---
+
+Timestamp: 1671145522.043558622
+---
+Miscellaneous system info for process PID=4742
+Recorded at Fri Dec 16 01:05:21 EET 2022
+
+Executing: uptime
+ 01:05:22 up 51 min,  4 users,  load average: 2.20, 1.26, 0.58
+
+Executing: uname -a
+Linux localhost.localdomain 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+Executing: free
+              total        used        free      shared  buff/cache   available
+Mem:        4040776     1246796     1115664       38188     1678316     2512408
+Swap:       4063228           0     4063228
+
+Executing: ps u 4742
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+vlsi      4742  5.0  0.7 277836 31424 pts/2    S+   01:05   0:00 /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui --
+
+Executing: cat /etc/redhat-release
+CentOS Linux release 7.7.1908 (Core)
+
+Executing: ldd /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui
+	linux-vdso.so.1 =>  (0x00007ffd5c86e000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00007f6665f7f000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f6665d63000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f6665b5f000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f6665957000)
+	libX11.so.6 => /lib64/libX11.so.6 (0x00007f6665619000)
+	libSM.so.6 => /lib64/libSM.so.6 (0x00007f6665411000)
+	libICE.so.6 => /lib64/libICE.so.6 (0x00007f66651f5000)
+	libXi.so.6 => /lib64/libXi.so.6 (0x00007f6664fe5000)
+	libXrender.so.1 => /lib64/libXrender.so.1 (0x00007f6664dda000)
+	libXfixes.so.3 => /lib64/libXfixes.so.3 (0x00007f6664bd4000)
+	libXrandr.so.2 => /lib64/libXrandr.so.2 (0x00007f66649c9000)
+	libXcursor.so.1 => /lib64/libXcursor.so.1 (0x00007f66647be000)
+	libXinerama.so.1 => /lib64/libXinerama.so.1 (0x00007f66645bb000)
+	libfreetype.so.6 => /lib64/libfreetype.so.6 (0x00007f66642fc000)
+	libXext.so.6 => /lib64/libXext.so.6 (0x00007f66640ea000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f6663ed4000)
+	libgthread-2.0.so.0 => /lib64/libgthread-2.0.so.0 (0x00007f6663cd2000)
+	libglib-2.0.so.0 => /lib64/libglib-2.0.so.0 (0x00007f66639bc000)
+	libfontconfig.so.1 => /lib64/libfontconfig.so.1 (0x00007f666377a000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f6663478000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f66630aa000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f66661a6000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00007f6662e80000)
+	libxcb.so.1 => /lib64/libxcb.so.1 (0x00007f6662c58000)
+	libuuid.so.1 => /lib64/libuuid.so.1 (0x00007f6662a53000)
+	libbz2.so.1 => /lib64/libbz2.so.1 (0x00007f6662843000)
+	libpng15.so.15 => /lib64/libpng15.so.15 (0x00007f6662618000)
+	libpcre.so.1 => /lib64/libpcre.so.1 (0x00007f66623b6000)
+	libexpat.so.1 => /lib64/libexpat.so.1 (0x00007f666218c000)
+	libXau.so.6 => /lib64/libXau.so.6 (0x00007f6661f88000)
+
+Examining disk space in the following directories:
+  Current directory: /home/vlsi/Desktop/WallaceTree
+  Oasys' temp directory: /tmp/oasys.4732/ (normalized path: /tmp/oasys.4732)
+  RT_TMP directory: /tmp/oasys.4732
+
+Executing: df /home/vlsi/Desktop/WallaceTree /tmp/oasys.4732 /tmp/oasys.4732
+Filesystem          1K-blocks     Used Available Use% Mounted on
+/dev/mapper/cl-root  47285700 31357216  15928484  67% /
+tmpfs                 2020388       32   2020356   1% /tmp
+tmpfs                 2020388       32   2020356   1% /tmp
+
+
+---
+
+Timestamp: 1671145538.786829147
+---
+NDbC::beforeConcurrency uniquifier=<offset=0,modulo=2>
+
+---
+
+1671145538.789522631 Parent PID=4742 2.247355394 2.088870 0.158486 forking worker # 1
+Timestamp: 1671145538.790285641
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=2>
+
+---
+
+Timestamp: 1671145538.790285641
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=2>
+
+---
+
+Timestamp: 1671145538.815024625
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=2>
+
+---
+
+Timestamp: 1671145538.815602757
+---
+Parent 4742 started child 4785 
+
+---
+
+1671145538.819538511 BEGIN areaOpt PID=4742 2.269303975 2.102994 0.166310
+1671145598.355795168 END areaOpt PID=4742 3.518879400 3.240088 0.278791
+1671145598.386144673 BEGIN constProp PID=4742 3.523177295 3.241481 0.281696
+1671145598.390983627 END constProp PID=4742 3.528015695 3.245259 0.282757
+1671145599.187118239 BEGIN runTimingOptimizationLoopLevel2 PID=4742 3.979269560 3.690098 0.289171
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:33802
+info: (0) optimizing 'i_0/I1[63]' (path group default) @ -1528.1ps(1/2) (0 secs)
+optimized 'integrationMult__GC0' area: 294940800000 -> 295260000000, inst: 268->269, slack: -1528.1 -> -1528.1 (0.0 secs)
+optimized 'mulTree__GB4' area: 939937600000 -> 958451200000, inst: 1972->2035, slack: -1528.1 -> -527.8 (3.7 secs)
+optimized 'mulTree__GB2' area: 607118400000 -> 612864000000, inst: 1300->1329, slack: -1528.1 -> -1522.3 (0.1 secs)
+optimized 'mulTree__GB0' area: 568920800000 -> 571687200000, inst: 1575->1586, slack: -1528.1 -> -1510.0 (0.2 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:33882
+info: (1) optimizing 'i_0/I1[62]' (path group default) @ -510.4ps(1/2) (6 secs)
+optimized 'integrationMult__GC0' area: 295260000000 -> 295260000000, inst: 269->269, slack: -510.4 -> -510.4 (0.0 secs)
+unchanged 'mulTree__GB4' area: 958451200000 -> 958451200000, inst: 2035->2035, slack: -510.4 -> -510.4 (0.1 secs)
+optimized 'mulTree__GB2' area: 612864000000 -> 637868000000, inst: 1329->1441, slack: -510.4 -> -498.3 (0.3 secs)
+unchanged 'mulTree__GB0' area: 571687200000 -> 571687200000, inst: 1586->1586, slack: -510.4 -> -510.4 (0.0 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:33962
+info: (2) optimizing 'i_0/I1[62]' (path group default) @ -490.2ps(1/2) (0 secs)
+unchanged 'integrationMult__GC0' area: 295260000000 -> 295260000000, inst: 269->269, slack: -490.2 -> -490.2 (0.0 secs)
+optimized 'mulTree__GB4' area: 958451200000 -> 974730400000, inst: 2035->2086, slack: -490.2 -> -407.6 (1.7 secs)
+optimized 'mulTree__GB2' area: 637868000000 -> 639570400000, inst: 1441->1448, slack: -490.2 -> -467.3 (0.2 secs)
+optimized 'mulTree__GB0' area: 571687200000 -> 575198400000, inst: 1586->1600, slack: -490.2 -> -481.0 (0.3 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:34042
+info: (3) optimizing 'i_0/I1[62]' (path group default) @ -384.0ps(1/2) (3 secs)
+optimized 'mulTree__GB1' area: 443475200000 -> 448901600000, inst: 957->981, slack: -384.0 -> -382.5 (0.2 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:34122
+info: (4) optimizing 'i_0/I1[62]' (path group default) @ -383.2ps(1/2) (1 secs)
+unchanged 'integrationMult__GC0' area: 295260000000 -> 295260000000, inst: 269->269, slack: -383.2 -> -383.2 (0.0 secs)
+unchanged 'mulTree__GB4' area: 974730400000 -> 974730400000, inst: 2086->2086, slack: -383.2 -> -383.2 (0.1 secs)
+optimized 'mulTree__GB2' area: 639570400000 -> 635846400000, inst: 1448->1436, slack: -383.2 -> -375.9 (0.8 secs)
+unchanged 'mulTree__GB0' area: 575198400000 -> 575198400000, inst: 1600->1600, slack: -383.2 -> -383.2 (0.0 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:34202
+info: (5) optimizing 'i_0/I1[62]' (path group default) @ -375.9ps(1/2) (1 secs)
+optimized 'integrationMult__GC0' area: 295260000000 -> 296324000000, inst: 269->269, slack: -375.9 -> -375.2 (0.0 secs)
+unchanged 'mulTree__GB4' area: 974730400000 -> 974730400000, inst: 2086->2086, slack: -375.9 -> -375.9 (0.1 secs)
+unchanged 'mulTree__GB2' area: 635846400000 -> 635846400000, inst: 1436->1436, slack: -375.9 -> -375.9 (0.1 secs)
+optimized 'mulTree__GB0' area: 575198400000 -> 577007200000, inst: 1600->1607, slack: -375.9 -> -365.6 (0.4 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:34282
+info: (6) optimizing 'i_0/I1[63]' (path group default) @ -364.9ps(1/2) (1 secs)
+optimized 'integrationMult__GC0' area: 296324000000 -> 297175200000, inst: 269->269, slack: -364.9 -> -364.9 (0.0 secs)
+optimized 'mulTree__GB4' area: 974730400000 -> 974624000000, inst: 2086->2086, slack: -364.9 -> -365.5 (0.9 secs)
+unchanged 'mulTree__GB2' area: 635846400000 -> 635846400000, inst: 1436->1436, slack: -364.9 -> -364.9 (0.0 secs)
+unchanged 'mulTree__GB1' area: 448901600000 -> 448901600000, inst: 981->981, slack: -364.9 -> -364.9 (0.0 secs)
+unchanged 'mulTree__GB0' area: 577007200000 -> 577007200000, inst: 1607->1607, slack: -364.9 -> -364.9 (0.1 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:34362
+info: (7) optimizing 'i_0/I1[63]' (path group default) @ -363.3ps(1/2) (1 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:34542
+optimized 'mulTree__GB0' area: 577007200000 -> 644996800000, inst: 1607->1573, slack: -363.3 -> -377.1 (1.2 secs)
+optimized 'mulTree__GB1' area: 448901600000 -> 464010400000, inst: 981->1006, slack: -363.3 -> -361.0 (0.4 secs)
+optimized 'mulTree__GB2' area: 635846400000 -> 619992800000, inst: 1436->1349, slack: -363.3 -> -340.1 (3.5 secs)
+optimized 'mulTree__GB4' area: 974624000000 -> 962920000000, inst: 2086->2081, slack: -363.3 -> -1275.6 (8.6 secs)
+optimized 'integrationMult__GC0' area: 297175200000 -> 297175200000, inst: 269->269, slack: -363.3 -> -363.3 (0.1 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:34624
+info: (8) optimizing 'i_0/I1[63]' (path group default) @ -1276.5ps(1/2) (18 secs)
+optimized 'mulTree__GB0' area: 644996800000 -> 644784000000, inst: 1573->1571, slack: -1276.5 -> -1244.2 (0.4 secs)
+optimized 'mulTree__GB2' area: 619992800000 -> 625206400000, inst: 1349->1381, slack: -1276.5 -> -1236.0 (0.8 secs)
+optimized 'mulTree__GB4' area: 962920000000 -> 963132800000, inst: 2081->2082, slack: -1276.5 -> -1275.0 (5.4 secs)
+unchanged 'integrationMult__GC0' area: 297175200000 -> 297175200000, inst: 269->269, slack: -1276.5 -> -1276.5 (0.0 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:34705
+info: (9) optimizing 'i_0/I1[63]' (path group default) @ -1271.7ps(1/2) (8 secs)
+optimized 'mulTree__GB0' area: 644784000000 -> 645954400000, inst: 1571->1580, slack: -1271.7 -> -1267.4 (0.5 secs)
+optimized 'mulTree__GB2' area: 625206400000 -> 633186400000, inst: 1381->1418, slack: -1271.7 -> -1239.5 (0.2 secs)
+unchanged 'mulTree__GB4' area: 963132800000 -> 963132800000, inst: 2082->2082, slack: -1271.7 -> -1271.7 (0.1 secs)
+optimized 'integrationMult__GC0' area: 297175200000 -> 297388000000, inst: 269->269, slack: -1271.7 -> -1271.7 (0.1 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:34787
+info: (10) optimizing 'i_0/I1[63]' (path group default) @ -1238.3ps(1/2) (1 secs)
+optimized 'mulTree__GB0' area: 645954400000 -> 645316000000, inst: 1580->1574, slack: -1238.3 -> -1237.9 (0.4 secs)
+optimized 'mulTree__GB2' area: 633186400000 -> 636378400000, inst: 1418->1432, slack: -1238.3 -> -1232.0 (1.9 secs)
+optimized 'mulTree__GB4' area: 963132800000 -> 965473600000, inst: 2082->2096, slack: -1238.3 -> -1254.0 (2.6 secs)
+optimized 'integrationMult__GC0' area: 297388000000 -> 298452000000, inst: 269->269, slack: -1238.3 -> -1238.3 (0.1 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:34869
+info: (11) optimizing 'i_0/I1[63]' (path group default) @ -1261.6ps(1/2) (6 secs)
+optimized 'mulTree__GB0' area: 645316000000 -> 646592800000, inst: 1574->1582, slack: -1261.6 -> -1255.0 (0.6 secs)
+unchanged 'mulTree__GB2' area: 636378400000 -> 636378400000, inst: 1432->1432, slack: -1261.6 -> -1261.6 (0.1 secs)
+optimized 'mulTree__GB4' area: 965473600000 -> 972921600000, inst: 2096->2124, slack: -1261.6 -> -833.9 (31.8 secs)
+unchanged 'integrationMult__GC0' area: 298452000000 -> 298452000000, inst: 269->269, slack: -1261.6 -> -1261.6 (0.0 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:34951
+info: (12) optimizing 'i_0/I1[63]' (path group default) @ -834.0ps(1/2) (38 secs)
+optimized 'mulTree__GB0' area: 646592800000 -> 646912000000, inst: 1582->1583, slack: -834.0 -> -828.0 (0.5 secs)
+optimized 'mulTree__GB2' area: 636378400000 -> 679470400000, inst: 1432->1612, slack: -834.0 -> -816.5 (5.3 secs)
+unchanged 'mulTree__GB4' area: 972921600000 -> 972921600000, inst: 2124->2124, slack: -834.0 -> -834.0 (0.1 secs)
+optimized 'integrationMult__GC0' area: 298452000000 -> 298877600000, inst: 269->269, slack: -834.0 -> -834.0 (0.1 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:35032
+info: (13) optimizing 'i_0/I1[63]' (path group default) @ -816.6ps(1/2) (6 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:35122
+optimized 'mulTree__GB1' area: 464010400000 -> 468692000000, inst: 1006->1023, slack: -816.6 -> -812.0 (0.8 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:35203
+info: (14) optimizing 'i_0/I1[63]' (path group default) @ -814.7ps(1/2) (2 secs)
+optimized 'mulTree__GB0' area: 646912000000 -> 646592800000, inst: 1583->1580, slack: -814.7 -> -814.3 (0.4 secs)
+optimized 'mulTree__GB2' area: 679470400000 -> 674895200000, inst: 1612->1590, slack: -814.7 -> -812.4 (2.1 secs)
+optimized 'mulTree__GB4' area: 972921600000 -> 972815200000, inst: 2124->2123, slack: -814.7 -> -811.6 (2.9 secs)
+unchanged 'integrationMult__GC0' area: 298877600000 -> 298877600000, inst: 269->269, slack: -814.7 -> -814.7 (0.0 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:35284
+info: (15) optimizing 'i_0/I1[63]' (path group default) @ -809.7ps(1/2) (6 secs)
+unchanged 'mulTree__GB0' area: 646592800000 -> 646592800000, inst: 1580->1580, slack: -809.7 -> -809.7 (0.0 secs)
+unchanged 'mulTree__GB2' area: 674895200000 -> 674895200000, inst: 1590->1590, slack: -809.7 -> -809.7 (0.1 secs)
+optimized 'mulTree__GB4' area: 972815200000 -> 972708800000, inst: 2123->2112, slack: -809.7 -> -707.3 (16.6 secs)
+unchanged 'integrationMult__GC0' area: 298877600000 -> 298877600000, inst: 269->269, slack: -809.7 -> -809.7 (0.0 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:35366
+info: (16) optimizing 'i_0/I1[63]' (path group default) @ -707.3ps(1/2) (19 secs)
+1671145721.024857239 BEGIN optRepartitionGenomes PID=4742 120.696046375 107.792672 12.903374
+1671145721.822141102 END optRepartitionGenomes PID=4742 121.473857618 108.559487 12.914371
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:35811
+info: (17) optimizing 'i_0/I1[63]' (path group default) @ -710.9ps(1/2) (1 secs)
+optimized 'mulTree__GTE0' area: 2294196800000 -> 2294196800000, inst: 5282->5282, slack: -710.9 -> -710.9 (0.2 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:35892
+info: (18) optimizing 'i_0/I1[63]' (path group default) @ -706.3ps(1/2) (1 secs)
+optimized 'mulTree__GTE0' area: 2294196800000 -> 2294196800000, inst: 5282->5282, slack: -706.3 -> -706.3 (0.4 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:35973
+info: (19) optimizing 'i_0/I1[63]' (path group default) @ -704.7ps(1/2) (0 secs)
+optimized 'mulTree__GTE0' area: 2294196800000 -> 2306645600000, inst: 5282->5345, slack: -704.7 -> -699.7 (1.4 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:36054
+info: (20) optimizing 'i_0/I1[63]' (path group default) @ -696.4ps(1/2) (2 secs)
+optimized 'mulTree__GTE0' area: 2306645600000 -> 2307603200000, inst: 5345->5348, slack: -696.4 -> -693.7 (2.4 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:36135
+info: (21) optimizing 'i_0/I1[63]' (path group default) @ -680.6ps(1/2) (3 secs)
+optimized 'mulTree__GTE0' area: 2307603200000 -> 2307816000000, inst: 5348->5349, slack: -680.6 -> -680.6 (0.5 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:36216
+info: (22) optimizing 'i_0/I1[63]' (path group default) @ -678.5ps(1/2) (1 secs)
+optimized 'mulTree__GTE0' area: 2307816000000 -> 2307922400000, inst: 5349->5349, slack: -678.5 -> -678.5 (0.5 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:36297
+info: (23) optimizing 'i_0/I1[63]' (path group default) @ -667.4ps(1/2) (1 secs)
+optimized 'mulTree__GTE0' area: 2307922400000 -> 2307922400000, inst: 5349->5349, slack: -667.4 -> -667.4 (0.6 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:36378
+info: (24) optimizing 'i_0/I1[63]' (path group default) @ -662.1ps(1/2) (1 secs)
+optimized 'mulTree__GTE0' area: 2307922400000 -> 2307922400000, inst: 5349->5349, slack: -662.1 -> -662.1 (0.4 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:36459
+info: (25) optimizing 'i_0/I1[63]' (path group default) @ -660.8ps(1/2) (4 secs)
+unchanged 'mulTree__GB1' area: 468692000000 -> 468692000000, inst: 1023->1023, slack: -660.8 -> -660.8 (0.0 secs)
+optimized 'mulTree__GTE0' area: 2307922400000 -> 2307922400000, inst: 5349->5349, slack: -660.8 -> -660.6 (3.2 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:36540
+info: (26) optimizing 'i_0/I1[63]' (path group default) @ -660.6ps(1/2) (4 secs)
+optimized 'mulTree__GB1' area: 468692000000 -> 480502400000, inst: 1023->1049, slack: -660.6 -> -653.2 (0.9 secs)
+unchanged 'mulTree__GTE0' area: 2307922400000 -> 2307922400000, inst: 5349->5349, slack: -660.6 -> -660.6 (3.0 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:36621
+info: (27) optimizing 'i_0/I1[63]' (path group default) @ -660.4ps(1/2) (5 secs)
+optimized 'mulTree__GTE0' area: 2307922400000 -> 2309624800000, inst: 5349->5356, slack: -660.4 -> -653.9 (9.8 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:36703
+info: (28) optimizing 'i_0/I1[63]' (path group default) @ -653.9ps(1/2) (11 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:36784
+info: (29) optimizing 'i_0/I1[63]' (path group default) @ -653.9ps(1/2) (0 secs)
+optimized 'integrationMult__GC0' area: 298877600000 -> 299303200000, inst: 269->269, slack: -653.9 -> -653.9 (0.1 secs)
+unchanged 'mulTree__GTE0' area: 2309624800000 -> 2309624800000, inst: 5356->5356, slack: -653.9 -> -653.9 (0.1 secs)
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:36865
+info: (30) optimizing 'i_0/I1[63]' (path group default) @ -653.9ps(1/2) (5 secs)
+1671145762.637358395 BEGIN optRepartitionGenomes PID=4742 161.333325085 145.239004 16.094321
+1671145762.637622695 END optRepartitionGenomes PID=4742 161.333589742 145.239268 16.094321
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:37002
+info: (31) optimizing 'i_0/I1[63]' (path group default) @ -653.9ps(1/2) (2 secs)
+1671145769.044481161 BEGIN optRepartitionGenomes PID=4742 167.593200092 151.076275 16.516925
+1671145769.044748362 END optRepartitionGenomes PID=4742 167.593467691 151.076542 16.516925
+1671145769.045089725 END runTimingOptimizationLoopLevel2 PID=4742 167.593808446 151.076883 16.516925
+1671145769.053762661 BEGIN runTimingOptimizationLoopLevel2 PID=4742 167.602419883 151.085495 16.516925
+1671145769.053840811 END runTimingOptimizationLoopLevel2 PID=4742 167.602498179 151.085573 16.516925
+1671145769.054395728 BEGIN runTimingOptimizationLoopLevel2 PID=4742 167.603053002 151.086128 16.516925
+1671145769.054466414 END runTimingOptimizationLoopLevel2 PID=4742 167.603123738 151.086198 16.516925
+1671145769.055899115 BEGIN runTimingOptimizationLoopLevel2 PID=4742 167.604556402 151.087631 16.516925
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:37416
+info: (32) optimizing 'i_0/I1[63]' (path group default) @ -653.9ps(1/2) (6 secs)
+1671145769.109988043 BEGIN optRepartitionGenomes PID=4742 167.652811114 151.134903 16.517908
+1671145769.110292256 END optRepartitionGenomes PID=4742 167.653115677 151.135207 16.517908
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:37553
+info: (33) optimizing 'i_0/I1[63]' (path group default) @ -653.9ps(1/2) (0 secs)
+1671145775.634967689 BEGIN optRepartitionGenomes PID=4742 174.022370560 157.057887 16.964484
+1671145775.635244650 END optRepartitionGenomes PID=4742 174.022647821 157.058164 16.964484
+1671145775.635508617 END runTimingOptimizationLoopLevel2 PID=4742 174.022911367 157.058428 16.964484
+1671145775.644720470 BEGIN runTimingOptimizationLoopLevel2 PID=4742 174.031455834 157.066972 16.964484
+1671145775.644799658 END runTimingOptimizationLoopLevel2 PID=4742 174.031535238 157.067051 16.964484
+1671145775.645365348 BEGIN runTimingOptimizationLoopLevel2 PID=4742 174.032100877 157.067617 16.964484
+1671145775.645435927 END runTimingOptimizationLoopLevel2 PID=4742 174.032171540 157.067688 16.964484
+1671145776.399850453 Pausing MPG
+1671145776.400007938 BEGIN Optimize3Top::place PID=4742 174.660671048 157.675384 16.985287
+1671145796.616194174 END Optimize3Top::place PID=4742 194.358111860 176.571140 17.786972
+1671145796.616701104 Resuming MPG
+1671145991.779481837 Parent PID=4742 198.298888309 180.380935 17.917953 forking worker # 1
+Timestamp: 1671145991.779640216
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=2>
+
+---
+
+Timestamp: 1671145991.779640216
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=2>
+
+---
+
+Timestamp: 1671145991.803637371
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=2>
+
+---
+
+Timestamp: 1671145991.804349805
+---
+Parent 4742 started child 5105 
+
+---
+
+1671145991.807324704 BEGIN areaOpt PID=4742 198.318819500 180.395881 17.922938
+1671146043.107460935 END areaOpt PID=4742 199.606530892 181.547470 18.059060
+1671146043.152934339 BEGIN constProp PID=4742 199.611632965 181.550361 18.061272
+1671146043.158854038 END constProp PID=4742 199.617242408 181.554158 18.063084
+1671146043.977492499 BEGIN runTimingOptimizationLoopLevel2 PID=4742 200.075121855 182.001068 18.074054
+
+@/home/vlsi/Desktop/WallaceTree/oasys.log.01:141715
+info: (0) optimizing 'i_0/I1[63]' (path group default) @ -528.1ps(1/2) (1 secs)
+optimized 'integrationMult__GC0' area: 294940800000 -> 295260000000, inst: 268->269, slack: -528.1 -> -528.1 (0.0 secs)
+optimized 'mulTree__GB4' area: 939937600000 -> 953982400000, inst: 1972->2026, slack: -528.1 -> 4.2 (1.1 secs)
+optimized 'mulTree__GB2' area: 607118400000 -> 612864000000, inst: 1300->1329, slack: -528.1 -> -522.3 (0.1 secs)
+optimized 'mulTree__GB0' area: 568920800000 -> 571687200000, inst: 1575->1586, slack: -528.1 -> -510.0 (0.2 secs)
+1671146046.488189318 END runTimingOptimizationLoopLevel2 PID=4742 202.281382943 184.069660 18.211723
+1671146046.497975830 BEGIN runTimingOptimizationLoopLevel2 PID=4742 202.290514829 184.078791 18.211723
+1671146046.498087408 END runTimingOptimizationLoopLevel2 PID=4742 202.290626759 184.078899 18.211728
+1671146046.498694049 BEGIN runTimingOptimizationLoopLevel2 PID=4742 202.291233396 184.079499 18.211734
+1671146046.498767120 END runTimingOptimizationLoopLevel2 PID=4742 202.291306590 184.079573 18.211734
+1671146046.500254005 BEGIN runTimingOptimizationLoopLevel2 PID=4742 202.292793443 184.081059 18.211734
+1671146046.500324457 END runTimingOptimizationLoopLevel2 PID=4742 202.292863865 184.081130 18.211734
+1671146046.500815795 BEGIN runTimingOptimizationLoopLevel2 PID=4742 202.293355205 184.081621 18.211734
+1671146046.500902540 END runTimingOptimizationLoopLevel2 PID=4742 202.293441990 184.081625 18.211816
+1671146046.501400915 BEGIN runTimingOptimizationLoopLevel2 PID=4742 202.293940292 184.081625 18.212315
+1671146046.501468037 END runTimingOptimizationLoopLevel2 PID=4742 202.294007547 184.081625 18.212382
+1671146047.812786591 Pausing MPG
+1671146047.812937953 BEGIN Optimize3Top::place PID=4742 203.417995812 185.184156 18.233840
+1671146089.985790561 END Optimize3Top::place PID=4742 244.428255371 225.737184 18.691072
+1671146089.986111440 Resuming MPG
