@@ -1,0 +1,20 @@
+#--------------------------------------------------------------------
+#         date     : Fri Dec 23 13:28:39 EET 2022
+#         ppid/pid : 3285/3295
+#         hostname : localhost.localdomain
+#         arch/os  : x86_64/Linux-3.10.0-1062.12.1.el7.x86_64 
+#         install  : /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1
+#         currdir  : /home/vlsi/Desktop/verilogMul
+#         logfile  : /home/vlsi/Desktop/verilogMul/oasys.log.00
+#         tmpdir   : /tmp/oasys.3285/
+#--------------------------------------------------------------------
+# Starting Interactive Session
+source scripts/0_init_design.tcl
+source scripts/1_read_design.tcl
+source scripts/2_synthesize_optimize.tcl
+source scripts/3_synthesize_optimize.tcl
+source scripts/3_export_design.tcl
+report_timing
+report_power
+report_area 
+report_timing -min_delay

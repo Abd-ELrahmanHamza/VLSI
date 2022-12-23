@@ -1,0 +1,17 @@
+D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/multiply.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/multiply.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module registerNbits
+-- Compiling module multiplyTimes
+-- Compiling module integrationMult
+
+Top level modules:
+	integrationMult
+
+} {} {}} D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/mulTreeTB.v {1 {vlog -work work -stats=none D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/mulTreeTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mulTreeTB
+
+Top level modules:
+	mulTreeTB
+
+} {} {}}

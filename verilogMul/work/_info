@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/FloatMultiplier
+vintegrationMult
+Z0 !s110 1671794293
+!i10b 1
+!s100 JTf^@=5oDER?ZR8[iY[=f0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ii:>1kIH]2CMS7C??n`6MB3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul
+Z4 w1671794007
+Z5 8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/multiply.v
+Z6 FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/multiply.v
+!i122 8
+L0 25 19
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1671794293.000000
+Z9 !s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/multiply.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/multiply.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+nintegration@mult
+vmultiplyTimes
+R0
+!i10b 1
+!s100 I02;O?kH;Hz?e>cYahi=Z2
+R1
+Iio^k2>e47_Ob0UhmlFcCS1
+R2
+R3
+R4
+R5
+R6
+!i122 8
+L0 16 8
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+nmultiply@times
+vmulTreeTB
+R0
+!i10b 1
+!s100 2:iPG44Y8J2<e>KFHkzQN0
+R1
+IccCLXU1ChTR@5<78VDj122
+R2
+R3
+w1671793908
+8D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/mulTreeTB.v
+FD:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/mulTreeTB.v
+!i122 9
+L0 2 121
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/mulTreeTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/mulTreeTB.v|
+!i113 1
+R11
+R12
+nmul@tree@t@b
+vregisterNbits
+R0
+!i10b 1
+!s100 U2TlQJJ_zUBMbHVkAEMU>1
+R1
+IP@zKZd>=jc0H=TJKk9RFI0
+R2
+R3
+R4
+R5
+R6
+!i122 8
+L0 2 13
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+nregister@nbits

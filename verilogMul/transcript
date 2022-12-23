@@ -1,0 +1,97 @@
+# Compile of multiply.v was successful.
+# Compile of mulTreeTB.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of multiply.v was successful.
+# Compile of mulTreeTB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.mulTreeTB
+# vsim -gui work.mulTreeTB 
+# Start time: 13:11:16 on Dec 23,2022
+# Loading work.mulTreeTB
+# Loading work.integrationMult
+# Loading work.registerNbits
+# Loading work.multiplyTimes
+# ** Error: (vsim-3063) Port 'x' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/mul/multiplier File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/multiply.v Line: 39
+# ** Error: (vsim-3063) Port 'y' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/mul/multiplier File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/multiply.v Line: 39
+# ** Error: (vsim-3063) Port 'out' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/mul/multiplier File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/multiply.v Line: 39
+# Error loading design
+# End time: 13:11:17 on Dec 23,2022, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 6
+# Compile of multiply.v was successful.
+# Compile of mulTreeTB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.mulTreeTB
+# vsim -gui work.mulTreeTB 
+# Start time: 13:12:48 on Dec 23,2022
+# Loading work.mulTreeTB
+# Loading work.integrationMult
+# Loading work.registerNbits
+# Loading work.multiplyTimes
+# ** Error: (vsim-3063) Port 'x' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/mul/multiplier File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/multiply.v Line: 39
+# ** Error: (vsim-3063) Port 'y' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/mul/multiplier File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/multiply.v Line: 39
+# ** Error: (vsim-3063) Port 'out' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /mulTreeTB/mul/multiplier File: D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/multiply.v Line: 39
+# Error loading design
+# End time: 13:12:48 on Dec 23,2022, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 2
+# Compile of multiply.v was successful.
+# Compile of mulTreeTB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.mulTreeTB
+# vsim -gui work.mulTreeTB 
+# Start time: 13:13:41 on Dec 23,2022
+# Loading work.mulTreeTB
+# Loading work.integrationMult
+# Loading work.registerNbits
+# Loading work.multiplyTimes
+add wave -position insertpoint sim:/mulTreeTB/*
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : success
+# TestCase#           5 : success
+# TestCase#           6 : success
+# TestCase#           7 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/mulTreeTB.v(117)
+#    Time: 34 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/mulTreeTB.v line 117
+quit -sim
+# End time: 13:16:10 on Dec 23,2022, Elapsed time: 0:02:29
+# Errors: 0, Warnings: 2
+vsim -gui work.mulTreeTB
+# vsim -gui work.mulTreeTB 
+# Start time: 13:18:00 on Dec 23,2022
+# Loading work.mulTreeTB
+# Loading work.integrationMult
+# Loading work.registerNbits
+# Loading work.multiplyTimes
+add wave -position insertpoint sim:/mulTreeTB/*
+# Compile of multiply.v was successful.
+# Compile of mulTreeTB.v was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# TestCase#           0 : success
+# TestCase#           1 : success
+# TestCase#           2 : success
+# TestCase#           3 : success
+# TestCase#           4 : success
+# TestCase#           5 : success
+# TestCase#           6 : success
+# TestCase#           7 : success
+# Finish testbench
+# ** Note: $finish    : D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/mulTreeTB.v(117)
+#    Time: 34 ns  Iteration: 0  Instance: /mulTreeTB
+# 1
+# Break in Module mulTreeTB at D:/Engineering/Third_Year/CMP_2023/First_Term/VLSI/Project/Project/verilogMul/mulTreeTB.v line 117
+quit -sim
+# End time: 13:19:16 on Dec 23,2022, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 3
