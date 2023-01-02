@@ -1,0 +1,49 @@
+Report Physical info: 
+------------------------+---------------+-----------+------------
+                        |               |Area (squm)|Leakage (uW)
+------------------------+---------------+-----------+------------
+Design Name             |integrationMult|           |            
+  Total Instances       |            706|       1573|      30.747
+    Macros              |              0|          0|       0.000
+    Pads                |              0|          0|       0.000
+    Phys                |              0|          0|       0.000
+    Blackboxes          |              0|          0|       0.000
+    Cells               |            706|       1573|      30.747
+      Buffers           |              0|          0|       0.000
+      Inverters         |             84|         45|       1.206
+      Clock-Gates       |              1|          4|       0.059
+      Combinational     |            437|        693|      14.925
+      Latches           |              0|          0|       0.000
+      FlipFlops         |            184|        832|      14.557
+       Single-Bit FF    |            184|        832|      14.557
+       Multi-Bit FF     |              0|          0|       0.000
+       Clock-Gated      |             24|           |            
+       Bits             |            184|        832|      14.557
+         Load-Enabled   |              0|           |            
+         Clock-Gated    |             24|           |            
+  Tristate Pin Count    |              0|           |            
+Physical Info           |Placed         |           |            
+  Chip Size (mm x mm)   |0.111 x 0.111  |      12367|            
+  Fixed Cell Area       |               |          0|            
+    Phys Only           |              0|          0|            
+  Placeable Area        |               |       2576|            
+  Movable Cell Area     |               |       1573|            
+  Utilization (%)       |             61|           |            
+  Chip Utilization (%)  |             61|           |            
+  Total Wire Length (mm)|          5.788|           |            
+  Longest Wire (mm)     |          0.059|           |            
+  Average Wire (mm)     |          0.057|           |            
+------------------------+---------------+-----------+------------
+Report Path Groups: 
+-----+-------+------+---------+---------
+     | Path  |Weight|Critical |Worst    
+     | Group |      |Range(ps)|Slack(ps)
+-----+-------+------+---------+---------
+1    |default| 1.000|      0.0|    259.9
+2    |I2R    | 1.000|      0.0|   1270.5
+3    |I2O    | 1.000|      0.0|<ill>    
+4    |R2O    | 1.000|      0.0|    104.3
+-----+-------+------+---------+---------
+5    |          |                    |                     |                   |                 
+6    |*TOTAL    |          404.191162|           483.968231|          30.746496|       918.905884
+-----+----------+--------------------+---------------------+-------------------+-----------------
