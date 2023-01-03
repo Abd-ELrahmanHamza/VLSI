@@ -1,0 +1,7 @@
+# vsim integrationMult -t ps -sdfmax "./multiplier.sdf" 
+# Start time: 18:09:59 on Jan 03,2023
+# ** Error (suppressible): (vsim-19) Failed to access library 'work' at "work".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 18:10:01 on Jan 03,2023, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 0

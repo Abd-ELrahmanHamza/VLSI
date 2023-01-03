@@ -1,0 +1,167 @@
+Report for group default
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: regA/out_reg[0]/Q
+    (Clocked by vsysclk R)
+Endpoint: radix4BoothIns/aux_reg[63]/D
+    (Clocked by vsysclk R)
+Path Group: default
+Data required time: 2967.0
+    (Clock shift: 3000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 33.0)
+Data arrival time: 2213.8
+Slack: 753.2
+Logic depth: 46
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0      9     0,   63                       
+regA/clk_gate_out_reg/CK->GCK
+                         CLKGATETST_X1           rr      0.0      0.0      0.0      0.0      0.0      0.0      0.0     32    66,   66  /PD_TOP        (1.10)
+regA/out_reg[0]/CK->Q    DFF_X1*                 rf    122.9    122.9    122.9      0.0      0.0      1.8     45.1      6    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_60/A3->ZN
+                         OR3_X4                  ff    200.7     77.8     77.8      0.0     15.3      0.8      8.5      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_59/A1->ZN
+                         OR2_X4                  ff    244.1     43.4     43.4      0.0     13.1      0.5      6.1      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_58/A1->ZN
+                         OR2_X4                  ff    288.1     44.0     44.0      0.0      8.8      0.9     10.5      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_57/A1->ZN
+                         OR3_X4                  ff    348.5     60.4     60.4      0.0     10.0      0.8      8.5      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_56/A1->ZN
+                         OR2_X4                  ff    394.4     45.9     45.9      0.0     13.1      0.9     10.5      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_55/A1->ZN
+                         OR3_X4                  ff    456.2     61.8     61.8      0.0     10.0      0.8     10.6      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_54/A1->ZN
+                         NOR2_X4                 fr    486.1     29.9     29.9      0.0     13.7      0.5      8.0      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_53/A1->ZN
+                         NAND2_X4                rf    506.8     20.7     20.7      0.0     19.7      0.8     12.7      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_51/A1->ZN
+                         NOR3_X4                 fr    548.9     42.1     42.1      0.0     10.2      0.6      8.1      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_50/A1->ZN
+                         NAND2_X4                rf    571.3     22.4     22.4      0.0     34.4      0.9     10.5      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_49/A1->ZN
+                         OR3_X4                  ff    631.5     60.2     60.2      0.0      9.4      0.8      8.5      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_48/A1->ZN
+                         OR2_X4                  ff    680.8     49.3     49.3      0.0     13.1      1.2     17.2      4    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_45/A1->ZN
+                         NOR4_X4                 fr    737.5     56.7     56.7      0.0     11.7      0.6      8.1      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_44/A1->ZN
+                         NAND2_X4                rf    757.9     20.4     20.4      0.0     51.9      0.5      6.1      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_43/A1->ZN
+                         OR2_X4                  ff    802.7     44.8     44.8      0.0      7.7      0.8     12.7      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_41/A1->ZN
+                         NOR3_X4                 fr    844.9     42.2     42.2      0.0     10.5      0.6      8.1      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_40/A1->ZN
+                         NAND2_X4                rf    867.3     22.4     22.4      0.0     34.4      0.9     10.5      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_39/A1->ZN
+                         OR3_X4                  ff    934.2     66.9     66.9      0.0      9.4      1.5     19.6      5    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_37/A1->ZN
+                         NOR3_X4                 fr    970.5     36.3     36.3      0.0     16.2      0.3      4.0      1    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_0/i_34/B->ZN
+                         XNOR2_X2*               rf   1022.3     51.8     51.8      0.0     27.0      0.6     29.9      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_1_925/B1->ZN
+                         AOI22_X4                fr   1064.4     42.1     42.1      0.0     15.3      0.4      3.0      1    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_1_924/A->ZN
+                         OAI221_X4               rf   1149.5     85.1     85.1      0.0     23.6      1.3     39.0      4    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_1_923/A->ZN
+                         INV_X32                 fr   1167.7     18.2     18.2      0.0     13.7      4.1     60.2     14    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_1_894/A2->ZN
+                         NOR2_X4*                rf   1191.6     23.9     23.8      0.1      9.5      1.2     36.9      4    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_1_889/A1->ZN
+                         NOR2_X4*                fr   1253.1     61.5     61.5      0.0     15.3      1.2     38.4      4    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_1_786/A->ZN
+                         OAI21_X4                rf   1275.0     21.9     21.9      0.0     15.3      1.0      7.7      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_1_785/A2->ZN
+                         OR2_X4                  ff   1326.0     51.0     51.0      0.0     10.8      1.6     12.7      5    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_1_439/A4->ZN
+                         OR4_X4                  ff   1438.7    112.7    112.7      0.0     10.6      1.0     11.7      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_316/A1->ZN
+                         NOR2_X4*                fr   1496.6     57.9     57.9      0.0     18.2      0.6     29.9      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_315/A->ZN
+                         INV_X8                  rf   1504.3      7.7      7.7      0.0     15.3      0.7      7.0      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_310/A1->ZN
+                         NAND3_X4                fr   1519.3     15.0     15.0      0.0      3.8      0.6      6.7      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_271/A->ZN
+                         AOI21_X2                rf   1532.7     13.4     13.4      0.0     13.5      0.4      3.0      1    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_269/A->ZN
+                         AOI221_X2               fr   1621.7     89.0     89.0      0.0      7.2      0.8      7.1      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_254/C2->ZN
+                         OAI221_X2               rf   1666.9     45.2     45.2      0.0     58.3      0.4      4.3      1    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_253/A2->ZN
+                         NOR3_X4                 fr   1733.0     66.1     66.1      0.0     19.2      0.9     12.1      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_247/A3->ZN
+                         NOR3_X4                 rf   1750.3     17.3     17.3      0.0     41.6      0.3      4.2      1    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_239/A4->ZN
+                         NOR4_X4                 fr   1863.7    113.4    113.4      0.0      6.6      1.3     16.5      4    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_223/A3->ZN
+                         NOR3_X4                 rf   1881.7     18.0     18.0      0.0     72.2      0.3      4.2      1    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_207/A4->ZN
+                         NOR4_X4                 fr   1971.5     89.8     89.8      0.0      6.6      0.6      7.8      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_205/B1->ZN
+                         AOI21_X4*               rf   2015.4     43.9     43.9      0.0     51.2      1.0     34.1      3    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_204/A->ZN
+                         INV_X8                  fr   2030.0     14.6     14.6      0.0     15.3      0.6      9.1      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_198/A3->ZN
+                         NAND3_X2                rf   2049.8     19.8     19.8      0.0      6.5      0.4      2.9      1    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_197/A->ZN
+                         OAI221_X2               fr   2074.1     24.3     24.3      0.0     10.3      0.3      3.6      1    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_41/i_195/A->Z
+                         XOR2_X2                 rr   2186.7    112.6    112.6      0.0     39.1      0.3     25.7      1    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_1_1057/A->ZN
+                         INV_X8                  rf   2194.1      7.4      7.4      0.0     76.1      0.6      8.8      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_1_199/B1->ZN
+                         OAI21_X2                fr   2213.8     19.7     19.7      0.0      4.0      0.3      1.5      1    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/aux_reg[63]/D
+                         DFF_X1                   r   2213.8      0.0               0.0     14.1                             66,   66  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2R
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: en
+    (Clocked by vsysclk R)
+Endpoint: radix4BoothIns/resetReg_reg/D
+    (Clocked by vsysclk R)
+Path Group: I2R
+Data required time: 2959.3
+    (Clock shift: 3000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 40.7)
+Data arrival time: 327.7
+Slack: 2631.6
+Logic depth: 3
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+en                       {set_input_delay}        r    200.0    200.0    200.0                        5.6     46.2      7     0,   63                       
+radix4BoothIns/i_1_980/A->ZN
+                         OAI21_X4*               rf    229.9     29.3     29.3      0.0      0.0      0.6     30.0      2    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/i_1_979/A->ZN
+                         INV_X32                 fr    266.9     37.0     37.0      0.0     15.3     17.6    290.5     66    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/resetReg_reg_enable_mux_0/S->Z
+                         MUX2_X1                 rf    327.7     60.8     60.2      0.6     25.7      0.3      1.5      1    66,   66  /PD_TOP        (1.10)
+radix4BoothIns/resetReg_reg/D
+                         DFF_X1                   f    327.7      0.0               0.0      9.8                             66,   66  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2O
+Report for group R2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: outB/out_reg[30]/Q
+    (Clocked by vsysclk R)
+Endpoint: result[62]
+    (Clocked by vsysclk R)
+Path Group: R2O
+Data required time: 2500.0
+    (Clock shift: 3000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 98.2
+Slack: 2401.8
+Logic depth: 0
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0      9     0,   63                       
+outB/clk_gate_out_reg/CK->GCK
+                         CLKGATETST_X1           rr      0.0      0.0      0.0      0.0      0.0      0.0      0.0     32    66,   66  /PD_TOP        (1.10)
+outB/out_reg[30]/CK->Q   DFF_X1                  rf     97.4     97.4     97.4      0.0      0.0      4.5     14.5      1    66,   66  /PD_TOP        (1.10)
+result[62]                                        f     98.2      0.8               0.8     18.4                              0,   53                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,30 @@
+Report End Points: 
+-----+-------+-------+-------+------+------+-----+-----+-----------------+-------------------------------
+     |Group  |Launch |Capture|Shift |Delay |Depth|Slack|Begin Point      |End Point                      
+-----+-------+-------+-------+------+------+-----+-----+-----------------+-------------------------------
+1    |default|vsysclk|vsysclk|3000.0|2090.9|   46|753.2|regA/out_reg[0]/Q|radix4BoothIns/aux_reg[63]/D   
+2    |default|vsysclk|vsysclk|3000.0|2087.2|   46|757.7|regA/out_reg[0]/Q|radix4BoothIns/result_reg[63]/D
+3    |default|vsysclk|vsysclk|3000.0|2071.7|   44|772.4|regA/out_reg[0]/Q|radix4BoothIns/aux_reg[62]/D   
+-----+-------+-------+-------+------+------+-----+-----+-----------------+-------------------------------
+Report End Points: 
+-----+-----+-------+-------+------+-----+-----+------+-----------+------------------------------------
+     |Group|Launch |Capture|Shift |Delay|Depth|Slack |Begin Point|End Point                           
+-----+-----+-------+-------+------+-----+-----+------+-----------+------------------------------------
+1    |I2R  |vsysclk|vsysclk|3000.0|127.7|    3|2631.6|en         |radix4BoothIns/resetReg_reg/D       
+2    |I2R  |vsysclk|vsysclk|3000.0| 50.4|    2|2662.4|en         |radix4BoothIns/clk_gate_result_reg/E
+3    |I2R  |vsysclk|vsysclk|3000.0| 30.1|    2|2681.1|en         |radix4BoothIns/clk_gate_aux_reg/E   
+-----+-----+-------+-------+------+-----+-----+------+-----------+------------------------------------
+Report End Points: 
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+     |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+1    |I2O  |      |       |     |     |     |     |           |         
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+Report End Points: 
+-----+-----+-------+-------+------+-----+-----+------+------------------+----------
+     |Group|Launch |Capture|Shift |Delay|Depth|Slack |Begin Point       |End Point 
+-----+-----+-------+-------+------+-----+-----+------+------------------+----------
+1    |R2O  |vsysclk|vsysclk|3000.0|  0.8|    0|2401.8|outB/out_reg[30]/Q|result[62]
+2    |R2O  |vsysclk|vsysclk|3000.0|  0.8|    0|2401.9|outB/out_reg[26]/Q|result[58]
+3    |R2O  |vsysclk|vsysclk|3000.0|  0.8|    0|2401.9|outB/out_reg[24]/Q|result[56]
+-----+-----+-------+-------+------+-----+-----+------+------------------+----------
