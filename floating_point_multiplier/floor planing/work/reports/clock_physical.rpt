@@ -2,21 +2,21 @@ LVS verification progress:
 Preparing nets ...
 Processing nets: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
 
-info Set 'max_open' and 'total_open' attributes for '830' open nets
+info Set 'max_open' and 'total_open' attributes for '855' open nets
 
 Report 'report_lvs': Detail Routing LVS Report
-Generated on Mon Jan 2 23:59:32 2023
+Generated on Tue Jan 3 02:02:51 2023
   
 --------------------------------------------------------------------------------
 |                    LVS detail routing verification report                    |
 |------------------------------------------------------------------------------|
 |                   | Total nets Open nets Open Float Tail Loop Pillar Warning | 
 |------------------------------------------------------------------------------|
-| Signal nets       | 850        830       1499 0     0    0    -      -       | 
-| Logic nets        | 2          1         8    0     0    0    -      -       | 
+| Signal nets       | 875        855       1571 0     0    0    -      -       | 
+| Logic nets        | 2          1         7    0     0    0    -      -       | 
 | Shield nets       | 0          0         0    0     0    0    -      -       | 
 | Power/Ground nets | -          -         -    -     -    -    -      -       | 
-| DontRoute nets    | 11         0         0    0     0    0    -      -       | 
+| DontRoute nets    | 8          0         0    0     0    0    -      -       | 
 --------------------------------------------------------------------------------
 
 
@@ -24,14 +24,14 @@ Generated on Mon Jan 2 23:59:32 2023
 ---------------------------------------------------------------------------------------
 |                       LVS open distance distribution (micron)                       |
 |-------------------------------------------------------------------------------------|
-|        | Total: 5223.75 2.57  5.14  7.71  10.27 12.84 15.41 17.98 20.55 23.12 25.69 | 
+|        | Total: 5544.89 2.65  5.29  7.94  10.59 13.23 15.88 18.53 21.17 23.82 26.47 | 
 |-------------------------------------------------------------------------------------|
-| % open | 100            50.77 29.15 10.81 4.60  1.80  1.27  0.60  0.47  0.33  0.20  | 
-| # open | 1499           761   437   162   69    27    19    9     7     5     3     | 
+| % open | 100            52.45 27.75 11.27 4.26  1.40  1.59  0.25  0.38  0.32  0.32  | 
+| # open | 1571           824   436   177   67    22    25    4     6     5     5     | 
 ---------------------------------------------------------------------------------------
 
 
-info UI33: performed LVS verification for 0 sec (CPU time: 0 sec; MEM: RSS - 354M, CVMEM - 1748M, PVMEM - 2263M)
+info UI33: performed LVS verification for 0 sec (CPU time: 0 sec; MEM: RSS - 356M, CVMEM - 1743M, PVMEM - 2263M)
 info DRC201: Only violations caused by detail_route shapes are being checked.
 DRC verification progress:
 Processing metal1: 30% 60% 100% 
@@ -46,7 +46,7 @@ Processing metal9: 100%
 Processing metal10: 100% 
 
 Report 'report_drc': Report Drc
-Generated on Mon Jan 2 23:59:33 2023
+Generated on Tue Jan 3 02:02:51 2023
   
 --------------------------------------------------------------------------------------------------------
 |                                       DRC verification report                                        |
@@ -68,9 +68,9 @@ Generated on Mon Jan 2 23:59:33 2023
 --------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 356M, CVMEM - 1748M, PVMEM - 2263M)
+info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 358M, CVMEM - 1743M, PVMEM - 2263M)
 info CHK10: Checking placement...
-info Found 522 movable and 194 fixed cells in partition integrationMult
+info Found 547 movable and 191 fixed cells in partition integrationMult
 info DP136: Found 0 moveable cells and 0 fixed cells to be illegal.
 Checking boundary overlap with partition: integrationMult; Nmacros=0; overlaps=0 : fpan/mcplace/mcpController.cpp@3946
 info Report for partition integrationMult:
@@ -92,7 +92,7 @@ info Report for partition integrationMult:
 --------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed placement checks for 0 sec (CPU time: 0 sec; MEM: RSS - 355M, CVMEM - 1748M, PVMEM - 2263M)
+info UI33: performed placement checks for 0 sec (CPU time: 0 sec; MEM: RSS - 358M, CVMEM - 1743M, PVMEM - 2263M)
 info running report region utilization in global placement context: 
     - utilization = (mobile_cell_area/(row_area - obstruction_area)).
     - obstruction area include hard and soft blockages, fixed std cells, fixed macros and pads.
@@ -101,15 +101,15 @@ info running report region utilization in global placement context:
 
 info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
 Report 'Region_Utilization': Region Utilization Report
-Generated on Mon Jan 2 23:59:33 2023
+Generated on Tue Jan 3 02:02:51 2023
   
 ------------------------------------------------------------------------------------------------------------------
 |                                           Report Region Utilization                                            |
 |----------------------------------------------------------------------------------------------------------------|
 |   | Partition/Region MH NMH Cell Area Placeable Area Useable Area Placer Utilization(%) Silicon Utilization(%) | 
 |----------------------------------------------------------------------------------------------------------------|
-| 0 | integrationMult  -  -   761.292   2101.67        761.292      36.2233               48.7                   | 
+| 0 | integrationMult  -  -   789.222   2145.56        789.222      36.784                49.3                   | 
 ------------------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed report region utilization for 0 sec (CPU time: 0 sec; MEM: RSS - 355M, CVMEM - 1748M, PVMEM - 2263M)
+info UI33: performed report region utilization for 0 sec (CPU time: 0 sec; MEM: RSS - 358M, CVMEM - 1743M, PVMEM - 2263M)

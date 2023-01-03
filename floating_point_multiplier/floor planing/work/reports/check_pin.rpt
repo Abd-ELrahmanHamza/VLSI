@@ -1,12 +1,12 @@
 info Check pin constraints
 Sdb track: Routing Layer  1 (Horizontal) = start    0, step 1400, number 410
-Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 296
+Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 300
 Sdb track: Routing Layer  3 (Horizontal) = start    0, step 1400, number 410
-Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 200
+Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 203
 Sdb track: Routing Layer  5 (Horizontal) = start    0, step 2800, number 205
-Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 200
+Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 203
 Sdb track: Routing Layer  7 (Horizontal) = start    0, step 8000, number 72
-Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 70
+Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 71
 Sdb track: Routing Layer  9 (Horizontal) = start    0, step 16000, number 36
 Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 35
 info Checking partition 'integrationMult' ...
@@ -25,13 +25,13 @@ PASSED: pin layer direction mismatch edge
 PASSED: invalid design keepout
 
 Sdb track: Routing Layer  1 (Horizontal) = start    0, step 1400, number 410
-Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 296
+Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 300
 Sdb track: Routing Layer  3 (Horizontal) = start    0, step 1400, number 410
-Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 200
+Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 203
 Sdb track: Routing Layer  5 (Horizontal) = start    0, step 2800, number 205
-Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 200
+Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 203
 Sdb track: Routing Layer  7 (Horizontal) = start    0, step 8000, number 72
-Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 70
+Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 71
 Sdb track: Routing Layer  9 (Horizontal) = start    0, step 16000, number 36
 Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 35
 info Check pin placement
@@ -105,4 +105,4 @@ PASSED: pin no internal leaf pin
 -----------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed pin placement checker for 0 sec (CPU time: 0 sec; MEM: RSS - 191M, CVMEM - 1673M, PVMEM - 1849M)
+info UI33: performed pin placement checker for 0 sec (CPU time: 0 sec; MEM: RSS - 189M, CVMEM - 1673M, PVMEM - 1849M)

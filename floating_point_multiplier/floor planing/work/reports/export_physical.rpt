@@ -6,14 +6,14 @@ Nitro-SoC> config_report_timing -path_type full_data
 Nitro-SoC> x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "vsysclk_new_mode"
 error TA_CMDS7437: At most one of -rise and -fall options can be specified at the same time.
 Report 'report_lvs': Detail Routing LVS Report
-Generated on Tue Jan 3 00:06:33 2023
+Generated on Tue Jan 3 02:10:38 2023
   
 --------------------------------------------------------------------------------
 |                    LVS detail routing verification report                    |
 |------------------------------------------------------------------------------|
 |                   | Total nets Open nets Open Float Tail Loop Pillar Warning | 
 |------------------------------------------------------------------------------|
-| Signal nets       | 861        0         0    0     0    0    -      -       | 
+| Signal nets       | 883        0         0    0     0    0    -      -       | 
 | Logic nets        | 2          0         0    0     0    0    -      -       | 
 | Shield nets       | 0          0         0    0     0    0    -      -       | 
 | Power/Ground nets | -          -         -    -     -    -    -      -       | 
@@ -21,7 +21,7 @@ Generated on Tue Jan 3 00:06:33 2023
 --------------------------------------------------------------------------------
 
 
-info UI33: performed LVS verification for 0 sec (CPU time: 0 sec; MEM: RSS - 443M, CVMEM - 1786M, PVMEM - 2263M)
+info UI33: performed LVS verification for 0 sec (CPU time: 0 sec; MEM: RSS - 427M, CVMEM - 1781M, PVMEM - 2263M)
 info DRC201: Only violations caused by detail_route shapes are being checked.
 DRC verification progress:
 Processing metal1: 30% 60% 100% 
@@ -39,7 +39,7 @@ Nitro-SoC> x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise t
 error TA_CMDS7437: At most one of -rise and -fall options can be specified at the same time.
 
 Report 'report_drc': Report Drc
-Generated on Tue Jan 3 00:06:34 2023
+Generated on Tue Jan 3 02:10:39 2023
   
 --------------------------------------------------------------------------------------------------------
 |                                       DRC verification report                                        |
@@ -61,10 +61,10 @@ Generated on Tue Jan 3 00:06:34 2023
 --------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 443M, CVMEM - 1786M, PVMEM - 2263M)
+info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 427M, CVMEM - 1781M, PVMEM - 2263M)
 info CHK10: Checking placement...
-info DP158: Found 963 filler cells in partition integrationMult and they will be treated as fixed. You might want to remove them before doing detail placement.
-info Found 522 movable and 1157 fixed cells in partition integrationMult
+info DP158: Found 1070 filler cells in partition integrationMult and they will be treated as fixed. You might want to remove them before doing detail placement.
+info Found 547 movable and 1261 fixed cells in partition integrationMult
 info DP136: Found 0 moveable cells and 0 fixed cells to be illegal.
 Checking boundary overlap with partition: integrationMult; Nmacros=0; overlaps=0 : fpan/mcplace/mcpController.cpp@3946
 info Report for partition integrationMult:
@@ -89,7 +89,7 @@ info Report for partition integrationMult:
 Nitro-SoC> config_report_timing -path_type full_data
 Nitro-SoC> x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "vsysclk_new_mode"
 error TA_CMDS7437: At most one of -rise and -fall options can be specified at the same time.
-info UI33: performed placement checks for 0 sec (CPU time: 0 sec; MEM: RSS - 444M, CVMEM - 1786M, PVMEM - 2263M)
+info UI33: performed placement checks for 0 sec (CPU time: 0 sec; MEM: RSS - 427M, CVMEM - 1781M, PVMEM - 2263M)
 info running report region utilization in global placement context: 
     - utilization = (mobile_cell_area/(row_area - obstruction_area)).
     - obstruction area include hard and soft blockages, fixed std cells, fixed macros and pads.
@@ -98,15 +98,15 @@ info running report region utilization in global placement context:
 
 info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
 Report 'Region_Utilization': Region Utilization Report
-Generated on Tue Jan 3 00:06:34 2023
+Generated on Tue Jan 3 02:10:39 2023
   
 ------------------------------------------------------------------------------------------------------------------
 |                                           Report Region Utilization                                            |
 |----------------------------------------------------------------------------------------------------------------|
 |   | Partition/Region MH NMH Cell Area Placeable Area Useable Area Placer Utilization(%) Silicon Utilization(%) | 
 |----------------------------------------------------------------------------------------------------------------|
-| 0 | integrationMult  -  -   761.292   692.398        761.292      109.95                48.7                   | 
+| 0 | integrationMult  -  -   789.222   726.712        789.222      108.602               49.3                   | 
 ------------------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed report region utilization for 0 sec (CPU time: 0 sec; MEM: RSS - 444M, CVMEM - 1786M, PVMEM - 2263M)
+info UI33: performed report region utilization for 0 sec (CPU time: 0 sec; MEM: RSS - 427M, CVMEM - 1781M, PVMEM - 2263M)

@@ -2,18 +2,18 @@ LVS verification progress:
 Preparing nets ...
 Processing nets: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
 
-info Set 'max_open' and 'total_open' attributes for '835' open nets
+info Set 'max_open' and 'total_open' attributes for '860' open nets
 
 Report 'report_lvs': Detail Routing LVS Report
-Generated on Mon Jan 2 23:58:54 2023
+Generated on Tue Jan 3 01:59:33 2023
   
 --------------------------------------------------------------------------------
 |                    LVS detail routing verification report                    |
 |------------------------------------------------------------------------------|
 |                   | Total nets Open nets Open Float Tail Loop Pillar Warning | 
 |------------------------------------------------------------------------------|
-| Signal nets       | 855        835       1687 0     0    0    -      -       | 
-| Logic nets        | 2          1         8    0     0    0    -      -       | 
+| Signal nets       | 880        860       1759 0     0    0    -      -       | 
+| Logic nets        | 2          1         7    0     0    0    -      -       | 
 | Shield nets       | 0          0         0    0     0    0    -      -       | 
 | Power/Ground nets | -          -         -    -     -    -    -      -       | 
 | DontRoute nets    | 0          0         0    0     0    0    -      -       | 
@@ -21,17 +21,17 @@ Generated on Mon Jan 2 23:58:54 2023
 
 
   
----------------------------------------------------------------------------------------
-|                       LVS open distance distribution (micron)                       |
-|-------------------------------------------------------------------------------------|
-|        | Total: 6064.74 2.57  5.14  7.71  10.27 12.84 15.41 17.98 20.55 23.12 25.69 | 
-|-------------------------------------------------------------------------------------|
-| % open | 100            46.65 32.25 11.80 4.80  1.72  1.19  0.65  0.47  0.30  0.18  | 
-| # open | 1687           787   544   199   81    29    20    11    8     5     3     | 
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+|                      LVS open distance distribution (micron)                       |
+|------------------------------------------------------------------------------------|
+|        | Total: 6380.79 3.25  6.50  9.74 12.99 16.24 19.49 22.74 25.98 29.23 32.48 | 
+|------------------------------------------------------------------------------------|
+| % open | 100            59.01 27.69 8.36 2.10  1.65  0.23  0.57  0.28  0.06  0.06  | 
+| # open | 1759           1038  487   147  37    29    4     10    5     1     1     | 
+--------------------------------------------------------------------------------------
 
 
-info UI33: performed LVS verification for 0 sec (CPU time: 0 sec; MEM: RSS - 367M, CVMEM - 1787M, PVMEM - 2263M)
+info UI33: performed LVS verification for 0 sec (CPU time: 0 sec; MEM: RSS - 367M, CVMEM - 1782M, PVMEM - 2263M)
 info DRC201: Only violations caused by detail_route shapes are being checked.
 DRC verification progress:
 Processing metal1: 30% 60% 100% 
@@ -46,7 +46,7 @@ Processing metal9: 100%
 Processing metal10: 100% 
 
 Report 'report_drc': Report Drc
-Generated on Mon Jan 2 23:58:55 2023
+Generated on Tue Jan 3 01:59:34 2023
   
 --------------------------------------------------------------------------------------------------------
 |                                       DRC verification report                                        |
@@ -68,9 +68,9 @@ Generated on Mon Jan 2 23:58:55 2023
 --------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 367M, CVMEM - 1787M, PVMEM - 2263M)
+info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 368M, CVMEM - 1782M, PVMEM - 2263M)
 info CHK10: Checking placement...
-info Found 710 movable and 0 fixed cells in partition integrationMult
+info Found 735 movable and 0 fixed cells in partition integrationMult
 info DP136: Found 0 moveable cells and 0 fixed cells to be illegal.
 Checking boundary overlap with partition: integrationMult; Nmacros=0; overlaps=0 : fpan/mcplace/mcpController.cpp@3946
 info Report for partition integrationMult:
@@ -92,7 +92,7 @@ info Report for partition integrationMult:
 --------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed placement checks for 0 sec (CPU time: 0 sec; MEM: RSS - 368M, CVMEM - 1787M, PVMEM - 2263M)
+info UI33: performed placement checks for 0 sec (CPU time: 0 sec; MEM: RSS - 368M, CVMEM - 1782M, PVMEM - 2263M)
 info running report region utilization in global placement context: 
     - utilization = (mobile_cell_area/(row_area - obstruction_area)).
     - obstruction area include hard and soft blockages, fixed std cells, fixed macros and pads.
@@ -101,15 +101,15 @@ info running report region utilization in global placement context:
 
 info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
 Report 'Region_Utilization': Region Utilization Report
-Generated on Mon Jan 2 23:58:55 2023
+Generated on Tue Jan 3 01:59:34 2023
   
 ------------------------------------------------------------------------------------------------------------------
 |                                           Report Region Utilization                                            |
 |----------------------------------------------------------------------------------------------------------------|
 |   | Partition/Region MH NMH Cell Area Placeable Area Useable Area Placer Utilization(%) Silicon Utilization(%) | 
 |----------------------------------------------------------------------------------------------------------------|
-| 0 | integrationMult  -  -   1591.48   2956.59        1591.48      53.8282               48.7                   | 
+| 0 | integrationMult  -  -   1627.12   2998.09        1627.12      54.272                49.3                   | 
 ------------------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed report region utilization for 0 sec (CPU time: 0 sec; MEM: RSS - 368M, CVMEM - 1787M, PVMEM - 2263M)
+info UI33: performed report region utilization for 0 sec (CPU time: 0 sec; MEM: RSS - 368M, CVMEM - 1782M, PVMEM - 2263M)

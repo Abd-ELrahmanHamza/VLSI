@@ -35,7 +35,7 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | not_aligned_pin                      | 0     | Passed  | Macro/top pin is not aligned to manufacturing grid.                | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| offgrid_core_access                  | 93    | Warning | Library core pin has only offgird routing access.                  | 
+| offgrid_core_access                  | 90    | Warning | Library core pin has only offgird routing access.                  | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | no_core_access                       | 0     | Passed  | Library core pin doesn't have routing access.                      | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
@@ -51,7 +51,7 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | no_port_geometry                     | 0     | Passed  | Port doesn't have geometry or not placed.                          | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| no_leaf_pin_geometry                 | 1     | Warning | Leaf pin doesn't have geometry or not placed.                      | 
+| no_leaf_pin_geometry                 | 0     | Passed  | Leaf pin doesn't have geometry or not placed.                      | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | port_outside_partition               | 0     | Passed  | Port is placed outside partition.                                  | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
@@ -212,12 +212,12 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | no_domain_cells                      | 0     | Passed  | Cells not assigned to a power domain.                              | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| no_cell_power_net                    | 3     | Warning | Cell is not connected to a power net. Use set_domain_supply_net    | 
+| no_cell_power_net                    | 2     | Warning | Cell is not connected to a power net. Use set_domain_supply_net    | 
 |                                      |       |         | to associate a power net with a power domain and all of its        | 
 |                                      |       |         | cells. Or use connect_supply_net to directly connect a power pin   | 
 |                                      |       |         | to a power net.                                                    | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| no_cell_ground_net                   | 3     | Warning | Cell is not connected to a ground net. Use set_domain_supply_net   | 
+| no_cell_ground_net                   | 2     | Warning | Cell is not connected to a ground net. Use set_domain_supply_net   | 
 |                                      |       |         | to associate a ground net with a power domain and all of           | 
 |                                      |       |         | its cells. Or use connect_supply_net to directly connect a         | 
 |                                      |       |         | ground pin to a ground net.                                        | 
@@ -236,4 +236,4 @@ info  report_region_utilization is restricted to regions with property member_ha
 -------------------------------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed floorplan checks for 0 sec (CPU time: 0 sec; MEM: RSS - 191M, CVMEM - 1673M, PVMEM - 1849M)
+info UI33: performed floorplan checks for 0 sec (CPU time: 0 sec; MEM: RSS - 190M, CVMEM - 1673M, PVMEM - 1849M)

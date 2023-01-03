@@ -20,7 +20,7 @@ reg [31:0]a,m,q;
 
 reg q0;
 
-always @(posedge clk) begin
+always @(negedge clk) begin
 	if(rst)begin
 		a = 0;
 		m = in1;

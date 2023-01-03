@@ -1,9 +1,9 @@
  Timing Path to fb/mult/out_reg[26]/D 
   
  Path Start Point : fb/mult/out_reg[27] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Path End Point   : fb/mult/out_reg[26] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Mode             : new_mode 
  Corner           : corner_0_0 
  Data Cell Derate : 1 
@@ -38,17 +38,19 @@
 -----------------------------------------------------------------------------------------------------------------------------------
 | Pin                       Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |---------------------------------------------------------------------------------------------------------------------------------|
-|    clk                            Rise  0.0000 0.0000 0.2310 41.7431  108.208  149.951           68      55.742   c    K        | 
-|    fb/clk                         Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                    Rise  0.0000 0.0000                                                                           | 
+|    clk                            Fall  1.5000 1.5000 0.2310 1.40474  25.1434  26.5482           4       53.8225  c    K        | 
+|    fb/clk                         Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                    Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8  Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8  Rise  1.5180 0.0180 0.0800 53.1849  75.3667  128.552           88      53.8225  L    K        | 
 | Data Path:                                                                                                                      | 
-|    fb/mult/out_reg[27]/CK DFF_X1  Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
-|    fb/mult/out_reg[27]/Q  DFF_X1  Fall  0.1930 0.1070 0.0090 0.988271 3.3561   4.34437           3       53.5077                | 
-|    fb/mult/i_2_105/A      INV_X1  Fall  0.1930 0.0000 0.0090          1.54936                                                   | 
-|    fb/mult/i_2_105/ZN     INV_X1  Rise  0.2050 0.0120 0.0070 0.21294  1.41309  1.62603           1       54.3052                | 
-|    fb/mult/i_2_57/A1      NOR2_X1 Rise  0.2050 0.0000 0.0070          1.71447                                                   | 
-|    fb/mult/i_2_57/ZN      NOR2_X1 Fall  0.2120 0.0070 0.0040 0.357435 1.06234  1.41978           1       54.3052                | 
-|    fb/mult/out_reg[26]/D  DFF_X1  Fall  0.2120 0.0000 0.0040          1.06234                                                   | 
+|    fb/mult/out_reg[27]/CK DFF_X1  Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
+|    fb/mult/out_reg[27]/Q  DFF_X1  Fall  1.6680 0.1080 0.0090 1.44738  3.3561   4.80348           3       53.8225                | 
+|    fb/mult/i_0_0_130/A    INV_X1  Fall  1.6680 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_130/ZN   INV_X1  Rise  1.6800 0.0120 0.0070 0.170352 1.41309  1.58345           1       53.8225                | 
+|    fb/mult/i_0_0_89/A1    NOR2_X1 Rise  1.6800 0.0000 0.0070          1.71447                                                   | 
+|    fb/mult/i_0_0_89/ZN    NOR2_X1 Fall  1.6870 0.0070 0.0040 0.415233 1.06234  1.47758           1       53.8225                | 
+|    fb/mult/out_reg[26]/D  DFF_X1  Fall  1.6870 0.0000 0.0040          1.06234                                                   | 
 -----------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -58,108 +60,26 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 | Pin                       Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |--------------------------------------------------------------------------------------------------------------------------------|
-|    clk                           Rise  0.0000 0.0000 0.2310 41.7432  119.305  161.048           68      55.742   c    K        | 
-|    fb/clk                        Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                   Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/out_reg[26]/CK DFF_X1 Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
+|    clk                           Fall  1.5000 1.5000 0.2310 1.40474  27.5784  28.9831           4       53.8225  c    K        | 
+|    fb/clk                        Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                   Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8 Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8 Rise  1.5180 0.0180 0.0820 53.1849  83.5695  136.754           88      53.8225  L    K        | 
+|    fb/mult/out_reg[26]/CK DFF_X1 Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------
 |                                           | Time    Total  | 
 |------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock ideal network latency        |  0.0860 0.0860 | 
-| library hold check                        |  0.0100 0.0960 | 
-| data required time                        |  0.0960        | 
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock ideal network latency        |  0.0600 1.5600 | 
+| library hold check                        |  0.0100 1.5700 | 
+| data required time                        |  1.5700        | 
 |                                           |                | 
-| data arrival time                         |  0.2120        | 
-| data required time                        | -0.0960        | 
-| pessimism margin                          |  0.0000        | 
-|                                           |                | 
-| slack                                     |  0.1160        | 
---------------------------------------------------------------
-
-
- Timing Path to fb/mult/out_reg[30]/D 
-  
- Path Start Point : fb/mult/out_reg[31] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/out_reg[30] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Mode             : new_mode 
- Corner           : corner_0_0 
- Data Cell Derate : 1 
- Data Net Derate  : 1 
- Clock Cell Derate: Early = 1 / Late = 1 
- Clock Net Derate : Early = 1 / Late = 1 
- Path Type        : min 
- Path Group       : vsysclk_new_mode 
-  
- Attributes  : U - cell is dont use 
-             : M - cell is dont modify 
-             : m - net is dont modify 
-             : n - connected (sub)net is dont modify 
-             : S - cell is size only 
-             : F - cell is fixed 
-             : C - cell has annotated timing constraints 
-             : c - pin has annotated timing constraints 
-             : A - cell is affected by case analysis 
-             : L - Estimated latency 
-             : O - CTS offset 
-  
- Opt Attr    : I - is ideal 
-             : L - is internal logic const 
-             : K - is in clock network 
-             : M - has only don't modify nets 
-             : N - has no load pin 
-             : D - has zero or multiple drivers 
-             : G - is valid global net 
-             : T - is not switching 
-
-
------------------------------------------------------------------------------------------------------------------------------------
-| Pin                       Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|---------------------------------------------------------------------------------------------------------------------------------|
-|    clk                            Rise  0.0000 0.0000 0.2310 41.7431  108.208  149.951           68      55.742   c    K        | 
-|    fb/clk                         Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                    Rise  0.0000 0.0000                                                                           | 
-| Data Path:                                                                                                                      | 
-|    fb/mult/out_reg[31]/CK DFF_X1  Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
-|    fb/mult/out_reg[31]/Q  DFF_X1  Fall  0.1930 0.1070 0.0090 0.82935  3.3561   4.18545           3       52.2461                | 
-|    fb/mult/i_2_109/A      INV_X1  Fall  0.1930 0.0000 0.0090          1.54936                                                   | 
-|    fb/mult/i_2_109/ZN     INV_X1  Rise  0.2050 0.0120 0.0070 0.170352 1.41309  1.58345           1       53.0485                | 
-|    fb/mult/i_2_61/A1      NOR2_X1 Rise  0.2050 0.0000 0.0070          1.71447                                                   | 
-|    fb/mult/i_2_61/ZN      NOR2_X1 Fall  0.2130 0.0080 0.0040 0.559728 1.06234  1.62207           1       53.0485                | 
-|    fb/mult/out_reg[30]/D  DFF_X1  Fall  0.2130 0.0000 0.0040          1.06234                                                   | 
------------------------------------------------------------------------------------------------------------------------------------
-
-
- Required Time Trace to fb/mult/out_reg[30]/CK 
-
-
-----------------------------------------------------------------------------------------------------------------------------------
-| Pin                       Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|--------------------------------------------------------------------------------------------------------------------------------|
-|    clk                           Rise  0.0000 0.0000 0.2310 41.7432  119.305  161.048           68      55.742   c    K        | 
-|    fb/clk                        Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                   Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/out_reg[30]/CK DFF_X1 Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
-----------------------------------------------------------------------------------------------------------------------------------
-
-
---------------------------------------------------------------
-|                                           | Time    Total  | 
-|------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock ideal network latency        |  0.0860 0.0860 | 
-| library hold check                        |  0.0100 0.0960 | 
-| data required time                        |  0.0960        | 
-|                                           |                | 
-| data arrival time                         |  0.2130        | 
-| data required time                        | -0.0960        | 
+| data arrival time                         |  1.6870        | 
+| data required time                        | -1.5700        | 
 | pessimism margin                          |  0.0000        | 
 |                                           |                | 
 | slack                                     |  0.1170        | 
@@ -169,9 +89,9 @@
  Timing Path to fb/mult/out_reg[27]/D 
   
  Path Start Point : fb/mult/out_reg[28] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Path End Point   : fb/mult/out_reg[27] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Mode             : new_mode 
  Corner           : corner_0_0 
  Data Cell Derate : 1 
@@ -206,17 +126,19 @@
 -----------------------------------------------------------------------------------------------------------------------------------
 | Pin                       Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |---------------------------------------------------------------------------------------------------------------------------------|
-|    clk                            Rise  0.0000 0.0000 0.2310 41.7431  108.208  149.951           68      55.742   c    K        | 
-|    fb/clk                         Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                    Rise  0.0000 0.0000                                                                           | 
+|    clk                            Fall  1.5000 1.5000 0.2310 1.40474  25.1434  26.5482           4       53.8225  c    K        | 
+|    fb/clk                         Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                    Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8  Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8  Rise  1.5180 0.0180 0.0800 53.1849  75.3667  128.552           88      53.8225  L    K        | 
 | Data Path:                                                                                                                      | 
-|    fb/mult/out_reg[28]/CK DFF_X1  Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
-|    fb/mult/out_reg[28]/Q  DFF_X1  Fall  0.1930 0.1070 0.0090 1.38251  3.3561   4.73862           3       53.5077                | 
-|    fb/mult/i_2_106/A      INV_X1  Fall  0.1930 0.0000 0.0090          1.54936                                                   | 
-|    fb/mult/i_2_106/ZN     INV_X1  Rise  0.2060 0.0130 0.0070 0.270738 1.41309  1.68383           1       53.5077                | 
-|    fb/mult/i_2_58/A1      NOR2_X1 Rise  0.2060 0.0000 0.0070          1.71447                                                   | 
-|    fb/mult/i_2_58/ZN      NOR2_X1 Fall  0.2140 0.0080 0.0040 0.617526 1.06234  1.67987           1       53.5077                | 
-|    fb/mult/out_reg[27]/D  DFF_X1  Fall  0.2140 0.0000 0.0040          1.06234                                                   | 
+|    fb/mult/out_reg[28]/CK DFF_X1  Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
+|    fb/mult/out_reg[28]/Q  DFF_X1  Fall  1.6680 0.1080 0.0090 1.54359  3.3561   4.89969           3       51.6901                | 
+|    fb/mult/i_0_0_131/A    INV_X1  Fall  1.6680 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_131/ZN   INV_X1  Rise  1.6800 0.0120 0.0070 0.170352 1.41309  1.58345           1       53.8225                | 
+|    fb/mult/i_0_0_90/A1    NOR2_X1 Rise  1.6800 0.0000 0.0070          1.71447                                                   | 
+|    fb/mult/i_0_0_90/ZN    NOR2_X1 Fall  1.6870 0.0070 0.0040 0.415233 1.06234  1.47758           1       53.8225                | 
+|    fb/mult/out_reg[27]/D  DFF_X1  Fall  1.6870 0.0000 0.0040          1.06234                                                   | 
 -----------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -226,36 +148,38 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 | Pin                       Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |--------------------------------------------------------------------------------------------------------------------------------|
-|    clk                           Rise  0.0000 0.0000 0.2310 41.7432  119.305  161.048           68      55.742   c    K        | 
-|    fb/clk                        Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                   Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/out_reg[27]/CK DFF_X1 Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
+|    clk                           Fall  1.5000 1.5000 0.2310 1.40474  27.5784  28.9831           4       53.8225  c    K        | 
+|    fb/clk                        Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                   Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8 Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8 Rise  1.5180 0.0180 0.0820 53.1849  83.5695  136.754           88      53.8225  L    K        | 
+|    fb/mult/out_reg[27]/CK DFF_X1 Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------
 |                                           | Time    Total  | 
 |------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock ideal network latency        |  0.0860 0.0860 | 
-| library hold check                        |  0.0100 0.0960 | 
-| data required time                        |  0.0960        | 
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock ideal network latency        |  0.0600 1.5600 | 
+| library hold check                        |  0.0100 1.5700 | 
+| data required time                        |  1.5700        | 
 |                                           |                | 
-| data arrival time                         |  0.2140        | 
-| data required time                        | -0.0960        | 
+| data arrival time                         |  1.6870        | 
+| data required time                        | -1.5700        | 
 | pessimism margin                          |  0.0000        | 
 |                                           |                | 
-| slack                                     |  0.1180        | 
+| slack                                     |  0.1170        | 
 --------------------------------------------------------------
 
 
- Timing Path to fb/mult/out_reg[24]/D 
+ Timing Path to fb/mult/out_reg[30]/D 
   
- Path Start Point : fb/mult/out_reg[25] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/out_reg[24] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+ Path Start Point : fb/mult/out_reg[31] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/out_reg[30] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Mode             : new_mode 
  Corner           : corner_0_0 
  Data Cell Derate : 1 
@@ -290,224 +214,60 @@
 -----------------------------------------------------------------------------------------------------------------------------------
 | Pin                       Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |---------------------------------------------------------------------------------------------------------------------------------|
-|    clk                            Rise  0.0000 0.0000 0.2310 41.7431  108.208  149.951           68      55.742   c    K        | 
-|    fb/clk                         Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                    Rise  0.0000 0.0000                                                                           | 
+|    clk                            Fall  1.5000 1.5000 0.2310 1.40474  25.1434  26.5482           4       53.8225  c    K        | 
+|    fb/clk                         Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                    Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8  Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8  Rise  1.5180 0.0180 0.0800 53.1849  75.3667  128.552           88      53.8225  L    K        | 
 | Data Path:                                                                                                                      | 
-|    fb/mult/out_reg[25]/CK DFF_X1  Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
-|    fb/mult/out_reg[25]/Q  DFF_X1  Fall  0.1930 0.1070 0.0090 1.06539  3.3561   4.42149           3       54.3052                | 
-|    fb/mult/i_2_103/A      INV_X1  Fall  0.1930 0.0000 0.0090          1.54936                                                   | 
-|    fb/mult/i_2_103/ZN     INV_X1  Rise  0.2060 0.0130 0.0080 0.473031 1.41309  1.88612           1       54.3052                | 
-|    fb/mult/i_2_55/A1      NOR2_X1 Rise  0.2060 0.0000 0.0080          1.71447                                                   | 
-|    fb/mult/i_2_55/ZN      NOR2_X1 Fall  0.2140 0.0080 0.0040 0.530829 1.06234  1.59317           1       54.3052                | 
-|    fb/mult/out_reg[24]/D  DFF_X1  Fall  0.2140 0.0000 0.0040          1.06234                                                   | 
+|    fb/mult/out_reg[31]/CK DFF_X1  Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
+|    fb/mult/out_reg[31]/Q  DFF_X1  Fall  1.6670 0.1070 0.0090 1.07095  3.3561   4.42705           3       54.7126                | 
+|    fb/mult/i_0_0_134/A    INV_X1  Fall  1.6670 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_134/ZN   INV_X1  Rise  1.6790 0.0120 0.0070 0.170352 1.41309  1.58345           1       54.7126                | 
+|    fb/mult/i_0_0_93/A1    NOR2_X1 Rise  1.6790 0.0000 0.0070          1.71447                                                   | 
+|    fb/mult/i_0_0_93/ZN    NOR2_X1 Fall  1.6870 0.0080 0.0040 0.473031 1.06234  1.53537           1       53.8225                | 
+|    fb/mult/out_reg[30]/D  DFF_X1  Fall  1.6870 0.0000 0.0040          1.06234                                                   | 
 -----------------------------------------------------------------------------------------------------------------------------------
 
 
- Required Time Trace to fb/mult/out_reg[24]/CK 
+ Required Time Trace to fb/mult/out_reg[30]/CK 
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
 | Pin                       Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |--------------------------------------------------------------------------------------------------------------------------------|
-|    clk                           Rise  0.0000 0.0000 0.2310 41.7432  119.305  161.048           68      55.742   c    K        | 
-|    fb/clk                        Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                   Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/out_reg[24]/CK DFF_X1 Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
+|    clk                           Fall  1.5000 1.5000 0.2310 1.40474  27.5784  28.9831           4       53.8225  c    K        | 
+|    fb/clk                        Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                   Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8 Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8 Rise  1.5180 0.0180 0.0820 53.1849  83.5695  136.754           88      53.8225  L    K        | 
+|    fb/mult/out_reg[30]/CK DFF_X1 Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------
 |                                           | Time    Total  | 
 |------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock ideal network latency        |  0.0860 0.0860 | 
-| library hold check                        |  0.0100 0.0960 | 
-| data required time                        |  0.0960        | 
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock ideal network latency        |  0.0600 1.5600 | 
+| library hold check                        |  0.0100 1.5700 | 
+| data required time                        |  1.5700        | 
 |                                           |                | 
-| data arrival time                         |  0.2140        | 
-| data required time                        | -0.0960        | 
+| data arrival time                         |  1.6870        | 
+| data required time                        | -1.5700        | 
 | pessimism margin                          |  0.0000        | 
 |                                           |                | 
-| slack                                     |  0.1180        | 
---------------------------------------------------------------
-
-
- Timing Path to fb/mult/out_reg[29]/D 
-  
- Path Start Point : fb/mult/out_reg[30] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/out_reg[29] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Mode             : new_mode 
- Corner           : corner_0_0 
- Data Cell Derate : 1 
- Data Net Derate  : 1 
- Clock Cell Derate: Early = 1 / Late = 1 
- Clock Net Derate : Early = 1 / Late = 1 
- Path Type        : min 
- Path Group       : vsysclk_new_mode 
-  
- Attributes  : U - cell is dont use 
-             : M - cell is dont modify 
-             : m - net is dont modify 
-             : n - connected (sub)net is dont modify 
-             : S - cell is size only 
-             : F - cell is fixed 
-             : C - cell has annotated timing constraints 
-             : c - pin has annotated timing constraints 
-             : A - cell is affected by case analysis 
-             : L - Estimated latency 
-             : O - CTS offset 
-  
- Opt Attr    : I - is ideal 
-             : L - is internal logic const 
-             : K - is in clock network 
-             : M - has only don't modify nets 
-             : N - has no load pin 
-             : D - has zero or multiple drivers 
-             : G - is valid global net 
-             : T - is not switching 
-
-
------------------------------------------------------------------------------------------------------------------------------------
-| Pin                       Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|---------------------------------------------------------------------------------------------------------------------------------|
-|    clk                            Rise  0.0000 0.0000 0.2310 41.7431  108.208  149.951           68      55.742   c    K        | 
-|    fb/clk                         Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                    Rise  0.0000 0.0000                                                                           | 
-| Data Path:                                                                                                                      | 
-|    fb/mult/out_reg[30]/CK DFF_X1  Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
-|    fb/mult/out_reg[30]/Q  DFF_X1  Fall  0.1930 0.1070 0.0090 0.96188  3.3561   4.31798           3       53.0485                | 
-|    fb/mult/i_2_108/A      INV_X1  Fall  0.1930 0.0000 0.0090          1.54936                                                   | 
-|    fb/mult/i_2_108/ZN     INV_X1  Rise  0.2070 0.0140 0.0080 0.657895 1.41309  2.07099           1       53.0485                | 
-|    fb/mult/i_2_60/A1      NOR2_X1 Rise  0.2070 0.0000 0.0080          1.71447                                                   | 
-|    fb/mult/i_2_60/ZN      NOR2_X1 Fall  0.2150 0.0080 0.0040 0.50193  1.06234  1.56427           1       53.5077                | 
-|    fb/mult/out_reg[29]/D  DFF_X1  Fall  0.2150 0.0000 0.0040          1.06234                                                   | 
------------------------------------------------------------------------------------------------------------------------------------
-
-
- Required Time Trace to fb/mult/out_reg[29]/CK 
-
-
-----------------------------------------------------------------------------------------------------------------------------------
-| Pin                       Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|--------------------------------------------------------------------------------------------------------------------------------|
-|    clk                           Rise  0.0000 0.0000 0.2310 41.7432  119.305  161.048           68      55.742   c    K        | 
-|    fb/clk                        Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                   Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/out_reg[29]/CK DFF_X1 Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
-----------------------------------------------------------------------------------------------------------------------------------
-
-
---------------------------------------------------------------
-|                                           | Time    Total  | 
-|------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock ideal network latency        |  0.0860 0.0860 | 
-| library hold check                        |  0.0100 0.0960 | 
-| data required time                        |  0.0960        | 
-|                                           |                | 
-| data arrival time                         |  0.2150        | 
-| data required time                        | -0.0960        | 
-| pessimism margin                          |  0.0000        | 
-|                                           |                | 
-| slack                                     |  0.1190        | 
---------------------------------------------------------------
-
-
- Timing Path to fb/mult/out_reg[28]/D 
-  
- Path Start Point : fb/mult/out_reg[29] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/out_reg[28] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Mode             : new_mode 
- Corner           : corner_0_0 
- Data Cell Derate : 1 
- Data Net Derate  : 1 
- Clock Cell Derate: Early = 1 / Late = 1 
- Clock Net Derate : Early = 1 / Late = 1 
- Path Type        : min 
- Path Group       : vsysclk_new_mode 
-  
- Attributes  : U - cell is dont use 
-             : M - cell is dont modify 
-             : m - net is dont modify 
-             : n - connected (sub)net is dont modify 
-             : S - cell is size only 
-             : F - cell is fixed 
-             : C - cell has annotated timing constraints 
-             : c - pin has annotated timing constraints 
-             : A - cell is affected by case analysis 
-             : L - Estimated latency 
-             : O - CTS offset 
-  
- Opt Attr    : I - is ideal 
-             : L - is internal logic const 
-             : K - is in clock network 
-             : M - has only don't modify nets 
-             : N - has no load pin 
-             : D - has zero or multiple drivers 
-             : G - is valid global net 
-             : T - is not switching 
-
-
------------------------------------------------------------------------------------------------------------------------------------
-| Pin                       Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|---------------------------------------------------------------------------------------------------------------------------------|
-|    clk                            Rise  0.0000 0.0000 0.2310 41.7431  108.208  149.951           68      55.742   c    K        | 
-|    fb/clk                         Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                    Rise  0.0000 0.0000                                                                           | 
-| Data Path:                                                                                                                      | 
-|    fb/mult/out_reg[29]/CK DFF_X1  Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
-|    fb/mult/out_reg[29]/Q  DFF_X1  Fall  0.1930 0.1070 0.0090 1.12799  3.3561   4.48409           3       53.5077                | 
-|    fb/mult/i_2_107/A      INV_X1  Fall  0.1930 0.0000 0.0090          1.54936                                                   | 
-|    fb/mult/i_2_107/ZN     INV_X1  Rise  0.2070 0.0140 0.0080 0.69368  1.41309  2.10677           1       53.5077                | 
-|    fb/mult/i_2_59/A1      NOR2_X1 Rise  0.2070 0.0000 0.0080          1.71447                                                   | 
-|    fb/mult/i_2_59/ZN      NOR2_X1 Fall  0.2150 0.0080 0.0040 0.684201 1.06234  1.74654           1       53.5077                | 
-|    fb/mult/out_reg[28]/D  DFF_X1  Fall  0.2150 0.0000 0.0040          1.06234                                                   | 
------------------------------------------------------------------------------------------------------------------------------------
-
-
- Required Time Trace to fb/mult/out_reg[28]/CK 
-
-
-----------------------------------------------------------------------------------------------------------------------------------
-| Pin                       Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|--------------------------------------------------------------------------------------------------------------------------------|
-|    clk                           Rise  0.0000 0.0000 0.2310 41.7432  119.305  161.048           68      55.742   c    K        | 
-|    fb/clk                        Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                   Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/out_reg[28]/CK DFF_X1 Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
-----------------------------------------------------------------------------------------------------------------------------------
-
-
---------------------------------------------------------------
-|                                           | Time    Total  | 
-|------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock ideal network latency        |  0.0860 0.0860 | 
-| library hold check                        |  0.0100 0.0960 | 
-| data required time                        |  0.0960        | 
-|                                           |                | 
-| data arrival time                         |  0.2150        | 
-| data required time                        | -0.0960        | 
-| pessimism margin                          |  0.0000        | 
-|                                           |                | 
-| slack                                     |  0.1190        | 
+| slack                                     |  0.1170        | 
 --------------------------------------------------------------
 
 
  Timing Path to fb/mult/out_reg[25]/D 
   
  Path Start Point : fb/mult/out_reg[26] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Path End Point   : fb/mult/out_reg[25] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Mode             : new_mode 
  Corner           : corner_0_0 
  Data Cell Derate : 1 
@@ -542,17 +302,19 @@
 -----------------------------------------------------------------------------------------------------------------------------------
 | Pin                       Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |---------------------------------------------------------------------------------------------------------------------------------|
-|    clk                            Rise  0.0000 0.0000 0.2310 41.7431  108.208  149.951           68      55.742   c    K        | 
-|    fb/clk                         Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                    Rise  0.0000 0.0000                                                                           | 
+|    clk                            Fall  1.5000 1.5000 0.2310 1.40474  25.1434  26.5482           4       53.8225  c    K        | 
+|    fb/clk                         Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                    Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8  Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8  Rise  1.5180 0.0180 0.0800 53.1849  75.3667  128.552           88      53.8225  L    K        | 
 | Data Path:                                                                                                                      | 
-|    fb/mult/out_reg[26]/CK DFF_X1  Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
-|    fb/mult/out_reg[26]/Q  DFF_X1  Fall  0.1940 0.1080 0.0100 1.79454  3.3561   5.15064           3       54.3052                | 
-|    fb/mult/i_2_104/A      INV_X1  Fall  0.1940 0.0000 0.0100          1.54936                                                   | 
-|    fb/mult/i_2_104/ZN     INV_X1  Rise  0.2070 0.0130 0.0070 0.170352 1.41309  1.58345           1       54.3052                | 
-|    fb/mult/i_2_56/A1      NOR2_X1 Rise  0.2070 0.0000 0.0070          1.71447                                                   | 
-|    fb/mult/i_2_56/ZN      NOR2_X1 Fall  0.2150 0.0080 0.0040 0.646425 1.06234  1.70877           1       54.3052                | 
-|    fb/mult/out_reg[25]/D  DFF_X1  Fall  0.2150 0.0000 0.0040          1.06234                                                   | 
+|    fb/mult/out_reg[26]/CK DFF_X1  Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
+|    fb/mult/out_reg[26]/Q  DFF_X1  Fall  1.6670 0.1070 0.0090 1.14102  3.3561   4.49712           3       53.8225                | 
+|    fb/mult/i_0_0_129/A    INV_X1  Fall  1.6670 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_129/ZN   INV_X1  Rise  1.6800 0.0130 0.0070 0.270738 1.41309  1.68383           1       53.8225                | 
+|    fb/mult/i_0_0_88/A1    NOR2_X1 Rise  1.6800 0.0000 0.0070          1.71447                                                   | 
+|    fb/mult/i_0_0_88/ZN    NOR2_X1 Fall  1.6880 0.0080 0.0040 0.50193  1.06234  1.56427           1       53.8225                | 
+|    fb/mult/out_reg[25]/D  DFF_X1  Fall  1.6880 0.0000 0.0040          1.06234                                                   | 
 -----------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -562,36 +324,214 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 | Pin                       Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |--------------------------------------------------------------------------------------------------------------------------------|
-|    clk                           Rise  0.0000 0.0000 0.2310 41.7432  119.305  161.048           68      55.742   c    K        | 
-|    fb/clk                        Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                   Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/out_reg[25]/CK DFF_X1 Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
+|    clk                           Fall  1.5000 1.5000 0.2310 1.40474  27.5784  28.9831           4       53.8225  c    K        | 
+|    fb/clk                        Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                   Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8 Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8 Rise  1.5180 0.0180 0.0820 53.1849  83.5695  136.754           88      53.8225  L    K        | 
+|    fb/mult/out_reg[25]/CK DFF_X1 Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------
 |                                           | Time    Total  | 
 |------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock ideal network latency        |  0.0860 0.0860 | 
-| library hold check                        |  0.0100 0.0960 | 
-| data required time                        |  0.0960        | 
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock ideal network latency        |  0.0600 1.5600 | 
+| library hold check                        |  0.0100 1.5700 | 
+| data required time                        |  1.5700        | 
 |                                           |                | 
-| data arrival time                         |  0.2150        | 
-| data required time                        | -0.0960        | 
+| data arrival time                         |  1.6880        | 
+| data required time                        | -1.5700        | 
+| pessimism margin                          |  0.0000        | 
+|                                           |                | 
+| slack                                     |  0.1180        | 
+--------------------------------------------------------------
+
+
+ Timing Path to fb/mult/out_reg[28]/D 
+  
+ Path Start Point : fb/mult/out_reg[29] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/out_reg[28] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : vsysclk_new_mode 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                       Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Fall  1.5000 1.5000 0.2310 1.40474  25.1434  26.5482           4       53.8225  c    K        | 
+|    fb/clk                         Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                    Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8  Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8  Rise  1.5180 0.0180 0.0800 53.1849  75.3667  128.552           88      53.8225  L    K        | 
+| Data Path:                                                                                                                      | 
+|    fb/mult/out_reg[29]/CK DFF_X1  Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
+|    fb/mult/out_reg[29]/Q  DFF_X1  Fall  1.6680 0.1080 0.0090 1.4714   3.3561   4.8275            3       51.6901                | 
+|    fb/mult/i_0_0_132/A    INV_X1  Fall  1.6680 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_132/ZN   INV_X1  Rise  1.6800 0.0120 0.0070 0.173394 1.41309  1.58649           1       51.6901                | 
+|    fb/mult/i_0_0_91/A1    NOR2_X1 Rise  1.6800 0.0000 0.0070          1.71447                                                   | 
+|    fb/mult/i_0_0_91/ZN    NOR2_X1 Fall  1.6880 0.0080 0.0040 0.830466 1.06234  1.89281           1       51.6901                | 
+|    fb/mult/out_reg[28]/D  DFF_X1  Fall  1.6880 0.0000 0.0040          1.06234                                                   | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to fb/mult/out_reg[28]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+| Pin                       Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------|
+|    clk                           Fall  1.5000 1.5000 0.2310 1.40474  27.5784  28.9831           4       53.8225  c    K        | 
+|    fb/clk                        Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                   Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8 Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8 Rise  1.5180 0.0180 0.0820 53.1849  83.5695  136.754           88      53.8225  L    K        | 
+|    fb/mult/out_reg[28]/CK DFF_X1 Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock ideal network latency        |  0.0600 1.5600 | 
+| library hold check                        |  0.0100 1.5700 | 
+| data required time                        |  1.5700        | 
+|                                           |                | 
+| data arrival time                         |  1.6880        | 
+| data required time                        | -1.5700        | 
+| pessimism margin                          |  0.0000        | 
+|                                           |                | 
+| slack                                     |  0.1180        | 
+--------------------------------------------------------------
+
+
+ Timing Path to fb/mult/out_reg[24]/D 
+  
+ Path Start Point : fb/mult/out_reg[25] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/out_reg[24] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : vsysclk_new_mode 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                       Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Fall  1.5000 1.5000 0.2310 1.40474  25.1434  26.5482           4       53.8225  c    K        | 
+|    fb/clk                         Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                    Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8  Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8  Rise  1.5180 0.0180 0.0800 53.1849  75.3667  128.552           88      53.8225  L    K        | 
+| Data Path:                                                                                                                      | 
+|    fb/mult/out_reg[25]/CK DFF_X1  Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
+|    fb/mult/out_reg[25]/Q  DFF_X1  Fall  1.6680 0.1080 0.0090 1.46399  3.3561   4.8201            3       53.8225                | 
+|    fb/mult/i_0_0_128/A    INV_X1  Fall  1.6680 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_128/ZN   INV_X1  Rise  1.6810 0.0130 0.0080 0.479123 1.41309  1.89222           1       53.8225                | 
+|    fb/mult/i_0_0_87/A1    NOR2_X1 Rise  1.6810 0.0000 0.0080          1.71447                                                   | 
+|    fb/mult/i_0_0_87/ZN    NOR2_X1 Fall  1.6890 0.0080 0.0040 0.62685  1.06234  1.68919           1       53.8225                | 
+|    fb/mult/out_reg[24]/D  DFF_X1  Fall  1.6890 0.0000 0.0040          1.06234                                                   | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to fb/mult/out_reg[24]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+| Pin                       Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------|
+|    clk                           Fall  1.5000 1.5000 0.2310 1.40474  27.5784  28.9831           4       53.8225  c    K        | 
+|    fb/clk                        Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                   Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8 Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8 Rise  1.5180 0.0180 0.0820 53.1849  83.5695  136.754           88      53.8225  L    K        | 
+|    fb/mult/out_reg[24]/CK DFF_X1 Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock ideal network latency        |  0.0600 1.5600 | 
+| library hold check                        |  0.0100 1.5700 | 
+| data required time                        |  1.5700        | 
+|                                           |                | 
+| data arrival time                         |  1.6890        | 
+| data required time                        | -1.5700        | 
 | pessimism margin                          |  0.0000        | 
 |                                           |                | 
 | slack                                     |  0.1190        | 
 --------------------------------------------------------------
 
 
- Timing Path to fb/mult/q0_reg/D 
+ Timing Path to fb/mult/out_reg[29]/D 
   
- Path Start Point : reset 
-                       (rising IO latch clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/q0_reg (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+ Path Start Point : fb/mult/out_reg[30] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/out_reg[29] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Mode             : new_mode 
  Corner           : corner_0_0 
  Data Cell Derate : 1 
@@ -599,7 +539,7 @@
  Clock Cell Derate: Early = 1 / Late = 1 
  Clock Net Derate : Early = 1 / Late = 1 
  Path Type        : min 
- Path Group       : **inputs** 
+ Path Group       : vsysclk_new_mode 
   
  Attributes  : U - cell is dont use 
              : M - cell is dont modify 
@@ -623,54 +563,63 @@
              : T - is not switching 
 
 
------------------------------------------------------------------------------------------------------------------------------
-| Pin                  Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|---------------------------------------------------------------------------------------------------------------------------|
-|    reset                     Rise  0.2000 0.0000 0.0000 21.4596  66.0526 87.5122           36      52.8627  c             | 
-|    fb/reset                  Rise  0.2000 0.0000                                                                          | 
-|    fb/mult/rst               Rise  0.2000 0.0000                                                                          | 
-|    fb/mult/i_2_98/A2 NOR2_X1 Rise  0.2100 0.0100 0.0000          1.65135                                                  | 
-|    fb/mult/i_2_98/ZN NOR2_X1 Fall  0.2160 0.0060 0.0040 0.479615 1.06234 1.54196           1       52.8627                | 
-|    fb/mult/q0_reg/D  DFF_X1  Fall  0.2160 0.0000 0.0040          1.06234                                                  | 
------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                       Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Fall  1.5000 1.5000 0.2310 1.40474  25.1434  26.5482           4       53.8225  c    K        | 
+|    fb/clk                         Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                    Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8  Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8  Rise  1.5180 0.0180 0.0800 53.1849  75.3667  128.552           88      53.8225  L    K        | 
+| Data Path:                                                                                                                      | 
+|    fb/mult/out_reg[30]/CK DFF_X1  Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
+|    fb/mult/out_reg[30]/Q  DFF_X1  Fall  1.6680 0.1080 0.0090 1.43764  3.3561   4.79374           3       53.8225                | 
+|    fb/mult/i_0_0_133/A    INV_X1  Fall  1.6680 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_133/ZN   INV_X1  Rise  1.6820 0.0140 0.0080 0.657895 1.41309  2.07099           1       51.6901                | 
+|    fb/mult/i_0_0_92/A1    NOR2_X1 Rise  1.6820 0.0000 0.0080          1.71447                                                   | 
+|    fb/mult/i_0_0_92/ZN    NOR2_X1 Fall  1.6900 0.0080 0.0040 0.480107 1.06234  1.54245           1       53.8225                | 
+|    fb/mult/out_reg[29]/D  DFF_X1  Fall  1.6900 0.0000 0.0040          1.06234                                                   | 
+-----------------------------------------------------------------------------------------------------------------------------------
 
 
- Required Time Trace to fb/mult/q0_reg/CK 
+ Required Time Trace to fb/mult/out_reg[29]/CK 
 
 
------------------------------------------------------------------------------------------------------------------------------
-| Pin                  Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|---------------------------------------------------------------------------------------------------------------------------|
-|    clk                      Rise  0.0000 0.0000 0.2310 41.7432  119.305  161.048           68      55.742   c    K        | 
-|    fb/clk                   Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk              Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/q0_reg/CK DFF_X1 Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+| Pin                       Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------|
+|    clk                           Fall  1.5000 1.5000 0.2310 1.40474  27.5784  28.9831           4       53.8225  c    K        | 
+|    fb/clk                        Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                   Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8 Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8 Rise  1.5180 0.0180 0.0820 53.1849  83.5695  136.754           88      53.8225  L    K        | 
+|    fb/mult/out_reg[29]/CK DFF_X1 Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
+----------------------------------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------
 |                                           | Time    Total  | 
 |------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock ideal network latency        |  0.0860 0.0860 | 
-| library hold check                        |  0.0100 0.0960 | 
-| data required time                        |  0.0960        | 
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock ideal network latency        |  0.0600 1.5600 | 
+| library hold check                        |  0.0100 1.5700 | 
+| data required time                        |  1.5700        | 
 |                                           |                | 
-| data arrival time                         |  0.2160        | 
-| data required time                        | -0.0960        | 
+| data arrival time                         |  1.6900        | 
+| data required time                        | -1.5700        | 
 | pessimism margin                          |  0.0000        | 
 |                                           |                | 
 | slack                                     |  0.1200        | 
 --------------------------------------------------------------
 
 
- Timing Path to fb/mult/out_reg[14]/D 
+ Timing Path to fb/mult/out_reg[8]/D 
   
- Path Start Point : reset 
-                       (rising IO latch clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/out_reg[14] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+ Path Start Point : regB/out_reg[8] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/out_reg[8] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Mode             : new_mode 
  Corner           : corner_0_0 
  Data Cell Derate : 1 
@@ -678,7 +627,7 @@
  Clock Cell Derate: Early = 1 / Late = 1 
  Clock Net Derate : Early = 1 / Late = 1 
  Path Type        : min 
- Path Group       : **inputs** 
+ Path Group       : vsysclk_new_mode 
   
  Attributes  : U - cell is dont use 
              : M - cell is dont modify 
@@ -703,53 +652,62 @@
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
-| Pin                      Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+| Pin                     Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |-------------------------------------------------------------------------------------------------------------------------------|
-|    reset                         Rise  0.2000 0.0000 0.0000 21.4596  66.0526 87.5122           36      52.8627  c             | 
-|    fb/reset                      Rise  0.2000 0.0000                                                                          | 
-|    fb/mult/rst                   Rise  0.2000 0.0000                                                                          | 
-|    fb/mult/i_2_45/S      MUX2_X1 Rise  0.2030 0.0030 0.0000          1.91994                                                  | 
-|    fb/mult/i_2_45/Z      MUX2_X1 Rise  0.2300 0.0270 0.0090 0.489466 1.06234 1.55181           1       52.8627                | 
-|    fb/mult/out_reg[14]/D DFF_X1  Rise  0.2300 0.0000 0.0090          1.14029                                                  | 
+|    clk                          Fall  1.5000 1.5000 0.2310 1.40474  25.1434  26.5482           4       53.8225  c    K        | 
+|    regB/clk                     Fall  1.5000 0.0000                                                                           | 
+|    regB/i_0_0/A         INV_X2  Fall  1.5110 0.0110 0.2310          2.94332                                     L             | 
+|    regB/i_0_0/ZN        INV_X2  Rise  1.5280 0.0170 0.0910 16.0536  27.4061  43.4597           32      53.8225  L    K        | 
+| Data Path:                                                                                                                    | 
+|    regB/out_reg[8]/CK   DFF_X1  Rise  1.5600 0.0320 0.2310          0.949653                                    L             | 
+|    regB/out_reg[8]/Q    DFF_X1  Rise  1.6720 0.1120 0.0110 0.820525 2.45393  3.27446           2       54.0234                | 
+|    regB/out[8]                  Rise  1.6720 0.0000                                                                           | 
+|    fb/b[8]                      Rise  1.6720 0.0000                                                                           | 
+|    fb/mult/in2[8]               Rise  1.6720 0.0000                                                                           | 
+|    fb/mult/i_0_0_71/B   MUX2_X1 Rise  1.6720 0.0000 0.0110          0.944775                                                  | 
+|    fb/mult/i_0_0_71/Z   MUX2_X1 Rise  1.7070 0.0350 0.0080 0.241839 1.06234  1.30418           1       54.0234                | 
+|    fb/mult/out_reg[8]/D DFF_X1  Rise  1.7070 0.0000 0.0080          1.14029                                                   | 
 ---------------------------------------------------------------------------------------------------------------------------------
 
 
- Required Time Trace to fb/mult/out_reg[14]/CK 
+ Required Time Trace to fb/mult/out_reg[8]/CK 
 
 
-----------------------------------------------------------------------------------------------------------------------------------
-| Pin                       Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|--------------------------------------------------------------------------------------------------------------------------------|
-|    clk                           Rise  0.0000 0.0000 0.2310 41.7432  119.305  161.048           68      55.742   c    K        | 
-|    fb/clk                        Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                   Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/out_reg[14]/CK DFF_X1 Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
-----------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
+| Pin                      Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------|
+|    clk                          Fall  1.5000 1.5000 0.2310 1.40474  27.5784  28.9831           4       53.8225  c    K        | 
+|    fb/clk                       Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                  Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A   INV_X8 Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN  INV_X8 Rise  1.5180 0.0180 0.0820 53.1849  83.5695  136.754           88      53.8225  L    K        | 
+|    fb/mult/out_reg[8]/CK DFF_X1 Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
+---------------------------------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------
 |                                           | Time    Total  | 
 |------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock ideal network latency        |  0.0860 0.0860 | 
-| library hold check                        |  0.0240 0.1100 | 
-| data required time                        |  0.1100        | 
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock ideal network latency        |  0.0600 1.5600 | 
+| library hold check                        |  0.0240 1.5840 | 
+| data required time                        |  1.5840        | 
 |                                           |                | 
-| data arrival time                         |  0.2300        | 
-| data required time                        | -0.1100        | 
+| data arrival time                         |  1.7070        | 
+| data required time                        | -1.5840        | 
 | pessimism margin                          |  0.0000        | 
 |                                           |                | 
-| slack                                     |  0.1200        | 
+| slack                                     |  0.1230        | 
 --------------------------------------------------------------
 
 
- Timing Path to fb/mult/out_reg[10]/D 
+ Timing Path to fb/mult/out_reg[22]/D 
   
- Path Start Point : reset 
-                       (rising IO latch clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/out_reg[10] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+ Path Start Point : regB/out_reg[22] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/out_reg[22] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Mode             : new_mode 
  Corner           : corner_0_0 
  Data Cell Derate : 1 
@@ -757,7 +715,7 @@
  Clock Cell Derate: Early = 1 / Late = 1 
  Clock Net Derate : Early = 1 / Late = 1 
  Path Type        : min 
- Path Group       : **inputs** 
+ Path Group       : vsysclk_new_mode 
   
  Attributes  : U - cell is dont use 
              : M - cell is dont modify 
@@ -781,46 +739,141 @@
              : T - is not switching 
 
 
----------------------------------------------------------------------------------------------------------------------------------
-| Pin                      Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|-------------------------------------------------------------------------------------------------------------------------------|
-|    reset                         Rise  0.2000 0.0000 0.0000 21.4596  66.0526 87.5122           36      52.8627  c             | 
-|    fb/reset                      Rise  0.2000 0.0000                                                                          | 
-|    fb/mult/rst                   Rise  0.2000 0.0000                                                                          | 
-|    fb/mult/i_2_41/S      MUX2_X1 Rise  0.2050 0.0050 0.0000          1.91994                                                  | 
-|    fb/mult/i_2_41/Z      MUX2_X1 Rise  0.2320 0.0270 0.0090 0.483678 1.06234 1.54602           1       52.8627                | 
-|    fb/mult/out_reg[10]/D DFF_X1  Rise  0.2320 0.0000 0.0090          1.14029                                                  | 
----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+| Pin                      Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------|
+|    clk                           Fall  1.5000 1.5000 0.2310 1.40474  25.1434  26.5482           4       53.8225  c    K        | 
+|    regB/clk                      Fall  1.5000 0.0000                                                                           | 
+|    regB/i_0_0/A          INV_X2  Fall  1.5110 0.0110 0.2310          2.94332                                     L             | 
+|    regB/i_0_0/ZN         INV_X2  Rise  1.5280 0.0170 0.0910 16.0536  27.4061  43.4597           32      53.8225  L    K        | 
+| Data Path:                                                                                                                     | 
+|    regB/out_reg[22]/CK   DFF_X1  Rise  1.5600 0.0320 0.2310          0.949653                                    L             | 
+|    regB/out_reg[22]/Q    DFF_X1  Rise  1.6720 0.1120 0.0110 0.836045 2.34631  3.18235           2       53.8225                | 
+|    regB/out[22]                  Rise  1.6720 0.0000                                                                           | 
+|    fb/b[22]                      Rise  1.6720 0.0000                                                                           | 
+|    fb/mult/in2[22]               Rise  1.6720 0.0000                                                                           | 
+|    fb/mult/i_0_0_85/B    MUX2_X1 Rise  1.6720 0.0000 0.0110          0.944775                                                  | 
+|    fb/mult/i_0_0_85/Z    MUX2_X1 Rise  1.7070 0.0350 0.0080 0.202293 1.06234  1.26464           1       54.0234                | 
+|    fb/mult/out_reg[22]/D DFF_X1  Rise  1.7070 0.0000 0.0080          1.14029                                                   | 
+----------------------------------------------------------------------------------------------------------------------------------
 
 
- Required Time Trace to fb/mult/out_reg[10]/CK 
+ Required Time Trace to fb/mult/out_reg[22]/CK 
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
 | Pin                       Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |--------------------------------------------------------------------------------------------------------------------------------|
-|    clk                           Rise  0.0000 0.0000 0.2310 41.7432  119.305  161.048           68      55.742   c    K        | 
-|    fb/clk                        Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/clk                   Rise  0.0000 0.0000                                                                           | 
-|    fb/mult/out_reg[10]/CK DFF_X1 Rise  0.0860 0.0860 0.2310          0.949653                                    L             | 
+|    clk                           Fall  1.5000 1.5000 0.2310 1.40474  27.5784  28.9831           4       53.8225  c    K        | 
+|    fb/clk                        Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                   Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8 Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8 Rise  1.5180 0.0180 0.0820 53.1849  83.5695  136.754           88      53.8225  L    K        | 
+|    fb/mult/out_reg[22]/CK DFF_X1 Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------
 |                                           | Time    Total  | 
 |------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock ideal network latency        |  0.0860 0.0860 | 
-| library hold check                        |  0.0240 0.1100 | 
-| data required time                        |  0.1100        | 
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock ideal network latency        |  0.0600 1.5600 | 
+| library hold check                        |  0.0240 1.5840 | 
+| data required time                        |  1.5840        | 
 |                                           |                | 
-| data arrival time                         |  0.2320        | 
-| data required time                        | -0.1100        | 
+| data arrival time                         |  1.7070        | 
+| data required time                        | -1.5840        | 
 | pessimism margin                          |  0.0000        | 
 |                                           |                | 
-| slack                                     |  0.1220        | 
+| slack                                     |  0.1230        | 
 --------------------------------------------------------------
 
 
-info UI33: performed report_timing for 0 sec (CPU time: 0 sec; MEM: RSS - 366M, CVMEM - 1787M, PVMEM - 2263M)
+ Timing Path to fb/mult/out_reg[9]/D 
+  
+ Path Start Point : fb/mult/out_reg[10] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/out_reg[9] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : vsysclk_new_mode 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                       Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Fall  1.5000 1.5000 0.2310 1.40474  25.1434  26.5482           4       53.8225  c    K        | 
+|    fb/clk                         Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                    Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A    INV_X8  Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN   INV_X8  Rise  1.5180 0.0180 0.0800 53.1849  75.3667  128.552           88      53.8225  L    K        | 
+| Data Path:                                                                                                                      | 
+|    fb/mult/out_reg[10]/CK DFF_X1  Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
+|    fb/mult/out_reg[10]/Q  DFF_X1  Rise  1.6720 0.1120 0.0110 0.879492 2.25053  3.13002           2       54.0234                | 
+|    fb/mult/i_0_0_72/A     MUX2_X1 Rise  1.6720 0.0000 0.0110          0.94642                                                   | 
+|    fb/mult/i_0_0_72/Z     MUX2_X1 Rise  1.7070 0.0350 0.0080 0.270738 1.06234  1.33308           1       54.0234                | 
+|    fb/mult/out_reg[9]/D   DFF_X1  Rise  1.7070 0.0000 0.0080          1.14029                                                   | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to fb/mult/out_reg[9]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+| Pin                      Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------|
+|    clk                          Fall  1.5000 1.5000 0.2310 1.40474  27.5784  28.9831           4       53.8225  c    K        | 
+|    fb/clk                       Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/clk                  Fall  1.5000 0.0000                                                                           | 
+|    fb/mult/i_0_0_125/A   INV_X8 Fall  1.5000 0.0000 0.2310          10.8                                                      | 
+|    fb/mult/i_0_0_125/ZN  INV_X8 Rise  1.5180 0.0180 0.0820 53.1849  83.5695  136.754           88      53.8225  L    K        | 
+|    fb/mult/out_reg[9]/CK DFF_X1 Rise  1.5600 0.0420 0.2310          0.949653                                    L             | 
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock ideal network latency        |  0.0600 1.5600 | 
+| library hold check                        |  0.0240 1.5840 | 
+| data required time                        |  1.5840        | 
+|                                           |                | 
+| data arrival time                         |  1.7070        | 
+| data required time                        | -1.5840        | 
+| pessimism margin                          |  0.0000        | 
+|                                           |                | 
+| slack                                     |  0.1230        | 
+--------------------------------------------------------------
+
+
+info UI33: performed report_timing for 0 sec (CPU time: 0 sec; MEM: RSS - 366M, CVMEM - 1782M, PVMEM - 2263M)

@@ -1,397 +1,9 @@
- Timing Path to fb/mult/out_reg[30]/D 
-  
- Path Start Point : fb/mult/out_reg[31] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/out_reg[30] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Mode             : new_mode 
- Corner           : corner_0_0 
- Data Cell Derate : 1 
- Data Net Derate  : 1 
- Clock Cell Derate: Early = 1 / Late = 1 
- Clock Net Derate : Early = 1 / Late = 1 
- Path Type        : min 
- Path Group       : vsysclk_new_mode 
- CRPR Threshold   : 5 
-  
- Attributes  : U - cell is dont use 
-             : M - cell is dont modify 
-             : m - net is dont modify 
-             : n - connected (sub)net is dont modify 
-             : S - cell is size only 
-             : F - cell is fixed 
-             : C - cell has annotated timing constraints 
-             : c - pin has annotated timing constraints 
-             : A - cell is affected by case analysis 
-             : L - Estimated latency 
-             : O - CTS offset 
-  
- Opt Attr    : I - is ideal 
-             : L - is internal logic const 
-             : K - is in clock network 
-             : M - has only don't modify nets 
-             : N - has no load pin 
-             : D - has zero or multiple drivers 
-             : G - is valid global net 
-             : T - is not switching 
-
-
-----------------------------------------------------------------------------------------------------------------------------------------
-| Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|--------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                 Rise  0.0000 0.0000 0.0000 1.64925  3.0037   4.65296           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4  Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4  Rise  0.0240 0.0240 0.0140 7.41207  10.8     18.2121           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                  Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1             Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8  Rise  0.0270 0.0030 0.0140          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8  Fall  0.0410 0.0140 0.0090 12.6882  35.663   48.3512           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4  Fall  0.0460 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4  Rise  0.0900 0.0440 0.0420 31.7565  30.8318  62.5884           36      52.8041  mF   K/M      | 
-| Data Path:                                                                                                                           | 
-|    fb/mult/out_reg[31]/CK      DFF_X1  Rise  0.0960 0.0060 0.0420          0.949653                                    MmF           | 
-|    fb/mult/out_reg[31]/Q       DFF_X1  Fall  0.1930 0.0970 0.0090 0.82935  3.3561   4.18545           3       52.4581  MF            | 
-|    fb/mult/i_2_109/A           INV_X1  Fall  0.1930 0.0000 0.0090          1.54936                                                   | 
-|    fb/mult/i_2_109/ZN          INV_X1  Rise  0.2050 0.0120 0.0070 0.170352 1.41309  1.58345           1       53.2908                | 
-|    fb/mult/i_2_61/A1           NOR2_X1 Rise  0.2050 0.0000 0.0070          1.71447                                                   | 
-|    fb/mult/i_2_61/ZN           NOR2_X1 Fall  0.2120 0.0070 0.0040 0.357435 1.06234  1.41978           1       53.2908                | 
-|    fb/mult/out_reg[30]/D       DFF_X1  Fall  0.2120 0.0000 0.0040          1.06234                                     MF            | 
-----------------------------------------------------------------------------------------------------------------------------------------
-
-
- Required Time Trace to fb/mult/out_reg[30]/CK 
-
-
----------------------------------------------------------------------------------------------------------------------------------------
-| Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|-------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                Rise  0.0000 0.0000 0.0000 1.64925  3.40189  5.05115           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4 Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4 Rise  0.0240 0.0240 0.0150 7.41207  11.8107  19.2227           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                 Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1            Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8 Rise  0.0270 0.0030 0.0150          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8 Fall  0.0420 0.0150 0.0100 12.6882  39.1661  51.8543           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4 Fall  0.0470 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4 Rise  0.0930 0.0460 0.0440 31.7565  34.1875  65.944            36      52.8041  mF   K/M      | 
-|    fb/mult/out_reg[30]/CK      DFF_X1 Rise  0.1000 0.0070 0.0440          0.949653                                    MmF           | 
----------------------------------------------------------------------------------------------------------------------------------------
-
-
---------------------------------------------------------------
-|                                           | Time    Total  | 
-|------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock propagated network latency   |  0.1000 0.1000 | 
-| library hold check                        |  0.0110 0.1110 | 
-| data required time                        |  0.1110        | 
-|                                           |                | 
-| data arrival time                         |  0.2120        | 
-| data required time                        | -0.1110        | 
-| pessimism                                 |  0.0010        | 
-|                                           |                | 
-| slack                                     |  0.1020        | 
---------------------------------------------------------------
-
-
- Timing Path to fb/mult/out_reg[24]/D 
-  
- Path Start Point : fb/mult/out_reg[25] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/out_reg[24] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Mode             : new_mode 
- Corner           : corner_0_0 
- Data Cell Derate : 1 
- Data Net Derate  : 1 
- Clock Cell Derate: Early = 1 / Late = 1 
- Clock Net Derate : Early = 1 / Late = 1 
- Path Type        : min 
- Path Group       : vsysclk_new_mode 
- CRPR Threshold   : 5 
-  
- Attributes  : U - cell is dont use 
-             : M - cell is dont modify 
-             : m - net is dont modify 
-             : n - connected (sub)net is dont modify 
-             : S - cell is size only 
-             : F - cell is fixed 
-             : C - cell has annotated timing constraints 
-             : c - pin has annotated timing constraints 
-             : A - cell is affected by case analysis 
-             : L - Estimated latency 
-             : O - CTS offset 
-  
- Opt Attr    : I - is ideal 
-             : L - is internal logic const 
-             : K - is in clock network 
-             : M - has only don't modify nets 
-             : N - has no load pin 
-             : D - has zero or multiple drivers 
-             : G - is valid global net 
-             : T - is not switching 
-
-
-----------------------------------------------------------------------------------------------------------------------------------------
-| Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|--------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                 Rise  0.0000 0.0000 0.0000 1.64925  3.0037   4.65296           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4  Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4  Rise  0.0240 0.0240 0.0140 7.41207  10.8     18.2121           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                  Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1             Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8  Rise  0.0270 0.0030 0.0140          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8  Fall  0.0410 0.0140 0.0090 12.6882  35.663   48.3512           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4  Fall  0.0460 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4  Rise  0.0900 0.0440 0.0420 31.7565  30.8318  62.5884           36      52.8041  mF   K/M      | 
-| Data Path:                                                                                                                           | 
-|    fb/mult/out_reg[25]/CK      DFF_X1  Rise  0.0950 0.0050 0.0420          0.949653                                    MmF           | 
-|    fb/mult/out_reg[25]/Q       DFF_X1  Fall  0.1920 0.0970 0.0090 1.06638  3.3561   4.42248           3       56.4258  MF            | 
-|    fb/mult/i_2_103/A           INV_X1  Fall  0.1920 0.0000 0.0090          1.54936                                                   | 
-|    fb/mult/i_2_103/ZN          INV_X1  Rise  0.2050 0.0130 0.0080 0.473031 1.41309  1.88612           1       56.4258                | 
-|    fb/mult/i_2_55/A1           NOR2_X1 Rise  0.2050 0.0000 0.0080          1.71447                                                   | 
-|    fb/mult/i_2_55/ZN           NOR2_X1 Fall  0.2130 0.0080 0.0040 0.530829 1.06234  1.59317           1       56.4258                | 
-|    fb/mult/out_reg[24]/D       DFF_X1  Fall  0.2130 0.0000 0.0040          1.06234                                     MF            | 
-----------------------------------------------------------------------------------------------------------------------------------------
-
-
- Required Time Trace to fb/mult/out_reg[24]/CK 
-
-
----------------------------------------------------------------------------------------------------------------------------------------
-| Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|-------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                Rise  0.0000 0.0000 0.0000 1.64925  3.40189  5.05115           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4 Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4 Rise  0.0240 0.0240 0.0150 7.41207  11.8107  19.2227           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                 Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1            Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8 Rise  0.0270 0.0030 0.0150          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8 Fall  0.0420 0.0150 0.0100 12.6882  39.1661  51.8543           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4 Fall  0.0470 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4 Rise  0.0930 0.0460 0.0440 31.7565  34.1875  65.944            36      52.8041  mF   K/M      | 
-|    fb/mult/out_reg[24]/CK      DFF_X1 Rise  0.0990 0.0060 0.0440          0.949653                                    MmF           | 
----------------------------------------------------------------------------------------------------------------------------------------
-
-
---------------------------------------------------------------
-|                                           | Time    Total  | 
-|------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock propagated network latency   |  0.0990 0.0990 | 
-| library hold check                        |  0.0110 0.1100 | 
-| data required time                        |  0.1100        | 
-|                                           |                | 
-| data arrival time                         |  0.2130        | 
-| data required time                        | -0.1100        | 
-| pessimism                                 |  0.0010        | 
-|                                           |                | 
-| slack                                     |  0.1040        | 
---------------------------------------------------------------
-
-
- Timing Path to fb/mult/out_reg[26]/D 
-  
- Path Start Point : fb/mult/out_reg[27] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/out_reg[26] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Mode             : new_mode 
- Corner           : corner_0_0 
- Data Cell Derate : 1 
- Data Net Derate  : 1 
- Clock Cell Derate: Early = 1 / Late = 1 
- Clock Net Derate : Early = 1 / Late = 1 
- Path Type        : min 
- Path Group       : vsysclk_new_mode 
- CRPR Threshold   : 5 
-  
- Attributes  : U - cell is dont use 
-             : M - cell is dont modify 
-             : m - net is dont modify 
-             : n - connected (sub)net is dont modify 
-             : S - cell is size only 
-             : F - cell is fixed 
-             : C - cell has annotated timing constraints 
-             : c - pin has annotated timing constraints 
-             : A - cell is affected by case analysis 
-             : L - Estimated latency 
-             : O - CTS offset 
-  
- Opt Attr    : I - is ideal 
-             : L - is internal logic const 
-             : K - is in clock network 
-             : M - has only don't modify nets 
-             : N - has no load pin 
-             : D - has zero or multiple drivers 
-             : G - is valid global net 
-             : T - is not switching 
-
-
-----------------------------------------------------------------------------------------------------------------------------------------
-| Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|--------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                 Rise  0.0000 0.0000 0.0000 1.64925  3.0037   4.65296           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4  Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4  Rise  0.0240 0.0240 0.0140 7.41207  10.8     18.2121           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                  Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1             Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8  Rise  0.0270 0.0030 0.0140          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8  Fall  0.0410 0.0140 0.0090 12.6882  35.663   48.3512           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4  Fall  0.0460 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4  Rise  0.0900 0.0440 0.0420 31.7565  30.8318  62.5884           36      52.8041  mF   K/M      | 
-| Data Path:                                                                                                                           | 
-|    fb/mult/out_reg[27]/CK      DFF_X1  Rise  0.0970 0.0070 0.0420          0.949653                                    MmF           | 
-|    fb/mult/out_reg[27]/Q       DFF_X1  Fall  0.1950 0.0980 0.0090 1.20975  3.3561   4.56585           3       54.477   MF            | 
-|    fb/mult/i_2_105/A           INV_X1  Fall  0.1950 0.0000 0.0090          1.54936                                                   | 
-|    fb/mult/i_2_105/ZN          INV_X1  Rise  0.2070 0.0120 0.0070 0.21294  1.41309  1.62603           1       56.4258                | 
-|    fb/mult/i_2_57/A1           NOR2_X1 Rise  0.2070 0.0000 0.0070          1.71447                                                   | 
-|    fb/mult/i_2_57/ZN           NOR2_X1 Fall  0.2140 0.0070 0.0040 0.357435 1.06234  1.41978           1       56.4258                | 
-|    fb/mult/out_reg[26]/D       DFF_X1  Fall  0.2140 0.0000 0.0040          1.06234                                     MF            | 
-----------------------------------------------------------------------------------------------------------------------------------------
-
-
- Required Time Trace to fb/mult/out_reg[26]/CK 
-
-
----------------------------------------------------------------------------------------------------------------------------------------
-| Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|-------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                Rise  0.0000 0.0000 0.0000 1.64925  3.40189  5.05115           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4 Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4 Rise  0.0240 0.0240 0.0150 7.41207  11.8107  19.2227           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                 Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1            Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8 Rise  0.0270 0.0030 0.0150          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8 Fall  0.0420 0.0150 0.0100 12.6882  39.1661  51.8543           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4 Fall  0.0470 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4 Rise  0.0930 0.0460 0.0440 31.7565  34.1875  65.944            36      52.8041  mF   K/M      | 
-|    fb/mult/out_reg[26]/CK      DFF_X1 Rise  0.1000 0.0070 0.0440          0.949653                                    MmF           | 
----------------------------------------------------------------------------------------------------------------------------------------
-
-
---------------------------------------------------------------
-|                                           | Time    Total  | 
-|------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock propagated network latency   |  0.1000 0.1000 | 
-| library hold check                        |  0.0110 0.1110 | 
-| data required time                        |  0.1110        | 
-|                                           |                | 
-| data arrival time                         |  0.2140        | 
-| data required time                        | -0.1110        | 
-| pessimism                                 |  0.0010        | 
-|                                           |                | 
-| slack                                     |  0.1040        | 
---------------------------------------------------------------
-
-
- Timing Path to fb/mult/out_reg[29]/D 
-  
- Path Start Point : fb/mult/out_reg[30] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/out_reg[29] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Mode             : new_mode 
- Corner           : corner_0_0 
- Data Cell Derate : 1 
- Data Net Derate  : 1 
- Clock Cell Derate: Early = 1 / Late = 1 
- Clock Net Derate : Early = 1 / Late = 1 
- Path Type        : min 
- Path Group       : vsysclk_new_mode 
- CRPR Threshold   : 5 
-  
- Attributes  : U - cell is dont use 
-             : M - cell is dont modify 
-             : m - net is dont modify 
-             : n - connected (sub)net is dont modify 
-             : S - cell is size only 
-             : F - cell is fixed 
-             : C - cell has annotated timing constraints 
-             : c - pin has annotated timing constraints 
-             : A - cell is affected by case analysis 
-             : L - Estimated latency 
-             : O - CTS offset 
-  
- Opt Attr    : I - is ideal 
-             : L - is internal logic const 
-             : K - is in clock network 
-             : M - has only don't modify nets 
-             : N - has no load pin 
-             : D - has zero or multiple drivers 
-             : G - is valid global net 
-             : T - is not switching 
-
-
-----------------------------------------------------------------------------------------------------------------------------------------
-| Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|--------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                 Rise  0.0000 0.0000 0.0000 1.64925  3.0037   4.65296           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4  Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4  Rise  0.0240 0.0240 0.0140 7.41207  10.8     18.2121           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                  Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1             Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8  Rise  0.0270 0.0030 0.0140          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8  Fall  0.0410 0.0140 0.0090 12.6882  35.663   48.3512           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4  Fall  0.0460 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4  Rise  0.0900 0.0440 0.0420 31.7565  30.8318  62.5884           36      52.8041  mF   K/M      | 
-| Data Path:                                                                                                                           | 
-|    fb/mult/out_reg[30]/CK      DFF_X1  Rise  0.0960 0.0060 0.0420          0.949653                                    MmF           | 
-|    fb/mult/out_reg[30]/Q       DFF_X1  Fall  0.1930 0.0970 0.0090 0.823165 3.3561   4.17927           3       53.2908  MF            | 
-|    fb/mult/i_2_108/A           INV_X1  Fall  0.1930 0.0000 0.0090          1.54936                                                   | 
-|    fb/mult/i_2_108/ZN          INV_X1  Rise  0.2070 0.0140 0.0080 0.725063 1.41309  2.13816           1       53.2908                | 
-|    fb/mult/i_2_60/A1           NOR2_X1 Rise  0.2070 0.0000 0.0080          1.71447                                                   | 
-|    fb/mult/i_2_60/ZN           NOR2_X1 Fall  0.2150 0.0080 0.0040 0.50193  1.06234  1.56427           1       54.477                 | 
-|    fb/mult/out_reg[29]/D       DFF_X1  Fall  0.2150 0.0000 0.0040          1.06234                                     MF            | 
-----------------------------------------------------------------------------------------------------------------------------------------
-
-
- Required Time Trace to fb/mult/out_reg[29]/CK 
-
-
----------------------------------------------------------------------------------------------------------------------------------------
-| Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|-------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                Rise  0.0000 0.0000 0.0000 1.64925  3.40189  5.05115           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4 Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4 Rise  0.0240 0.0240 0.0150 7.41207  11.8107  19.2227           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                 Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1            Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8 Rise  0.0270 0.0030 0.0150          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8 Fall  0.0420 0.0150 0.0100 12.6882  39.1661  51.8543           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4 Fall  0.0470 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4 Rise  0.0930 0.0460 0.0440 31.7565  34.1875  65.944            36      52.8041  mF   K/M      | 
-|    fb/mult/out_reg[29]/CK      DFF_X1 Rise  0.1000 0.0070 0.0440          0.949653                                    MmF           | 
----------------------------------------------------------------------------------------------------------------------------------------
-
-
---------------------------------------------------------------
-|                                           | Time    Total  | 
-|------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock propagated network latency   |  0.1000 0.1000 | 
-| library hold check                        |  0.0110 0.1110 | 
-| data required time                        |  0.1110        | 
-|                                           |                | 
-| data arrival time                         |  0.2150        | 
-| data required time                        | -0.1110        | 
-| pessimism                                 |  0.0010        | 
-|                                           |                | 
-| slack                                     |  0.1050        | 
---------------------------------------------------------------
-
-
  Timing Path to fb/mult/out_reg[28]/D 
   
  Path Start Point : fb/mult/out_reg[29] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Path End Point   : fb/mult/out_reg[28] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Mode             : new_mode 
  Corner           : corner_0_0 
  Data Cell Derate : 1 
@@ -427,23 +39,29 @@
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |--------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                 Rise  0.0000 0.0000 0.0000 1.64925  3.0037   4.65296           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4  Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4  Rise  0.0240 0.0240 0.0140 7.41207  10.8     18.2121           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                  Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1             Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8  Rise  0.0270 0.0030 0.0140          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8  Fall  0.0410 0.0140 0.0090 12.6882  35.663   48.3512           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4  Fall  0.0460 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4  Rise  0.0900 0.0440 0.0420 31.7565  30.8318  62.5884           36      52.8041  mF   K/M      | 
+|    clk                                 Fall  1.5000 1.5000 0.0000 0.24664  5.81013  6.05677           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8  Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8  Fall  1.5190 0.0190 0.0050 0.869541 5.70005  6.5696            1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3                Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4  Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4  Rise  1.5340 0.0150 0.0110 2.33607  10.8     13.1361           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8  Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8  Fall  1.5500 0.0150 0.0100 17.9785  43.2     61.1785           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2                Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4                Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8  Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8  Rise  1.5940 0.0360 0.0290 41.9726  43.6784  85.651            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2                Rise  1.5940 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                  Rise  1.5940 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2             Rise  1.5940 0.0000                                                                           | 
 | Data Path:                                                                                                                           | 
-|    fb/mult/out_reg[29]/CK      DFF_X1  Rise  0.0960 0.0060 0.0420          0.949653                                    MmF           | 
-|    fb/mult/out_reg[29]/Q       DFF_X1  Fall  0.1930 0.0970 0.0090 1.19516  3.3561   4.55126           3       54.477   MF            | 
-|    fb/mult/i_2_107/A           INV_X1  Fall  0.1930 0.0000 0.0090          1.54936                                                   | 
-|    fb/mult/i_2_107/ZN          INV_X1  Rise  0.2070 0.0140 0.0080 0.69368  1.41309  2.10677           1       54.477                 | 
-|    fb/mult/i_2_59/A1           NOR2_X1 Rise  0.2070 0.0000 0.0080          1.71447                                                   | 
-|    fb/mult/i_2_59/ZN           NOR2_X1 Fall  0.2150 0.0080 0.0040 0.69368  1.06234  1.75602           1       54.477                 | 
-|    fb/mult/out_reg[28]/D       DFF_X1  Fall  0.2150 0.0000 0.0040          1.06234                                     MF            | 
+|    fb/mult/out_reg[29]/CK      DFF_X1  Rise  1.5950 0.0010 0.0290          0.949653                                    MmF           | 
+|    fb/mult/out_reg[29]/Q       DFF_X1  Fall  1.6900 0.0950 0.0090 1.51642  3.3561   4.87252           3       52.1747  MF            | 
+|    fb/mult/i_0_0_132/A         INV_X1  Fall  1.6900 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_132/ZN        INV_X1  Rise  1.7020 0.0120 0.0070 0.173394 1.41309  1.58649           1       52.1747                | 
+|    fb/mult/i_0_0_91/A1         NOR2_X1 Rise  1.7020 0.0000 0.0070          1.71447                                                   | 
+|    fb/mult/i_0_0_91/ZN         NOR2_X1 Fall  1.7100 0.0080 0.0040 0.830466 1.06234  1.89281           1       52.1747                | 
+|    fb/mult/out_reg[28]/D       DFF_X1  Fall  1.7100 0.0000 0.0040          1.06234                                     MF            | 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -453,139 +71,48 @@
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |-------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                Rise  0.0000 0.0000 0.0000 1.64925  3.40189  5.05115           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4 Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4 Rise  0.0240 0.0240 0.0150 7.41207  11.8107  19.2227           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                 Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1            Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8 Rise  0.0270 0.0030 0.0150          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8 Fall  0.0420 0.0150 0.0100 12.6882  39.1661  51.8543           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4 Fall  0.0470 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4 Rise  0.0930 0.0460 0.0440 31.7565  34.1875  65.944            36      52.8041  mF   K/M      | 
-|    fb/mult/out_reg[28]/CK      DFF_X1 Rise  0.1000 0.0070 0.0440          0.949653                                    MmF           | 
+|    clk                                Fall  1.5000 1.5000 0.0000 0.24664  6.58518  6.83182           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8 Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8 Fall  1.5190 0.0190 0.0050 0.869541 6.25843  7.12797           1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3               Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4 Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4 Rise  1.5340 0.0150 0.0110 2.33607  11.8107  14.1467           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8 Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8 Fall  1.5500 0.0150 0.0110 17.9785  47.2426  65.2211           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2               Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4               Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8 Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8 Rise  1.5950 0.0370 0.0310 41.9726  48.4323  90.405            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2               Rise  1.5950 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                 Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2            Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/out_reg[28]/CK      DFF_X1 Rise  1.5990 0.0040 0.0310          0.949653                                    MmF           | 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------
 |                                           | Time    Total  | 
 |------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock propagated network latency   |  0.1000 0.1000 | 
-| library hold check                        |  0.0110 0.1110 | 
-| data required time                        |  0.1110        | 
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock propagated network latency   |  0.0990 1.5990 | 
+| library hold check                        |  0.0080 1.6070 | 
+| data required time                        |  1.6070        | 
 |                                           |                | 
-| data arrival time                         |  0.2150        | 
-| data required time                        | -0.1110        | 
-| pessimism                                 |  0.0010        | 
+| data arrival time                         |  1.7100        | 
+| data required time                        | -1.6070        | 
+| pessimism                                 |  0.0000        | 
 |                                           |                | 
-| slack                                     |  0.1050        | 
---------------------------------------------------------------
-
-
- Timing Path to fb/mult/out_reg[25]/D 
-  
- Path Start Point : fb/mult/out_reg[26] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/out_reg[25] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
- Mode             : new_mode 
- Corner           : corner_0_0 
- Data Cell Derate : 1 
- Data Net Derate  : 1 
- Clock Cell Derate: Early = 1 / Late = 1 
- Clock Net Derate : Early = 1 / Late = 1 
- Path Type        : min 
- Path Group       : vsysclk_new_mode 
- CRPR Threshold   : 5 
-  
- Attributes  : U - cell is dont use 
-             : M - cell is dont modify 
-             : m - net is dont modify 
-             : n - connected (sub)net is dont modify 
-             : S - cell is size only 
-             : F - cell is fixed 
-             : C - cell has annotated timing constraints 
-             : c - pin has annotated timing constraints 
-             : A - cell is affected by case analysis 
-             : L - Estimated latency 
-             : O - CTS offset 
-  
- Opt Attr    : I - is ideal 
-             : L - is internal logic const 
-             : K - is in clock network 
-             : M - has only don't modify nets 
-             : N - has no load pin 
-             : D - has zero or multiple drivers 
-             : G - is valid global net 
-             : T - is not switching 
-
-
-----------------------------------------------------------------------------------------------------------------------------------------
-| Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|--------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                 Rise  0.0000 0.0000 0.0000 1.64925  3.0037   4.65296           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4  Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4  Rise  0.0240 0.0240 0.0140 7.41207  10.8     18.2121           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                  Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1             Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8  Rise  0.0270 0.0030 0.0140          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8  Fall  0.0410 0.0140 0.0090 12.6882  35.663   48.3512           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4  Fall  0.0460 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4  Rise  0.0900 0.0440 0.0420 31.7565  30.8318  62.5884           36      52.8041  mF   K/M      | 
-| Data Path:                                                                                                                           | 
-|    fb/mult/out_reg[26]/CK      DFF_X1  Rise  0.0960 0.0060 0.0420          0.949653                                    MmF           | 
-|    fb/mult/out_reg[26]/Q       DFF_X1  Fall  0.1940 0.0980 0.0100 1.82278  3.3561   5.17888           3       56.4258  MF            | 
-|    fb/mult/i_2_104/A           INV_X1  Fall  0.1940 0.0000 0.0100          1.54936                                                   | 
-|    fb/mult/i_2_104/ZN          INV_X1  Rise  0.2070 0.0130 0.0070 0.170352 1.41309  1.58345           1       56.4258                | 
-|    fb/mult/i_2_56/A1           NOR2_X1 Rise  0.2070 0.0000 0.0070          1.71447                                                   | 
-|    fb/mult/i_2_56/ZN           NOR2_X1 Fall  0.2150 0.0080 0.0040 0.646425 1.06234  1.70877           1       56.4258                | 
-|    fb/mult/out_reg[25]/D       DFF_X1  Fall  0.2150 0.0000 0.0040          1.06234                                     MF            | 
-----------------------------------------------------------------------------------------------------------------------------------------
-
-
- Required Time Trace to fb/mult/out_reg[25]/CK 
-
-
----------------------------------------------------------------------------------------------------------------------------------------
-| Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|-------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                Rise  0.0000 0.0000 0.0000 1.64925  3.40189  5.05115           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4 Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4 Rise  0.0240 0.0240 0.0150 7.41207  11.8107  19.2227           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                 Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1            Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8 Rise  0.0270 0.0030 0.0150          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8 Fall  0.0420 0.0150 0.0100 12.6882  39.1661  51.8543           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4 Fall  0.0470 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4 Rise  0.0930 0.0460 0.0440 31.7565  34.1875  65.944            36      52.8041  mF   K/M      | 
-|    fb/mult/out_reg[25]/CK      DFF_X1 Rise  0.0990 0.0060 0.0440          0.949653                                    MmF           | 
----------------------------------------------------------------------------------------------------------------------------------------
-
-
---------------------------------------------------------------
-|                                           | Time    Total  | 
-|------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock propagated network latency   |  0.0990 0.0990 | 
-| library hold check                        |  0.0110 0.1100 | 
-| data required time                        |  0.1100        | 
-|                                           |                | 
-| data arrival time                         |  0.2150        | 
-| data required time                        | -0.1100        | 
-| pessimism                                 |  0.0010        | 
-|                                           |                | 
-| slack                                     |  0.1060        | 
+| slack                                     |  0.1030        | 
 --------------------------------------------------------------
 
 
  Timing Path to fb/mult/out_reg[27]/D 
   
  Path Start Point : fb/mult/out_reg[28] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Path End Point   : fb/mult/out_reg[27] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Mode             : new_mode 
  Corner           : corner_0_0 
  Data Cell Derate : 1 
@@ -621,23 +148,29 @@
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |--------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                 Rise  0.0000 0.0000 0.0000 1.64925  3.0037   4.65296           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4  Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4  Rise  0.0240 0.0240 0.0140 7.41207  10.8     18.2121           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                  Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1             Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8  Rise  0.0270 0.0030 0.0140          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8  Fall  0.0410 0.0140 0.0090 12.6882  35.663   48.3512           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4  Fall  0.0460 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4  Rise  0.0900 0.0440 0.0420 31.7565  30.8318  62.5884           36      52.8041  mF   K/M      | 
+|    clk                                 Fall  1.5000 1.5000 0.0000 0.24664  5.81013  6.05677           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8  Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8  Fall  1.5190 0.0190 0.0050 0.869541 5.70005  6.5696            1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3                Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4  Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4  Rise  1.5340 0.0150 0.0110 2.33607  10.8     13.1361           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8  Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8  Fall  1.5500 0.0150 0.0100 17.9785  43.2     61.1785           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2                Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4                Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8  Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8  Rise  1.5940 0.0360 0.0290 41.9726  43.6784  85.651            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2                Rise  1.5940 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                  Rise  1.5940 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2             Rise  1.5940 0.0000                                                                           | 
 | Data Path:                                                                                                                           | 
-|    fb/mult/out_reg[28]/CK      DFF_X1  Rise  0.0970 0.0070 0.0420          0.949653                                    MmF           | 
-|    fb/mult/out_reg[28]/Q       DFF_X1  Fall  0.1950 0.0980 0.0090 1.38251  3.3561   4.73862           3       54.477   MF            | 
-|    fb/mult/i_2_106/A           INV_X1  Fall  0.1950 0.0000 0.0090          1.54936                                                   | 
-|    fb/mult/i_2_106/ZN          INV_X1  Rise  0.2080 0.0130 0.0070 0.270738 1.41309  1.68383           1       54.477                 | 
-|    fb/mult/i_2_58/A1           NOR2_X1 Rise  0.2080 0.0000 0.0070          1.71447                                                   | 
-|    fb/mult/i_2_58/ZN           NOR2_X1 Fall  0.2160 0.0080 0.0040 0.617526 1.06234  1.67987           1       54.477                 | 
-|    fb/mult/out_reg[27]/D       DFF_X1  Fall  0.2160 0.0000 0.0040          1.06234                                     MF            | 
+|    fb/mult/out_reg[28]/CK      DFF_X1  Rise  1.5970 0.0030 0.0290          0.949653                                    MmF           | 
+|    fb/mult/out_reg[28]/Q       DFF_X1  Fall  1.6920 0.0950 0.0090 1.55807  3.3561   4.91417           3       52.1747  MF            | 
+|    fb/mult/i_0_0_131/A         INV_X1  Fall  1.6920 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_131/ZN        INV_X1  Rise  1.7040 0.0120 0.0070 0.170352 1.41309  1.58345           1       53.7221                | 
+|    fb/mult/i_0_0_90/A1         NOR2_X1 Rise  1.7040 0.0000 0.0070          1.71447                                                   | 
+|    fb/mult/i_0_0_90/ZN         NOR2_X1 Fall  1.7110 0.0070 0.0040 0.415233 1.06234  1.47758           1       53.7221                | 
+|    fb/mult/out_reg[27]/D       DFF_X1  Fall  1.7110 0.0000 0.0040          1.06234                                     MF            | 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -647,42 +180,375 @@
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |-------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                Rise  0.0000 0.0000 0.0000 1.64925  3.40189  5.05115           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4 Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4 Rise  0.0240 0.0240 0.0150 7.41207  11.8107  19.2227           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                 Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1            Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8 Rise  0.0270 0.0030 0.0150          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8 Fall  0.0420 0.0150 0.0100 12.6882  39.1661  51.8543           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4 Fall  0.0470 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4 Rise  0.0930 0.0460 0.0440 31.7565  34.1875  65.944            36      52.8041  mF   K/M      | 
-|    fb/mult/out_reg[27]/CK      DFF_X1 Rise  0.1000 0.0070 0.0440          0.949653                                    MmF           | 
+|    clk                                Fall  1.5000 1.5000 0.0000 0.24664  6.58518  6.83182           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8 Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8 Fall  1.5190 0.0190 0.0050 0.869541 6.25843  7.12797           1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3               Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4 Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4 Rise  1.5340 0.0150 0.0110 2.33607  11.8107  14.1467           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8 Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8 Fall  1.5500 0.0150 0.0110 17.9785  47.2426  65.2211           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2               Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4               Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8 Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8 Rise  1.5950 0.0370 0.0310 41.9726  48.4323  90.405            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2               Rise  1.5950 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                 Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2            Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/out_reg[27]/CK      DFF_X1 Rise  1.5990 0.0040 0.0310          0.949653                                    MmF           | 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------
 |                                           | Time    Total  | 
 |------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock propagated network latency   |  0.1000 0.1000 | 
-| library hold check                        |  0.0110 0.1110 | 
-| data required time                        |  0.1110        | 
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock propagated network latency   |  0.0990 1.5990 | 
+| library hold check                        |  0.0080 1.6070 | 
+| data required time                        |  1.6070        | 
 |                                           |                | 
-| data arrival time                         |  0.2160        | 
-| data required time                        | -0.1110        | 
-| pessimism                                 |  0.0010        | 
+| data arrival time                         |  1.7110        | 
+| data required time                        | -1.6070        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     |  0.1040        | 
+--------------------------------------------------------------
+
+
+ Timing Path to fb/mult/out_reg[26]/D 
+  
+ Path Start Point : fb/mult/out_reg[27] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/out_reg[26] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : vsysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                 Fall  1.5000 1.5000 0.0000 0.24664  5.81013  6.05677           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8  Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8  Fall  1.5190 0.0190 0.0050 0.869541 5.70005  6.5696            1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3                Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4  Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4  Rise  1.5340 0.0150 0.0110 2.33607  10.8     13.1361           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8  Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8  Fall  1.5500 0.0150 0.0100 17.9785  43.2     61.1785           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2                Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4                Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8  Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8  Rise  1.5940 0.0360 0.0290 41.9726  43.6784  85.651            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2                Rise  1.5940 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                  Rise  1.5940 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2             Rise  1.5940 0.0000                                                                           | 
+| Data Path:                                                                                                                           | 
+|    fb/mult/out_reg[27]/CK      DFF_X1  Rise  1.5980 0.0040 0.0290          0.949653                                    MmF           | 
+|    fb/mult/out_reg[27]/Q       DFF_X1  Fall  1.6930 0.0950 0.0090 1.44738  3.3561   4.80348           3       53.7221  MF            | 
+|    fb/mult/i_0_0_130/A         INV_X1  Fall  1.6930 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_130/ZN        INV_X1  Rise  1.7050 0.0120 0.0070 0.170352 1.41309  1.58345           1       53.7221                | 
+|    fb/mult/i_0_0_89/A1         NOR2_X1 Rise  1.7050 0.0000 0.0070          1.71447                                                   | 
+|    fb/mult/i_0_0_89/ZN         NOR2_X1 Fall  1.7120 0.0070 0.0040 0.415233 1.06234  1.47758           1       53.7221                | 
+|    fb/mult/out_reg[26]/D       DFF_X1  Fall  1.7120 0.0000 0.0040          1.06234                                     MF            | 
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to fb/mult/out_reg[26]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                Fall  1.5000 1.5000 0.0000 0.24664  6.58518  6.83182           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8 Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8 Fall  1.5190 0.0190 0.0050 0.869541 6.25843  7.12797           1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3               Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4 Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4 Rise  1.5340 0.0150 0.0110 2.33607  11.8107  14.1467           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8 Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8 Fall  1.5500 0.0150 0.0110 17.9785  47.2426  65.2211           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2               Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4               Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8 Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8 Rise  1.5950 0.0370 0.0310 41.9726  48.4323  90.405            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2               Rise  1.5950 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                 Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2            Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/out_reg[26]/CK      DFF_X1 Rise  1.6000 0.0050 0.0310          0.949653                                    MmF           | 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock propagated network latency   |  0.1000 1.6000 | 
+| library hold check                        |  0.0080 1.6080 | 
+| data required time                        |  1.6080        | 
+|                                           |                | 
+| data arrival time                         |  1.7120        | 
+| data required time                        | -1.6080        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     |  0.1040        | 
+--------------------------------------------------------------
+
+
+ Timing Path to fb/mult/out_reg[25]/D 
+  
+ Path Start Point : fb/mult/out_reg[26] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/out_reg[25] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : vsysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                 Fall  1.5000 1.5000 0.0000 0.24664  5.81013  6.05677           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8  Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8  Fall  1.5190 0.0190 0.0050 0.869541 5.70005  6.5696            1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3                Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4  Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4  Rise  1.5340 0.0150 0.0110 2.33607  10.8     13.1361           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8  Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8  Fall  1.5500 0.0150 0.0100 17.9785  43.2     61.1785           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2                Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4                Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8  Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8  Rise  1.5940 0.0360 0.0290 41.9726  43.6784  85.651            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2                Rise  1.5940 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                  Rise  1.5940 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2             Rise  1.5940 0.0000                                                                           | 
+| Data Path:                                                                                                                           | 
+|    fb/mult/out_reg[26]/CK      DFF_X1  Rise  1.5980 0.0040 0.0290          0.949653                                    MmF           | 
+|    fb/mult/out_reg[26]/Q       DFF_X1  Fall  1.6920 0.0940 0.0090 1.1425   3.3561   4.4986            3       53.7221  MF            | 
+|    fb/mult/i_0_0_129/A         INV_X1  Fall  1.6920 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_129/ZN        INV_X1  Rise  1.7050 0.0130 0.0070 0.270738 1.41309  1.68383           1       53.7221                | 
+|    fb/mult/i_0_0_88/A1         NOR2_X1 Rise  1.7050 0.0000 0.0070          1.71447                                                   | 
+|    fb/mult/i_0_0_88/ZN         NOR2_X1 Fall  1.7130 0.0080 0.0040 0.50193  1.06234  1.56427           1       53.7221                | 
+|    fb/mult/out_reg[25]/D       DFF_X1  Fall  1.7130 0.0000 0.0040          1.06234                                     MF            | 
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to fb/mult/out_reg[25]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                Fall  1.5000 1.5000 0.0000 0.24664  6.58518  6.83182           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8 Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8 Fall  1.5190 0.0190 0.0050 0.869541 6.25843  7.12797           1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3               Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4 Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4 Rise  1.5340 0.0150 0.0110 2.33607  11.8107  14.1467           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8 Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8 Fall  1.5500 0.0150 0.0110 17.9785  47.2426  65.2211           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2               Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4               Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8 Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8 Rise  1.5950 0.0370 0.0310 41.9726  48.4323  90.405            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2               Rise  1.5950 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                 Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2            Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/out_reg[25]/CK      DFF_X1 Rise  1.6000 0.0050 0.0310          0.949653                                    MmF           | 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock propagated network latency   |  0.1000 1.6000 | 
+| library hold check                        |  0.0080 1.6080 | 
+| data required time                        |  1.6080        | 
+|                                           |                | 
+| data arrival time                         |  1.7130        | 
+| data required time                        | -1.6080        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     |  0.1050        | 
+--------------------------------------------------------------
+
+
+ Timing Path to fb/mult/out_reg[30]/D 
+  
+ Path Start Point : fb/mult/out_reg[31] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/out_reg[30] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : vsysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                 Fall  1.5000 1.5000 0.0000 0.24664  5.81013  6.05677           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8  Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8  Fall  1.5190 0.0190 0.0050 0.869541 5.70005  6.5696            1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3                Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4  Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4  Rise  1.5340 0.0150 0.0110 2.33607  10.8     13.1361           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8  Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8  Fall  1.5500 0.0150 0.0100 17.9785  43.2     61.1785           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2                Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4                Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8  Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8  Rise  1.5940 0.0360 0.0290 41.9726  43.6784  85.651            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2                Rise  1.5940 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                  Rise  1.5940 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2             Rise  1.5940 0.0000                                                                           | 
+| Data Path:                                                                                                                           | 
+|    fb/mult/out_reg[31]/CK      DFF_X1  Rise  1.5990 0.0050 0.0290          0.949653                                    MmF           | 
+|    fb/mult/out_reg[31]/Q       DFF_X1  Fall  1.6930 0.0940 0.0090 1.07194  3.3561   4.42804           3       54.654   MF            | 
+|    fb/mult/i_0_0_134/A         INV_X1  Fall  1.6930 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_134/ZN        INV_X1  Rise  1.7050 0.0120 0.0070 0.170352 1.41309  1.58345           1       54.654                 | 
+|    fb/mult/i_0_0_93/A1         NOR2_X1 Rise  1.7050 0.0000 0.0070          1.71447                                                   | 
+|    fb/mult/i_0_0_93/ZN         NOR2_X1 Fall  1.7130 0.0080 0.0040 0.473031 1.06234  1.53537           1       53.7221                | 
+|    fb/mult/out_reg[30]/D       DFF_X1  Fall  1.7130 0.0000 0.0040          1.06234                                     MF            | 
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to fb/mult/out_reg[30]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                Fall  1.5000 1.5000 0.0000 0.24664  6.58518  6.83182           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8 Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8 Fall  1.5190 0.0190 0.0050 0.869541 6.25843  7.12797           1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3               Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4 Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4 Rise  1.5340 0.0150 0.0110 2.33607  11.8107  14.1467           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8 Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8 Fall  1.5500 0.0150 0.0110 17.9785  47.2426  65.2211           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2               Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4               Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8 Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8 Rise  1.5950 0.0370 0.0310 41.9726  48.4323  90.405            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2               Rise  1.5950 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                 Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2            Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/out_reg[30]/CK      DFF_X1 Rise  1.5990 0.0040 0.0310          0.949653                                    MmF           | 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock propagated network latency   |  0.0990 1.5990 | 
+| library hold check                        |  0.0080 1.6070 | 
+| data required time                        |  1.6070        | 
+|                                           |                | 
+| data arrival time                         |  1.7130        | 
+| data required time                        | -1.6070        | 
+| pessimism                                 |  0.0000        | 
 |                                           |                | 
 | slack                                     |  0.1060        | 
 --------------------------------------------------------------
 
 
- Timing Path to fb/mult/out_reg[9]/D 
+ Timing Path to fb/mult/out_reg[24]/D 
   
- Path Start Point : reset 
-                       (rising IO latch clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/out_reg[9] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+ Path Start Point : fb/mult/out_reg[25] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/out_reg[24] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Mode             : new_mode 
  Corner           : corner_0_0 
  Data Cell Derate : 1 
@@ -690,7 +556,7 @@
  Clock Cell Derate: Early = 1 / Late = 1 
  Clock Net Derate : Early = 1 / Late = 1 
  Path Type        : min 
- Path Group       : **inputs** 
+ Path Group       : vsysclk_new_mode 
  CRPR Threshold   : 5 
   
  Attributes  : U - cell is dont use 
@@ -715,60 +581,83 @@
              : T - is not switching 
 
 
---------------------------------------------------------------------------------------------------------------------------------
-| Pin                     Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|------------------------------------------------------------------------------------------------------------------------------|
-|    reset                        Rise  0.2000 0.0000 0.0000 22.285   66.0526 88.3376           36      52.8041  c             | 
-|    fb/reset                     Rise  0.2000 0.0000                                                                          | 
-|    fb/mult/rst                  Rise  0.2000 0.0000                                                                          | 
-|    fb/mult/i_2_40/S     MUX2_X1 Rise  0.2000 0.0000 0.0000          1.91994                                                  | 
-|    fb/mult/i_2_40/Z     MUX2_X1 Rise  0.2270 0.0270 0.0080 0.42588  1.06234 1.48822           1       52.8041                | 
-|    fb/mult/out_reg[9]/D DFF_X1  Rise  0.2270 0.0000 0.0080          1.14029                                    MF            | 
---------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                 Fall  1.5000 1.5000 0.0000 0.24664  5.81013  6.05677           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8  Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8  Fall  1.5190 0.0190 0.0050 0.869541 5.70005  6.5696            1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3                Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4  Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4  Rise  1.5340 0.0150 0.0110 2.33607  10.8     13.1361           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8  Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8  Fall  1.5500 0.0150 0.0100 17.9785  43.2     61.1785           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2                Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4                Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8  Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8  Rise  1.5940 0.0360 0.0290 41.9726  43.6784  85.651            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2                Rise  1.5940 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                  Rise  1.5940 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2             Rise  1.5940 0.0000                                                                           | 
+| Data Path:                                                                                                                           | 
+|    fb/mult/out_reg[25]/CK      DFF_X1  Rise  1.5990 0.0050 0.0290          0.949653                                    MmF           | 
+|    fb/mult/out_reg[25]/Q       DFF_X1  Fall  1.6940 0.0950 0.0090 1.50314  3.3561   4.85924           3       53.7221  MF            | 
+|    fb/mult/i_0_0_128/A         INV_X1  Fall  1.6940 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_128/ZN        INV_X1  Rise  1.7070 0.0130 0.0080 0.4806   1.41309  1.89369           1       53.7221                | 
+|    fb/mult/i_0_0_87/A1         NOR2_X1 Rise  1.7070 0.0000 0.0080          1.71447                                                   | 
+|    fb/mult/i_0_0_87/ZN         NOR2_X1 Fall  1.7150 0.0080 0.0040 0.671877 1.06234  1.73422           1       53.7221                | 
+|    fb/mult/out_reg[24]/D       DFF_X1  Fall  1.7150 0.0000 0.0040          1.06234                                     MF            | 
+----------------------------------------------------------------------------------------------------------------------------------------
 
 
- Required Time Trace to fb/mult/out_reg[9]/CK 
+ Required Time Trace to fb/mult/out_reg[24]/CK 
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |-------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                Rise  0.0000 0.0000 0.0000 1.64925  3.40189  5.05115           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4 Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4 Rise  0.0240 0.0240 0.0150 7.41207  11.8107  19.2227           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                 Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1            Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8 Rise  0.0270 0.0030 0.0150          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8 Fall  0.0420 0.0150 0.0100 12.6882  39.1661  51.8543           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4 Fall  0.0470 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4 Rise  0.0930 0.0460 0.0440 31.7565  34.1875  65.944            36      52.8041  mF   K/M      | 
-|    fb/mult/out_reg[9]/CK       DFF_X1 Rise  0.1010 0.0080 0.0440          0.949653                                    MmF           | 
+|    clk                                Fall  1.5000 1.5000 0.0000 0.24664  6.58518  6.83182           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8 Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8 Fall  1.5190 0.0190 0.0050 0.869541 6.25843  7.12797           1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3               Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4 Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4 Rise  1.5340 0.0150 0.0110 2.33607  11.8107  14.1467           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8 Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8 Fall  1.5500 0.0150 0.0110 17.9785  47.2426  65.2211           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2               Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4               Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8 Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8 Rise  1.5950 0.0370 0.0310 41.9726  48.4323  90.405            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2               Rise  1.5950 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                 Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2            Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/out_reg[24]/CK      DFF_X1 Rise  1.6010 0.0060 0.0310          0.949653                                    MmF           | 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------
 |                                           | Time    Total  | 
 |------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock propagated network latency   |  0.1010 0.1010 | 
-| library hold check                        |  0.0180 0.1190 | 
-| data required time                        |  0.1190        | 
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock propagated network latency   |  0.1010 1.6010 | 
+| library hold check                        |  0.0080 1.6090 | 
+| data required time                        |  1.6090        | 
 |                                           |                | 
-| data arrival time                         |  0.2270        | 
-| data required time                        | -0.1190        | 
+| data arrival time                         |  1.7150        | 
+| data required time                        | -1.6090        | 
 | pessimism                                 |  0.0000        | 
 |                                           |                | 
-| slack                                     |  0.1080        | 
+| slack                                     |  0.1060        | 
 --------------------------------------------------------------
 
 
- Timing Path to fb/mult/out_reg[14]/D 
+ Timing Path to fb/mult/m_reg[0]/D 
   
- Path Start Point : reset 
-                       (rising IO latch clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/out_reg[14] (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+ Path Start Point : regA/out_reg[0] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/m_reg[0] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Mode             : new_mode 
  Corner           : corner_0_0 
  Data Cell Derate : 1 
@@ -776,7 +665,7 @@
  Clock Cell Derate: Early = 1 / Late = 1 
  Clock Net Derate : Early = 1 / Late = 1 
  Path Type        : min 
- Path Group       : **inputs** 
+ Path Group       : vsysclk_new_mode 
  CRPR Threshold   : 5 
   
  Attributes  : U - cell is dont use 
@@ -801,60 +690,85 @@
              : T - is not switching 
 
 
----------------------------------------------------------------------------------------------------------------------------------
-| Pin                      Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|-------------------------------------------------------------------------------------------------------------------------------|
-|    reset                         Rise  0.2000 0.0000 0.0000 22.285   66.0526 88.3376           36      52.8041  c             | 
-|    fb/reset                      Rise  0.2000 0.0000                                                                          | 
-|    fb/mult/rst                   Rise  0.2000 0.0000                                                                          | 
-|    fb/mult/i_2_45/S      MUX2_X1 Rise  0.2000 0.0000 0.0000          1.91994                                                  | 
-|    fb/mult/i_2_45/Z      MUX2_X1 Rise  0.2270 0.0270 0.0090 0.489466 1.06234 1.55181           1       52.8041                | 
-|    fb/mult/out_reg[14]/D DFF_X1  Rise  0.2270 0.0000 0.0090          1.14029                                    MF            | 
----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                 Fall  1.5000 1.5000 0.0000 0.24664  5.81013  6.05677           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8  Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8  Fall  1.5190 0.0190 0.0050 0.869541 5.70005  6.5696            1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3                Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4  Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4  Rise  1.5340 0.0150 0.0110 2.33607  10.8     13.1361           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8  Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8  Fall  1.5500 0.0150 0.0100 17.9785  43.2     61.1785           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2                Fall  1.5500 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_4                  Fall  1.5500 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_4             Fall  1.5500 0.0000                                                                           | 
+|    fb/mult/CTS_L4_c_tid1_20/A  INV_X8  Fall  1.5520 0.0020 0.0110          10.8                                        mF            | 
+|    fb/mult/CTS_L4_c_tid1_20/ZN INV_X8  Rise  1.5850 0.0330 0.0290 37.5492  47.1042  84.6535           55      52.3689  mF   K/M      | 
+|    fb/mult/clk__CTS_1_PP_3             Rise  1.5850 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_3                  Rise  1.5850 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_3                Rise  1.5850 0.0000                                                                           | 
+| Data Path:                                                                                                                           | 
+|    regA/out_reg[0]/CK          DFF_X1  Rise  1.5880 0.0030 0.0290          0.949653                                    MmF           | 
+|    regA/out_reg[0]/Q           DFF_X1  Rise  1.6870 0.0990 0.0110 0.704223 2.45393  3.15816           2       54.654   MF            | 
+|    regA/out[0]                         Rise  1.6870 0.0000                                                                           | 
+|    fb/a[0]                             Rise  1.6870 0.0000                                                                           | 
+|    fb/mult/in1[0]                      Rise  1.6870 0.0000                                                                           | 
+|    fb/mult/i_0_0_101/B         MUX2_X1 Rise  1.6870 0.0000 0.0110          0.944775                                                  | 
+|    fb/mult/i_0_0_101/Z         MUX2_X1 Rise  1.7220 0.0350 0.0090 0.482078 1.06234  1.54442           1       54.654                 | 
+|    fb/mult/m_reg[0]/D          DFF_X1  Rise  1.7220 0.0000 0.0090          1.14029                                     MF            | 
+----------------------------------------------------------------------------------------------------------------------------------------
 
 
- Required Time Trace to fb/mult/out_reg[14]/CK 
+ Required Time Trace to fb/mult/m_reg[0]/CK 
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |-------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                Rise  0.0000 0.0000 0.0000 1.64925  3.40189  5.05115           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4 Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4 Rise  0.0240 0.0240 0.0150 7.41207  11.8107  19.2227           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                 Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1            Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8 Rise  0.0270 0.0030 0.0150          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8 Fall  0.0420 0.0150 0.0100 12.6882  39.1661  51.8543           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4 Fall  0.0470 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4 Rise  0.0930 0.0460 0.0440 31.7565  34.1875  65.944            36      52.8041  mF   K/M      | 
-|    fb/mult/out_reg[14]/CK      DFF_X1 Rise  0.1010 0.0080 0.0440          0.949653                                    MmF           | 
+|    clk                                Fall  1.5000 1.5000 0.0000 0.24664  6.58518  6.83182           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8 Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8 Fall  1.5190 0.0190 0.0050 0.869541 6.25843  7.12797           1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3               Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4 Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4 Rise  1.5340 0.0150 0.0110 2.33607  11.8107  14.1467           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8 Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8 Fall  1.5500 0.0150 0.0110 17.9785  47.2426  65.2211           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2               Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4               Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8 Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8 Rise  1.5950 0.0370 0.0310 41.9726  48.4323  90.405            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2               Rise  1.5950 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                 Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2            Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/m_reg[0]/CK         DFF_X1 Rise  1.6010 0.0060 0.0310          0.949653                                    MmF           | 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------
 |                                           | Time    Total  | 
 |------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock propagated network latency   |  0.1010 0.1010 | 
-| library hold check                        |  0.0180 0.1190 | 
-| data required time                        |  0.1190        | 
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock propagated network latency   |  0.1010 1.6010 | 
+| library hold check                        |  0.0150 1.6160 | 
+| data required time                        |  1.6160        | 
 |                                           |                | 
-| data arrival time                         |  0.2270        | 
-| data required time                        | -0.1190        | 
+| data arrival time                         |  1.7220        | 
+| data required time                        | -1.6160        | 
 | pessimism                                 |  0.0000        | 
 |                                           |                | 
-| slack                                     |  0.1080        | 
+| slack                                     |  0.1060        | 
 --------------------------------------------------------------
 
 
- Timing Path to fb/mult/q0_reg/D 
+ Timing Path to fb/mult/out_reg[29]/D 
   
- Path Start Point : reset 
-                       (rising IO latch clocked by vsysclk_new_mode) 
- Path End Point   : fb/mult/q0_reg (DFF_X1) 
-                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode) 
+ Path Start Point : fb/mult/out_reg[30] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/out_reg[29] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
  Mode             : new_mode 
  Corner           : corner_0_0 
  Data Cell Derate : 1 
@@ -862,7 +776,7 @@
  Clock Cell Derate: Early = 1 / Late = 1 
  Clock Net Derate : Early = 1 / Late = 1 
  Path Type        : min 
- Path Group       : **inputs** 
+ Path Group       : vsysclk_new_mode 
  CRPR Threshold   : 5 
   
  Attributes  : U - cell is dont use 
@@ -887,52 +801,283 @@
              : T - is not switching 
 
 
------------------------------------------------------------------------------------------------------------------------------
-| Pin                  Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
-|---------------------------------------------------------------------------------------------------------------------------|
-|    reset                     Rise  0.2000 0.0000 0.0000 22.285   66.0526 88.3376           36      52.8041  c             | 
-|    fb/reset                  Rise  0.2000 0.0000                                                                          | 
-|    fb/mult/rst               Rise  0.2000 0.0000                                                                          | 
-|    fb/mult/i_2_98/A2 NOR2_X1 Rise  0.2100 0.0100 0.0000          1.65135                                                  | 
-|    fb/mult/i_2_98/ZN NOR2_X1 Fall  0.2160 0.0060 0.0040 0.48257  1.06234 1.54491           1       52.8041                | 
-|    fb/mult/q0_reg/D  DFF_X1  Fall  0.2160 0.0000 0.0040          1.06234                                    MF            | 
------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                 Fall  1.5000 1.5000 0.0000 0.24664  5.81013  6.05677           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8  Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8  Fall  1.5190 0.0190 0.0050 0.869541 5.70005  6.5696            1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3                Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4  Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4  Rise  1.5340 0.0150 0.0110 2.33607  10.8     13.1361           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8  Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8  Fall  1.5500 0.0150 0.0100 17.9785  43.2     61.1785           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2                Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4                Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8  Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8  Rise  1.5940 0.0360 0.0290 41.9726  43.6784  85.651            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2                Rise  1.5940 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                  Rise  1.5940 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2             Rise  1.5940 0.0000                                                                           | 
+| Data Path:                                                                                                                           | 
+|    fb/mult/out_reg[30]/CK      DFF_X1  Rise  1.5970 0.0030 0.0290          0.949653                                    MmF           | 
+|    fb/mult/out_reg[30]/Q       DFF_X1  Fall  1.6920 0.0950 0.0090 1.48719  3.3561   4.84329           3       53.7221  MF            | 
+|    fb/mult/i_0_0_133/A         INV_X1  Fall  1.6920 0.0000 0.0090          1.54936                                                   | 
+|    fb/mult/i_0_0_133/ZN        INV_X1  Rise  1.7060 0.0140 0.0080 0.671877 1.41309  2.08497           1       52.1747                | 
+|    fb/mult/i_0_0_92/A1         NOR2_X1 Rise  1.7060 0.0000 0.0080          1.71447                                                   | 
+|    fb/mult/i_0_0_92/ZN         NOR2_X1 Fall  1.7140 0.0080 0.0040 0.4806   1.06234  1.54294           1       53.7221                | 
+|    fb/mult/out_reg[29]/D       DFF_X1  Fall  1.7140 0.0000 0.0040          1.06234                                     MF            | 
+----------------------------------------------------------------------------------------------------------------------------------------
 
 
- Required Time Trace to fb/mult/q0_reg/CK 
+ Required Time Trace to fb/mult/out_reg[29]/CK 
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
 |-------------------------------------------------------------------------------------------------------------------------------------|
-|    clk                                Rise  0.0000 0.0000 0.0000 1.64925  3.40189  5.05115           1       56.6578  c    K/M      | 
-|    CTS_L1_tid1__c1_tid1__c42/A BUF_X4 Rise  0.0000 0.0000 0.0000          3.40189                                     mF            | 
-|    CTS_L1_tid1__c1_tid1__c42/Z BUF_X4 Rise  0.0240 0.0240 0.0150 7.41207  11.8107  19.2227           1       56.6578  mF   K/M      | 
-|    fb/clk__CTS_1_PP_1                 Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/clk__CTS_1_PP_1            Rise  0.0240 0.0000                                                                           | 
-|    fb/mult/CTS_L2_c_tid1_68/A  INV_X8 Rise  0.0270 0.0030 0.0150          11.8107                                     mF            | 
-|    fb/mult/CTS_L2_c_tid1_68/ZN INV_X8 Fall  0.0420 0.0150 0.0100 12.6882  39.1661  51.8543           4       54.5954  mF   K/M      | 
-|    fb/mult/CTS_L3_c_tid1_18/A  INV_X4 Fall  0.0470 0.0050 0.0110          5.70005                                     mF            | 
-|    fb/mult/CTS_L3_c_tid1_18/ZN INV_X4 Rise  0.0930 0.0460 0.0440 31.7565  34.1875  65.944            36      52.8041  mF   K/M      | 
-|    fb/mult/q0_reg/CK           DFF_X1 Rise  0.0960 0.0030 0.0440          0.949653                                    MmF           | 
+|    clk                                Fall  1.5000 1.5000 0.0000 0.24664  6.58518  6.83182           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8 Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8 Fall  1.5190 0.0190 0.0050 0.869541 6.25843  7.12797           1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3               Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4 Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4 Rise  1.5340 0.0150 0.0110 2.33607  11.8107  14.1467           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8 Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8 Fall  1.5500 0.0150 0.0110 17.9785  47.2426  65.2211           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2               Fall  1.5500 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_4               Fall  1.5500 0.0000                                                                           | 
+|    regA/CTS_L4_c_tid1_4/A      INV_X8 Fall  1.5580 0.0080 0.0130          10.8                                        mF            | 
+|    regA/CTS_L4_c_tid1_4/ZN     INV_X8 Rise  1.5950 0.0370 0.0310 41.9726  48.4323  90.405            51      59.8342  mF   K/M      | 
+|    regA/clk__CTS_1_PP_2               Rise  1.5950 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_2                 Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_2            Rise  1.5950 0.0000                                                                           | 
+|    fb/mult/out_reg[29]/CK      DFF_X1 Rise  1.5960 0.0010 0.0310          0.949653                                    MmF           | 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------
 |                                           | Time    Total  | 
 |------------------------------------------------------------|
-| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
-| target clock cycle shift                  |  0.0000 0.0000 | 
-| target clock propagated network latency   |  0.0960 0.0960 | 
-| library hold check                        |  0.0110 0.1070 | 
-| data required time                        |  0.1070        | 
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock propagated network latency   |  0.0960 1.5960 | 
+| library hold check                        |  0.0080 1.6040 | 
+| data required time                        |  1.6040        | 
 |                                           |                | 
-| data arrival time                         |  0.2160        | 
-| data required time                        | -0.1070        | 
+| data arrival time                         |  1.7140        | 
+| data required time                        | -1.6040        | 
 | pessimism                                 |  0.0000        | 
 |                                           |                | 
-| slack                                     |  0.1090        | 
+| slack                                     |  0.1100        | 
 --------------------------------------------------------------
 
 
-info UI33: performed report_timing for 0 sec (CPU time: 0 sec; MEM: RSS - 354M, CVMEM - 1748M, PVMEM - 2263M)
+ Timing Path to fb/mult/m_reg[21]/D 
+  
+ Path Start Point : regA/out_reg[21] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/m_reg[21] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : vsysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                 Fall  1.5000 1.5000 0.0000 0.24664  5.81013  6.05677           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8  Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8  Fall  1.5190 0.0190 0.0050 0.869541 5.70005  6.5696            1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3                Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4  Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4  Rise  1.5340 0.0150 0.0110 2.33607  10.8     13.1361           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8  Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8  Fall  1.5500 0.0150 0.0100 17.9785  43.2     61.1785           4       53.7221  mF   K/M      | 
+|    regB/CTS_L4_c_tid1_4/A      INV_X8  Fall  1.5540 0.0040 0.0120          10.8                                        mF            | 
+|    regB/CTS_L4_c_tid1_4/ZN     INV_X8  Rise  1.5800 0.0260 0.0200 20.7903  33.4011  54.1914           39      53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_0                Rise  1.5800 0.0000                                                                           | 
+|    regA/clk__CTS_1_PP_0                Rise  1.5800 0.0000                                                                           | 
+| Data Path:                                                                                                                           | 
+|    regA/out_reg[21]/CK         DFF_X1  Rise  1.5840 0.0040 0.0200          0.949653                                    MmF           | 
+|    regA/out_reg[21]/Q          DFF_X1  Rise  1.6820 0.0980 0.0130 1.60435  2.38962  3.99397           2       52.3689  MF            | 
+|    regA/out[21]                        Rise  1.6820 0.0000                                                                           | 
+|    fb/a[21]                            Rise  1.6820 0.0000                                                                           | 
+|    fb/mult/in1[21]                     Rise  1.6820 0.0000                                                                           | 
+|    fb/mult/i_0_0_122/B         MUX2_X1 Rise  1.6820 0.0000 0.0130          0.944775                                                  | 
+|    fb/mult/i_0_0_122/Z         MUX2_X1 Rise  1.7180 0.0360 0.0080 0.328536 1.06234  1.39088           1       52.3689                | 
+|    fb/mult/m_reg[21]/D         DFF_X1  Rise  1.7180 0.0000 0.0080          1.14029                                     MF            | 
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to fb/mult/m_reg[21]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                Fall  1.5000 1.5000 0.0000 0.24664  6.58518  6.83182           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8 Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8 Fall  1.5190 0.0190 0.0050 0.869541 6.25843  7.12797           1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3               Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4 Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4 Rise  1.5340 0.0150 0.0110 2.33607  11.8107  14.1467           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8 Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8 Fall  1.5500 0.0150 0.0110 17.9785  47.2426  65.2211           4       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_2               Fall  1.5500 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_4                 Fall  1.5500 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_4            Fall  1.5500 0.0000                                                                           | 
+|    fb/mult/CTS_L4_c_tid1_20/A  INV_X8 Fall  1.5520 0.0020 0.0110          10.8                                        mF            | 
+|    fb/mult/CTS_L4_c_tid1_20/ZN INV_X8 Rise  1.5870 0.0350 0.0310 37.5493  52.2309  89.7802           55      52.3689  mF   K/M      | 
+|    fb/mult/m_reg[21]/CK        DFF_X1 Rise  1.5900 0.0030 0.0310          0.949653                                    MmF           | 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock propagated network latency   |  0.0900 1.5900 | 
+| library hold check                        |  0.0150 1.6050 | 
+| data required time                        |  1.6050        | 
+|                                           |                | 
+| data arrival time                         |  1.7180        | 
+| data required time                        | -1.6050        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     |  0.1130        | 
+--------------------------------------------------------------
+
+
+ Timing Path to fb/mult/out_reg[19]/D 
+  
+ Path Start Point : regB/out_reg[19] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Path End Point   : fb/mult/out_reg[19] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by vsysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : vsysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                 Fall  1.5000 1.5000 0.0000 0.24664  5.81013  6.05677           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8  Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8  Fall  1.5190 0.0190 0.0050 0.869541 5.70005  6.5696            1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3                Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4  Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4  Rise  1.5340 0.0150 0.0110 2.33607  10.8     13.1361           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8  Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8  Fall  1.5500 0.0150 0.0100 17.9785  43.2     61.1785           4       53.7221  mF   K/M      | 
+|    regB/CTS_L4_c_tid1_4/A      INV_X8  Fall  1.5540 0.0040 0.0120          10.8                                        mF            | 
+|    regB/CTS_L4_c_tid1_4/ZN     INV_X8  Rise  1.5800 0.0260 0.0200 20.7903  33.4011  54.1914           39      53.7221  mF   K/M      | 
+| Data Path:                                                                                                                           | 
+|    regB/out_reg[19]/CK         DFF_X1  Rise  1.5810 0.0010 0.0200          0.949653                                    MmF           | 
+|    regB/out_reg[19]/Q          DFF_X1  Rise  1.6780 0.0970 0.0120 1.22086  2.2432   3.46406           2       55.4018  MF            | 
+|    regB/out[19]                        Rise  1.6780 0.0000                                                                           | 
+|    fb/b[19]                            Rise  1.6780 0.0000                                                                           | 
+|    fb/mult/in2[19]                     Rise  1.6780 0.0000                                                                           | 
+|    fb/mult/i_0_0_82/B          MUX2_X1 Rise  1.6780 0.0000 0.0120          0.944775                                                  | 
+|    fb/mult/i_0_0_82/Z          MUX2_X1 Rise  1.7140 0.0360 0.0090 0.570375 1.06234  1.63272           1       55.4018                | 
+|    fb/mult/out_reg[19]/D       DFF_X1  Rise  1.7140 0.0000 0.0090          1.14029                                     MF            | 
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to fb/mult/out_reg[19]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                Fall  1.5000 1.5000 0.0000 0.24664  6.58518  6.83182           1       53.7221  c    K/M      | 
+|    CTS_L1_tid1__c1_tid1__c22/A BUF_X8 Fall  1.5000 0.0000 0.0000          5.81013                                     mF            | 
+|    CTS_L1_tid1__c1_tid1__c22/Z BUF_X8 Fall  1.5190 0.0190 0.0050 0.869541 6.25843  7.12797           1       53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_3               Fall  1.5190 0.0000                                                                           | 
+|    regB/CTS_L2_c_tid1_7/A      INV_X4 Fall  1.5190 0.0000 0.0050          5.70005                                     mF            | 
+|    regB/CTS_L2_c_tid1_7/ZN     INV_X4 Rise  1.5340 0.0150 0.0110 2.33607  11.8107  14.1467           1       53.7221  mF   K/M      | 
+|    regB/CTS_L3_c_tid1_6/A      INV_X8 Rise  1.5350 0.0010 0.0110          11.8107                                     mF            | 
+|    regB/CTS_L3_c_tid1_6/ZN     INV_X8 Fall  1.5500 0.0150 0.0110 17.9785  47.2426  65.2211           4       53.7221  mF   K/M      | 
+|    regB/CTS_L4_c_tid1_4/A      INV_X8 Fall  1.5540 0.0040 0.0130          10.8                                        mF            | 
+|    regB/CTS_L4_c_tid1_4/ZN     INV_X8 Rise  1.5820 0.0280 0.0210 20.7903  37.0365  57.8267           39      53.7221  mF   K/M      | 
+|    regB/clk__CTS_1_PP_0               Rise  1.5820 0.0000                                                                           | 
+|    fb/clk__CTS_1_PP_0                 Rise  1.5820 0.0000                                                                           | 
+|    fb/mult/clk__CTS_1_PP_0            Rise  1.5820 0.0000                                                                           | 
+|    fb/mult/out_reg[19]/CK      DFF_X1 Rise  1.5870 0.0050 0.0210          0.949653                                    MmF           | 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (fall edge) |  1.5000 1.5000 | 
+| target clock cycle shift                  |  0.0000 1.5000 | 
+| target clock propagated network latency   |  0.0870 1.5870 | 
+| library hold check                        |  0.0130 1.6000 | 
+| data required time                        |  1.6000        | 
+|                                           |                | 
+| data arrival time                         |  1.7140        | 
+| data required time                        | -1.6000        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     |  0.1140        | 
+--------------------------------------------------------------
+
+
+info UI33: performed report_timing for 0 sec (CPU time: 0 sec; MEM: RSS - 356M, CVMEM - 1743M, PVMEM - 2263M)

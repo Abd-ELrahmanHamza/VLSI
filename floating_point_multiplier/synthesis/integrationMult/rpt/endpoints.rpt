@@ -1,19 +1,19 @@
 Report End Points: 
------+-------+-------+-------+------+------+-----+-----+------------------+------------------
-     |Group  |Launch |Capture|Shift |Delay |Depth|Slack|Begin Point       |End Point         
------+-------+-------+-------+------+------+-----+-----+------------------+------------------
-1    |default|vsysclk|vsysclk|1500.0|1061.7|   29|259.9|fb/mult/q_reg[0]/Q|outB/out_reg[22]/D
-2    |default|vsysclk|vsysclk|1500.0|1027.6|   28|294.0|fb/mult/q_reg[0]/Q|outB/out_reg[21]/D
-3    |default|vsysclk|vsysclk|1500.0| 989.8|   27|331.8|fb/mult/q_reg[0]/Q|outB/out_reg[20]/D
------+-------+-------+-------+------+------+-----+-----+------------------+------------------
+-----+-------+-------+-------+------+------+-----+-----+---------------------+-------------------
+     |Group  |Launch |Capture|Shift |Delay |Depth|Slack|Begin Point          |End Point          
+-----+-------+-------+-------+------+------+-----+-----+---------------------+-------------------
+1    |default|vsysclk|vsysclk|3000.0|2304.2|   34|537.4|fb/mult/out_reg[32]/Q|fb/mult/a_reg[30]/D
+2    |default|vsysclk|vsysclk|3000.0|2292.2|   32|550.5|fb/mult/out_reg[32]/Q|fb/mult/a_reg[28]/D
+3    |default|vsysclk|vsysclk|3000.0|2270.1|   33|571.5|fb/mult/out_reg[32]/Q|fb/mult/a_reg[29]/D
+-----+-------+-------+-------+------+------+-----+-----+---------------------+-------------------
 Report End Points: 
------+-----+-------+-------+------+-----+-----+------+-----------+------------------
-     |Group|Launch |Capture|Shift |Delay|Depth|Slack |Begin Point|End Point         
------+-----+-------+-------+------+-----+-----+------+-----------+------------------
-1    |I2R  |vsysclk|vsysclk|1500.0|  0.4|    0|1270.5|inputA[31] |regA/out_reg[31]/D
-2    |I2R  |vsysclk|vsysclk|1500.0|  0.4|    0|1270.5|inputA[30] |regA/out_reg[30]/D
-3    |I2R  |vsysclk|vsysclk|1500.0|  0.4|    0|1270.5|inputA[29] |regA/out_reg[29]/D
------+-----+-------+-------+------+-----+-----+------+-----------+------------------
+-----+-----+-------+-------+------+-----+-----+------+-----------+---------------------
+     |Group|Launch |Capture|Shift |Delay|Depth|Slack |Begin Point|End Point            
+-----+-----+-------+-------+------+-----+-----+------+-----------+---------------------
+1    |I2R  |vsysclk|vsysclk|1500.0|189.0|    3|1073.0|reset      |fb/mult/out_reg[47]/D
+2    |I2R  |vsysclk|vsysclk|1500.0|189.0|    3|1073.0|reset      |fb/mult/out_reg[46]/D
+3    |I2R  |vsysclk|vsysclk|1500.0|189.0|    3|1073.0|reset      |fb/mult/out_reg[45]/D
+-----+-----+-------+-------+------+-----+-----+------+-----------+---------------------
 Report End Points: 
 -----+-----+------+-------+-----+-----+-----+-----+-----------+---------
      |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
@@ -24,7 +24,7 @@ Report End Points:
 -----+-----+-------+-------+------+-----+-----+-----+------------------+---------
      |Group|Launch |Capture|Shift |Delay|Depth|Slack|Begin Point       |End Point
 -----+-----+-------+-------+------+-----+-----+-----+------------------+---------
-1    |R2O  |vsysclk|vsysclk|1500.0|780.8|   15|104.3|regA/out_reg[23]/Q|overflow 
-2    |R2O  |vsysclk|vsysclk|1500.0|768.1|   15|117.0|regA/out_reg[23]/Q|underflow
-3    |R2O  |vsysclk|vsysclk|1500.0|120.5|    2|764.5|regB/out_reg[27]/Q|exception
+1    |R2O  |vsysclk|vsysclk|1500.0|782.6|   15|101.5|regA/out_reg[23]/Q|overflow 
+2    |R2O  |vsysclk|vsysclk|1500.0|770.0|   15|114.1|regA/out_reg[23]/Q|underflow
+3    |R2O  |vsysclk|vsysclk|1500.0|120.0|    2|764.1|regB/out_reg[27]/Q|exception
 -----+-----+-------+-------+------+-----+-----+-----+------------------+---------
