@@ -25,7 +25,7 @@ initial begin
 		b = 0;
 
 		 //Wait 10 ns for global reset to finish
-		#10;
+#10;
 		a = 32'b11000000100100110011001100110011;//-4.6;
 		b = 32'b01000000100100110011001100110011;//4.6
 		// expected = 0

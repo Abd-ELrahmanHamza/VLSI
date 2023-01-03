@@ -19,6 +19,7 @@ assign exponentB = B[30:23];
 
 SubtractionStage subtract(exponentA,exponentB,shamt,borrow);
 
+// needs 2's complement circuit 
 Mux23 m1 (mantissaB,mantissaA,borrow,firstOp);
 Mux23 m2 (mantissaA,mantissaB,borrow,secondOp);
 RightShifter RF1(firstOp,shamt,shiftedFirstOp);
