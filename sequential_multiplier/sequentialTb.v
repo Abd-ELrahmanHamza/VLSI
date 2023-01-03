@@ -1,128 +1,117 @@
-module sequential_multiplier_tb;
-  reg clk, rst;
-  reg signed [31:0] in1, in2;
-  reg signed [63:0] in163, in263;
-  wire [63:0] out;
-  sequential_multiplier mult (
-      .in1 (in1),
-      .in2 (in2),
-      .prod(out),
+module SeqTB ();
+  reg clk;
+  reg start;
+  reg signed [31:0] x, y;
+  wire signed [63:0] result;
+  localparam cy = 5;
+  localparam changeStart = 50;
+  localparam change = cy * 32;
+  integer i = 0, count_failure = 0, count_success = 0, ok = 0;
+  reg [63:0] result_ref[0:7];
+
+  sequential_multiplier multi (
       .clk (clk),
-      .rst (rst)
+      .rst (start),
+      .in1 (x),
+      .in2 (y),
+      .prod(result)
   );
 
-  localparam T = 10;
   initial begin
+    clk = 1;
+    start = 1;
+    result_ref[0] = 10;
+    result_ref[1] = 25;
+    result_ref[2] = -12;
+    result_ref[3] = -42;
+    result_ref[4] = 14;
+    result_ref[5] = 6;
+    result_ref[6] = 8;
+    result_ref[7] = 21;
+    result_ref[8] = 0;
 
+    x = 2;
+    y = 5;
+    #changeStart;
+    start = 0;
 
+    #change;
+    ok = 1;
+    x = 5;
+    y = 5;
+    start = 1;
+    #changeStart;
+    start = 0;
 
+    #change;
+    x = 4;
+    y = -3;
+    start = 1;
+    #changeStart;
+    start = 0;
 
-    // Test positive and positive numbers
-    in1 = 32'd2;
-    in2 = 32'd5;
-    clk = 1'b1;
-    rst = 1'b1;
-    #T;
-    if (out == 32'd10) begin
-      $display("[PASSED] positive and positive numbers");
-    end else begin
-      $display("[Falied] positive and positive numbers out = %d and correct value is %b", out,
-               32'd10);
-    end
-    // Test positive and negaitive numbers
-    in1 = 32'd2;
-    in2 = -32'd5;
-    rst = 1'b0;
-    #T;
-    if (out == -64'd10) begin
-      $display("[PASSED] positive and negaitive numbers");
-    end else begin
-      $display("[Falied] positive and negaitive numbers out = %b and correct value is %d", out,
-               -64'd10);
-    end
+    #change;
+    x = -7;
+    y = 6;
+    start = 1;
+    #changeStart;
+    start = 0;
 
-    // Test negaitive and negaitive numbers
-    in1 = -32'd132;
-    in2 = -32'd5;
-    #T;
-    if (out == 64'd660) begin
-      $display("[PASSED] negaitive and negaitive numbers");
-    end else begin
-      $display("[Falied] negaitive and negaitive numbers out = %d and correct value is %d", out,
-               -64'd660);
-    end
+    #change;
+    x = -7;
+    y = -2;
+    start = 1;
+    #changeStart;
+    start = 0;
 
-    // Test negaitive and positive numbers
-    in1 = -32'd132;
-    in2 = 32'd5;
-    #T;
-    if (out == -64'd660) begin
-      $display("[PASSED] negaitive and positive numbers");
-    end else begin
-      $display("[Falied] negaitive and positive numbers out = %d and correct value is %d", out,
-               -64'd660);
-    end
+    #change;
+    x = 1;
+    y = 6;
+    start = 1;
+    #changeStart;
+    start = 0;
 
+    #change;
+    x = 1;
+    y = 8;
+    start = 1;
+    #changeStart;
+    start = 0;
 
-    // Test multiply by zero
-    in1   = 32'd5;
-    in2   = 32'd0;
-    in163 = 5;
-    in263 = 0;
-    #T;
-    if (out == 64'd0) begin
-      $display("[PASSED] multiply by zero");
-    end else begin
-      $display("[Falied] multiply by zero out = %d and correct value is %d", out, 64'd0);
-    end
+    #change;
+    x = 3;
+    y = 7;
+    start = 1;
+    #changeStart;
+    start = 0;
 
+    #change;
+    x = 3;
+    y = 0;
+    start = 1;
+    #changeStart;
+    start = 0;
 
-    // Test multiply by one
-    in1 = 32'd5;
-    in2 = 32'd1;
-    #T;
-    if (out == 64'd5) begin
-      $display("[PASSED] multiply by one");
-    end else begin
-      $display("[Falied] multiply by one = %d and correct value is %d", out, 64'd5);
-    end
-
-
-    // Test random testcase 1
-    in1 = 32'd5;
-    in2 = 32'd1;
-    #T;
-    if (out == 64'd5) begin
-      $display("[PASSED] multiply by one");
-    end else begin
-      $display("[Falied] multiply by one out = %d and correct value is %d", out, 64'd5);
-    end
-
-    // Test random testcase 1 (test large numbers)
-    in1 = 32'd2147483647;
-    in2 = 32'd2147483647;
-    #T;
-    if (out == 64'd4611686014132420609) begin
-      $display("[PASSED] multiply by large positive numbers");
-    end else begin
-      $display("[Falied] multiply by large positive numbers = %d and correct value is %d", out,
-               64'd4611686014132420609);
-    end
-
-    // Test random testcase 1 (test large numbers)
-    in1 = -32'd1;
-    in2 = -32'd1;
-
-    #T;
-    if (out == 64'd1) begin
-      $display("[PASSED] multiply by large negative and negative numbers");
-    end else begin
-      $display(
-          "[Falied] multiply by large negative and negative numbers = %d and correct value is  %d",
-          out, 64'd1);
-    end
+    #change $display("Total number of Success: %0d", count_success);
+    $display("Total number of Failure: %0d", count_failure);
     $finish;
   end
-  always #T clk = ~clk;
+
+  always #(cy / 2) clk = ~clk;
+
+  always @(posedge start) begin
+    #2;
+    if (ok == 1) begin
+      if (result == result_ref[i]) begin
+        $display("Test Case #%d : Success result = %d", i + 1, result);
+        count_success = count_success + 1;
+      end else begin
+        $display("Test Case #%d : Error x = %d, y = %d,result = %d, result_ref = %d", i, x, y,
+                 result, result_ref[i]);
+        count_failure = count_failure + 1;
+      end
+      i = i + 1;
+    end
+  end
+
 endmodule
-;
