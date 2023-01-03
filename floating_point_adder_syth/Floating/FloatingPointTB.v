@@ -6,13 +6,13 @@ module FloatingPointTB();
 
 	// Outputs
 	wire [31:0] fadd;
-    wire cout;
+    wire overFlow;
 
 	// Instantiate the Unit Under Test (UUT)
 	FloatingPointAdder uut ( 
 		.A(a), 
 		.B(b),
-		.Cout(cout),
+		.overFlow(overFlow),
 		.Sum(fadd)
 	);
 
@@ -55,13 +55,16 @@ initial begin
 		i =1;
 		$display("testcase # %d",i);
 		if(fadd == 32'b00000000000000000000000000000000)begin
+
 			$display("[Passed ] %b + %b = %b ",a,b,fadd);
 		end else begin
 			$display("[Failed ] %b + %b = %b ",a,b, fadd);
 			$display("True value =  %b",32'b00000000000000000000000000000000);
 			$display("Actual value =  %b",fadd);
 		end
-
+		if(overFlow) begin
+			$display("Overflow Ocurred in test# %d",i);
+		end
 		a = 32'b01000000010000000000000000000000;//3;
 		b = 32'b01000000010000000000000000000000;//3
 		// expected = 0
@@ -74,6 +77,9 @@ initial begin
 			$display("[Failed ] %b + %b = %b ",a,b, fadd);
 			$display("True value =  %b",32'b01000000110000000000000000000000);
 			$display("Actual value =  %b",fadd);
+		end
+		if(overFlow) begin
+			$display("Overflow Ocurred in test# %d",i);
 		end
 #50;
 		a = 32'b01000000010000000000000000000000;//3;
@@ -88,6 +94,9 @@ initial begin
 			$display("[Failed ] %b + %b = %b ",a,b, fadd);
 			$display("True value =  %b",32'b00111111100000000000000000000000);
 			$display("Actual value =  %b",fadd);
+		end
+		if(overFlow) begin
+			$display("Overflow Ocurred in test# %d",i);
 		end
 
 #50;
@@ -107,7 +116,9 @@ initial begin
 			$display("True value =  %b",32'b01000001000001100110011001100110);
 			$display("Actual value =  %b",fadd);
 		end
-
+		if(overFlow) begin
+			$display("Overflow Ocurred in test# %d",i);
+		end
 #60;
 
 		// positive positive
@@ -125,7 +136,9 @@ initial begin
 			$display("True value =  %b",32'b11000010001010110011001100110011);
 			$display("Actual value =  %b",fadd);
 		end
-		
+		if(overFlow) begin
+			$display("Overflow Ocurred in test# %d",i);
+		end		
 #40;
 		// negative negative 
 
@@ -136,29 +149,33 @@ initial begin
 		$display("testcase # %d",i);
 		// expected -42.800003 (b01000010001010110011001100110011) true
 		if(fadd == 32'b11000010001010110011001100110011)begin
-			$display("[Passed %d] %b + %b = %b ",i,a,b,fadd);
+			$display("[Passed] %b + %b = %b ",a,b,fadd);
 		end else begin
-			$display("[Faild %d] %b + %b = %b ",i,a,b, fadd);
+			$display("[Faild] %b + %b = %b ",a,b, fadd);
 			$display("True value =  %b",32'b01000010001010110011001100110011);
 			$display("Actual value =  %b",fadd);
 		end
-		
-// #50;
+		if(overFlow) begin
+			$display("Overflow Ocurred in test# %d",i);
+		end		
+#50;
 
-// 		a = 32'b01000100010011001100110011001101; //819.2
-// 		b = 32'b01000010000010011001100110011010; //34.4
-// #50;
-// 		i = 7;
-// 		$display("testcase # %d",i);
-// 		// expected 853.60004 (b11000010001010110011001100110011)
-// 		if(fadd == 32'b11000010001010110011001100110011)begin
-// 			$display("[Passed] %b + %b = %b ",a,b,fadd);
-// 		end else begin
-// 			$display("[Faild] %b + %b = %b ",a,b, fadd);
-// 			$display("True value =  %b",32'b11000010001010110011001100110011);
-// 			$display("Actual value =  %b",fadd);
-// 		end
-		
+		a = 32'b11111111100010011001100110011010; //
+		b = 32'b01111111100010011001100110011010; //
+#50;
+		i = 7;
+		$display("testcase # %d",i);
+		// expected 853.60004 (b11000010001010110011001100110011)
+		if(fadd == 32'b00000000000000000000000000000000)begin
+			$display("[Passed] %b + %b = %b ",a,b,fadd);
+		end else begin
+			$display("[Faild] %b + %b = %b ",a,b, fadd);
+			$display("True value =  %b",32'b00000000000000000000000000000000);
+			$display("Actual value =  %b",fadd);
+		end
+		if(overFlow) begin
+			$display("Overflow Ocurred in test# %d",i);
+		end	
 // #50;
 // 		a= 32'b01000001010011001100110011001101; //12.8
 // 		b= 32'b01000010000010011001100110011010; //34.4
@@ -190,7 +207,9 @@ initial begin
 			$display("True value =  %b",32'b01000001100010001100110011001101);
 			$display("Actual value =  %b",fadd);
 		end
-		
+		if(overFlow) begin
+			$display("Overflow Ocurred in test# %d",i);
+		end		
 #50;
 
 		 a=32'b01000001001000000000000000000000; //10
@@ -206,11 +225,13 @@ initial begin
 			$display("True value =  %b",32'b01000001000000000000000000000000);
 			$display("Actual value =  %b",fadd);
 		end
-
+		if(overFlow) begin
+			$display("Overflow Ocurred in test# %d",i);
+		end
 #50;
 
-		 a=32'b11000001001000000000000000000000; //10
-		 b=32'b01000000000000000000000000000000; //-2
+		 a=32'b11000001001000000000000000000000; //-10
+		 b=32'b01000000000000000000000000000000; //2
 #50;
 		i = 11;
 		$display("testcase # %d",i);
@@ -222,7 +243,9 @@ initial begin
 			$display("True value =  %b",32'b11000001000000000000000000000000);
 			$display("Actual value =  %b",fadd);
 		end
-
+		if(overFlow) begin
+			$display("Overflow Ocurred in test# %d",i);
+		end
 
 $finish;
 end	 

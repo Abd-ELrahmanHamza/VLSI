@@ -1,5 +1,5 @@
-module complementMantissa (signA,signB,borrow,mantissaA,mantissaB,outputMantissaA,outputMantissaB);
-input signA,signB,borrow;
+module complementMantissa (signA,signB,mantissaA,mantissaB,outputMantissaA,outputMantissaB);
+input signA,signB;
 input [23:0] mantissaA,mantissaB;
 output reg [23:0] outputMantissaA,outputMantissaB;
 
