@@ -1,0 +1,831 @@
+ Timing Path to regB/out_reg[5]/D 
+  
+ Path Start Point : inputB[5] 
+ Path End Point   : regB/out_reg[5] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : **inputs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+| Pin                      Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------------------------------|
+|    inputB[5]                       Rise  0.2000 0.0000 0.1000 0        0.894119 0.894119          1       58.8002  c             | 
+|    regB/inp[5]                     Rise  0.2000 0.0000                                                                           | 
+|    regB/i_0_7/A2         AND2_X1   Rise  0.2000 0.0000 0.1000          0.97463                                                   | 
+|    regB/i_0_7/ZN         AND2_X1   Rise  0.2430 0.0430 0.0090 0.170352 0.699202 0.869554          1       58.8002                | 
+|    regB/CLOCK_slh__c65/A CLKBUF_X1 Rise  0.2430 0.0000 0.0090          0.77983                                                   | 
+|    regB/CLOCK_slh__c65/Z CLKBUF_X1 Rise  0.2700 0.0270 0.0070 0.170352 1.06234  1.23269           1       58.8002                | 
+|    regB/out_reg[5]/D     DFF_X1    Rise  0.2700 0.0000 0.0070          1.14029                                     MF            | 
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to regB/out_reg[5]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.42329  2.20099  3.62428           2       59.6456  c    K/M      | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0640 0.0640 0.0190 8.15823  7.03097  15.1892           3       59.6456  mF   K/M      | 
+|    regB/clk_CTS_0_PP_11                      Rise  0.0640 0.0000                                                                           | 
+|    regB/clk_gate_out_reg/CK    CLKGATETST_X1 Rise  0.0650 0.0010 0.0190          1.8122                                      mFA           | 
+|    regB/clk_gate_out_reg/GCK   CLKGATETST_X1 Rise  0.2420 0.1770 0.1510 33.0144  30.3889  63.4033           32      58.8002  mFA  K/M      | 
+|    regB/out_reg[5]/CK          DFF_X1        Rise  0.2470 0.0050 0.1510          0.949653                                    MmF           | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.2470 0.2470 | 
+| library hold check                       |  0.0210 0.2680 | 
+| data required time                       |  0.2680        | 
+|                                          |                | 
+| data arrival time                        |  0.2700        | 
+| data required time                       | -0.2680        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0020        | 
+-------------------------------------------------------------
+
+
+ Timing Path to regB/out_reg[10]/D 
+  
+ Path Start Point : inputB[10] 
+ Path End Point   : regB/out_reg[10] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : **inputs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+| Pin                      Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------------------------------|
+|    inputB[10]                      Rise  0.2000 0.0000 0.1000 0        0.894119 0.894119          1       58.8002  c             | 
+|    regB/inp[10]                    Rise  0.2000 0.0000                                                                           | 
+|    regB/i_0_12/A2        AND2_X1   Rise  0.2000 0.0000 0.1000          0.97463                                                   | 
+|    regB/i_0_12/ZN        AND2_X1   Rise  0.2430 0.0430 0.0090 0.170352 0.699202 0.869554          1       58.8002                | 
+|    regB/CLOCK_slh__c45/A CLKBUF_X1 Rise  0.2430 0.0000 0.0090          0.77983                                                   | 
+|    regB/CLOCK_slh__c45/Z CLKBUF_X1 Rise  0.2700 0.0270 0.0070 0.170352 1.06234  1.23269           1       58.8002                | 
+|    regB/out_reg[10]/D    DFF_X1    Rise  0.2700 0.0000 0.0070          1.14029                                     MF            | 
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to regB/out_reg[10]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.42329  2.20099  3.62428           2       59.6456  c    K/M      | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0640 0.0640 0.0190 8.15823  7.03097  15.1892           3       59.6456  mF   K/M      | 
+|    regB/clk_CTS_0_PP_11                      Rise  0.0640 0.0000                                                                           | 
+|    regB/clk_gate_out_reg/CK    CLKGATETST_X1 Rise  0.0650 0.0010 0.0190          1.8122                                      mFA           | 
+|    regB/clk_gate_out_reg/GCK   CLKGATETST_X1 Rise  0.2420 0.1770 0.1510 33.0144  30.3889  63.4033           32      58.8002  mFA  K/M      | 
+|    regB/out_reg[10]/CK         DFF_X1        Rise  0.2470 0.0050 0.1510          0.949653                                    MmF           | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.2470 0.2470 | 
+| library hold check                       |  0.0210 0.2680 | 
+| data required time                       |  0.2680        | 
+|                                          |                | 
+| data arrival time                        |  0.2700        | 
+| data required time                       | -0.2680        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0020        | 
+-------------------------------------------------------------
+
+
+ Timing Path to regB/out_reg[15]/D 
+  
+ Path Start Point : inputB[15] 
+ Path End Point   : regB/out_reg[15] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : **inputs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+| Pin                      Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------------------------------|
+|    inputB[15]                      Rise  0.2000 0.0000 0.1000 0        0.894119 0.894119          1       57.9102  c             | 
+|    regB/inp[15]                    Rise  0.2000 0.0000                                                                           | 
+|    regB/i_0_17/A2        AND2_X1   Rise  0.2000 0.0000 0.1000          0.97463                                                   | 
+|    regB/i_0_17/ZN        AND2_X1   Rise  0.2430 0.0430 0.0090 0.170352 0.699202 0.869554          1       57.9102                | 
+|    regB/CLOCK_slh__c49/A CLKBUF_X1 Rise  0.2430 0.0000 0.0090          0.77983                                                   | 
+|    regB/CLOCK_slh__c49/Z CLKBUF_X1 Rise  0.2700 0.0270 0.0070 0.170352 1.06234  1.23269           1       57.9102                | 
+|    regB/out_reg[15]/D    DFF_X1    Rise  0.2700 0.0000 0.0070          1.14029                                     MF            | 
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to regB/out_reg[15]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.42329  2.20099  3.62428           2       59.6456  c    K/M      | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0640 0.0640 0.0190 8.15823  7.03097  15.1892           3       59.6456  mF   K/M      | 
+|    regB/clk_CTS_0_PP_11                      Rise  0.0640 0.0000                                                                           | 
+|    regB/clk_gate_out_reg/CK    CLKGATETST_X1 Rise  0.0650 0.0010 0.0190          1.8122                                      mFA           | 
+|    regB/clk_gate_out_reg/GCK   CLKGATETST_X1 Rise  0.2420 0.1770 0.1510 33.0144  30.3889  63.4033           32      58.8002  mFA  K/M      | 
+|    regB/out_reg[15]/CK         DFF_X1        Rise  0.2470 0.0050 0.1510          0.949653                                    MmF           | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.2470 0.2470 | 
+| library hold check                       |  0.0210 0.2680 | 
+| data required time                       |  0.2680        | 
+|                                          |                | 
+| data arrival time                        |  0.2700        | 
+| data required time                       | -0.2680        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0020        | 
+-------------------------------------------------------------
+
+
+ Timing Path to regB/out_reg[17]/D 
+  
+ Path Start Point : inputB[17] 
+ Path End Point   : regB/out_reg[17] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : **inputs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+| Pin                      Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------------------------------|
+|    inputB[17]                      Rise  0.2000 0.0000 0.1000 0        0.894119 0.894119          1       57.9102  c             | 
+|    regB/inp[17]                    Rise  0.2000 0.0000                                                                           | 
+|    regB/i_0_19/A2        AND2_X1   Rise  0.2000 0.0000 0.1000          0.97463                                                   | 
+|    regB/i_0_19/ZN        AND2_X1   Rise  0.2430 0.0430 0.0090 0.170352 0.699202 0.869554          1       57.9102                | 
+|    regB/CLOCK_slh__c51/A CLKBUF_X1 Rise  0.2430 0.0000 0.0090          0.77983                                                   | 
+|    regB/CLOCK_slh__c51/Z CLKBUF_X1 Rise  0.2700 0.0270 0.0070 0.170352 1.06234  1.23269           1       57.9102                | 
+|    regB/out_reg[17]/D    DFF_X1    Rise  0.2700 0.0000 0.0070          1.14029                                     MF            | 
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to regB/out_reg[17]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.42329  2.20099  3.62428           2       59.6456  c    K/M      | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0640 0.0640 0.0190 8.15823  7.03097  15.1892           3       59.6456  mF   K/M      | 
+|    regB/clk_CTS_0_PP_11                      Rise  0.0640 0.0000                                                                           | 
+|    regB/clk_gate_out_reg/CK    CLKGATETST_X1 Rise  0.0650 0.0010 0.0190          1.8122                                      mFA           | 
+|    regB/clk_gate_out_reg/GCK   CLKGATETST_X1 Rise  0.2420 0.1770 0.1510 33.0144  30.3889  63.4033           32      58.8002  mFA  K/M      | 
+|    regB/out_reg[17]/CK         DFF_X1        Rise  0.2470 0.0050 0.1510          0.949653                                    MmF           | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.2470 0.2470 | 
+| library hold check                       |  0.0210 0.2680 | 
+| data required time                       |  0.2680        | 
+|                                          |                | 
+| data arrival time                        |  0.2700        | 
+| data required time                       | -0.2680        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0020        | 
+-------------------------------------------------------------
+
+
+ Timing Path to regB/out_reg[19]/D 
+  
+ Path Start Point : inputB[19] 
+ Path End Point   : regB/out_reg[19] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : **inputs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+| Pin                      Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------------------------------|
+|    inputB[19]                      Rise  0.2000 0.0000 0.1000 0        0.894119 0.894119          1       57.9102  c             | 
+|    regB/inp[19]                    Rise  0.2000 0.0000                                                                           | 
+|    regB/i_0_21/A2        AND2_X1   Rise  0.2000 0.0000 0.1000          0.97463                                                   | 
+|    regB/i_0_21/ZN        AND2_X1   Rise  0.2430 0.0430 0.0090 0.170352 0.699202 0.869554          1       57.9102                | 
+|    regB/CLOCK_slh__c55/A CLKBUF_X1 Rise  0.2430 0.0000 0.0090          0.77983                                                   | 
+|    regB/CLOCK_slh__c55/Z CLKBUF_X1 Rise  0.2700 0.0270 0.0070 0.170352 1.06234  1.23269           1       57.9102                | 
+|    regB/out_reg[19]/D    DFF_X1    Rise  0.2700 0.0000 0.0070          1.14029                                     MF            | 
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to regB/out_reg[19]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.42329  2.20099  3.62428           2       59.6456  c    K/M      | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0640 0.0640 0.0190 8.15823  7.03097  15.1892           3       59.6456  mF   K/M      | 
+|    regB/clk_CTS_0_PP_11                      Rise  0.0640 0.0000                                                                           | 
+|    regB/clk_gate_out_reg/CK    CLKGATETST_X1 Rise  0.0650 0.0010 0.0190          1.8122                                      mFA           | 
+|    regB/clk_gate_out_reg/GCK   CLKGATETST_X1 Rise  0.2420 0.1770 0.1510 33.0144  30.3889  63.4033           32      58.8002  mFA  K/M      | 
+|    regB/out_reg[19]/CK         DFF_X1        Rise  0.2470 0.0050 0.1510          0.949653                                    MmF           | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.2470 0.2470 | 
+| library hold check                       |  0.0210 0.2680 | 
+| data required time                       |  0.2680        | 
+|                                          |                | 
+| data arrival time                        |  0.2700        | 
+| data required time                       | -0.2680        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0020        | 
+-------------------------------------------------------------
+
+
+ Timing Path to regB/out_reg[25]/D 
+  
+ Path Start Point : inputB[25] 
+ Path End Point   : regB/out_reg[25] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : **inputs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+| Pin                      Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------------------------------|
+|    inputB[25]                      Rise  0.2000 0.0000 0.1000 0.972393 0.894119 1.86651           1       55.5552  c             | 
+|    regB/inp[25]                    Rise  0.2000 0.0000                                                                           | 
+|    regB/i_0_27/A2        AND2_X1   Rise  0.2000 0.0000 0.1000          0.97463                                                   | 
+|    regB/i_0_27/ZN        AND2_X1   Rise  0.2430 0.0430 0.0090 0.170352 0.699202 0.869554          1       55.5552                | 
+|    regB/CLOCK_slh__c59/A CLKBUF_X1 Rise  0.2430 0.0000 0.0090          0.77983                                                   | 
+|    regB/CLOCK_slh__c59/Z CLKBUF_X1 Rise  0.2700 0.0270 0.0070 0.170352 1.06234  1.23269           1       55.5552                | 
+|    regB/out_reg[25]/D    DFF_X1    Rise  0.2700 0.0000 0.0070          1.14029                                     MF            | 
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to regB/out_reg[25]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.42329  2.20099  3.62428           2       59.6456  c    K/M      | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0640 0.0640 0.0190 8.15823  7.03097  15.1892           3       59.6456  mF   K/M      | 
+|    regB/clk_CTS_0_PP_11                      Rise  0.0640 0.0000                                                                           | 
+|    regB/clk_gate_out_reg/CK    CLKGATETST_X1 Rise  0.0650 0.0010 0.0190          1.8122                                      mFA           | 
+|    regB/clk_gate_out_reg/GCK   CLKGATETST_X1 Rise  0.2420 0.1770 0.1510 33.0144  30.3889  63.4033           32      58.8002  mFA  K/M      | 
+|    regB/out_reg[25]/CK         DFF_X1        Rise  0.2470 0.0050 0.1510          0.949653                                    MmF           | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.2470 0.2470 | 
+| library hold check                       |  0.0210 0.2680 | 
+| data required time                       |  0.2680        | 
+|                                          |                | 
+| data arrival time                        |  0.2700        | 
+| data required time                       | -0.2680        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0020        | 
+-------------------------------------------------------------
+
+
+ Timing Path to regB/out_reg[27]/D 
+  
+ Path Start Point : inputB[27] 
+ Path End Point   : regB/out_reg[27] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : **inputs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+| Pin                      Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------------------------------|
+|    inputB[27]                      Rise  0.2000 0.0000 0.1000 0.429574 0.894119 1.32369           1       55.5552  c             | 
+|    regB/inp[27]                    Rise  0.2000 0.0000                                                                           | 
+|    regB/i_0_29/A2        AND2_X1   Rise  0.2000 0.0000 0.1000          0.97463                                                   | 
+|    regB/i_0_29/ZN        AND2_X1   Rise  0.2430 0.0430 0.0090 0.170352 0.699202 0.869554          1       55.5552                | 
+|    regB/CLOCK_slh__c61/A CLKBUF_X1 Rise  0.2430 0.0000 0.0090          0.77983                                                   | 
+|    regB/CLOCK_slh__c61/Z CLKBUF_X1 Rise  0.2700 0.0270 0.0070 0.173394 1.06234  1.23574           1       55.5552                | 
+|    regB/out_reg[27]/D    DFF_X1    Rise  0.2700 0.0000 0.0070          1.14029                                     MF            | 
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to regB/out_reg[27]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.42329  2.20099  3.62428           2       59.6456  c    K/M      | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0640 0.0640 0.0190 8.15823  7.03097  15.1892           3       59.6456  mF   K/M      | 
+|    regB/clk_CTS_0_PP_11                      Rise  0.0640 0.0000                                                                           | 
+|    regB/clk_gate_out_reg/CK    CLKGATETST_X1 Rise  0.0650 0.0010 0.0190          1.8122                                      mFA           | 
+|    regB/clk_gate_out_reg/GCK   CLKGATETST_X1 Rise  0.2420 0.1770 0.1510 33.0144  30.3889  63.4033           32      58.8002  mFA  K/M      | 
+|    regB/out_reg[27]/CK         DFF_X1        Rise  0.2470 0.0050 0.1510          0.949653                                    MmF           | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.2470 0.2470 | 
+| library hold check                       |  0.0210 0.2680 | 
+| data required time                       |  0.2680        | 
+|                                          |                | 
+| data arrival time                        |  0.2700        | 
+| data required time                       | -0.2680        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0020        | 
+-------------------------------------------------------------
+
+
+ Timing Path to regB/out_reg[6]/D 
+  
+ Path Start Point : inputB[6] 
+ Path End Point   : regB/out_reg[6] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : **inputs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+| Pin                      Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------------------------------|
+|    inputB[6]                       Rise  0.2000 0.0000 0.1000 0        0.894119 0.894119          1       58.8002  c             | 
+|    regB/inp[6]                     Rise  0.2000 0.0000                                                                           | 
+|    regB/i_0_8/A2         AND2_X1   Rise  0.2000 0.0000 0.1000          0.97463                                                   | 
+|    regB/i_0_8/ZN         AND2_X1   Rise  0.2430 0.0430 0.0090 0.170352 0.699202 0.869554          1       58.8002                | 
+|    regB/CLOCK_slh__c79/A CLKBUF_X1 Rise  0.2430 0.0000 0.0090          0.77983                                                   | 
+|    regB/CLOCK_slh__c79/Z CLKBUF_X1 Rise  0.2710 0.0280 0.0080 0.412368 1.06234  1.47471           1       58.8002                | 
+|    regB/out_reg[6]/D     DFF_X1    Rise  0.2710 0.0000 0.0080          1.14029                                     MF            | 
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to regB/out_reg[6]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.42329  2.20099  3.62428           2       59.6456  c    K/M      | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0640 0.0640 0.0190 8.15823  7.03097  15.1892           3       59.6456  mF   K/M      | 
+|    regB/clk_CTS_0_PP_11                      Rise  0.0640 0.0000                                                                           | 
+|    regB/clk_gate_out_reg/CK    CLKGATETST_X1 Rise  0.0650 0.0010 0.0190          1.8122                                      mFA           | 
+|    regB/clk_gate_out_reg/GCK   CLKGATETST_X1 Rise  0.2420 0.1770 0.1510 33.0144  30.3889  63.4033           32      58.8002  mFA  K/M      | 
+|    regB/out_reg[6]/CK          DFF_X1        Rise  0.2470 0.0050 0.1510          0.949653                                    MmF           | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.2470 0.2470 | 
+| library hold check                       |  0.0210 0.2680 | 
+| data required time                       |  0.2680        | 
+|                                          |                | 
+| data arrival time                        |  0.2710        | 
+| data required time                       | -0.2680        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0030        | 
+-------------------------------------------------------------
+
+
+ Timing Path to regB/out_reg[7]/D 
+  
+ Path Start Point : inputB[7] 
+ Path End Point   : regB/out_reg[7] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : **inputs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+| Pin                      Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------------------------------|
+|    inputB[7]                       Rise  0.2000 0.0000 0.1000 0        0.894119 0.894119          1       58.8002  c             | 
+|    regB/inp[7]                     Rise  0.2000 0.0000                                                                           | 
+|    regB/i_0_9/A2         AND2_X1   Rise  0.2000 0.0000 0.1000          0.97463                                                   | 
+|    regB/i_0_9/ZN         AND2_X1   Rise  0.2430 0.0430 0.0090 0.170352 0.699202 0.869554          1       58.8002                | 
+|    regB/CLOCK_slh__c81/A CLKBUF_X1 Rise  0.2430 0.0000 0.0090          0.77983                                                   | 
+|    regB/CLOCK_slh__c81/Z CLKBUF_X1 Rise  0.2710 0.0280 0.0080 0.412368 1.06234  1.47471           1       58.8002                | 
+|    regB/out_reg[7]/D     DFF_X1    Rise  0.2710 0.0000 0.0080          1.14029                                     MF            | 
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to regB/out_reg[7]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.42329  2.20099  3.62428           2       59.6456  c    K/M      | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0640 0.0640 0.0190 8.15823  7.03097  15.1892           3       59.6456  mF   K/M      | 
+|    regB/clk_CTS_0_PP_11                      Rise  0.0640 0.0000                                                                           | 
+|    regB/clk_gate_out_reg/CK    CLKGATETST_X1 Rise  0.0650 0.0010 0.0190          1.8122                                      mFA           | 
+|    regB/clk_gate_out_reg/GCK   CLKGATETST_X1 Rise  0.2420 0.1770 0.1510 33.0144  30.3889  63.4033           32      58.8002  mFA  K/M      | 
+|    regB/out_reg[7]/CK          DFF_X1        Rise  0.2470 0.0050 0.1510          0.949653                                    MmF           | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.2470 0.2470 | 
+| library hold check                       |  0.0210 0.2680 | 
+| data required time                       |  0.2680        | 
+|                                          |                | 
+| data arrival time                        |  0.2710        | 
+| data required time                       | -0.2680        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0030        | 
+-------------------------------------------------------------
+
+
+ Timing Path to regB/out_reg[8]/D 
+  
+ Path Start Point : inputB[8] 
+ Path End Point   : regB/out_reg[8] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : **inputs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+| Pin                      Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------------------------------|
+|    inputB[8]                       Rise  0.2000 0.0000 0.1000 0        0.894119 0.894119          1       58.8002  c             | 
+|    regB/inp[8]                     Rise  0.2000 0.0000                                                                           | 
+|    regB/i_0_10/A2        AND2_X1   Rise  0.2000 0.0000 0.1000          0.97463                                                   | 
+|    regB/i_0_10/ZN        AND2_X1   Rise  0.2430 0.0430 0.0090 0.170352 0.699202 0.869554          1       58.8002                | 
+|    regB/CLOCK_slh__c41/A CLKBUF_X1 Rise  0.2430 0.0000 0.0090          0.77983                                                   | 
+|    regB/CLOCK_slh__c41/Z CLKBUF_X1 Rise  0.2710 0.0280 0.0070 0.299637 1.06234  1.36198           1       58.8002                | 
+|    regB/out_reg[8]/D     DFF_X1    Rise  0.2710 0.0000 0.0070          1.14029                                     MF            | 
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to regB/out_reg[8]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.42329  2.20099  3.62428           2       59.6456  c    K/M      | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0640 0.0640 0.0190 8.15823  7.03097  15.1892           3       59.6456  mF   K/M      | 
+|    regB/clk_CTS_0_PP_11                      Rise  0.0640 0.0000                                                                           | 
+|    regB/clk_gate_out_reg/CK    CLKGATETST_X1 Rise  0.0650 0.0010 0.0190          1.8122                                      mFA           | 
+|    regB/clk_gate_out_reg/GCK   CLKGATETST_X1 Rise  0.2420 0.1770 0.1510 33.0144  30.3889  63.4033           32      58.8002  mFA  K/M      | 
+|    regB/out_reg[8]/CK          DFF_X1        Rise  0.2470 0.0050 0.1510          0.949653                                    MmF           | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.2470 0.2470 | 
+| library hold check                       |  0.0210 0.2680 | 
+| data required time                       |  0.2680        | 
+|                                          |                | 
+| data arrival time                        |  0.2710        | 
+| data required time                       | -0.2680        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0030        | 
+-------------------------------------------------------------
+
+
+info UI33: performed report_timing for 0 sec (CPU time: 0 sec; MEM: RSS - 349M, CVMEM - 1806M, PVMEM - 2637M)
