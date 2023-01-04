@@ -1,118 +1,119 @@
-module SeqTB ();
-  reg clk;
-  reg start;
-  reg signed [31:0] x, y;
-  wire signed [63:0] result;
-  localparam cy = 5;
-  localparam changeStart = 50;
-  localparam change = cy * 32;
-  integer i = 0, count_failure = 0, count_success = 0, ok = 0;
-  reg [63:0] result_ref[0:7];
-
-  integrationMult multi (
-      .clk(clk),
-      .reset(start),
-      .inputA(x),
-      .en(1'b1),
-      .inputB(y),
-      .result(result)
+module sequentialmultiplierTB;
+  reg [31:0] a, b;
+  wire signed [63:0] prod;
+  reg clk, reset, en;
+  integerationMult SmTb (
+      clk,
+      reset,
+      en,
+      a,
+      b,
+      prod
   );
-
+  integer passed, failed;
   initial begin
-    clk = 1;
-    start = 1;
-    result_ref[0] = 10;
-    result_ref[1] = 25;
-    result_ref[2] = -12;
-    result_ref[3] = -42;
-    result_ref[4] = 14;
-    result_ref[5] = 6;
-    result_ref[6] = 8;
-    result_ref[7] = 21;
-    result_ref[8] = 0;
-
-    x = 2;
-    y = 5;
-    #changeStart;
-    start = 0;
-
-    #change;
-    ok = 1;
-    x = 5;
-    y = 5;
-    start = 1;
-    #changeStart;
-    start = 0;
-
-    #change;
-    x = 4;
-    y = -3;
-    start = 1;
-    #changeStart;
-    start = 0;
-
-    #change;
-    x = -7;
-    y = 6;
-    start = 1;
-    #changeStart;
-    start = 0;
-
-    #change;
-    x = -7;
-    y = -2;
-    start = 1;
-    #changeStart;
-    start = 0;
-
-    #change;
-    x = 1;
-    y = 6;
-    start = 1;
-    #changeStart;
-    start = 0;
-
-    #change;
-    x = 1;
-    y = 8;
-    start = 1;
-    #changeStart;
-    start = 0;
-
-    #change;
-    x = 3;
-    y = 7;
-    start = 1;
-    #changeStart;
-    start = 0;
-
-    #change;
-    x = 3;
-    y = 0;
-    start = 1;
-    #changeStart;
-    start = 0;
-
-    #change $display("Total number of Success: %0d", count_success);
-    $display("Total number of Failure: %0d", count_failure);
-    $finish;
-  end
-
-  always #(cy / 2) clk = ~clk;
-
-  always @(posedge start) begin
-    #2;
-    if (ok == 1) begin
-      if (result == result_ref[i]) begin
-        $display("Test Case #%d : Success result = %d", i + 1, result);
-        count_success = count_success + 1;
-      end else begin
-        $display("Test Case #%d : Error x = %d, y = %d,result = %d, result_ref = %d", i, x, y,
-                 result, result_ref[i]);
-        count_failure = count_failure + 1;
-      end
-      i = i + 1;
+    // Clock cycle time = 20
+    passed = 0;
+    failed = 0;
+    clk = 0;
+    en = 1;
+    a = 5;
+    b = -7;
+    reset = 1;
+    #20;
+    reset = 0;
+    #20;
+    #640;
+    a = 2;
+    b = 3;
+    #20;
+    if (prod === -35) begin
+      passed = passed + 1;
+      $display("TestCase#1: success");
+    end else begin
+      failed = failed + 1;
+      $display("TestCase#1: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
     end
+    #640;
+    a = -12;
+    b = -4;
+    #20;
+    if (prod === 6) begin
+      passed = passed + 1;
+      $display("TestCase#2: success");
+    end else begin
+      failed = failed + 1;
+      $display("TestCase#2: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+    end
+    #640;
+    a = -9;
+    b = 5;
+    #20;
+    if (prod === 48) begin
+      passed = passed + 1;
+      $display("TestCase#3: success");
+    end else begin
+      failed = failed + 1;
+      $display("TestCase#3: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+    end
+    #640;
+    a = 11;
+    b = 0;
+    #20;
+    if (prod === -45) begin
+      passed = passed + 1;
+      $display("TestCase#4: success");
+    end else begin
+      failed = failed + 1;
+      $display("TestCase#4: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+    end
+    #640;
+    a = 10;
+    b = 1;
+    #20;
+    if (prod === 0) begin
+      passed = passed + 1;
+      $display("TestCase#5: success");
+    end else begin
+      failed = failed + 1;
+      $display("TestCase#5: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+    end
+    #640;
+    a = 4;
+    b = 6;
+    #20;
+    if (prod === 10) begin
+      passed = passed + 1;
+      $display("TestCase#6: success");
+    end else begin
+      failed = failed + 1;
+      $display("TestCase#6: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+    end
+    #640;
+    a = -1;
+    b = -7;
+    #20;
+    if (prod === 24) begin
+      passed = passed + 1;
+      $display("TestCase#7: success");
+    end else begin
+      failed = failed + 1;
+      $display("TestCase#7: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+    end
+    #640;
+    #20;
+    if (prod === 7) begin
+      passed = passed + 1;
+      $display("TestCase#8: success");
+    end else begin
+      failed = failed + 1;
+      $display("TestCase#8: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+    end
+    $display("Total passed tests: %d and Total failed tests: %d", passed, failed);
+  end
+  always begin
+    #10;
+    clk = ~clk;
   end
 
 endmodule
