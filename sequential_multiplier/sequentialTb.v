@@ -1,14 +1,14 @@
 module sequentialmultiplierTB;
   reg [31:0] a, b;
-  wire signed [63:0] prod;
+  wire signed [63:0] sequentialmultiplierResult;
   reg clk, reset, en;
-  integerationMult SmTb (
+  sequentialmultiplier_withregs SMTB (
+      a,
+      b,
       clk,
       reset,
       en,
-      a,
-      b,
-      prod
+      sequentialmultiplierResult
   );
   integer passed, failed;
   initial begin
@@ -27,87 +27,95 @@ module sequentialmultiplierTB;
     a = 2;
     b = 3;
     #20;
-    if (prod === -35) begin
+    if (sequentialmultiplierResult === -35) begin
       passed = passed + 1;
       $display("TestCase#1: success");
     end else begin
       failed = failed + 1;
-      $display("TestCase#1: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+      $display("TestCase#1: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b,
+               sequentialmultiplierResult);
     end
     #640;
     a = -12;
     b = -4;
     #20;
-    if (prod === 6) begin
+    if (sequentialmultiplierResult === 6) begin
       passed = passed + 1;
       $display("TestCase#2: success");
     end else begin
       failed = failed + 1;
-      $display("TestCase#2: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+      $display("TestCase#2: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b,
+               sequentialmultiplierResult);
     end
     #640;
     a = -9;
     b = 5;
     #20;
-    if (prod === 48) begin
+    if (sequentialmultiplierResult === 48) begin
       passed = passed + 1;
       $display("TestCase#3: success");
     end else begin
       failed = failed + 1;
-      $display("TestCase#3: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+      $display("TestCase#3: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b,
+               sequentialmultiplierResult);
     end
     #640;
     a = 11;
     b = 0;
     #20;
-    if (prod === -45) begin
+    if (sequentialmultiplierResult === -45) begin
       passed = passed + 1;
       $display("TestCase#4: success");
     end else begin
       failed = failed + 1;
-      $display("TestCase#4: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+      $display("TestCase#4: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b,
+               sequentialmultiplierResult);
     end
     #640;
     a = 10;
     b = 1;
     #20;
-    if (prod === 0) begin
+    if (sequentialmultiplierResult === 0) begin
       passed = passed + 1;
       $display("TestCase#5: success");
     end else begin
       failed = failed + 1;
-      $display("TestCase#5: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+      $display("TestCase#5: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b,
+               sequentialmultiplierResult);
     end
     #640;
     a = 4;
     b = 6;
     #20;
-    if (prod === 10) begin
+    if (sequentialmultiplierResult === 10) begin
       passed = passed + 1;
       $display("TestCase#6: success");
     end else begin
       failed = failed + 1;
-      $display("TestCase#6: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+      $display("TestCase#6: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b,
+               sequentialmultiplierResult);
     end
     #640;
     a = -1;
     b = -7;
     #20;
-    if (prod === 24) begin
+    if (sequentialmultiplierResult === 24) begin
       passed = passed + 1;
       $display("TestCase#7: success");
     end else begin
       failed = failed + 1;
-      $display("TestCase#7: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+      $display("TestCase#7: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b,
+               sequentialmultiplierResult);
     end
     #640;
     #20;
-    if (prod === 7) begin
+    if (sequentialmultiplierResult === 7) begin
       passed = passed + 1;
       $display("TestCase#8: success");
     end else begin
       failed = failed + 1;
-      $display("TestCase#8: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b, prod);
+      $display("TestCase#8: failed with Input %d, %d, Output sequentialmultiplier: %d", a, b,
+               sequentialmultiplierResult);
     end
     $display("Total passed tests: %d and Total failed tests: %d", passed, failed);
   end
