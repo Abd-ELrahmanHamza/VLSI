@@ -1,0 +1,11 @@
+Report Instance Areas: 
+-----+--------+--------------------+-----+---------
+     |Instance|Module              |Cells|Cell Area
+-----+--------+--------------------+-----+---------
+1    |top     |                    | 1099|     2312
+2    |  regA  |registerNbits__0_22 |   67|      184
+3    |  regB  |registerNbits__0_25 |   67|      184
+4    |  SM    |sequentialmultiplier|  831|     1574
+5    |  outB  |registerNbits__0_28 |   67|      184
+6    |  outA  |registerNbits       |   67|      184
+-----+--------+--------------------+-----+---------
