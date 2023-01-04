@@ -1,9 +1,9 @@
 module sequential_multiplier (
+    in1,
+    in2,
     clk,
     reset,
     en,
-    in1,
-    in2,
     result,
     enOut
 );
@@ -52,7 +52,7 @@ module sequential_multiplier (
           res = ((in1[31] ^ in2[31]) == 1) ? (~res[63:0] + 1'b1) : res[63:0];
           result = res;  // last iteration
           // make one cycle delay for getting input data right
-          enOut = 1;
+          enOut = 1;  // write the previos result out to the out register
         end
       end
 

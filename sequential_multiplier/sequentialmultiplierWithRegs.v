@@ -1,4 +1,4 @@
-module integerationMult #(
+module sequentialmultiplier_withregs #(
     parameter N = 32
 ) (
     inputA,
@@ -30,12 +30,12 @@ module integerationMult #(
       inputB,
       B_reg
   );
-  sequential_multiplier SM (
+  sequentialmultiplier SM (
+      A_reg,
+      B_reg,
       clk,
       reset,
       en,
-      A_reg,
-      B_reg,
       {outA_reg, outB_reg},
       enableOutput
   );
