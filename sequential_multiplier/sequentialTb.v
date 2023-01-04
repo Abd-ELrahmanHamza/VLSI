@@ -9,12 +9,13 @@ module SeqTB ();
   integer i = 0, count_failure = 0, count_success = 0, ok = 0;
   reg [63:0] result_ref[0:7];
 
-  sequential_multiplier multi (
-      .clk (clk),
-      .rst (start),
-      .in1 (x),
-      .in2 (y),
-      .prod(result)
+  integrationMult multi (
+      .clk(clk),
+      .reset(start),
+      .inputA(x),
+      .en(1'b1),
+      .inputB(y),
+      .result(result)
   );
 
   initial begin
