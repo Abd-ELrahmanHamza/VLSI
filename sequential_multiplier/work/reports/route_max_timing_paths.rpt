@@ -1,0 +1,1717 @@
+ Timing Path to SM/result_reg[63]/D 
+  
+ Path Start Point : regA/out_reg[31] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : SM/result_reg[63] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.21555  2.20099  3.41654           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0620 0.0620 0.0170 5.23361  7.03097  12.2646           3       59.504   F    K        | 
+|    regA/clk_CTS_0_PP_3                       Rise  0.0620 0.0000                                                                           | 
+|    regA/CTS_L2_c_tid0_18/A     CLKBUF_X1     Rise  0.0620 0.0000 0.0170          0.77983                                     F             | 
+|    regA/CTS_L2_c_tid0_18/Z     CLKBUF_X1     Rise  0.1200 0.0580 0.0300 4.80162  7.03097  11.8326           3       59.504   F    K        | 
+|    regA/clk_gate_out_reg/CK    CLKGATETST_X4 Rise  0.1200 0.0000 0.0300          4.43894                                     FA            | 
+|    regA/clk_gate_out_reg/GCK   CLKGATETST_X4 Rise  0.1510 0.0310 0.0080 2.85528  2.84232  5.6976            2       60.8705  FA   K        | 
+|    regA/CTS_L4_c_tid0_9/A      CLKBUF_X3     Rise  0.1510 0.0000 0.0080          1.42116                                     F             | 
+|    regA/CTS_L4_c_tid0_9/Z      CLKBUF_X3     Rise  0.2010 0.0500 0.0260 12.5625  16.1441  28.7066           17      63.9286  F    K        | 
+| Data Path:                                                                                                                                 | 
+|    regA/out_reg[31]/CK         DFF_X1        Rise  0.2020 0.0010 0.0260          0.949653                                    F             | 
+|    regA/out_reg[31]/Q          DFF_X1        Rise  0.3010 0.0990 0.0120 0.277151 3.40189  3.67904           1       59.504   F             | 
+|    regA/drc_ipo_c3/A           BUF_X4        Rise  0.3010 0.0000 0.0120          3.40189                                                   | 
+|    regA/drc_ipo_c3/Z           BUF_X4        Rise  0.3660 0.0650 0.0550 19.5804  63.3228  82.9032           33      59.504                 | 
+|    regA/out[31]                              Rise  0.3660 0.0000                                                                           | 
+|    SM/in1[31]                                Rise  0.3660 0.0000                                                                           | 
+|    SM/i_1_355/S                MUX2_X1       Rise  0.3700 0.0040 0.0540          1.91994                                                   | 
+|    SM/i_1_355/Z                MUX2_X1       Fall  0.4440 0.0740 0.0150 0.969824 5.44097  6.4108            2       54.9219                | 
+|    SM/i_9/m[1]                               Fall  0.4440 0.0000                                                                           | 
+|    SM/i_9/i_1/A                FA_X1         Fall  0.4440 0.0000 0.0150          3.6056                                                    | 
+|    SM/i_9/i_1/CO               FA_X1         Fall  0.5230 0.0790 0.0150 0.424245 2.76208  3.18632           1       44.933                 | 
+|    SM/i_9/i_2/CI               FA_X1         Fall  0.5230 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_2/CO               FA_X1         Fall  0.5960 0.0730 0.0160 0.619796 2.76208  3.38187           1       46.5402                | 
+|    SM/i_9/i_3/CI               FA_X1         Fall  0.5960 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_3/CO               FA_X1         Fall  0.6710 0.0750 0.0160 1.19227  2.76208  3.95435           1       46.5402                | 
+|    SM/i_9/i_4/CI               FA_X1         Fall  0.6710 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_4/CO               FA_X1         Fall  0.7450 0.0740 0.0150 0.579563 2.76208  3.34164           1       45.7701                | 
+|    SM/i_9/i_5/CI               FA_X1         Fall  0.7450 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_5/CO               FA_X1         Fall  0.8190 0.0740 0.0160 0.872461 2.76208  3.63454           1       46.5402                | 
+|    SM/i_9/i_6/CI               FA_X1         Fall  0.8190 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_6/CO               FA_X1         Fall  0.8950 0.0760 0.0170 1.44646  2.76208  4.20854           1       46.5402                | 
+|    SM/i_9/i_7/CI               FA_X1         Fall  0.8950 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_7/CO               FA_X1         Fall  0.9700 0.0750 0.0160 0.906222 2.76208  3.6683            1       46.5402                | 
+|    SM/i_9/i_8/CI               FA_X1         Fall  0.9700 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_8/CO               FA_X1         Fall  1.0440 0.0740 0.0150 0.57942  2.76208  3.3415            1       54.9219                | 
+|    SM/i_9/i_9/CI               FA_X1         Fall  1.0440 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_9/CO               FA_X1         Fall  1.1170 0.0730 0.0160 0.643586 2.76208  3.40566           1       54.9219                | 
+|    SM/i_9/i_10/CI              FA_X1         Fall  1.1170 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_10/CO              FA_X1         Fall  1.1910 0.0740 0.0160 0.759632 2.76208  3.52171           1       63.9286                | 
+|    SM/i_9/i_11/CI              FA_X1         Fall  1.1910 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_11/CO              FA_X1         Fall  1.2650 0.0740 0.0160 0.665157 2.76208  3.42724           1       63.9286                | 
+|    SM/i_9/i_12/CI              FA_X1         Fall  1.2650 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_12/CO              FA_X1         Fall  1.3380 0.0730 0.0150 0.433347 2.76208  3.19543           1       63.9286                | 
+|    SM/i_9/i_13/CI              FA_X1         Fall  1.3380 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_13/CO              FA_X1         Fall  1.4130 0.0750 0.0170 1.4323   2.76208  4.19437           1       59.4308                | 
+|    SM/i_9/i_14/CI              FA_X1         Fall  1.4130 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_14/CO              FA_X1         Fall  1.4860 0.0730 0.0150 0.271838 2.76208  3.03392           1       53.2351                | 
+|    SM/i_9/i_15/CI              FA_X1         Fall  1.4860 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_15/CO              FA_X1         Fall  1.5610 0.0750 0.0160 1.06262  2.76208  3.8247            1       53.2351                | 
+|    SM/i_9/i_16/CI              FA_X1         Fall  1.5610 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_16/CO              FA_X1         Fall  1.6350 0.0740 0.0160 0.810419 2.76208  3.5725            1       49.6939                | 
+|    SM/i_9/i_17/CI              FA_X1         Fall  1.6350 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_17/CO              FA_X1         Fall  1.7100 0.0750 0.0160 1.08508  2.76208  3.84716           1       49.6939                | 
+|    SM/i_9/i_18/CI              FA_X1         Fall  1.7100 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_18/CO              FA_X1         Fall  1.7830 0.0730 0.0150 0.246956 2.76208  3.00903           1       59.4308                | 
+|    SM/i_9/i_19/CI              FA_X1         Fall  1.7830 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_19/CO              FA_X1         Fall  1.8570 0.0740 0.0160 0.71446  2.76208  3.47654           1       53.0022                | 
+|    SM/i_9/i_20/CI              FA_X1         Fall  1.8570 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_20/CO              FA_X1         Fall  1.9300 0.0730 0.0150 0.502662 2.76208  3.26474           1       53.0022                | 
+|    SM/i_9/i_21/CI              FA_X1         Fall  1.9300 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_21/CO              FA_X1         Fall  2.0020 0.0720 0.0150 0.297689 2.76208  3.05977           1       53.0022                | 
+|    SM/i_9/i_22/CI              FA_X1         Fall  2.0020 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_22/CO              FA_X1         Fall  2.0750 0.0730 0.0150 0.458084 2.76208  3.22016           1       48.8616                | 
+|    SM/i_9/i_23/CI              FA_X1         Fall  2.0750 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_23/CO              FA_X1         Fall  2.1480 0.0730 0.0150 0.462875 2.76208  3.22495           1       48.8616                | 
+|    SM/i_9/i_24/CI              FA_X1         Fall  2.1480 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_24/CO              FA_X1         Fall  2.2210 0.0730 0.0150 0.573388 2.76208  3.33547           1       48.8616                | 
+|    SM/i_9/i_25/CI              FA_X1         Fall  2.2210 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_25/CO              FA_X1         Fall  2.2940 0.0730 0.0160 0.64095  2.76208  3.40303           1       53.6719                | 
+|    SM/i_9/i_26/CI              FA_X1         Fall  2.2940 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_26/CO              FA_X1         Fall  2.3690 0.0750 0.0160 1.09599  2.76208  3.85807           1       50.1786                | 
+|    SM/i_9/i_27/CI              FA_X1         Fall  2.3690 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_27/CO              FA_X1         Fall  2.4420 0.0730 0.0150 0.221135 2.76208  2.98321           1       50.1786                | 
+|    SM/i_9/i_28/CI              FA_X1         Fall  2.4420 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_28/CO              FA_X1         Fall  2.5150 0.0730 0.0160 0.649193 2.76208  3.41127           1       55.676                 | 
+|    SM/i_9/i_29/CI              FA_X1         Fall  2.5150 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_29/CO              FA_X1         Fall  2.5890 0.0740 0.0160 0.863065 2.76208  3.62514           1       61.6406                | 
+|    SM/i_9/i_30/CI              FA_X1         Fall  2.5890 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_30/CO              FA_X1         Fall  2.6650 0.0760 0.0170 1.34511  2.76208  4.10719           1       53.6719                | 
+|    SM/i_9/i_31/CI              FA_X1         Fall  2.6650 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_31/S               FA_X1         Fall  2.7500 0.0850 0.0140 0.208374 0.944775 1.15315           1       53.6719                | 
+|    SM/i_9/p_1[31]                            Fall  2.7500 0.0000                                                                           | 
+|    SM/i_1_343/B                MUX2_X1       Fall  2.7500 0.0000 0.0140          0.899702                                                  | 
+|    SM/i_1_343/Z                MUX2_X1       Fall  2.8250 0.0750 0.0170 1.42575  7.08377  8.50952           4       48.8616                | 
+|    SM/i_11/p_1[62]                           Fall  2.8250 0.0000                                                             A             | 
+|    SM/i_11/i_70/A3             NOR3_X1       Fall  2.8250 0.0000 0.0170          1.55272                                                   | 
+|    SM/i_11/i_70/ZN             NOR3_X1       Rise  2.9050 0.0800 0.0510 1.00765  4.17264  5.18029           2       53.6719                | 
+|    SM/i_11/i_68/B              XNOR2_X1      Rise  2.9050 0.0000 0.0510          2.57361                                                   | 
+|    SM/i_11/i_68/ZN             XNOR2_X1      Rise  2.9580 0.0530 0.0280 0.465716 3.31054  3.77626           2       53.6719                | 
+|    SM/i_11/p_0[63]                           Rise  2.9580 0.0000                                                             A             | 
+|    SM/i_1_131/B2               AOI22_X1      Rise  2.9580 0.0000 0.0280          1.62303                                                   | 
+|    SM/i_1_131/ZN               AOI22_X1      Fall  2.9850 0.0270 0.0290 0.960684 1.70023  2.66091           1       53.6719                | 
+|    SM/i_1_130/A                INV_X1        Fall  2.9850 0.0000 0.0290          1.54936                                                   | 
+|    SM/i_1_130/ZN               INV_X1        Rise  3.0040 0.0190 0.0110 0.415611 1.14029  1.5559            1       61.6406                | 
+|    SM/result_reg[63]/D         DFF_X1        Rise  3.0040 0.0000 0.0110          1.14029                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to SM/result_reg[63]/CK 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay   Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000  0.0000 0.1000             1.21555  1.94799  3.16354           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000  0.0000 0.1000                      1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0610  0.0610 0.0160             5.23361  6.36838  11.602            3       59.504   F    K        | 
+|    SM/clk_CTS_0_PP_15                        Rise  0.0610  0.0000                                                                                       | 
+|    SM/clk_gate_result_reg/CK   CLKGATETST_X4 Rise  0.0600 -0.0010 0.0160    -0.0010           4.43894                                     FA            | 
+|    SM/clk_gate_result_reg/GCK  CLKGATETST_X4 Rise  0.0870  0.0270 0.0060             1.97615  1.24879  3.22493           1       60.8705  FA   K        | 
+|    SM/CTS_L3_c_tid0_79/A       CLKBUF_X3     Rise  0.0870  0.0000 0.0060                      1.42116                                     F             | 
+|    SM/CTS_L3_c_tid0_79/Z       CLKBUF_X3     Rise  0.1930  0.1060 0.0880             48.9616  54.8122  103.774           64      44.2299  F    K        | 
+|    SM/result_reg[63]/CK        DFF_X1        Rise  0.2020  0.0090 0.0880                      0.949653                                    F             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  4.0000 4.0000 | 
+| target clock propagated network latency  |  0.2020 4.2020 | 
+| library setup check                      | -0.0310 4.1710 | 
+| data required time                       |  4.1710        | 
+|                                          |                | 
+| data required time                       |  4.1710        | 
+| data arrival time                        | -3.0040        | 
+| pessimism                                |  0.0010        | 
+|                                          |                | 
+| slack                                    |  1.1680        | 
+-------------------------------------------------------------
+
+
+ Timing Path to SM/res_reg[63]/D 
+  
+ Path Start Point : regA/out_reg[31] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : SM/res_reg[63] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.21555  2.20099  3.41654           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0620 0.0620 0.0170 5.23361  7.03097  12.2646           3       59.504   F    K        | 
+|    regA/clk_CTS_0_PP_3                       Rise  0.0620 0.0000                                                                           | 
+|    regA/CTS_L2_c_tid0_18/A     CLKBUF_X1     Rise  0.0620 0.0000 0.0170          0.77983                                     F             | 
+|    regA/CTS_L2_c_tid0_18/Z     CLKBUF_X1     Rise  0.1200 0.0580 0.0300 4.80162  7.03097  11.8326           3       59.504   F    K        | 
+|    regA/clk_gate_out_reg/CK    CLKGATETST_X4 Rise  0.1200 0.0000 0.0300          4.43894                                     FA            | 
+|    regA/clk_gate_out_reg/GCK   CLKGATETST_X4 Rise  0.1510 0.0310 0.0080 2.85528  2.84232  5.6976            2       60.8705  FA   K        | 
+|    regA/CTS_L4_c_tid0_9/A      CLKBUF_X3     Rise  0.1510 0.0000 0.0080          1.42116                                     F             | 
+|    regA/CTS_L4_c_tid0_9/Z      CLKBUF_X3     Rise  0.2010 0.0500 0.0260 12.5625  16.1441  28.7066           17      63.9286  F    K        | 
+| Data Path:                                                                                                                                 | 
+|    regA/out_reg[31]/CK         DFF_X1        Rise  0.2020 0.0010 0.0260          0.949653                                    F             | 
+|    regA/out_reg[31]/Q          DFF_X1        Rise  0.3010 0.0990 0.0120 0.277151 3.40189  3.67904           1       59.504   F             | 
+|    regA/drc_ipo_c3/A           BUF_X4        Rise  0.3010 0.0000 0.0120          3.40189                                                   | 
+|    regA/drc_ipo_c3/Z           BUF_X4        Rise  0.3660 0.0650 0.0550 19.5804  63.3228  82.9032           33      59.504                 | 
+|    regA/out[31]                              Rise  0.3660 0.0000                                                                           | 
+|    SM/in1[31]                                Rise  0.3660 0.0000                                                                           | 
+|    SM/i_1_355/S                MUX2_X1       Rise  0.3700 0.0040 0.0540          1.91994                                                   | 
+|    SM/i_1_355/Z                MUX2_X1       Fall  0.4440 0.0740 0.0150 0.969824 5.44097  6.4108            2       54.9219                | 
+|    SM/i_9/m[1]                               Fall  0.4440 0.0000                                                                           | 
+|    SM/i_9/i_1/A                FA_X1         Fall  0.4440 0.0000 0.0150          3.6056                                                    | 
+|    SM/i_9/i_1/CO               FA_X1         Fall  0.5230 0.0790 0.0150 0.424245 2.76208  3.18632           1       44.933                 | 
+|    SM/i_9/i_2/CI               FA_X1         Fall  0.5230 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_2/CO               FA_X1         Fall  0.5960 0.0730 0.0160 0.619796 2.76208  3.38187           1       46.5402                | 
+|    SM/i_9/i_3/CI               FA_X1         Fall  0.5960 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_3/CO               FA_X1         Fall  0.6710 0.0750 0.0160 1.19227  2.76208  3.95435           1       46.5402                | 
+|    SM/i_9/i_4/CI               FA_X1         Fall  0.6710 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_4/CO               FA_X1         Fall  0.7450 0.0740 0.0150 0.579563 2.76208  3.34164           1       45.7701                | 
+|    SM/i_9/i_5/CI               FA_X1         Fall  0.7450 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_5/CO               FA_X1         Fall  0.8190 0.0740 0.0160 0.872461 2.76208  3.63454           1       46.5402                | 
+|    SM/i_9/i_6/CI               FA_X1         Fall  0.8190 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_6/CO               FA_X1         Fall  0.8950 0.0760 0.0170 1.44646  2.76208  4.20854           1       46.5402                | 
+|    SM/i_9/i_7/CI               FA_X1         Fall  0.8950 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_7/CO               FA_X1         Fall  0.9700 0.0750 0.0160 0.906222 2.76208  3.6683            1       46.5402                | 
+|    SM/i_9/i_8/CI               FA_X1         Fall  0.9700 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_8/CO               FA_X1         Fall  1.0440 0.0740 0.0150 0.57942  2.76208  3.3415            1       54.9219                | 
+|    SM/i_9/i_9/CI               FA_X1         Fall  1.0440 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_9/CO               FA_X1         Fall  1.1170 0.0730 0.0160 0.643586 2.76208  3.40566           1       54.9219                | 
+|    SM/i_9/i_10/CI              FA_X1         Fall  1.1170 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_10/CO              FA_X1         Fall  1.1910 0.0740 0.0160 0.759632 2.76208  3.52171           1       63.9286                | 
+|    SM/i_9/i_11/CI              FA_X1         Fall  1.1910 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_11/CO              FA_X1         Fall  1.2650 0.0740 0.0160 0.665157 2.76208  3.42724           1       63.9286                | 
+|    SM/i_9/i_12/CI              FA_X1         Fall  1.2650 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_12/CO              FA_X1         Fall  1.3380 0.0730 0.0150 0.433347 2.76208  3.19543           1       63.9286                | 
+|    SM/i_9/i_13/CI              FA_X1         Fall  1.3380 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_13/CO              FA_X1         Fall  1.4130 0.0750 0.0170 1.4323   2.76208  4.19437           1       59.4308                | 
+|    SM/i_9/i_14/CI              FA_X1         Fall  1.4130 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_14/CO              FA_X1         Fall  1.4860 0.0730 0.0150 0.271838 2.76208  3.03392           1       53.2351                | 
+|    SM/i_9/i_15/CI              FA_X1         Fall  1.4860 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_15/CO              FA_X1         Fall  1.5610 0.0750 0.0160 1.06262  2.76208  3.8247            1       53.2351                | 
+|    SM/i_9/i_16/CI              FA_X1         Fall  1.5610 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_16/CO              FA_X1         Fall  1.6350 0.0740 0.0160 0.810419 2.76208  3.5725            1       49.6939                | 
+|    SM/i_9/i_17/CI              FA_X1         Fall  1.6350 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_17/CO              FA_X1         Fall  1.7100 0.0750 0.0160 1.08508  2.76208  3.84716           1       49.6939                | 
+|    SM/i_9/i_18/CI              FA_X1         Fall  1.7100 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_18/CO              FA_X1         Fall  1.7830 0.0730 0.0150 0.246956 2.76208  3.00903           1       59.4308                | 
+|    SM/i_9/i_19/CI              FA_X1         Fall  1.7830 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_19/CO              FA_X1         Fall  1.8570 0.0740 0.0160 0.71446  2.76208  3.47654           1       53.0022                | 
+|    SM/i_9/i_20/CI              FA_X1         Fall  1.8570 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_20/CO              FA_X1         Fall  1.9300 0.0730 0.0150 0.502662 2.76208  3.26474           1       53.0022                | 
+|    SM/i_9/i_21/CI              FA_X1         Fall  1.9300 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_21/CO              FA_X1         Fall  2.0020 0.0720 0.0150 0.297689 2.76208  3.05977           1       53.0022                | 
+|    SM/i_9/i_22/CI              FA_X1         Fall  2.0020 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_22/CO              FA_X1         Fall  2.0750 0.0730 0.0150 0.458084 2.76208  3.22016           1       48.8616                | 
+|    SM/i_9/i_23/CI              FA_X1         Fall  2.0750 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_23/CO              FA_X1         Fall  2.1480 0.0730 0.0150 0.462875 2.76208  3.22495           1       48.8616                | 
+|    SM/i_9/i_24/CI              FA_X1         Fall  2.1480 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_24/CO              FA_X1         Fall  2.2210 0.0730 0.0150 0.573388 2.76208  3.33547           1       48.8616                | 
+|    SM/i_9/i_25/CI              FA_X1         Fall  2.2210 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_25/CO              FA_X1         Fall  2.2940 0.0730 0.0160 0.64095  2.76208  3.40303           1       53.6719                | 
+|    SM/i_9/i_26/CI              FA_X1         Fall  2.2940 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_26/CO              FA_X1         Fall  2.3690 0.0750 0.0160 1.09599  2.76208  3.85807           1       50.1786                | 
+|    SM/i_9/i_27/CI              FA_X1         Fall  2.3690 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_27/CO              FA_X1         Fall  2.4420 0.0730 0.0150 0.221135 2.76208  2.98321           1       50.1786                | 
+|    SM/i_9/i_28/CI              FA_X1         Fall  2.4420 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_28/CO              FA_X1         Fall  2.5150 0.0730 0.0160 0.649193 2.76208  3.41127           1       55.676                 | 
+|    SM/i_9/i_29/CI              FA_X1         Fall  2.5150 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_29/CO              FA_X1         Fall  2.5890 0.0740 0.0160 0.863065 2.76208  3.62514           1       61.6406                | 
+|    SM/i_9/i_30/CI              FA_X1         Fall  2.5890 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_30/CO              FA_X1         Fall  2.6650 0.0760 0.0170 1.34511  2.76208  4.10719           1       53.6719                | 
+|    SM/i_9/i_31/CI              FA_X1         Fall  2.6650 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_31/S               FA_X1         Fall  2.7500 0.0850 0.0140 0.208374 0.944775 1.15315           1       53.6719                | 
+|    SM/i_9/p_1[31]                            Fall  2.7500 0.0000                                                                           | 
+|    SM/i_1_343/B                MUX2_X1       Fall  2.7500 0.0000 0.0140          0.899702                                                  | 
+|    SM/i_1_343/Z                MUX2_X1       Fall  2.8250 0.0750 0.0170 1.42575  7.08377  8.50952           4       48.8616                | 
+|    SM/i_11/p_1[62]                           Fall  2.8250 0.0000                                                             A             | 
+|    SM/i_11/i_70/A3             NOR3_X1       Fall  2.8250 0.0000 0.0170          1.55272                                                   | 
+|    SM/i_11/i_70/ZN             NOR3_X1       Rise  2.9050 0.0800 0.0510 1.00765  4.17264  5.18029           2       53.6719                | 
+|    SM/i_11/i_68/B              XNOR2_X1      Rise  2.9050 0.0000 0.0510          2.57361                                                   | 
+|    SM/i_11/i_68/ZN             XNOR2_X1      Rise  2.9580 0.0530 0.0280 0.465716 3.31054  3.77626           2       53.6719                | 
+|    SM/i_11/p_0[63]                           Rise  2.9580 0.0000                                                             A             | 
+|    SM/i_1_302/A1               AOI22_X1      Rise  2.9580 0.0000 0.0280          1.68751                                                   | 
+|    SM/i_1_302/ZN               AOI22_X1      Fall  2.9770 0.0190 0.0270 0.294294 1.70023  1.99452           1       53.6719                | 
+|    SM/i_1_301/A                INV_X1        Fall  2.9770 0.0000 0.0270          1.54936                                                   | 
+|    SM/i_1_301/ZN               INV_X1        Rise  2.9950 0.0180 0.0100 0.316315 1.14029  1.45661           1       53.6719                | 
+|    SM/res_reg[63]/D            DFF_X1        Rise  2.9950 0.0000 0.0100          1.14029                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to SM/res_reg[63]/CK 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                          Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                     Rise  0.0000 0.0000 0.1000 1.21555  1.94799  3.16354           2       59.504   c    K        | 
+|    SM/CTSclk_CTS_0_PP_15PP_0               Rise  0.0000 0.0000                                                                           | 
+|    SM/CTS_L1_c_tid0_153/A    CLKBUF_X1     Rise  0.0000 0.0000 0.1000          0.77983                                     F             | 
+|    SM/CTS_L1_c_tid0_153/Z    CLKBUF_X1     Rise  0.1040 0.1040 0.0560 4.31082  18.4098  22.7206           3       59.504   F    K        | 
+|    SM/clk_gate_res_reg/CK    CLKGATETST_X8 Rise  0.1050 0.0010 0.0560          7.95918                                     FA            | 
+|    SM/clk_gate_res_reg/GCK   CLKGATETST_X8 Rise  0.1390 0.0340 0.0070 4.5169   2.49758  7.01448           2       60.8705  FA   K        | 
+|    SM/CTS_L3_c_tid1_36/A     CLKBUF_X3     Rise  0.1390 0.0000 0.0070          1.42116                                     F             | 
+|    SM/CTS_L3_c_tid1_36/Z     CLKBUF_X3     Rise  0.2100 0.0710 0.0470 28.5699  27.4061  55.976            32      48.8616  F    K        | 
+|    SM/res_reg[63]/CK         DFF_X1        Rise  0.2120 0.0020 0.0470          0.949653                                    F             | 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  4.0000 4.0000 | 
+| target clock propagated network latency  |  0.2120 4.2120 | 
+| library setup check                      | -0.0270 4.1850 | 
+| data required time                       |  4.1850        | 
+|                                          |                | 
+| data required time                       |  4.1850        | 
+| data arrival time                        | -2.9950        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.1900        | 
+-------------------------------------------------------------
+
+
+ Timing Path to SM/res_reg[64]/D 
+  
+ Path Start Point : regA/out_reg[31] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : SM/res_reg[64] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.21555  2.20099  3.41654           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0620 0.0620 0.0170 5.23361  7.03097  12.2646           3       59.504   F    K        | 
+|    regA/clk_CTS_0_PP_3                       Rise  0.0620 0.0000                                                                           | 
+|    regA/CTS_L2_c_tid0_18/A     CLKBUF_X1     Rise  0.0620 0.0000 0.0170          0.77983                                     F             | 
+|    regA/CTS_L2_c_tid0_18/Z     CLKBUF_X1     Rise  0.1200 0.0580 0.0300 4.80162  7.03097  11.8326           3       59.504   F    K        | 
+|    regA/clk_gate_out_reg/CK    CLKGATETST_X4 Rise  0.1200 0.0000 0.0300          4.43894                                     FA            | 
+|    regA/clk_gate_out_reg/GCK   CLKGATETST_X4 Rise  0.1510 0.0310 0.0080 2.85528  2.84232  5.6976            2       60.8705  FA   K        | 
+|    regA/CTS_L4_c_tid0_9/A      CLKBUF_X3     Rise  0.1510 0.0000 0.0080          1.42116                                     F             | 
+|    regA/CTS_L4_c_tid0_9/Z      CLKBUF_X3     Rise  0.2010 0.0500 0.0260 12.5625  16.1441  28.7066           17      63.9286  F    K        | 
+| Data Path:                                                                                                                                 | 
+|    regA/out_reg[31]/CK         DFF_X1        Rise  0.2020 0.0010 0.0260          0.949653                                    F             | 
+|    regA/out_reg[31]/Q          DFF_X1        Rise  0.3010 0.0990 0.0120 0.277151 3.40189  3.67904           1       59.504   F             | 
+|    regA/drc_ipo_c3/A           BUF_X4        Rise  0.3010 0.0000 0.0120          3.40189                                                   | 
+|    regA/drc_ipo_c3/Z           BUF_X4        Rise  0.3660 0.0650 0.0550 19.5804  63.3228  82.9032           33      59.504                 | 
+|    regA/out[31]                              Rise  0.3660 0.0000                                                                           | 
+|    SM/in1[31]                                Rise  0.3660 0.0000                                                                           | 
+|    SM/i_1_355/S                MUX2_X1       Rise  0.3700 0.0040 0.0540          1.91994                                                   | 
+|    SM/i_1_355/Z                MUX2_X1       Fall  0.4440 0.0740 0.0150 0.969824 5.44097  6.4108            2       54.9219                | 
+|    SM/i_9/m[1]                               Fall  0.4440 0.0000                                                                           | 
+|    SM/i_9/i_1/A                FA_X1         Fall  0.4440 0.0000 0.0150          3.6056                                                    | 
+|    SM/i_9/i_1/CO               FA_X1         Fall  0.5230 0.0790 0.0150 0.424245 2.76208  3.18632           1       44.933                 | 
+|    SM/i_9/i_2/CI               FA_X1         Fall  0.5230 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_2/CO               FA_X1         Fall  0.5960 0.0730 0.0160 0.619796 2.76208  3.38187           1       46.5402                | 
+|    SM/i_9/i_3/CI               FA_X1         Fall  0.5960 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_3/CO               FA_X1         Fall  0.6710 0.0750 0.0160 1.19227  2.76208  3.95435           1       46.5402                | 
+|    SM/i_9/i_4/CI               FA_X1         Fall  0.6710 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_4/CO               FA_X1         Fall  0.7450 0.0740 0.0150 0.579563 2.76208  3.34164           1       45.7701                | 
+|    SM/i_9/i_5/CI               FA_X1         Fall  0.7450 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_5/CO               FA_X1         Fall  0.8190 0.0740 0.0160 0.872461 2.76208  3.63454           1       46.5402                | 
+|    SM/i_9/i_6/CI               FA_X1         Fall  0.8190 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_6/CO               FA_X1         Fall  0.8950 0.0760 0.0170 1.44646  2.76208  4.20854           1       46.5402                | 
+|    SM/i_9/i_7/CI               FA_X1         Fall  0.8950 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_7/CO               FA_X1         Fall  0.9700 0.0750 0.0160 0.906222 2.76208  3.6683            1       46.5402                | 
+|    SM/i_9/i_8/CI               FA_X1         Fall  0.9700 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_8/CO               FA_X1         Fall  1.0440 0.0740 0.0150 0.57942  2.76208  3.3415            1       54.9219                | 
+|    SM/i_9/i_9/CI               FA_X1         Fall  1.0440 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_9/CO               FA_X1         Fall  1.1170 0.0730 0.0160 0.643586 2.76208  3.40566           1       54.9219                | 
+|    SM/i_9/i_10/CI              FA_X1         Fall  1.1170 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_10/CO              FA_X1         Fall  1.1910 0.0740 0.0160 0.759632 2.76208  3.52171           1       63.9286                | 
+|    SM/i_9/i_11/CI              FA_X1         Fall  1.1910 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_11/CO              FA_X1         Fall  1.2650 0.0740 0.0160 0.665157 2.76208  3.42724           1       63.9286                | 
+|    SM/i_9/i_12/CI              FA_X1         Fall  1.2650 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_12/CO              FA_X1         Fall  1.3380 0.0730 0.0150 0.433347 2.76208  3.19543           1       63.9286                | 
+|    SM/i_9/i_13/CI              FA_X1         Fall  1.3380 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_13/CO              FA_X1         Fall  1.4130 0.0750 0.0170 1.4323   2.76208  4.19437           1       59.4308                | 
+|    SM/i_9/i_14/CI              FA_X1         Fall  1.4130 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_14/CO              FA_X1         Fall  1.4860 0.0730 0.0150 0.271838 2.76208  3.03392           1       53.2351                | 
+|    SM/i_9/i_15/CI              FA_X1         Fall  1.4860 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_15/CO              FA_X1         Fall  1.5610 0.0750 0.0160 1.06262  2.76208  3.8247            1       53.2351                | 
+|    SM/i_9/i_16/CI              FA_X1         Fall  1.5610 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_16/CO              FA_X1         Fall  1.6350 0.0740 0.0160 0.810419 2.76208  3.5725            1       49.6939                | 
+|    SM/i_9/i_17/CI              FA_X1         Fall  1.6350 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_17/CO              FA_X1         Fall  1.7100 0.0750 0.0160 1.08508  2.76208  3.84716           1       49.6939                | 
+|    SM/i_9/i_18/CI              FA_X1         Fall  1.7100 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_18/CO              FA_X1         Fall  1.7830 0.0730 0.0150 0.246956 2.76208  3.00903           1       59.4308                | 
+|    SM/i_9/i_19/CI              FA_X1         Fall  1.7830 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_19/CO              FA_X1         Fall  1.8570 0.0740 0.0160 0.71446  2.76208  3.47654           1       53.0022                | 
+|    SM/i_9/i_20/CI              FA_X1         Fall  1.8570 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_20/CO              FA_X1         Fall  1.9300 0.0730 0.0150 0.502662 2.76208  3.26474           1       53.0022                | 
+|    SM/i_9/i_21/CI              FA_X1         Fall  1.9300 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_21/CO              FA_X1         Fall  2.0020 0.0720 0.0150 0.297689 2.76208  3.05977           1       53.0022                | 
+|    SM/i_9/i_22/CI              FA_X1         Fall  2.0020 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_22/CO              FA_X1         Fall  2.0750 0.0730 0.0150 0.458084 2.76208  3.22016           1       48.8616                | 
+|    SM/i_9/i_23/CI              FA_X1         Fall  2.0750 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_23/CO              FA_X1         Fall  2.1480 0.0730 0.0150 0.462875 2.76208  3.22495           1       48.8616                | 
+|    SM/i_9/i_24/CI              FA_X1         Fall  2.1480 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_24/CO              FA_X1         Fall  2.2210 0.0730 0.0150 0.573388 2.76208  3.33547           1       48.8616                | 
+|    SM/i_9/i_25/CI              FA_X1         Fall  2.2210 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_25/CO              FA_X1         Fall  2.2940 0.0730 0.0160 0.64095  2.76208  3.40303           1       53.6719                | 
+|    SM/i_9/i_26/CI              FA_X1         Fall  2.2940 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_26/CO              FA_X1         Fall  2.3690 0.0750 0.0160 1.09599  2.76208  3.85807           1       50.1786                | 
+|    SM/i_9/i_27/CI              FA_X1         Fall  2.3690 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_27/CO              FA_X1         Fall  2.4420 0.0730 0.0150 0.221135 2.76208  2.98321           1       50.1786                | 
+|    SM/i_9/i_28/CI              FA_X1         Fall  2.4420 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_28/CO              FA_X1         Fall  2.5150 0.0730 0.0160 0.649193 2.76208  3.41127           1       55.676                 | 
+|    SM/i_9/i_29/CI              FA_X1         Fall  2.5150 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_29/CO              FA_X1         Fall  2.5890 0.0740 0.0160 0.863065 2.76208  3.62514           1       61.6406                | 
+|    SM/i_9/i_30/CI              FA_X1         Fall  2.5890 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_30/CO              FA_X1         Fall  2.6650 0.0760 0.0170 1.34511  2.76208  4.10719           1       53.6719                | 
+|    SM/i_9/i_31/CI              FA_X1         Fall  2.6650 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_31/S               FA_X1         Fall  2.7500 0.0850 0.0140 0.208374 0.944775 1.15315           1       53.6719                | 
+|    SM/i_9/p_1[31]                            Fall  2.7500 0.0000                                                                           | 
+|    SM/i_1_343/B                MUX2_X1       Fall  2.7500 0.0000 0.0140          0.899702                                                  | 
+|    SM/i_1_343/Z                MUX2_X1       Fall  2.8250 0.0750 0.0170 1.42575  7.08377  8.50952           4       48.8616                | 
+|    SM/i_11/p_1[62]                           Fall  2.8250 0.0000                                                             A             | 
+|    SM/i_11/i_70/A3             NOR3_X1       Fall  2.8250 0.0000 0.0170          1.55272                                                   | 
+|    SM/i_11/i_70/ZN             NOR3_X1       Rise  2.9050 0.0800 0.0510 1.00765  4.17264  5.18029           2       53.6719                | 
+|    SM/i_11/i_69/A1             NAND2_X1      Rise  2.9050 0.0000 0.0510          1.59903                                                   | 
+|    SM/i_11/i_69/ZN             NAND2_X1      Fall  2.9260 0.0210 0.0160 1.41477  0.879747 2.29452           1       53.2143                | 
+|    SM/i_11/p_0[64]                           Fall  2.9260 0.0000                                                             A             | 
+|    SM/i_1_305/A1               AND3_X1       Fall  2.9260 0.0000 0.0160          0.86614                                                   | 
+|    SM/i_1_305/ZN               AND3_X1       Fall  2.9610 0.0350 0.0080 1.14858  1.14029  2.28887           1       40.7143                | 
+|    SM/res_reg[64]/D            DFF_X1        Fall  2.9610 0.0000 0.0080          1.06234                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to SM/res_reg[64]/CK 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                          Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                     Rise  0.0000 0.0000 0.1000 1.21555  1.94799  3.16354           2       59.504   c    K        | 
+|    SM/CTSclk_CTS_0_PP_15PP_0               Rise  0.0000 0.0000                                                                           | 
+|    SM/CTS_L1_c_tid0_153/A    CLKBUF_X1     Rise  0.0000 0.0000 0.1000          0.77983                                     F             | 
+|    SM/CTS_L1_c_tid0_153/Z    CLKBUF_X1     Rise  0.1040 0.1040 0.0560 4.31082  18.4098  22.7206           3       59.504   F    K        | 
+|    SM/clk_gate_res_reg/CK    CLKGATETST_X8 Rise  0.1050 0.0010 0.0560          7.95918                                     FA            | 
+|    SM/clk_gate_res_reg/GCK   CLKGATETST_X8 Rise  0.1390 0.0340 0.0070 4.5169   2.49758  7.01448           2       60.8705  FA   K        | 
+|    SM/CTS_L3_c_tid1_36/A     CLKBUF_X3     Rise  0.1390 0.0000 0.0070          1.42116                                     F             | 
+|    SM/CTS_L3_c_tid1_36/Z     CLKBUF_X3     Rise  0.2100 0.0710 0.0470 28.5699  27.4061  55.976            32      48.8616  F    K        | 
+|    SM/res_reg[64]/CK         DFF_X1        Rise  0.2130 0.0030 0.0470          0.949653                                    F             | 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  4.0000 4.0000 | 
+| target clock propagated network latency  |  0.2130 4.2130 | 
+| library setup check                      | -0.0250 4.1880 | 
+| data required time                       |  4.1880        | 
+|                                          |                | 
+| data required time                       |  4.1880        | 
+| data arrival time                        | -2.9610        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.2270        | 
+-------------------------------------------------------------
+
+
+ Timing Path to SM/result_reg[62]/D 
+  
+ Path Start Point : regA/out_reg[31] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : SM/result_reg[62] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.21555  2.20099  3.41654           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0620 0.0620 0.0170 5.23361  7.03097  12.2646           3       59.504   F    K        | 
+|    regA/clk_CTS_0_PP_3                       Rise  0.0620 0.0000                                                                           | 
+|    regA/CTS_L2_c_tid0_18/A     CLKBUF_X1     Rise  0.0620 0.0000 0.0170          0.77983                                     F             | 
+|    regA/CTS_L2_c_tid0_18/Z     CLKBUF_X1     Rise  0.1200 0.0580 0.0300 4.80162  7.03097  11.8326           3       59.504   F    K        | 
+|    regA/clk_gate_out_reg/CK    CLKGATETST_X4 Rise  0.1200 0.0000 0.0300          4.43894                                     FA            | 
+|    regA/clk_gate_out_reg/GCK   CLKGATETST_X4 Rise  0.1510 0.0310 0.0080 2.85528  2.84232  5.6976            2       60.8705  FA   K        | 
+|    regA/CTS_L4_c_tid0_9/A      CLKBUF_X3     Rise  0.1510 0.0000 0.0080          1.42116                                     F             | 
+|    regA/CTS_L4_c_tid0_9/Z      CLKBUF_X3     Rise  0.2010 0.0500 0.0260 12.5625  16.1441  28.7066           17      63.9286  F    K        | 
+| Data Path:                                                                                                                                 | 
+|    regA/out_reg[31]/CK         DFF_X1        Rise  0.2020 0.0010 0.0260          0.949653                                    F             | 
+|    regA/out_reg[31]/Q          DFF_X1        Rise  0.3010 0.0990 0.0120 0.277151 3.40189  3.67904           1       59.504   F             | 
+|    regA/drc_ipo_c3/A           BUF_X4        Rise  0.3010 0.0000 0.0120          3.40189                                                   | 
+|    regA/drc_ipo_c3/Z           BUF_X4        Rise  0.3660 0.0650 0.0550 19.5804  63.3228  82.9032           33      59.504                 | 
+|    regA/out[31]                              Rise  0.3660 0.0000                                                                           | 
+|    SM/in1[31]                                Rise  0.3660 0.0000                                                                           | 
+|    SM/i_1_355/S                MUX2_X1       Rise  0.3700 0.0040 0.0540          1.91994                                                   | 
+|    SM/i_1_355/Z                MUX2_X1       Fall  0.4440 0.0740 0.0150 0.969824 5.44097  6.4108            2       54.9219                | 
+|    SM/i_9/m[1]                               Fall  0.4440 0.0000                                                                           | 
+|    SM/i_9/i_1/A                FA_X1         Fall  0.4440 0.0000 0.0150          3.6056                                                    | 
+|    SM/i_9/i_1/CO               FA_X1         Fall  0.5230 0.0790 0.0150 0.424245 2.76208  3.18632           1       44.933                 | 
+|    SM/i_9/i_2/CI               FA_X1         Fall  0.5230 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_2/CO               FA_X1         Fall  0.5960 0.0730 0.0160 0.619796 2.76208  3.38187           1       46.5402                | 
+|    SM/i_9/i_3/CI               FA_X1         Fall  0.5960 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_3/CO               FA_X1         Fall  0.6710 0.0750 0.0160 1.19227  2.76208  3.95435           1       46.5402                | 
+|    SM/i_9/i_4/CI               FA_X1         Fall  0.6710 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_4/CO               FA_X1         Fall  0.7450 0.0740 0.0150 0.579563 2.76208  3.34164           1       45.7701                | 
+|    SM/i_9/i_5/CI               FA_X1         Fall  0.7450 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_5/CO               FA_X1         Fall  0.8190 0.0740 0.0160 0.872461 2.76208  3.63454           1       46.5402                | 
+|    SM/i_9/i_6/CI               FA_X1         Fall  0.8190 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_6/CO               FA_X1         Fall  0.8950 0.0760 0.0170 1.44646  2.76208  4.20854           1       46.5402                | 
+|    SM/i_9/i_7/CI               FA_X1         Fall  0.8950 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_7/CO               FA_X1         Fall  0.9700 0.0750 0.0160 0.906222 2.76208  3.6683            1       46.5402                | 
+|    SM/i_9/i_8/CI               FA_X1         Fall  0.9700 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_8/CO               FA_X1         Fall  1.0440 0.0740 0.0150 0.57942  2.76208  3.3415            1       54.9219                | 
+|    SM/i_9/i_9/CI               FA_X1         Fall  1.0440 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_9/CO               FA_X1         Fall  1.1170 0.0730 0.0160 0.643586 2.76208  3.40566           1       54.9219                | 
+|    SM/i_9/i_10/CI              FA_X1         Fall  1.1170 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_10/CO              FA_X1         Fall  1.1910 0.0740 0.0160 0.759632 2.76208  3.52171           1       63.9286                | 
+|    SM/i_9/i_11/CI              FA_X1         Fall  1.1910 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_11/CO              FA_X1         Fall  1.2650 0.0740 0.0160 0.665157 2.76208  3.42724           1       63.9286                | 
+|    SM/i_9/i_12/CI              FA_X1         Fall  1.2650 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_12/CO              FA_X1         Fall  1.3380 0.0730 0.0150 0.433347 2.76208  3.19543           1       63.9286                | 
+|    SM/i_9/i_13/CI              FA_X1         Fall  1.3380 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_13/CO              FA_X1         Fall  1.4130 0.0750 0.0170 1.4323   2.76208  4.19437           1       59.4308                | 
+|    SM/i_9/i_14/CI              FA_X1         Fall  1.4130 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_14/CO              FA_X1         Fall  1.4860 0.0730 0.0150 0.271838 2.76208  3.03392           1       53.2351                | 
+|    SM/i_9/i_15/CI              FA_X1         Fall  1.4860 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_15/CO              FA_X1         Fall  1.5610 0.0750 0.0160 1.06262  2.76208  3.8247            1       53.2351                | 
+|    SM/i_9/i_16/CI              FA_X1         Fall  1.5610 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_16/CO              FA_X1         Fall  1.6350 0.0740 0.0160 0.810419 2.76208  3.5725            1       49.6939                | 
+|    SM/i_9/i_17/CI              FA_X1         Fall  1.6350 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_17/CO              FA_X1         Fall  1.7100 0.0750 0.0160 1.08508  2.76208  3.84716           1       49.6939                | 
+|    SM/i_9/i_18/CI              FA_X1         Fall  1.7100 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_18/CO              FA_X1         Fall  1.7830 0.0730 0.0150 0.246956 2.76208  3.00903           1       59.4308                | 
+|    SM/i_9/i_19/CI              FA_X1         Fall  1.7830 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_19/CO              FA_X1         Fall  1.8570 0.0740 0.0160 0.71446  2.76208  3.47654           1       53.0022                | 
+|    SM/i_9/i_20/CI              FA_X1         Fall  1.8570 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_20/CO              FA_X1         Fall  1.9300 0.0730 0.0150 0.502662 2.76208  3.26474           1       53.0022                | 
+|    SM/i_9/i_21/CI              FA_X1         Fall  1.9300 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_21/CO              FA_X1         Fall  2.0020 0.0720 0.0150 0.297689 2.76208  3.05977           1       53.0022                | 
+|    SM/i_9/i_22/CI              FA_X1         Fall  2.0020 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_22/CO              FA_X1         Fall  2.0750 0.0730 0.0150 0.458084 2.76208  3.22016           1       48.8616                | 
+|    SM/i_9/i_23/CI              FA_X1         Fall  2.0750 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_23/CO              FA_X1         Fall  2.1480 0.0730 0.0150 0.462875 2.76208  3.22495           1       48.8616                | 
+|    SM/i_9/i_24/CI              FA_X1         Fall  2.1480 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_24/CO              FA_X1         Fall  2.2210 0.0730 0.0150 0.573388 2.76208  3.33547           1       48.8616                | 
+|    SM/i_9/i_25/CI              FA_X1         Fall  2.2210 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_25/CO              FA_X1         Fall  2.2940 0.0730 0.0160 0.64095  2.76208  3.40303           1       53.6719                | 
+|    SM/i_9/i_26/CI              FA_X1         Fall  2.2940 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_26/CO              FA_X1         Fall  2.3690 0.0750 0.0160 1.09599  2.76208  3.85807           1       50.1786                | 
+|    SM/i_9/i_27/CI              FA_X1         Fall  2.3690 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_27/CO              FA_X1         Fall  2.4420 0.0730 0.0150 0.221135 2.76208  2.98321           1       50.1786                | 
+|    SM/i_9/i_28/CI              FA_X1         Fall  2.4420 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_28/CO              FA_X1         Fall  2.5150 0.0730 0.0160 0.649193 2.76208  3.41127           1       55.676                 | 
+|    SM/i_9/i_29/CI              FA_X1         Fall  2.5150 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_29/CO              FA_X1         Fall  2.5890 0.0740 0.0160 0.863065 2.76208  3.62514           1       61.6406                | 
+|    SM/i_9/i_30/CI              FA_X1         Fall  2.5890 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_30/CO              FA_X1         Fall  2.6650 0.0760 0.0170 1.34511  2.76208  4.10719           1       53.6719                | 
+|    SM/i_9/i_31/CI              FA_X1         Fall  2.6650 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_31/S               FA_X1         Fall  2.7500 0.0850 0.0140 0.208374 0.944775 1.15315           1       53.6719                | 
+|    SM/i_9/p_1[31]                            Fall  2.7500 0.0000                                                                           | 
+|    SM/i_1_343/B                MUX2_X1       Fall  2.7500 0.0000 0.0140          0.899702                                                  | 
+|    SM/i_1_343/Z                MUX2_X1       Fall  2.8250 0.0750 0.0170 1.42575  7.08377  8.50952           4       48.8616                | 
+|    SM/i_11/p_1[62]                           Fall  2.8250 0.0000                                                             A             | 
+|    SM/i_11/i_67/A              XNOR2_X1      Fall  2.8250 0.0000 0.0170          2.12585                                                   | 
+|    SM/i_11/i_67/ZN             XNOR2_X1      Fall  2.8710 0.0460 0.0150 0.778767 3.25971  4.03848           2       53.6719                | 
+|    SM/i_11/p_0[62]                           Fall  2.8710 0.0000                                                             A             | 
+|    SM/i_1_129/B2               AOI22_X1      Fall  2.8710 0.0000 0.0150          1.52031                                                   | 
+|    SM/i_1_129/ZN               AOI22_X1      Rise  2.9240 0.0530 0.0380 0.932685 1.70023  2.63292           1       53.6719                | 
+|    SM/i_1_128/A                INV_X1        Rise  2.9240 0.0000 0.0380          1.70023                                                   | 
+|    SM/i_1_128/ZN               INV_X1        Fall  2.9340 0.0100 0.0100 0.672877 1.14029  1.81317           1       61.6406                | 
+|    SM/result_reg[62]/D         DFF_X1        Fall  2.9340 0.0000 0.0100          1.06234                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to SM/result_reg[62]/CK 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay   Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000  0.0000 0.1000             1.21555  1.94799  3.16354           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000  0.0000 0.1000                      1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0610  0.0610 0.0160             5.23361  6.36838  11.602            3       59.504   F    K        | 
+|    SM/clk_CTS_0_PP_15                        Rise  0.0610  0.0000                                                                                       | 
+|    SM/clk_gate_result_reg/CK   CLKGATETST_X4 Rise  0.0600 -0.0010 0.0160    -0.0010           4.43894                                     FA            | 
+|    SM/clk_gate_result_reg/GCK  CLKGATETST_X4 Rise  0.0870  0.0270 0.0060             1.97615  1.24879  3.22493           1       60.8705  FA   K        | 
+|    SM/CTS_L3_c_tid0_79/A       CLKBUF_X3     Rise  0.0870  0.0000 0.0060                      1.42116                                     F             | 
+|    SM/CTS_L3_c_tid0_79/Z       CLKBUF_X3     Rise  0.1930  0.1060 0.0880             48.9616  54.8122  103.774           64      44.2299  F    K        | 
+|    SM/result_reg[62]/CK        DFF_X1        Rise  0.2020  0.0090 0.0880                      0.949653                                    F             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  4.0000 4.0000 | 
+| target clock propagated network latency  |  0.2020 4.2020 | 
+| library setup check                      | -0.0240 4.1780 | 
+| data required time                       |  4.1780        | 
+|                                          |                | 
+| data required time                       |  4.1780        | 
+| data arrival time                        | -2.9340        | 
+| pessimism                                |  0.0010        | 
+|                                          |                | 
+| slack                                    |  1.2450        | 
+-------------------------------------------------------------
+
+
+ Timing Path to SM/res_reg[62]/D 
+  
+ Path Start Point : regA/out_reg[31] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : SM/res_reg[62] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.21555  2.20099  3.41654           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0620 0.0620 0.0170 5.23361  7.03097  12.2646           3       59.504   F    K        | 
+|    regA/clk_CTS_0_PP_3                       Rise  0.0620 0.0000                                                                           | 
+|    regA/CTS_L2_c_tid0_18/A     CLKBUF_X1     Rise  0.0620 0.0000 0.0170          0.77983                                     F             | 
+|    regA/CTS_L2_c_tid0_18/Z     CLKBUF_X1     Rise  0.1200 0.0580 0.0300 4.80162  7.03097  11.8326           3       59.504   F    K        | 
+|    regA/clk_gate_out_reg/CK    CLKGATETST_X4 Rise  0.1200 0.0000 0.0300          4.43894                                     FA            | 
+|    regA/clk_gate_out_reg/GCK   CLKGATETST_X4 Rise  0.1510 0.0310 0.0080 2.85528  2.84232  5.6976            2       60.8705  FA   K        | 
+|    regA/CTS_L4_c_tid0_9/A      CLKBUF_X3     Rise  0.1510 0.0000 0.0080          1.42116                                     F             | 
+|    regA/CTS_L4_c_tid0_9/Z      CLKBUF_X3     Rise  0.2010 0.0500 0.0260 12.5625  16.1441  28.7066           17      63.9286  F    K        | 
+| Data Path:                                                                                                                                 | 
+|    regA/out_reg[31]/CK         DFF_X1        Rise  0.2020 0.0010 0.0260          0.949653                                    F             | 
+|    regA/out_reg[31]/Q          DFF_X1        Rise  0.3010 0.0990 0.0120 0.277151 3.40189  3.67904           1       59.504   F             | 
+|    regA/drc_ipo_c3/A           BUF_X4        Rise  0.3010 0.0000 0.0120          3.40189                                                   | 
+|    regA/drc_ipo_c3/Z           BUF_X4        Rise  0.3660 0.0650 0.0550 19.5804  63.3228  82.9032           33      59.504                 | 
+|    regA/out[31]                              Rise  0.3660 0.0000                                                                           | 
+|    SM/in1[31]                                Rise  0.3660 0.0000                                                                           | 
+|    SM/i_1_355/S                MUX2_X1       Rise  0.3700 0.0040 0.0540          1.91994                                                   | 
+|    SM/i_1_355/Z                MUX2_X1       Fall  0.4440 0.0740 0.0150 0.969824 5.44097  6.4108            2       54.9219                | 
+|    SM/i_9/m[1]                               Fall  0.4440 0.0000                                                                           | 
+|    SM/i_9/i_1/A                FA_X1         Fall  0.4440 0.0000 0.0150          3.6056                                                    | 
+|    SM/i_9/i_1/CO               FA_X1         Fall  0.5230 0.0790 0.0150 0.424245 2.76208  3.18632           1       44.933                 | 
+|    SM/i_9/i_2/CI               FA_X1         Fall  0.5230 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_2/CO               FA_X1         Fall  0.5960 0.0730 0.0160 0.619796 2.76208  3.38187           1       46.5402                | 
+|    SM/i_9/i_3/CI               FA_X1         Fall  0.5960 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_3/CO               FA_X1         Fall  0.6710 0.0750 0.0160 1.19227  2.76208  3.95435           1       46.5402                | 
+|    SM/i_9/i_4/CI               FA_X1         Fall  0.6710 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_4/CO               FA_X1         Fall  0.7450 0.0740 0.0150 0.579563 2.76208  3.34164           1       45.7701                | 
+|    SM/i_9/i_5/CI               FA_X1         Fall  0.7450 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_5/CO               FA_X1         Fall  0.8190 0.0740 0.0160 0.872461 2.76208  3.63454           1       46.5402                | 
+|    SM/i_9/i_6/CI               FA_X1         Fall  0.8190 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_6/CO               FA_X1         Fall  0.8950 0.0760 0.0170 1.44646  2.76208  4.20854           1       46.5402                | 
+|    SM/i_9/i_7/CI               FA_X1         Fall  0.8950 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_7/CO               FA_X1         Fall  0.9700 0.0750 0.0160 0.906222 2.76208  3.6683            1       46.5402                | 
+|    SM/i_9/i_8/CI               FA_X1         Fall  0.9700 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_8/CO               FA_X1         Fall  1.0440 0.0740 0.0150 0.57942  2.76208  3.3415            1       54.9219                | 
+|    SM/i_9/i_9/CI               FA_X1         Fall  1.0440 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_9/CO               FA_X1         Fall  1.1170 0.0730 0.0160 0.643586 2.76208  3.40566           1       54.9219                | 
+|    SM/i_9/i_10/CI              FA_X1         Fall  1.1170 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_10/CO              FA_X1         Fall  1.1910 0.0740 0.0160 0.759632 2.76208  3.52171           1       63.9286                | 
+|    SM/i_9/i_11/CI              FA_X1         Fall  1.1910 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_11/CO              FA_X1         Fall  1.2650 0.0740 0.0160 0.665157 2.76208  3.42724           1       63.9286                | 
+|    SM/i_9/i_12/CI              FA_X1         Fall  1.2650 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_12/CO              FA_X1         Fall  1.3380 0.0730 0.0150 0.433347 2.76208  3.19543           1       63.9286                | 
+|    SM/i_9/i_13/CI              FA_X1         Fall  1.3380 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_13/CO              FA_X1         Fall  1.4130 0.0750 0.0170 1.4323   2.76208  4.19437           1       59.4308                | 
+|    SM/i_9/i_14/CI              FA_X1         Fall  1.4130 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_14/CO              FA_X1         Fall  1.4860 0.0730 0.0150 0.271838 2.76208  3.03392           1       53.2351                | 
+|    SM/i_9/i_15/CI              FA_X1         Fall  1.4860 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_15/CO              FA_X1         Fall  1.5610 0.0750 0.0160 1.06262  2.76208  3.8247            1       53.2351                | 
+|    SM/i_9/i_16/CI              FA_X1         Fall  1.5610 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_16/CO              FA_X1         Fall  1.6350 0.0740 0.0160 0.810419 2.76208  3.5725            1       49.6939                | 
+|    SM/i_9/i_17/CI              FA_X1         Fall  1.6350 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_17/CO              FA_X1         Fall  1.7100 0.0750 0.0160 1.08508  2.76208  3.84716           1       49.6939                | 
+|    SM/i_9/i_18/CI              FA_X1         Fall  1.7100 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_18/CO              FA_X1         Fall  1.7830 0.0730 0.0150 0.246956 2.76208  3.00903           1       59.4308                | 
+|    SM/i_9/i_19/CI              FA_X1         Fall  1.7830 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_19/CO              FA_X1         Fall  1.8570 0.0740 0.0160 0.71446  2.76208  3.47654           1       53.0022                | 
+|    SM/i_9/i_20/CI              FA_X1         Fall  1.8570 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_20/CO              FA_X1         Fall  1.9300 0.0730 0.0150 0.502662 2.76208  3.26474           1       53.0022                | 
+|    SM/i_9/i_21/CI              FA_X1         Fall  1.9300 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_21/CO              FA_X1         Fall  2.0020 0.0720 0.0150 0.297689 2.76208  3.05977           1       53.0022                | 
+|    SM/i_9/i_22/CI              FA_X1         Fall  2.0020 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_22/CO              FA_X1         Fall  2.0750 0.0730 0.0150 0.458084 2.76208  3.22016           1       48.8616                | 
+|    SM/i_9/i_23/CI              FA_X1         Fall  2.0750 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_23/CO              FA_X1         Fall  2.1480 0.0730 0.0150 0.462875 2.76208  3.22495           1       48.8616                | 
+|    SM/i_9/i_24/CI              FA_X1         Fall  2.1480 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_24/CO              FA_X1         Fall  2.2210 0.0730 0.0150 0.573388 2.76208  3.33547           1       48.8616                | 
+|    SM/i_9/i_25/CI              FA_X1         Fall  2.2210 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_25/CO              FA_X1         Fall  2.2940 0.0730 0.0160 0.64095  2.76208  3.40303           1       53.6719                | 
+|    SM/i_9/i_26/CI              FA_X1         Fall  2.2940 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_26/CO              FA_X1         Fall  2.3690 0.0750 0.0160 1.09599  2.76208  3.85807           1       50.1786                | 
+|    SM/i_9/i_27/CI              FA_X1         Fall  2.3690 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_27/CO              FA_X1         Fall  2.4420 0.0730 0.0150 0.221135 2.76208  2.98321           1       50.1786                | 
+|    SM/i_9/i_28/CI              FA_X1         Fall  2.4420 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_28/CO              FA_X1         Fall  2.5150 0.0730 0.0160 0.649193 2.76208  3.41127           1       55.676                 | 
+|    SM/i_9/i_29/CI              FA_X1         Fall  2.5150 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_29/CO              FA_X1         Fall  2.5890 0.0740 0.0160 0.863065 2.76208  3.62514           1       61.6406                | 
+|    SM/i_9/i_30/CI              FA_X1         Fall  2.5890 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_30/CO              FA_X1         Fall  2.6650 0.0760 0.0170 1.34511  2.76208  4.10719           1       53.6719                | 
+|    SM/i_9/i_31/CI              FA_X1         Fall  2.6650 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_31/S               FA_X1         Fall  2.7500 0.0850 0.0140 0.208374 0.944775 1.15315           1       53.6719                | 
+|    SM/i_9/p_1[31]                            Fall  2.7500 0.0000                                                                           | 
+|    SM/i_1_343/B                MUX2_X1       Fall  2.7500 0.0000 0.0140          0.899702                                                  | 
+|    SM/i_1_343/Z                MUX2_X1       Fall  2.8250 0.0750 0.0170 1.42575  7.08377  8.50952           4       48.8616                | 
+|    SM/i_11/p_1[62]                           Fall  2.8250 0.0000                                                             A             | 
+|    SM/i_11/i_67/A              XNOR2_X1      Fall  2.8250 0.0000 0.0170          2.12585                                                   | 
+|    SM/i_11/i_67/ZN             XNOR2_X1      Fall  2.8710 0.0460 0.0150 0.778767 3.25971  4.03848           2       53.6719                | 
+|    SM/i_11/p_0[62]                           Fall  2.8710 0.0000                                                             A             | 
+|    SM/i_1_298/A1               AOI222_X1     Fall  2.8710 0.0000 0.0150          1.40277                                                   | 
+|    SM/i_1_298/ZN               AOI222_X1     Rise  2.9280 0.0570 0.0510 0.386237 1.70023  2.08647           1       53.6719                | 
+|    SM/i_1_297/A                INV_X1        Rise  2.9280 0.0000 0.0510          1.70023                                                   | 
+|    SM/i_1_297/ZN               INV_X1        Fall  2.9380 0.0100 0.0120 0.610878 1.14029  1.75117           1       53.6719                | 
+|    SM/res_reg[62]/D            DFF_X1        Fall  2.9380 0.0000 0.0120          1.06234                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to SM/res_reg[62]/CK 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                          Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                     Rise  0.0000 0.0000 0.1000 1.21555  1.94799  3.16354           2       59.504   c    K        | 
+|    SM/CTSclk_CTS_0_PP_15PP_0               Rise  0.0000 0.0000                                                                           | 
+|    SM/CTS_L1_c_tid0_153/A    CLKBUF_X1     Rise  0.0000 0.0000 0.1000          0.77983                                     F             | 
+|    SM/CTS_L1_c_tid0_153/Z    CLKBUF_X1     Rise  0.1040 0.1040 0.0560 4.31082  18.4098  22.7206           3       59.504   F    K        | 
+|    SM/clk_gate_res_reg/CK    CLKGATETST_X8 Rise  0.1050 0.0010 0.0560          7.95918                                     FA            | 
+|    SM/clk_gate_res_reg/GCK   CLKGATETST_X8 Rise  0.1390 0.0340 0.0070 4.5169   2.49758  7.01448           2       60.8705  FA   K        | 
+|    SM/CTS_L3_c_tid1_36/A     CLKBUF_X3     Rise  0.1390 0.0000 0.0070          1.42116                                     F             | 
+|    SM/CTS_L3_c_tid1_36/Z     CLKBUF_X3     Rise  0.2100 0.0710 0.0470 28.5699  27.4061  55.976            32      48.8616  F    K        | 
+|    SM/res_reg[62]/CK         DFF_X1        Rise  0.2120 0.0020 0.0470          0.949653                                    F             | 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  4.0000 4.0000 | 
+| target clock propagated network latency  |  0.2120 4.2120 | 
+| library setup check                      | -0.0260 4.1860 | 
+| data required time                       |  4.1860        | 
+|                                          |                | 
+| data required time                       |  4.1860        | 
+| data arrival time                        | -2.9380        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.2480        | 
+-------------------------------------------------------------
+
+
+ Timing Path to SM/res_reg[61]/D 
+  
+ Path Start Point : regA/out_reg[31] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : SM/res_reg[61] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.21555  2.20099  3.41654           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0620 0.0620 0.0170 5.23361  7.03097  12.2646           3       59.504   F    K        | 
+|    regA/clk_CTS_0_PP_3                       Rise  0.0620 0.0000                                                                           | 
+|    regA/CTS_L2_c_tid0_18/A     CLKBUF_X1     Rise  0.0620 0.0000 0.0170          0.77983                                     F             | 
+|    regA/CTS_L2_c_tid0_18/Z     CLKBUF_X1     Rise  0.1200 0.0580 0.0300 4.80162  7.03097  11.8326           3       59.504   F    K        | 
+|    regA/clk_gate_out_reg/CK    CLKGATETST_X4 Rise  0.1200 0.0000 0.0300          4.43894                                     FA            | 
+|    regA/clk_gate_out_reg/GCK   CLKGATETST_X4 Rise  0.1510 0.0310 0.0080 2.85528  2.84232  5.6976            2       60.8705  FA   K        | 
+|    regA/CTS_L4_c_tid0_9/A      CLKBUF_X3     Rise  0.1510 0.0000 0.0080          1.42116                                     F             | 
+|    regA/CTS_L4_c_tid0_9/Z      CLKBUF_X3     Rise  0.2010 0.0500 0.0260 12.5625  16.1441  28.7066           17      63.9286  F    K        | 
+| Data Path:                                                                                                                                 | 
+|    regA/out_reg[31]/CK         DFF_X1        Rise  0.2020 0.0010 0.0260          0.949653                                    F             | 
+|    regA/out_reg[31]/Q          DFF_X1        Rise  0.3010 0.0990 0.0120 0.277151 3.40189  3.67904           1       59.504   F             | 
+|    regA/drc_ipo_c3/A           BUF_X4        Rise  0.3010 0.0000 0.0120          3.40189                                                   | 
+|    regA/drc_ipo_c3/Z           BUF_X4        Rise  0.3660 0.0650 0.0550 19.5804  63.3228  82.9032           33      59.504                 | 
+|    regA/out[31]                              Rise  0.3660 0.0000                                                                           | 
+|    SM/in1[31]                                Rise  0.3660 0.0000                                                                           | 
+|    SM/i_1_355/S                MUX2_X1       Rise  0.3700 0.0040 0.0540          1.91994                                                   | 
+|    SM/i_1_355/Z                MUX2_X1       Fall  0.4440 0.0740 0.0150 0.969824 5.44097  6.4108            2       54.9219                | 
+|    SM/i_9/m[1]                               Fall  0.4440 0.0000                                                                           | 
+|    SM/i_9/i_1/A                FA_X1         Fall  0.4440 0.0000 0.0150          3.6056                                                    | 
+|    SM/i_9/i_1/CO               FA_X1         Fall  0.5230 0.0790 0.0150 0.424245 2.76208  3.18632           1       44.933                 | 
+|    SM/i_9/i_2/CI               FA_X1         Fall  0.5230 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_2/CO               FA_X1         Fall  0.5960 0.0730 0.0160 0.619796 2.76208  3.38187           1       46.5402                | 
+|    SM/i_9/i_3/CI               FA_X1         Fall  0.5960 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_3/CO               FA_X1         Fall  0.6710 0.0750 0.0160 1.19227  2.76208  3.95435           1       46.5402                | 
+|    SM/i_9/i_4/CI               FA_X1         Fall  0.6710 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_4/CO               FA_X1         Fall  0.7450 0.0740 0.0150 0.579563 2.76208  3.34164           1       45.7701                | 
+|    SM/i_9/i_5/CI               FA_X1         Fall  0.7450 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_5/CO               FA_X1         Fall  0.8190 0.0740 0.0160 0.872461 2.76208  3.63454           1       46.5402                | 
+|    SM/i_9/i_6/CI               FA_X1         Fall  0.8190 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_6/CO               FA_X1         Fall  0.8950 0.0760 0.0170 1.44646  2.76208  4.20854           1       46.5402                | 
+|    SM/i_9/i_7/CI               FA_X1         Fall  0.8950 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_7/CO               FA_X1         Fall  0.9700 0.0750 0.0160 0.906222 2.76208  3.6683            1       46.5402                | 
+|    SM/i_9/i_8/CI               FA_X1         Fall  0.9700 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_8/CO               FA_X1         Fall  1.0440 0.0740 0.0150 0.57942  2.76208  3.3415            1       54.9219                | 
+|    SM/i_9/i_9/CI               FA_X1         Fall  1.0440 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_9/CO               FA_X1         Fall  1.1170 0.0730 0.0160 0.643586 2.76208  3.40566           1       54.9219                | 
+|    SM/i_9/i_10/CI              FA_X1         Fall  1.1170 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_10/CO              FA_X1         Fall  1.1910 0.0740 0.0160 0.759632 2.76208  3.52171           1       63.9286                | 
+|    SM/i_9/i_11/CI              FA_X1         Fall  1.1910 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_11/CO              FA_X1         Fall  1.2650 0.0740 0.0160 0.665157 2.76208  3.42724           1       63.9286                | 
+|    SM/i_9/i_12/CI              FA_X1         Fall  1.2650 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_12/CO              FA_X1         Fall  1.3380 0.0730 0.0150 0.433347 2.76208  3.19543           1       63.9286                | 
+|    SM/i_9/i_13/CI              FA_X1         Fall  1.3380 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_13/CO              FA_X1         Fall  1.4130 0.0750 0.0170 1.4323   2.76208  4.19437           1       59.4308                | 
+|    SM/i_9/i_14/CI              FA_X1         Fall  1.4130 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_14/CO              FA_X1         Fall  1.4860 0.0730 0.0150 0.271838 2.76208  3.03392           1       53.2351                | 
+|    SM/i_9/i_15/CI              FA_X1         Fall  1.4860 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_15/CO              FA_X1         Fall  1.5610 0.0750 0.0160 1.06262  2.76208  3.8247            1       53.2351                | 
+|    SM/i_9/i_16/CI              FA_X1         Fall  1.5610 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_16/CO              FA_X1         Fall  1.6350 0.0740 0.0160 0.810419 2.76208  3.5725            1       49.6939                | 
+|    SM/i_9/i_17/CI              FA_X1         Fall  1.6350 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_17/CO              FA_X1         Fall  1.7100 0.0750 0.0160 1.08508  2.76208  3.84716           1       49.6939                | 
+|    SM/i_9/i_18/CI              FA_X1         Fall  1.7100 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_18/CO              FA_X1         Fall  1.7830 0.0730 0.0150 0.246956 2.76208  3.00903           1       59.4308                | 
+|    SM/i_9/i_19/CI              FA_X1         Fall  1.7830 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_19/CO              FA_X1         Fall  1.8570 0.0740 0.0160 0.71446  2.76208  3.47654           1       53.0022                | 
+|    SM/i_9/i_20/CI              FA_X1         Fall  1.8570 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_20/CO              FA_X1         Fall  1.9300 0.0730 0.0150 0.502662 2.76208  3.26474           1       53.0022                | 
+|    SM/i_9/i_21/CI              FA_X1         Fall  1.9300 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_21/CO              FA_X1         Fall  2.0020 0.0720 0.0150 0.297689 2.76208  3.05977           1       53.0022                | 
+|    SM/i_9/i_22/CI              FA_X1         Fall  2.0020 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_22/CO              FA_X1         Fall  2.0750 0.0730 0.0150 0.458084 2.76208  3.22016           1       48.8616                | 
+|    SM/i_9/i_23/CI              FA_X1         Fall  2.0750 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_23/CO              FA_X1         Fall  2.1480 0.0730 0.0150 0.462875 2.76208  3.22495           1       48.8616                | 
+|    SM/i_9/i_24/CI              FA_X1         Fall  2.1480 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_24/CO              FA_X1         Fall  2.2210 0.0730 0.0150 0.573388 2.76208  3.33547           1       48.8616                | 
+|    SM/i_9/i_25/CI              FA_X1         Fall  2.2210 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_25/CO              FA_X1         Fall  2.2940 0.0730 0.0160 0.64095  2.76208  3.40303           1       53.6719                | 
+|    SM/i_9/i_26/CI              FA_X1         Fall  2.2940 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_26/CO              FA_X1         Fall  2.3690 0.0750 0.0160 1.09599  2.76208  3.85807           1       50.1786                | 
+|    SM/i_9/i_27/CI              FA_X1         Fall  2.3690 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_27/CO              FA_X1         Fall  2.4420 0.0730 0.0150 0.221135 2.76208  2.98321           1       50.1786                | 
+|    SM/i_9/i_28/CI              FA_X1         Fall  2.4420 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_28/CO              FA_X1         Fall  2.5150 0.0730 0.0160 0.649193 2.76208  3.41127           1       55.676                 | 
+|    SM/i_9/i_29/CI              FA_X1         Fall  2.5150 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_29/CO              FA_X1         Fall  2.5890 0.0740 0.0160 0.863065 2.76208  3.62514           1       61.6406                | 
+|    SM/i_9/i_30/CI              FA_X1         Fall  2.5890 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_30/S               FA_X1         Fall  2.6750 0.0860 0.0140 0.426076 0.944775 1.37085           1       53.6719                | 
+|    SM/i_9/p_1[30]                            Fall  2.6750 0.0000                                                                           | 
+|    SM/i_1_342/B                MUX2_X1       Fall  2.6750 0.0000 0.0140          0.899702                                                  | 
+|    SM/i_1_342/Z                MUX2_X1       Fall  2.7540 0.0790 0.0190 1.89499  8.78205  10.677            5       53.6719                | 
+|    SM/i_11/p_1[61]                           Fall  2.7540 0.0000                                                             A             | 
+|    SM/i_11/i_66/A              XOR2_X1       Fall  2.7540 0.0000 0.0190          2.18123                                                   | 
+|    SM/i_11/i_66/Z              XOR2_X1       Fall  2.8120 0.0580 0.0140 0.584996 3.20216  3.78716           2       61.6406                | 
+|    SM/i_11/p_0[61]                           Fall  2.8120 0.0000                                                             A             | 
+|    SM/i_1_296/B1               AOI222_X1     Fall  2.8120 0.0000 0.0140          1.47422                                                   | 
+|    SM/i_1_296/ZN               AOI222_X1     Rise  2.8910 0.0790 0.0510 0.304719 1.70023  2.00495           1       53.6719                | 
+|    SM/i_1_295/A                INV_X1        Rise  2.8910 0.0000 0.0510          1.70023                                                   | 
+|    SM/i_1_295/ZN               INV_X1        Fall  2.9000 0.0090 0.0120 0.378201 1.14029  1.51849           1       61.6406                | 
+|    SM/res_reg[61]/D            DFF_X1        Fall  2.9000 0.0000 0.0120          1.06234                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to SM/res_reg[61]/CK 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                          Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                     Rise  0.0000 0.0000 0.1000 1.21555  1.94799  3.16354           2       59.504   c    K        | 
+|    SM/CTSclk_CTS_0_PP_15PP_0               Rise  0.0000 0.0000                                                                           | 
+|    SM/CTS_L1_c_tid0_153/A    CLKBUF_X1     Rise  0.0000 0.0000 0.1000          0.77983                                     F             | 
+|    SM/CTS_L1_c_tid0_153/Z    CLKBUF_X1     Rise  0.1040 0.1040 0.0560 4.31082  18.4098  22.7206           3       59.504   F    K        | 
+|    SM/clk_gate_res_reg/CK    CLKGATETST_X8 Rise  0.1050 0.0010 0.0560          7.95918                                     FA            | 
+|    SM/clk_gate_res_reg/GCK   CLKGATETST_X8 Rise  0.1390 0.0340 0.0070 4.5169   2.49758  7.01448           2       60.8705  FA   K        | 
+|    SM/CTS_L3_c_tid1_36/A     CLKBUF_X3     Rise  0.1390 0.0000 0.0070          1.42116                                     F             | 
+|    SM/CTS_L3_c_tid1_36/Z     CLKBUF_X3     Rise  0.2100 0.0710 0.0470 28.5699  27.4061  55.976            32      48.8616  F    K        | 
+|    SM/res_reg[61]/CK         DFF_X1        Rise  0.2120 0.0020 0.0470          0.949653                                    F             | 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  4.0000 4.0000 | 
+| target clock propagated network latency  |  0.2120 4.2120 | 
+| library setup check                      | -0.0260 4.1860 | 
+| data required time                       |  4.1860        | 
+|                                          |                | 
+| data required time                       |  4.1860        | 
+| data arrival time                        | -2.9000        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.2860        | 
+-------------------------------------------------------------
+
+
+ Timing Path to SM/result_reg[61]/D 
+  
+ Path Start Point : regA/out_reg[31] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : SM/result_reg[61] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.21555  2.20099  3.41654           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0620 0.0620 0.0170 5.23361  7.03097  12.2646           3       59.504   F    K        | 
+|    regA/clk_CTS_0_PP_3                       Rise  0.0620 0.0000                                                                           | 
+|    regA/CTS_L2_c_tid0_18/A     CLKBUF_X1     Rise  0.0620 0.0000 0.0170          0.77983                                     F             | 
+|    regA/CTS_L2_c_tid0_18/Z     CLKBUF_X1     Rise  0.1200 0.0580 0.0300 4.80162  7.03097  11.8326           3       59.504   F    K        | 
+|    regA/clk_gate_out_reg/CK    CLKGATETST_X4 Rise  0.1200 0.0000 0.0300          4.43894                                     FA            | 
+|    regA/clk_gate_out_reg/GCK   CLKGATETST_X4 Rise  0.1510 0.0310 0.0080 2.85528  2.84232  5.6976            2       60.8705  FA   K        | 
+|    regA/CTS_L4_c_tid0_9/A      CLKBUF_X3     Rise  0.1510 0.0000 0.0080          1.42116                                     F             | 
+|    regA/CTS_L4_c_tid0_9/Z      CLKBUF_X3     Rise  0.2010 0.0500 0.0260 12.5625  16.1441  28.7066           17      63.9286  F    K        | 
+| Data Path:                                                                                                                                 | 
+|    regA/out_reg[31]/CK         DFF_X1        Rise  0.2020 0.0010 0.0260          0.949653                                    F             | 
+|    regA/out_reg[31]/Q          DFF_X1        Rise  0.3010 0.0990 0.0120 0.277151 3.40189  3.67904           1       59.504   F             | 
+|    regA/drc_ipo_c3/A           BUF_X4        Rise  0.3010 0.0000 0.0120          3.40189                                                   | 
+|    regA/drc_ipo_c3/Z           BUF_X4        Rise  0.3660 0.0650 0.0550 19.5804  63.3228  82.9032           33      59.504                 | 
+|    regA/out[31]                              Rise  0.3660 0.0000                                                                           | 
+|    SM/in1[31]                                Rise  0.3660 0.0000                                                                           | 
+|    SM/i_1_355/S                MUX2_X1       Rise  0.3700 0.0040 0.0540          1.91994                                                   | 
+|    SM/i_1_355/Z                MUX2_X1       Fall  0.4440 0.0740 0.0150 0.969824 5.44097  6.4108            2       54.9219                | 
+|    SM/i_9/m[1]                               Fall  0.4440 0.0000                                                                           | 
+|    SM/i_9/i_1/A                FA_X1         Fall  0.4440 0.0000 0.0150          3.6056                                                    | 
+|    SM/i_9/i_1/CO               FA_X1         Fall  0.5230 0.0790 0.0150 0.424245 2.76208  3.18632           1       44.933                 | 
+|    SM/i_9/i_2/CI               FA_X1         Fall  0.5230 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_2/CO               FA_X1         Fall  0.5960 0.0730 0.0160 0.619796 2.76208  3.38187           1       46.5402                | 
+|    SM/i_9/i_3/CI               FA_X1         Fall  0.5960 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_3/CO               FA_X1         Fall  0.6710 0.0750 0.0160 1.19227  2.76208  3.95435           1       46.5402                | 
+|    SM/i_9/i_4/CI               FA_X1         Fall  0.6710 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_4/CO               FA_X1         Fall  0.7450 0.0740 0.0150 0.579563 2.76208  3.34164           1       45.7701                | 
+|    SM/i_9/i_5/CI               FA_X1         Fall  0.7450 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_5/CO               FA_X1         Fall  0.8190 0.0740 0.0160 0.872461 2.76208  3.63454           1       46.5402                | 
+|    SM/i_9/i_6/CI               FA_X1         Fall  0.8190 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_6/CO               FA_X1         Fall  0.8950 0.0760 0.0170 1.44646  2.76208  4.20854           1       46.5402                | 
+|    SM/i_9/i_7/CI               FA_X1         Fall  0.8950 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_7/CO               FA_X1         Fall  0.9700 0.0750 0.0160 0.906222 2.76208  3.6683            1       46.5402                | 
+|    SM/i_9/i_8/CI               FA_X1         Fall  0.9700 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_8/CO               FA_X1         Fall  1.0440 0.0740 0.0150 0.57942  2.76208  3.3415            1       54.9219                | 
+|    SM/i_9/i_9/CI               FA_X1         Fall  1.0440 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_9/CO               FA_X1         Fall  1.1170 0.0730 0.0160 0.643586 2.76208  3.40566           1       54.9219                | 
+|    SM/i_9/i_10/CI              FA_X1         Fall  1.1170 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_10/CO              FA_X1         Fall  1.1910 0.0740 0.0160 0.759632 2.76208  3.52171           1       63.9286                | 
+|    SM/i_9/i_11/CI              FA_X1         Fall  1.1910 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_11/CO              FA_X1         Fall  1.2650 0.0740 0.0160 0.665157 2.76208  3.42724           1       63.9286                | 
+|    SM/i_9/i_12/CI              FA_X1         Fall  1.2650 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_12/CO              FA_X1         Fall  1.3380 0.0730 0.0150 0.433347 2.76208  3.19543           1       63.9286                | 
+|    SM/i_9/i_13/CI              FA_X1         Fall  1.3380 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_13/CO              FA_X1         Fall  1.4130 0.0750 0.0170 1.4323   2.76208  4.19437           1       59.4308                | 
+|    SM/i_9/i_14/CI              FA_X1         Fall  1.4130 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_14/CO              FA_X1         Fall  1.4860 0.0730 0.0150 0.271838 2.76208  3.03392           1       53.2351                | 
+|    SM/i_9/i_15/CI              FA_X1         Fall  1.4860 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_15/CO              FA_X1         Fall  1.5610 0.0750 0.0160 1.06262  2.76208  3.8247            1       53.2351                | 
+|    SM/i_9/i_16/CI              FA_X1         Fall  1.5610 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_16/CO              FA_X1         Fall  1.6350 0.0740 0.0160 0.810419 2.76208  3.5725            1       49.6939                | 
+|    SM/i_9/i_17/CI              FA_X1         Fall  1.6350 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_17/CO              FA_X1         Fall  1.7100 0.0750 0.0160 1.08508  2.76208  3.84716           1       49.6939                | 
+|    SM/i_9/i_18/CI              FA_X1         Fall  1.7100 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_18/CO              FA_X1         Fall  1.7830 0.0730 0.0150 0.246956 2.76208  3.00903           1       59.4308                | 
+|    SM/i_9/i_19/CI              FA_X1         Fall  1.7830 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_19/CO              FA_X1         Fall  1.8570 0.0740 0.0160 0.71446  2.76208  3.47654           1       53.0022                | 
+|    SM/i_9/i_20/CI              FA_X1         Fall  1.8570 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_20/CO              FA_X1         Fall  1.9300 0.0730 0.0150 0.502662 2.76208  3.26474           1       53.0022                | 
+|    SM/i_9/i_21/CI              FA_X1         Fall  1.9300 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_21/CO              FA_X1         Fall  2.0020 0.0720 0.0150 0.297689 2.76208  3.05977           1       53.0022                | 
+|    SM/i_9/i_22/CI              FA_X1         Fall  2.0020 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_22/CO              FA_X1         Fall  2.0750 0.0730 0.0150 0.458084 2.76208  3.22016           1       48.8616                | 
+|    SM/i_9/i_23/CI              FA_X1         Fall  2.0750 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_23/CO              FA_X1         Fall  2.1480 0.0730 0.0150 0.462875 2.76208  3.22495           1       48.8616                | 
+|    SM/i_9/i_24/CI              FA_X1         Fall  2.1480 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_24/CO              FA_X1         Fall  2.2210 0.0730 0.0150 0.573388 2.76208  3.33547           1       48.8616                | 
+|    SM/i_9/i_25/CI              FA_X1         Fall  2.2210 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_25/CO              FA_X1         Fall  2.2940 0.0730 0.0160 0.64095  2.76208  3.40303           1       53.6719                | 
+|    SM/i_9/i_26/CI              FA_X1         Fall  2.2940 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_26/CO              FA_X1         Fall  2.3690 0.0750 0.0160 1.09599  2.76208  3.85807           1       50.1786                | 
+|    SM/i_9/i_27/CI              FA_X1         Fall  2.3690 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_27/CO              FA_X1         Fall  2.4420 0.0730 0.0150 0.221135 2.76208  2.98321           1       50.1786                | 
+|    SM/i_9/i_28/CI              FA_X1         Fall  2.4420 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_28/CO              FA_X1         Fall  2.5150 0.0730 0.0160 0.649193 2.76208  3.41127           1       55.676                 | 
+|    SM/i_9/i_29/CI              FA_X1         Fall  2.5150 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_29/CO              FA_X1         Fall  2.5890 0.0740 0.0160 0.863065 2.76208  3.62514           1       61.6406                | 
+|    SM/i_9/i_30/CI              FA_X1         Fall  2.5890 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_30/S               FA_X1         Rise  2.7000 0.1110 0.0100 0.426076 0.944775 1.37085           1       53.6719                | 
+|    SM/i_9/p_1[30]                            Rise  2.7000 0.0000                                                                           | 
+|    SM/i_1_342/B                MUX2_X1       Rise  2.7000 0.0000 0.0100          0.944775                                                  | 
+|    SM/i_1_342/Z                MUX2_X1       Rise  2.7590 0.0590 0.0290 1.89499  8.78205  10.677            5       53.6719                | 
+|    SM/i_11/p_1[61]                           Rise  2.7590 0.0000                                                             A             | 
+|    SM/i_11/i_66/A              XOR2_X1       Rise  2.7590 0.0000 0.0290          2.23214                                                   | 
+|    SM/i_11/i_66/Z              XOR2_X1       Rise  2.8200 0.0610 0.0320 0.584996 3.20216  3.78716           2       61.6406                | 
+|    SM/i_11/p_0[61]                           Rise  2.8200 0.0000                                                             A             | 
+|    SM/i_1_127/B2               AOI22_X1      Rise  2.8200 0.0000 0.0320          1.62303                                                   | 
+|    SM/i_1_127/ZN               AOI22_X1      Fall  2.8470 0.0270 0.0280 0.539941 1.70023  2.24017           1       53.6719                | 
+|    SM/i_1_126/A                INV_X1        Fall  2.8470 0.0000 0.0280          1.54936                                                   | 
+|    SM/i_1_126/ZN               INV_X1        Rise  2.8670 0.0200 0.0110 0.571979 1.14029  1.71227           1       61.6406                | 
+|    SM/result_reg[61]/D         DFF_X1        Rise  2.8670 0.0000 0.0110          1.14029                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to SM/result_reg[61]/CK 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay   Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000  0.0000 0.1000             1.21555  1.94799  3.16354           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000  0.0000 0.1000                      1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0610  0.0610 0.0160             5.23361  6.36838  11.602            3       59.504   F    K        | 
+|    SM/clk_CTS_0_PP_15                        Rise  0.0610  0.0000                                                                                       | 
+|    SM/clk_gate_result_reg/CK   CLKGATETST_X4 Rise  0.0600 -0.0010 0.0160    -0.0010           4.43894                                     FA            | 
+|    SM/clk_gate_result_reg/GCK  CLKGATETST_X4 Rise  0.0870  0.0270 0.0060             1.97615  1.24879  3.22493           1       60.8705  FA   K        | 
+|    SM/CTS_L3_c_tid0_79/A       CLKBUF_X3     Rise  0.0870  0.0000 0.0060                      1.42116                                     F             | 
+|    SM/CTS_L3_c_tid0_79/Z       CLKBUF_X3     Rise  0.1930  0.1060 0.0880             48.9616  54.8122  103.774           64      44.2299  F    K        | 
+|    SM/result_reg[61]/CK        DFF_X1        Rise  0.2020  0.0090 0.0880                      0.949653                                    F             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  4.0000 4.0000 | 
+| target clock propagated network latency  |  0.2020 4.2020 | 
+| library setup check                      | -0.0310 4.1710 | 
+| data required time                       |  4.1710        | 
+|                                          |                | 
+| data required time                       |  4.1710        | 
+| data arrival time                        | -2.8670        | 
+| pessimism                                |  0.0010        | 
+|                                          |                | 
+| slack                                    |  1.3050        | 
+-------------------------------------------------------------
+
+
+ Timing Path to SM/res_reg[60]/D 
+  
+ Path Start Point : regA/out_reg[31] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : SM/res_reg[60] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000             1.21555  2.20099  3.41654           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000                      1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0620 0.0620 0.0170             5.23361  7.03097  12.2646           3       59.504   F    K        | 
+|    regA/clk_CTS_0_PP_3                       Rise  0.0620 0.0000                                                                                       | 
+|    regA/CTS_L2_c_tid0_18/A     CLKBUF_X1     Rise  0.0620 0.0000 0.0170                      0.77983                                     F             | 
+|    regA/CTS_L2_c_tid0_18/Z     CLKBUF_X1     Rise  0.1200 0.0580 0.0300             4.80162  7.03097  11.8326           3       59.504   F    K        | 
+|    regA/clk_gate_out_reg/CK    CLKGATETST_X4 Rise  0.1200 0.0000 0.0300                      4.43894                                     FA            | 
+|    regA/clk_gate_out_reg/GCK   CLKGATETST_X4 Rise  0.1510 0.0310 0.0080             2.85528  2.84232  5.6976            2       60.8705  FA   K        | 
+|    regA/CTS_L4_c_tid0_9/A      CLKBUF_X3     Rise  0.1510 0.0000 0.0080                      1.42116                                     F             | 
+|    regA/CTS_L4_c_tid0_9/Z      CLKBUF_X3     Rise  0.2010 0.0500 0.0260             12.5625  16.1441  28.7066           17      63.9286  F    K        | 
+| Data Path:                                                                                                                                             | 
+|    regA/out_reg[31]/CK         DFF_X1        Rise  0.2020 0.0010 0.0260                      0.949653                                    F             | 
+|    regA/out_reg[31]/Q          DFF_X1        Rise  0.3010 0.0990 0.0120             0.277151 3.40189  3.67904           1       59.504   F             | 
+|    regA/drc_ipo_c3/A           BUF_X4        Rise  0.3010 0.0000 0.0120                      3.40189                                                   | 
+|    regA/drc_ipo_c3/Z           BUF_X4        Rise  0.3660 0.0650 0.0550             19.5804  63.3228  82.9032           33      59.504                 | 
+|    regA/out[31]                              Rise  0.3660 0.0000                                                                                       | 
+|    SM/in1[31]                                Rise  0.3660 0.0000                                                                                       | 
+|    SM/i_1_355/S                MUX2_X1       Rise  0.3700 0.0040 0.0540                      1.91994                                                   | 
+|    SM/i_1_355/Z                MUX2_X1       Fall  0.4440 0.0740 0.0150             0.969824 5.44097  6.4108            2       54.9219                | 
+|    SM/i_9/m[1]                               Fall  0.4440 0.0000                                                                                       | 
+|    SM/i_9/i_1/A                FA_X1         Fall  0.4440 0.0000 0.0150                      3.6056                                                    | 
+|    SM/i_9/i_1/CO               FA_X1         Fall  0.5230 0.0790 0.0150             0.424245 2.76208  3.18632           1       44.933                 | 
+|    SM/i_9/i_2/CI               FA_X1         Fall  0.5230 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_2/CO               FA_X1         Fall  0.5960 0.0730 0.0160             0.619796 2.76208  3.38187           1       46.5402                | 
+|    SM/i_9/i_3/CI               FA_X1         Fall  0.5960 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_3/CO               FA_X1         Fall  0.6710 0.0750 0.0160             1.19227  2.76208  3.95435           1       46.5402                | 
+|    SM/i_9/i_4/CI               FA_X1         Fall  0.6710 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_4/CO               FA_X1         Fall  0.7450 0.0740 0.0150             0.579563 2.76208  3.34164           1       45.7701                | 
+|    SM/i_9/i_5/CI               FA_X1         Fall  0.7450 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_5/CO               FA_X1         Fall  0.8190 0.0740 0.0160             0.872461 2.76208  3.63454           1       46.5402                | 
+|    SM/i_9/i_6/CI               FA_X1         Fall  0.8190 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_6/CO               FA_X1         Fall  0.8950 0.0760 0.0170             1.44646  2.76208  4.20854           1       46.5402                | 
+|    SM/i_9/i_7/CI               FA_X1         Fall  0.8950 0.0000 0.0170                      2.66475                                                   | 
+|    SM/i_9/i_7/CO               FA_X1         Fall  0.9700 0.0750 0.0160             0.906222 2.76208  3.6683            1       46.5402                | 
+|    SM/i_9/i_8/CI               FA_X1         Fall  0.9700 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_8/CO               FA_X1         Fall  1.0440 0.0740 0.0150             0.57942  2.76208  3.3415            1       54.9219                | 
+|    SM/i_9/i_9/CI               FA_X1         Fall  1.0440 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_9/CO               FA_X1         Fall  1.1170 0.0730 0.0160             0.643586 2.76208  3.40566           1       54.9219                | 
+|    SM/i_9/i_10/CI              FA_X1         Fall  1.1170 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_10/CO              FA_X1         Fall  1.1910 0.0740 0.0160             0.759632 2.76208  3.52171           1       63.9286                | 
+|    SM/i_9/i_11/CI              FA_X1         Fall  1.1910 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_11/CO              FA_X1         Fall  1.2650 0.0740 0.0160             0.665157 2.76208  3.42724           1       63.9286                | 
+|    SM/i_9/i_12/CI              FA_X1         Fall  1.2650 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_12/CO              FA_X1         Fall  1.3380 0.0730 0.0150             0.433347 2.76208  3.19543           1       63.9286                | 
+|    SM/i_9/i_13/CI              FA_X1         Fall  1.3380 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_13/CO              FA_X1         Fall  1.4130 0.0750 0.0170             1.4323   2.76208  4.19437           1       59.4308                | 
+|    SM/i_9/i_14/CI              FA_X1         Fall  1.4130 0.0000 0.0170                      2.66475                                                   | 
+|    SM/i_9/i_14/CO              FA_X1         Fall  1.4860 0.0730 0.0150             0.271838 2.76208  3.03392           1       53.2351                | 
+|    SM/i_9/i_15/CI              FA_X1         Fall  1.4860 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_15/CO              FA_X1         Fall  1.5610 0.0750 0.0160             1.06262  2.76208  3.8247            1       53.2351                | 
+|    SM/i_9/i_16/CI              FA_X1         Fall  1.5610 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_16/CO              FA_X1         Fall  1.6350 0.0740 0.0160             0.810419 2.76208  3.5725            1       49.6939                | 
+|    SM/i_9/i_17/CI              FA_X1         Fall  1.6350 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_17/CO              FA_X1         Fall  1.7100 0.0750 0.0160             1.08508  2.76208  3.84716           1       49.6939                | 
+|    SM/i_9/i_18/CI              FA_X1         Fall  1.7100 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_18/CO              FA_X1         Fall  1.7830 0.0730 0.0150             0.246956 2.76208  3.00903           1       59.4308                | 
+|    SM/i_9/i_19/CI              FA_X1         Fall  1.7830 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_19/CO              FA_X1         Fall  1.8570 0.0740 0.0160             0.71446  2.76208  3.47654           1       53.0022                | 
+|    SM/i_9/i_20/CI              FA_X1         Fall  1.8570 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_20/CO              FA_X1         Fall  1.9300 0.0730 0.0150             0.502662 2.76208  3.26474           1       53.0022                | 
+|    SM/i_9/i_21/CI              FA_X1         Fall  1.9300 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_21/CO              FA_X1         Fall  2.0020 0.0720 0.0150             0.297689 2.76208  3.05977           1       53.0022                | 
+|    SM/i_9/i_22/CI              FA_X1         Fall  2.0020 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_22/CO              FA_X1         Fall  2.0750 0.0730 0.0150             0.458084 2.76208  3.22016           1       48.8616                | 
+|    SM/i_9/i_23/CI              FA_X1         Fall  2.0750 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_23/CO              FA_X1         Fall  2.1480 0.0730 0.0150             0.462875 2.76208  3.22495           1       48.8616                | 
+|    SM/i_9/i_24/CI              FA_X1         Fall  2.1480 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_24/CO              FA_X1         Fall  2.2210 0.0730 0.0150             0.573388 2.76208  3.33547           1       48.8616                | 
+|    SM/i_9/i_25/CI              FA_X1         Fall  2.2210 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_25/CO              FA_X1         Fall  2.2940 0.0730 0.0160             0.64095  2.76208  3.40303           1       53.6719                | 
+|    SM/i_9/i_26/CI              FA_X1         Fall  2.2940 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_26/CO              FA_X1         Fall  2.3690 0.0750 0.0160             1.09599  2.76208  3.85807           1       50.1786                | 
+|    SM/i_9/i_27/CI              FA_X1         Fall  2.3690 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_27/CO              FA_X1         Fall  2.4420 0.0730 0.0150             0.221135 2.76208  2.98321           1       50.1786                | 
+|    SM/i_9/i_28/CI              FA_X1         Fall  2.4420 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_28/CO              FA_X1         Fall  2.5150 0.0730 0.0160             0.649193 2.76208  3.41127           1       55.676                 | 
+|    SM/i_9/i_29/CI              FA_X1         Fall  2.5150 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_29/S               FA_X1         Fall  2.6000 0.0850 0.0140             0.219525 0.944775 1.1643            1       61.6406                | 
+|    SM/i_9/p_1[29]                            Fall  2.6000 0.0000                                                                                       | 
+|    SM/i_1_341/B                MUX2_X1       Fall  2.6000 0.0000 0.0140                      0.899702                                                  | 
+|    SM/i_1_341/Z                MUX2_X1       Fall  2.6740 0.0740 0.0170             0.980801 7.1677   8.1485            4       61.6406                | 
+|    SM/i_11/p_1[60]                           Fall  2.6740 0.0000                                                                         A             | 
+|    SM/i_11/i_65/A              XNOR2_X1      Fall  2.6740 0.0000 0.0170                      2.12585                                                   | 
+|    SM/i_11/i_65/ZN             XNOR2_X1      Fall  2.7210 0.0470 0.0200             0.863053 3.20216  4.06521           2       53.6719                | 
+|    SM/i_11/p_0[60]                           Fall  2.7210 0.0000                                                                         A             | 
+|    SM/i_1_294/B1               AOI222_X1     Fall  2.7210 0.0000 0.0200                      1.47422                                                   | 
+|    SM/i_1_294/ZN               AOI222_X1     Rise  2.8050 0.0840 0.0530             0.565849 1.70023  2.26608           1       61.6406                | 
+|    SM/i_1_293/A                INV_X1        Rise  2.8100 0.0050 0.0530    0.0050            1.70023                                                   | 
+|    SM/i_1_293/ZN               INV_X1        Fall  2.8190 0.0090 0.0120             0.351685 1.14029  1.49197           1       61.6406                | 
+|    SM/res_reg[60]/D            DFF_X1        Fall  2.8190 0.0000 0.0120                      1.06234                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to SM/res_reg[60]/CK 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                          Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                     Rise  0.0000 0.0000 0.1000 1.21555  1.94799  3.16354           2       59.504   c    K        | 
+|    SM/CTSclk_CTS_0_PP_15PP_0               Rise  0.0000 0.0000                                                                           | 
+|    SM/CTS_L1_c_tid0_153/A    CLKBUF_X1     Rise  0.0000 0.0000 0.1000          0.77983                                     F             | 
+|    SM/CTS_L1_c_tid0_153/Z    CLKBUF_X1     Rise  0.1040 0.1040 0.0560 4.31082  18.4098  22.7206           3       59.504   F    K        | 
+|    SM/clk_gate_res_reg/CK    CLKGATETST_X8 Rise  0.1050 0.0010 0.0560          7.95918                                     FA            | 
+|    SM/clk_gate_res_reg/GCK   CLKGATETST_X8 Rise  0.1390 0.0340 0.0070 4.5169   2.49758  7.01448           2       60.8705  FA   K        | 
+|    SM/CTS_L3_c_tid1_36/A     CLKBUF_X3     Rise  0.1390 0.0000 0.0070          1.42116                                     F             | 
+|    SM/CTS_L3_c_tid1_36/Z     CLKBUF_X3     Rise  0.2100 0.0710 0.0470 28.5699  27.4061  55.976            32      48.8616  F    K        | 
+|    SM/res_reg[60]/CK         DFF_X1        Rise  0.2120 0.0020 0.0470          0.949653                                    F             | 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  4.0000 4.0000 | 
+| target clock propagated network latency  |  0.2120 4.2120 | 
+| library setup check                      | -0.0260 4.1860 | 
+| data required time                       |  4.1860        | 
+|                                          |                | 
+| data required time                       |  4.1860        | 
+| data arrival time                        | -2.8190        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.3670        | 
+-------------------------------------------------------------
+
+
+ Timing Path to SM/result_reg[60]/D 
+  
+ Path Start Point : regA/out_reg[31] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : SM/result_reg[60] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000             1.21555  2.20099  3.41654           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000                      1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0620 0.0620 0.0170             5.23361  7.03097  12.2646           3       59.504   F    K        | 
+|    regA/clk_CTS_0_PP_3                       Rise  0.0620 0.0000                                                                                       | 
+|    regA/CTS_L2_c_tid0_18/A     CLKBUF_X1     Rise  0.0620 0.0000 0.0170                      0.77983                                     F             | 
+|    regA/CTS_L2_c_tid0_18/Z     CLKBUF_X1     Rise  0.1200 0.0580 0.0300             4.80162  7.03097  11.8326           3       59.504   F    K        | 
+|    regA/clk_gate_out_reg/CK    CLKGATETST_X4 Rise  0.1200 0.0000 0.0300                      4.43894                                     FA            | 
+|    regA/clk_gate_out_reg/GCK   CLKGATETST_X4 Rise  0.1510 0.0310 0.0080             2.85528  2.84232  5.6976            2       60.8705  FA   K        | 
+|    regA/CTS_L4_c_tid0_9/A      CLKBUF_X3     Rise  0.1510 0.0000 0.0080                      1.42116                                     F             | 
+|    regA/CTS_L4_c_tid0_9/Z      CLKBUF_X3     Rise  0.2010 0.0500 0.0260             12.5625  16.1441  28.7066           17      63.9286  F    K        | 
+| Data Path:                                                                                                                                             | 
+|    regA/out_reg[31]/CK         DFF_X1        Rise  0.2020 0.0010 0.0260                      0.949653                                    F             | 
+|    regA/out_reg[31]/Q          DFF_X1        Rise  0.3010 0.0990 0.0120             0.277151 3.40189  3.67904           1       59.504   F             | 
+|    regA/drc_ipo_c3/A           BUF_X4        Rise  0.3010 0.0000 0.0120                      3.40189                                                   | 
+|    regA/drc_ipo_c3/Z           BUF_X4        Rise  0.3660 0.0650 0.0550             19.5804  63.3228  82.9032           33      59.504                 | 
+|    regA/out[31]                              Rise  0.3660 0.0000                                                                                       | 
+|    SM/in1[31]                                Rise  0.3660 0.0000                                                                                       | 
+|    SM/i_1_355/S                MUX2_X1       Rise  0.3700 0.0040 0.0540                      1.91994                                                   | 
+|    SM/i_1_355/Z                MUX2_X1       Fall  0.4440 0.0740 0.0150             0.969824 5.44097  6.4108            2       54.9219                | 
+|    SM/i_9/m[1]                               Fall  0.4440 0.0000                                                                                       | 
+|    SM/i_9/i_1/A                FA_X1         Fall  0.4440 0.0000 0.0150                      3.6056                                                    | 
+|    SM/i_9/i_1/CO               FA_X1         Fall  0.5230 0.0790 0.0150             0.424245 2.76208  3.18632           1       44.933                 | 
+|    SM/i_9/i_2/CI               FA_X1         Fall  0.5230 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_2/CO               FA_X1         Fall  0.5960 0.0730 0.0160             0.619796 2.76208  3.38187           1       46.5402                | 
+|    SM/i_9/i_3/CI               FA_X1         Fall  0.5960 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_3/CO               FA_X1         Fall  0.6710 0.0750 0.0160             1.19227  2.76208  3.95435           1       46.5402                | 
+|    SM/i_9/i_4/CI               FA_X1         Fall  0.6710 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_4/CO               FA_X1         Fall  0.7450 0.0740 0.0150             0.579563 2.76208  3.34164           1       45.7701                | 
+|    SM/i_9/i_5/CI               FA_X1         Fall  0.7450 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_5/CO               FA_X1         Fall  0.8190 0.0740 0.0160             0.872461 2.76208  3.63454           1       46.5402                | 
+|    SM/i_9/i_6/CI               FA_X1         Fall  0.8190 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_6/CO               FA_X1         Fall  0.8950 0.0760 0.0170             1.44646  2.76208  4.20854           1       46.5402                | 
+|    SM/i_9/i_7/CI               FA_X1         Fall  0.8950 0.0000 0.0170                      2.66475                                                   | 
+|    SM/i_9/i_7/CO               FA_X1         Fall  0.9700 0.0750 0.0160             0.906222 2.76208  3.6683            1       46.5402                | 
+|    SM/i_9/i_8/CI               FA_X1         Fall  0.9700 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_8/CO               FA_X1         Fall  1.0440 0.0740 0.0150             0.57942  2.76208  3.3415            1       54.9219                | 
+|    SM/i_9/i_9/CI               FA_X1         Fall  1.0440 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_9/CO               FA_X1         Fall  1.1170 0.0730 0.0160             0.643586 2.76208  3.40566           1       54.9219                | 
+|    SM/i_9/i_10/CI              FA_X1         Fall  1.1170 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_10/CO              FA_X1         Fall  1.1910 0.0740 0.0160             0.759632 2.76208  3.52171           1       63.9286                | 
+|    SM/i_9/i_11/CI              FA_X1         Fall  1.1910 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_11/CO              FA_X1         Fall  1.2650 0.0740 0.0160             0.665157 2.76208  3.42724           1       63.9286                | 
+|    SM/i_9/i_12/CI              FA_X1         Fall  1.2650 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_12/CO              FA_X1         Fall  1.3380 0.0730 0.0150             0.433347 2.76208  3.19543           1       63.9286                | 
+|    SM/i_9/i_13/CI              FA_X1         Fall  1.3380 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_13/CO              FA_X1         Fall  1.4130 0.0750 0.0170             1.4323   2.76208  4.19437           1       59.4308                | 
+|    SM/i_9/i_14/CI              FA_X1         Fall  1.4130 0.0000 0.0170                      2.66475                                                   | 
+|    SM/i_9/i_14/CO              FA_X1         Fall  1.4860 0.0730 0.0150             0.271838 2.76208  3.03392           1       53.2351                | 
+|    SM/i_9/i_15/CI              FA_X1         Fall  1.4860 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_15/CO              FA_X1         Fall  1.5610 0.0750 0.0160             1.06262  2.76208  3.8247            1       53.2351                | 
+|    SM/i_9/i_16/CI              FA_X1         Fall  1.5610 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_16/CO              FA_X1         Fall  1.6350 0.0740 0.0160             0.810419 2.76208  3.5725            1       49.6939                | 
+|    SM/i_9/i_17/CI              FA_X1         Fall  1.6350 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_17/CO              FA_X1         Fall  1.7100 0.0750 0.0160             1.08508  2.76208  3.84716           1       49.6939                | 
+|    SM/i_9/i_18/CI              FA_X1         Fall  1.7100 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_18/CO              FA_X1         Fall  1.7830 0.0730 0.0150             0.246956 2.76208  3.00903           1       59.4308                | 
+|    SM/i_9/i_19/CI              FA_X1         Fall  1.7830 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_19/CO              FA_X1         Fall  1.8570 0.0740 0.0160             0.71446  2.76208  3.47654           1       53.0022                | 
+|    SM/i_9/i_20/CI              FA_X1         Fall  1.8570 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_20/CO              FA_X1         Fall  1.9300 0.0730 0.0150             0.502662 2.76208  3.26474           1       53.0022                | 
+|    SM/i_9/i_21/CI              FA_X1         Fall  1.9300 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_21/CO              FA_X1         Fall  2.0020 0.0720 0.0150             0.297689 2.76208  3.05977           1       53.0022                | 
+|    SM/i_9/i_22/CI              FA_X1         Fall  2.0020 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_22/CO              FA_X1         Fall  2.0750 0.0730 0.0150             0.458084 2.76208  3.22016           1       48.8616                | 
+|    SM/i_9/i_23/CI              FA_X1         Fall  2.0750 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_23/CO              FA_X1         Fall  2.1480 0.0730 0.0150             0.462875 2.76208  3.22495           1       48.8616                | 
+|    SM/i_9/i_24/CI              FA_X1         Fall  2.1480 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_24/CO              FA_X1         Fall  2.2210 0.0730 0.0150             0.573388 2.76208  3.33547           1       48.8616                | 
+|    SM/i_9/i_25/CI              FA_X1         Fall  2.2210 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_25/CO              FA_X1         Fall  2.2940 0.0730 0.0160             0.64095  2.76208  3.40303           1       53.6719                | 
+|    SM/i_9/i_26/CI              FA_X1         Fall  2.2940 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_26/CO              FA_X1         Fall  2.3690 0.0750 0.0160             1.09599  2.76208  3.85807           1       50.1786                | 
+|    SM/i_9/i_27/CI              FA_X1         Fall  2.3690 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_27/CO              FA_X1         Fall  2.4420 0.0730 0.0150             0.221135 2.76208  2.98321           1       50.1786                | 
+|    SM/i_9/i_28/CI              FA_X1         Fall  2.4420 0.0000 0.0150                      2.66475                                                   | 
+|    SM/i_9/i_28/CO              FA_X1         Fall  2.5150 0.0730 0.0160             0.649193 2.76208  3.41127           1       55.676                 | 
+|    SM/i_9/i_29/CI              FA_X1         Fall  2.5150 0.0000 0.0160                      2.66475                                                   | 
+|    SM/i_9/i_29/S               FA_X1         Fall  2.6000 0.0850 0.0140             0.219525 0.944775 1.1643            1       61.6406                | 
+|    SM/i_9/p_1[29]                            Fall  2.6000 0.0000                                                                                       | 
+|    SM/i_1_341/B                MUX2_X1       Fall  2.6000 0.0000 0.0140                      0.899702                                                  | 
+|    SM/i_1_341/Z                MUX2_X1       Fall  2.6740 0.0740 0.0170             0.980801 7.1677   8.1485            4       61.6406                | 
+|    SM/i_11/p_1[60]                           Fall  2.6740 0.0000                                                                         A             | 
+|    SM/i_11/i_65/A              XNOR2_X1      Fall  2.6740 0.0000 0.0170                      2.12585                                                   | 
+|    SM/i_11/i_65/ZN             XNOR2_X1      Fall  2.7210 0.0470 0.0200             0.863053 3.20216  4.06521           2       53.6719                | 
+|    SM/i_11/p_0[60]                           Fall  2.7210 0.0000                                                                         A             | 
+|    SM/i_1_125/B2               AOI22_X1      Fall  2.7210 0.0000 0.0200                      1.52031                                                   | 
+|    SM/i_1_125/ZN               AOI22_X1      Rise  2.7740 0.0530 0.0360             0.506831 1.70023  2.20706           1       61.6406                | 
+|    SM/i_1_124/A                INV_X1        Rise  2.7770 0.0030 0.0360    0.0030            1.70023                                                   | 
+|    SM/i_1_124/ZN               INV_X1        Fall  2.7860 0.0090 0.0090             0.29301  1.14029  1.4333            1       55.676                 | 
+|    SM/result_reg[60]/D         DFF_X1        Fall  2.7860 0.0000 0.0090                      1.06234                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to SM/result_reg[60]/CK 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay   Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000  0.0000 0.1000             1.21555  1.94799  3.16354           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000  0.0000 0.1000                      1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0610  0.0610 0.0160             5.23361  6.36838  11.602            3       59.504   F    K        | 
+|    SM/clk_CTS_0_PP_15                        Rise  0.0610  0.0000                                                                                       | 
+|    SM/clk_gate_result_reg/CK   CLKGATETST_X4 Rise  0.0600 -0.0010 0.0160    -0.0010           4.43894                                     FA            | 
+|    SM/clk_gate_result_reg/GCK  CLKGATETST_X4 Rise  0.0870  0.0270 0.0060             1.97615  1.24879  3.22493           1       60.8705  FA   K        | 
+|    SM/CTS_L3_c_tid0_79/A       CLKBUF_X3     Rise  0.0870  0.0000 0.0060                      1.42116                                     F             | 
+|    SM/CTS_L3_c_tid0_79/Z       CLKBUF_X3     Rise  0.1930  0.1060 0.0880             48.9616  54.8122  103.774           64      44.2299  F    K        | 
+|    SM/result_reg[60]/CK        DFF_X1        Rise  0.2020  0.0090 0.0880                      0.949653                                    F             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  4.0000 4.0000 | 
+| target clock propagated network latency  |  0.2020 4.2020 | 
+| library setup check                      | -0.0240 4.1780 | 
+| data required time                       |  4.1780        | 
+|                                          |                | 
+| data required time                       |  4.1780        | 
+| data arrival time                        | -2.7860        | 
+| pessimism                                |  0.0010        | 
+|                                          |                | 
+| slack                                    |  1.3930        | 
+-------------------------------------------------------------
+
+
+ Timing Path to SM/res_reg[59]/D 
+  
+ Path Start Point : regA/out_reg[31] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : SM/res_reg[59] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                            Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Rise  0.0000 0.0000 0.1000 1.21555  2.20099  3.41654           2       59.504   c    K        | 
+|    CTS_L1_tid0__c1_tid0__c14/A CLKBUF_X3     Rise  0.0000 0.0000 0.1000          1.42116                                     F             | 
+|    CTS_L1_tid0__c1_tid0__c14/Z CLKBUF_X3     Rise  0.0620 0.0620 0.0170 5.23361  7.03097  12.2646           3       59.504   F    K        | 
+|    regA/clk_CTS_0_PP_3                       Rise  0.0620 0.0000                                                                           | 
+|    regA/CTS_L2_c_tid0_18/A     CLKBUF_X1     Rise  0.0620 0.0000 0.0170          0.77983                                     F             | 
+|    regA/CTS_L2_c_tid0_18/Z     CLKBUF_X1     Rise  0.1200 0.0580 0.0300 4.80162  7.03097  11.8326           3       59.504   F    K        | 
+|    regA/clk_gate_out_reg/CK    CLKGATETST_X4 Rise  0.1200 0.0000 0.0300          4.43894                                     FA            | 
+|    regA/clk_gate_out_reg/GCK   CLKGATETST_X4 Rise  0.1510 0.0310 0.0080 2.85528  2.84232  5.6976            2       60.8705  FA   K        | 
+|    regA/CTS_L4_c_tid0_9/A      CLKBUF_X3     Rise  0.1510 0.0000 0.0080          1.42116                                     F             | 
+|    regA/CTS_L4_c_tid0_9/Z      CLKBUF_X3     Rise  0.2010 0.0500 0.0260 12.5625  16.1441  28.7066           17      63.9286  F    K        | 
+| Data Path:                                                                                                                                 | 
+|    regA/out_reg[31]/CK         DFF_X1        Rise  0.2020 0.0010 0.0260          0.949653                                    F             | 
+|    regA/out_reg[31]/Q          DFF_X1        Rise  0.3010 0.0990 0.0120 0.277151 3.40189  3.67904           1       59.504   F             | 
+|    regA/drc_ipo_c3/A           BUF_X4        Rise  0.3010 0.0000 0.0120          3.40189                                                   | 
+|    regA/drc_ipo_c3/Z           BUF_X4        Rise  0.3660 0.0650 0.0550 19.5804  63.3228  82.9032           33      59.504                 | 
+|    regA/out[31]                              Rise  0.3660 0.0000                                                                           | 
+|    SM/in1[31]                                Rise  0.3660 0.0000                                                                           | 
+|    SM/i_1_355/S                MUX2_X1       Rise  0.3700 0.0040 0.0540          1.91994                                                   | 
+|    SM/i_1_355/Z                MUX2_X1       Fall  0.4440 0.0740 0.0150 0.969824 5.44097  6.4108            2       54.9219                | 
+|    SM/i_9/m[1]                               Fall  0.4440 0.0000                                                                           | 
+|    SM/i_9/i_1/A                FA_X1         Fall  0.4440 0.0000 0.0150          3.6056                                                    | 
+|    SM/i_9/i_1/CO               FA_X1         Fall  0.5230 0.0790 0.0150 0.424245 2.76208  3.18632           1       44.933                 | 
+|    SM/i_9/i_2/CI               FA_X1         Fall  0.5230 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_2/CO               FA_X1         Fall  0.5960 0.0730 0.0160 0.619796 2.76208  3.38187           1       46.5402                | 
+|    SM/i_9/i_3/CI               FA_X1         Fall  0.5960 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_3/CO               FA_X1         Fall  0.6710 0.0750 0.0160 1.19227  2.76208  3.95435           1       46.5402                | 
+|    SM/i_9/i_4/CI               FA_X1         Fall  0.6710 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_4/CO               FA_X1         Fall  0.7450 0.0740 0.0150 0.579563 2.76208  3.34164           1       45.7701                | 
+|    SM/i_9/i_5/CI               FA_X1         Fall  0.7450 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_5/CO               FA_X1         Fall  0.8190 0.0740 0.0160 0.872461 2.76208  3.63454           1       46.5402                | 
+|    SM/i_9/i_6/CI               FA_X1         Fall  0.8190 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_6/CO               FA_X1         Fall  0.8950 0.0760 0.0170 1.44646  2.76208  4.20854           1       46.5402                | 
+|    SM/i_9/i_7/CI               FA_X1         Fall  0.8950 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_7/CO               FA_X1         Fall  0.9700 0.0750 0.0160 0.906222 2.76208  3.6683            1       46.5402                | 
+|    SM/i_9/i_8/CI               FA_X1         Fall  0.9700 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_8/CO               FA_X1         Fall  1.0440 0.0740 0.0150 0.57942  2.76208  3.3415            1       54.9219                | 
+|    SM/i_9/i_9/CI               FA_X1         Fall  1.0440 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_9/CO               FA_X1         Fall  1.1170 0.0730 0.0160 0.643586 2.76208  3.40566           1       54.9219                | 
+|    SM/i_9/i_10/CI              FA_X1         Fall  1.1170 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_10/CO              FA_X1         Fall  1.1910 0.0740 0.0160 0.759632 2.76208  3.52171           1       63.9286                | 
+|    SM/i_9/i_11/CI              FA_X1         Fall  1.1910 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_11/CO              FA_X1         Fall  1.2650 0.0740 0.0160 0.665157 2.76208  3.42724           1       63.9286                | 
+|    SM/i_9/i_12/CI              FA_X1         Fall  1.2650 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_12/CO              FA_X1         Fall  1.3380 0.0730 0.0150 0.433347 2.76208  3.19543           1       63.9286                | 
+|    SM/i_9/i_13/CI              FA_X1         Fall  1.3380 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_13/CO              FA_X1         Fall  1.4130 0.0750 0.0170 1.4323   2.76208  4.19437           1       59.4308                | 
+|    SM/i_9/i_14/CI              FA_X1         Fall  1.4130 0.0000 0.0170          2.66475                                                   | 
+|    SM/i_9/i_14/CO              FA_X1         Fall  1.4860 0.0730 0.0150 0.271838 2.76208  3.03392           1       53.2351                | 
+|    SM/i_9/i_15/CI              FA_X1         Fall  1.4860 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_15/CO              FA_X1         Fall  1.5610 0.0750 0.0160 1.06262  2.76208  3.8247            1       53.2351                | 
+|    SM/i_9/i_16/CI              FA_X1         Fall  1.5610 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_16/CO              FA_X1         Fall  1.6350 0.0740 0.0160 0.810419 2.76208  3.5725            1       49.6939                | 
+|    SM/i_9/i_17/CI              FA_X1         Fall  1.6350 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_17/CO              FA_X1         Fall  1.7100 0.0750 0.0160 1.08508  2.76208  3.84716           1       49.6939                | 
+|    SM/i_9/i_18/CI              FA_X1         Fall  1.7100 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_18/CO              FA_X1         Fall  1.7830 0.0730 0.0150 0.246956 2.76208  3.00903           1       59.4308                | 
+|    SM/i_9/i_19/CI              FA_X1         Fall  1.7830 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_19/CO              FA_X1         Fall  1.8570 0.0740 0.0160 0.71446  2.76208  3.47654           1       53.0022                | 
+|    SM/i_9/i_20/CI              FA_X1         Fall  1.8570 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_20/CO              FA_X1         Fall  1.9300 0.0730 0.0150 0.502662 2.76208  3.26474           1       53.0022                | 
+|    SM/i_9/i_21/CI              FA_X1         Fall  1.9300 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_21/CO              FA_X1         Fall  2.0020 0.0720 0.0150 0.297689 2.76208  3.05977           1       53.0022                | 
+|    SM/i_9/i_22/CI              FA_X1         Fall  2.0020 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_22/CO              FA_X1         Fall  2.0750 0.0730 0.0150 0.458084 2.76208  3.22016           1       48.8616                | 
+|    SM/i_9/i_23/CI              FA_X1         Fall  2.0750 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_23/CO              FA_X1         Fall  2.1480 0.0730 0.0150 0.462875 2.76208  3.22495           1       48.8616                | 
+|    SM/i_9/i_24/CI              FA_X1         Fall  2.1480 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_24/CO              FA_X1         Fall  2.2210 0.0730 0.0150 0.573388 2.76208  3.33547           1       48.8616                | 
+|    SM/i_9/i_25/CI              FA_X1         Fall  2.2210 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_25/CO              FA_X1         Fall  2.2940 0.0730 0.0160 0.64095  2.76208  3.40303           1       53.6719                | 
+|    SM/i_9/i_26/CI              FA_X1         Fall  2.2940 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_26/CO              FA_X1         Fall  2.3690 0.0750 0.0160 1.09599  2.76208  3.85807           1       50.1786                | 
+|    SM/i_9/i_27/CI              FA_X1         Fall  2.3690 0.0000 0.0160          2.66475                                                   | 
+|    SM/i_9/i_27/CO              FA_X1         Fall  2.4420 0.0730 0.0150 0.221135 2.76208  2.98321           1       50.1786                | 
+|    SM/i_9/i_28/CI              FA_X1         Fall  2.4420 0.0000 0.0150          2.66475                                                   | 
+|    SM/i_9/i_28/S               FA_X1         Fall  2.5270 0.0850 0.0140 0.346606 0.944775 1.29138           1       55.676                 | 
+|    SM/i_9/p_1[28]                            Fall  2.5270 0.0000                                                                           | 
+|    SM/i_1_340/B                MUX2_X1       Fall  2.5270 0.0000 0.0140          0.899702                                                  | 
+|    SM/i_1_340/Z                MUX2_X1       Fall  2.6010 0.0740 0.0170 0.839109 7.08377  7.92288           4       55.676                 | 
+|    SM/i_11/p_1[59]                           Fall  2.6010 0.0000                                                             A             | 
+|    SM/i_11/i_64/A              XNOR2_X1      Fall  2.6010 0.0000 0.0170          2.12585                                                   | 
+|    SM/i_11/i_64/ZN             XNOR2_X1      Fall  2.6470 0.0460 0.0140 0.697222 3.20216  3.89938           2       55.676                 | 
+|    SM/i_11/p_0[59]                           Fall  2.6470 0.0000                                                             A             | 
+|    SM/i_1_292/B1               AOI222_X1     Fall  2.6470 0.0000 0.0140          1.47422                                                   | 
+|    SM/i_1_292/ZN               AOI222_X1     Rise  2.7280 0.0810 0.0520 0.461706 1.70023  2.16194           1       50.1786                | 
+|    SM/i_1_291/A                INV_X1        Rise  2.7280 0.0000 0.0520          1.70023                                                   | 
+|    SM/i_1_291/ZN               INV_X1        Fall  2.7370 0.0090 0.0120 0.493808 1.14029  1.6341            1       55.676                 | 
+|    SM/res_reg[59]/D            DFF_X1        Fall  2.7370 0.0000 0.0120          1.06234                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to SM/res_reg[59]/CK 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                          Cell          Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                     Rise  0.0000 0.0000 0.1000 1.21555  1.94799  3.16354           2       59.504   c    K        | 
+|    SM/CTSclk_CTS_0_PP_15PP_0               Rise  0.0000 0.0000                                                                           | 
+|    SM/CTS_L1_c_tid0_153/A    CLKBUF_X1     Rise  0.0000 0.0000 0.1000          0.77983                                     F             | 
+|    SM/CTS_L1_c_tid0_153/Z    CLKBUF_X1     Rise  0.1040 0.1040 0.0560 4.31082  18.4098  22.7206           3       59.504   F    K        | 
+|    SM/clk_gate_res_reg/CK    CLKGATETST_X8 Rise  0.1050 0.0010 0.0560          7.95918                                     FA            | 
+|    SM/clk_gate_res_reg/GCK   CLKGATETST_X8 Rise  0.1390 0.0340 0.0070 4.5169   2.49758  7.01448           2       60.8705  FA   K        | 
+|    SM/CTS_L3_c_tid1_36/A     CLKBUF_X3     Rise  0.1390 0.0000 0.0070          1.42116                                     F             | 
+|    SM/CTS_L3_c_tid1_36/Z     CLKBUF_X3     Rise  0.2100 0.0710 0.0470 28.5699  27.4061  55.976            32      48.8616  F    K        | 
+|    SM/res_reg[59]/CK         DFF_X1        Rise  0.2120 0.0020 0.0470          0.949653                                    F             | 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  4.0000 4.0000 | 
+| target clock propagated network latency  |  0.2120 4.2120 | 
+| library setup check                      | -0.0260 4.1860 | 
+| data required time                       |  4.1860        | 
+|                                          |                | 
+| data required time                       |  4.1860        | 
+| data arrival time                        | -2.7370        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.4490        | 
+-------------------------------------------------------------
+
+
+info UI33: performed report_timing for 0 sec (CPU time: 0 sec; MEM: RSS - 392M, CVMEM - 1806M, PVMEM - 2637M)
