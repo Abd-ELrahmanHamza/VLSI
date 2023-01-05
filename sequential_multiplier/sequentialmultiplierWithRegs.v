@@ -30,7 +30,7 @@ module sequentialmultiplier_withregs #(
       inputB,
       B_reg
   );
-  sequentialmultiplier SM (
+  sequential_multiplier sm (
       A_reg,
       B_reg,
       clk,
