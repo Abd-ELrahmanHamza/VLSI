@@ -31,13 +31,11 @@ module sequentialmultiplier_withregs #(
       B_reg
   );
   sequential_multiplier sm (
-      A_reg,
-      B_reg,
       clk,
       reset,
-      en,
-      {outA_reg, outB_reg},
-      enableOutput
+      A_reg,
+      B_reg,
+      {outA_reg, outB_reg}
   );
   registerNbits #(32) outA (
       clk,
